@@ -2,7 +2,6 @@
   "dependencies": {
     "com.nirbhaykwatra.gameeventmanager": "https://github.com/nirbhaykwatra/GameEventManager.git",
     "com.nirbhaykwatra.scenemanager": "https://github.com/nirbhaykwatra/SceneManager.git",
-    "com.qhenshaw.charactermovement": "https://github.com/qhenshaw/CharacterMovement.git",
     "com.qhenshaw.fmodextensions": "https://github.com/qhenshaw/FMODExtensions.git",
     "com.qhenshaw.uicomponents": "https://github.com/qhenshaw/UIComponents.git",
     "com.qhenshaw.unitytools": "https://github.com/qhenshaw/UnityTools.git",

@@ -15,10 +15,10 @@ GameObject:
   - component: {fileID: 8132600139385282924}
   - component: {fileID: 8132600139385282925}
   - component: {fileID: 8777296038871484649}
-  - component: {fileID: 8700276836711986089}
-  - component: {fileID: 3354287246493306244}
-  - component: {fileID: 5988204689839524087}
-  - component: {fileID: 3685997924641695181}
+  - component: {fileID: 5548389131240028350}
+  - component: {fileID: 6638402231617272092}
+  - component: {fileID: 6434668707729419335}
+  - component: {fileID: 3876257368030616053}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -156,7 +156,7 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0.9}
-  m_Size: {x: 0.3, y: 1.8}
+  m_Size: {x: 1, y: 1.8}
   m_Direction: 0
 --- !u!50 &8132600139385282924
 Rigidbody2D:
@@ -234,7 +234,7 @@ MonoBehaviour:
       Data3: -1367347271
       Data4: 113292409
     Path: event:/SFX/Footstep
---- !u!114 &8700276836711986089
+--- !u!114 &5548389131240028350
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -243,9 +243,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7422681891417741142}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8825d20bd92ab14db931b4362679637, type: 3}
+  m_Script: {fileID: 11500000, guid: 256ec8144a11a3c4ea17a5ea0b1b0cdf, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterMovement2D
   <Speed>k__BackingField: 5
   <Acceleration>k__BackingField: 10
   <TurnSpeed>k__BackingField: 15
@@ -260,7 +260,7 @@ MonoBehaviour:
   <AirControl>k__BackingField: 0.1
   <AirTurning>k__BackingField: 1
   <Height>k__BackingField: 1.8
-  <Radius>k__BackingField: 0.3
+  <Radius>k__BackingField: 1
   <GroundCheckOffset>k__BackingField: 0.1
   <GroundCheckDistance>k__BackingField: 0.4
   <MaxSlopeAngle>k__BackingField: 40
@@ -271,38 +271,14 @@ MonoBehaviour:
   <MinGroundedVelocity>k__BackingField: 5
   OnGrounded:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8777296038871484649}
-        m_TargetAssemblyTypeName: FMODVFS.FMODFootsteps, FMODVFS
-        m_MethodName: PlayFootstep
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   OnFootstep:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8777296038871484649}
-        m_TargetAssemblyTypeName: FMODVFS.FMODFootsteps, FMODVFS
-        m_MethodName: PlayFootstep
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   TopDownMovement: 0
   Rigidbody: {fileID: 8132600139385282924}
   CapsuleCollider: {fileID: 5042489157841715398}
---- !u!114 &3354287246493306244
+--- !u!114 &6638402231617272092
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -311,12 +287,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7422681891417741142}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: feb786fc1e9b0dc4c8ae0f3b97e68af6, type: 3}
+  m_Script: {fileID: 11500000, guid: 41c059b7eb8144147bf660b541d21bf2, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-  <Movement>k__BackingField: {fileID: 8700276836711986089}
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterSpriteFlipper
+  <Movement>k__BackingField: {fileID: 5548389131240028350}
   <SpriteRenderer>k__BackingField: {fileID: 6102486833466380474}
---- !u!114 &5988204689839524087
+--- !u!114 &6434668707729419335
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -325,13 +301,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 7422681891417741142}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64592c0cac6b52347bdc5335e510c63b, type: 3}
+  m_Script: {fileID: 11500000, guid: f3b660f8f9ddfe546851b858da6416e7, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   <CursorMode>k__BackingField: 1
   <LookInCameraDirection>k__BackingField: 0
-  <Movement>k__BackingField: {fileID: 8700276836711986089}
---- !u!114 &3685997924641695181
+  <Movement>k__BackingField: {fileID: 5548389131240028350}
+--- !u!114 &3876257368030616053
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -340,12 +316,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7422681891417741142}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42cd500ed42aee644a14ce8ad7ea0e9e, type: 3}
+  m_Script: {fileID: 11500000, guid: 436abfcfa7e1b1a4ca8682f9d5655ce9, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterAnimations
   <DampTime>k__BackingField: 0.1
   <Animator>k__BackingField: {fileID: 8527081426609046684}
-  <CharacterMovement>k__BackingField: {fileID: 8700276836711986089}
+  <CharacterMovement>k__BackingField: {fileID: 5548389131240028350}
 --- !u!1 &7765261338290157645
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,7 +382,7 @@ Transform:
   m_GameObject: {fileID: 8029197328071085110}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -25}
+  m_LocalPosition: {x: 0, y: 2.5, z: -25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -470,7 +446,7 @@ MonoBehaviour:
   CameraDistance: 25
   DeadZoneDepth: 0
   Composition:
-    ScreenPosition: {x: 0, y: 0}
+    ScreenPosition: {x: 0, y: 0.25}
     DeadZone:
       Enabled: 0
       Size: {x: 0.2, y: 0.2}
@@ -482,7 +458,7 @@ MonoBehaviour:
   TargetOffset: {x: 0, y: 0, z: 0}
   Damping: {x: 1, y: 1, z: 1}
   Lookahead:
-    Enabled: 0
+    Enabled: 1
     Time: 0
     Smoothing: 0
     IgnoreY: 0
