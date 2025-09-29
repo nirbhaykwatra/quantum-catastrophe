@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Sirenix.OdinInspector.Editor.Modules;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -18,6 +19,8 @@ public class CharacterMovement2D : CharacterMovementBase
     public override Vector3 Velocity { get => Rigidbody.velocity; protected set => Rigidbody.velocity = value; }
 #endif
     protected Vector3 GroundCheckStart => transform.position + transform.up * GroundCheckOffset;
+    protected Vector3 WallCheckStart => transform.position + transform.up * WallCheckOffset;
+    protected bool CanWallJump;
 
     protected virtual void OnValidate()
     {
@@ -79,8 +82,24 @@ public class CharacterMovement2D : CharacterMovementBase
     // attempts a jump, will fail if not grounded
     public override void TryJump()
     {
+        if (CanWallJump) TryWallJump();
         if (!CanMove || !CanCoyoteJump) return;
         Jump();
+    }
+
+    public void TryWallJump()
+    {
+        if (!CanMove || !CanWallJump) return;
+        WallJump();
+    }
+
+    private void WallJump()
+    {
+        // calculate jump velocity from jump height and gravity
+        float jumpVelocity = Mathf.Sqrt(2f * -Gravity * JumpHeight);
+        // override current y velocity but maintain x/z velocity
+        Velocity = new Vector3(-LookDirection.x * (jumpVelocity * 1.25f), jumpVelocity * 1.25f, Velocity.z);
+        // rotate character to face wall
     }
 
     public override void Jump()
@@ -95,11 +114,11 @@ public class CharacterMovement2D : CharacterMovementBase
     {
         // check for the ground
         IsGrounded = CheckGrounded();
+        CanWallJump = CheckWallContact();
 
         // sends correct forward/right inputs to GetMovementAcceleration and applies result to rigidbody
         Vector3 input = MoveInput;
         Vector3 forward = Vector3.right * input.x;
-        if (TopDownMovement) forward = new Vector3(MoveInput.x, MoveInput.z, 0f);
 
         // calculates desirection movement velocity
         Vector3 targetVelocity = forward * (Speed * MoveSpeedMultiplier);
@@ -112,11 +131,19 @@ public class CharacterMovement2D : CharacterMovementBase
         float control = IsGrounded ? 1f : AirControl;
         Vector3 acceleration = velocityDiff * (Acceleration * control);
         // zeros acceleration if airborne and not trying to move (allows for nice jumping arcs)
-        if (!IsGrounded && !HasMoveInput) acceleration = Vector3.zero;
+        if (!IsGrounded && !HasMoveInput)
+        {
+            acceleration = velocityDiff * Acceleration;
+        }
         // add gravity
         acceleration += GroundNormal * Gravity;
 
         Rigidbody.AddForce(acceleration);
+
+        if (CanWallJump)
+        {
+            Rigidbody.linearVelocity = new Vector2(Velocity.x, Mathf.Max(Velocity.y, -2));
+        }
 
         // rotates character towards movement direction
         if (ControlRotation && (IsGrounded || AirTurning))
@@ -194,9 +221,37 @@ public class CharacterMovement2D : CharacterMovementBase
         }
     }
 
+    protected bool CheckWallContact()
+    {
+        // configure layer mask for 2D raycast
+        ContactFilter2D filter = new ContactFilter2D();
+        filter.SetLayerMask(WallMask);
+        // raycast to find ground
+        RaycastHit2D[] hits = new RaycastHit2D[4];
+        RaycastHit2D wallHit = new RaycastHit2D();
+        Physics2D.Raycast(WallCheckStart, LookDirection, filter, hits, WallCheckDistance);
+        for (int i = 0; i < hits.Length; i++)
+        {
+            RaycastHit2D hit = hits[i];
+            if(hit.collider != null && hit.collider != CapsuleCollider)
+            {
+                wallHit = hit;
+                continue;
+            }
+        }
+        
+        if (wallHit.collider == null) return false;
+        
+        
+        return true;
+    }
+
     protected virtual void OnDrawGizmosSelected()
     {
         Gizmos.color = IsGrounded ? Color.green : Color.red;
         Gizmos.DrawRay(GroundCheckStart, -transform.up * GroundCheckDistance);
+        
+        Gizmos.color = CheckWallContact() ? Color.green : Color.red;
+        Gizmos.DrawRay(WallCheckStart, LookDirection * WallCheckDistance);
     }
 }

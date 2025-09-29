@@ -33,6 +33,11 @@ public abstract class CharacterMovementBase : MonoBehaviour
     [field: SerializeField] protected float MaxSlopeAngle { get; set; } = 40f;              // maximum climbable slope, character will slip on anything higher
     [field: SerializeField] protected float CoyoteMaxJumpDistance { get; set; } = 0.5f;     // max distance allowed after leaving ground when doing a coyote jump
     [field: SerializeField] protected LayerMask GroundMask { get; set; } = 1 << 0;          // mask for layers considered the ground
+    
+    [field: Header("Wall Checks")]
+    [field: SerializeField] protected float WallCheckOffset { get; set; } = 0.5f;         // height inside character where grounding ray starts
+    [field: SerializeField] protected float WallCheckDistance { get; set; } = 0.4f;       // distance away from offset position
+    [field: SerializeField] protected LayerMask WallMask { get; set; } = 1 << 3;           // mask for layers considered walls
 
     [field: Header("Events")]
     [field: SerializeField] protected float MinGroundedVelocity { get; set; } = 5f;
