@@ -1,5 +1,18 @@
 {
   "dependencies": {
+    "com.kyrylokuzyk.primetween": {
+      "version": "file:../Assets/Plugins/PrimeTween/internal/com.kyrylokuzyk.primetween.tgz",
+      "depth": 0,
+      "source": "local-tarball",
+      "dependencies": {}
+    },
+    "com.mischief.markdownviewer": {
+      "version": "https://github.com/gwaredd/UnityMarkdownViewer.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "d4a969bb6f29adff8830f4226cad9a81b4b0a6af"
+    },
     "com.nirbhaykwatra.gameeventmanager": {
       "version": "https://github.com/nirbhaykwatra/GameEventManager.git",
       "depth": 0,
@@ -60,7 +73,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.2d.aseprite": {
-      "version": "2.0.1",
+      "version": "2.0.2",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -189,7 +202,7 @@
       "dependencies": {}
     },
     "com.unity.ide.rider": {
-      "version": "3.0.37",
+      "version": "3.0.38",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -245,7 +258,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.postprocessing": {
-      "version": "3.5.0",
+      "version": "3.5.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -380,7 +393,7 @@
       }
     },
     "com.unity.visualscripting": {
-      "version": "1.9.7",
+      "version": "1.9.8",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -398,6 +411,13 @@
         "com.unity.nuget.newtonsoft-json": "3.2.1"
       },
       "url": "https://packages.unity.com"
+    },
+    "com.wooshii.foldericons": {
+      "version": "https://github.com/qhenshaw/Unity-Folder-Icons.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "f8020eaee981bf182e8d67b867ea439b20b13515"
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
