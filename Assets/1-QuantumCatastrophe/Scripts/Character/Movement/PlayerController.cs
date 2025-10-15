@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.InputSystem;
 
 // sends input from PlayerInput to attached CharacterMovement components
@@ -12,8 +13,9 @@ public class PlayerController : MonoBehaviour
     // make character look in Camera direction instead of MoveDirection
     [field: SerializeField] protected bool LookInCameraDirection { get; set; }
 
-    [field: Header("Componenents")]
+    [field: Header("Components")]
     [field: SerializeField] protected CharacterMovementBase Movement { get; set; }
+    [field: SerializeField] protected CharacterAbilities Abilities { get; set; }
 
     protected Vector2 MoveInput { get; set; }
 
@@ -37,7 +39,7 @@ public class PlayerController : MonoBehaviour
         Movement?.TryJump();
     }
 
-    public virtual void OnFire(InputValue value)
+    public virtual void OnDash(InputValue value)
     {
         // placeholder for shooting stuff
     }
