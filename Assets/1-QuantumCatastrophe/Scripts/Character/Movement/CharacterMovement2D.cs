@@ -22,10 +22,10 @@ public class CharacterMovement2D : CharacterMovementBase
 #endif
     protected Vector3 GroundCheckStart => transform.position + transform.up * GroundCheckOffset;
     protected Vector3 WallCheckStart => transform.position + transform.up * WallCheckOffset;
-    protected bool CanWallJump;
+
+    public bool CanWallJump;
     
     protected CharacterAbilities m_abilities;
-    protected Action OnGroundedAction;
 
     protected virtual void OnValidate()
     {

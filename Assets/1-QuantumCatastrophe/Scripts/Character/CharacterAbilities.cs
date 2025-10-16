@@ -40,6 +40,7 @@ public class CharacterAbilities : MonoBehaviour
     private CharacterMovement2D m_movement;
     private float m_initialGravityScale;
     private float m_dashCooldownTimer;
+    private Vector2 m_dashDestination;
 
     private void Awake()
     {
@@ -56,37 +57,31 @@ public class CharacterAbilities : MonoBehaviour
 
     private void Update()
     {
-        if (CanDash) return;
-        m_dashCooldownTimer -= Time.deltaTime;
-        if (m_dashCooldownTimer <= 0)
+        if (!CanDash)
         {
-            CanDash = true;
-            m_dashCooldownTimer = DashCooldown;
+            m_dashCooldownTimer -= Time.deltaTime;
+            if (m_dashCooldownTimer <= 0)
+            {
+                CanDash = true;
+            }
         }
     }
 
     public void TryDash()
     {
-        Debug.Log("Trying dash");
-        if (IsDashing || !CanDash) return;
-        if (!m_movement.IsGrounded)
-        {
-            TryAirDash();
-        }
-        else
-        {
-            StartCoroutine(OnDash());
-            CanDash = false;
-            m_dashCooldownTimer = DashCooldown;
-        }
+        if (IsDashing || !CanDash || !m_movement.IsGrounded) return;
+        StartCoroutine(OnDash());
+        CanDash = false;
+        m_dashCooldownTimer = DashCooldown;
     }
 
     public void TryAirDash()
     {
         Debug.Log("Trying air dash");
-        if (!CanAirDash) return;
+        Debug.Log("CanAirDash: " + CanAirDash);
+        if (!CanDash || !CanAirDash) return;
+        Debug.Log("CanAirDash after guard: " + CanAirDash);
         StartCoroutine(OnDash());
-        Debug.Log("Set air dash to false");
         CanAirDash = false;
         CanDash = false;
         m_dashCooldownTimer = DashCooldown;
@@ -94,6 +89,7 @@ public class CharacterAbilities : MonoBehaviour
 
     public IEnumerator OnDash()
     {
+        if (!CanDash || IsDashing || !CanAirDash) yield break;
         float timer = 0f;
         float progress = 0f;
         m_rigidbody.gravityScale = 0f;
@@ -111,6 +107,8 @@ public class CharacterAbilities : MonoBehaviour
         {
             destination = start + direction * (hit.distance - DashCheckRadius);
         }
+        
+        m_dashDestination = destination;
 
         float velocity = DashDistance / DashDuration;
         float duration = Vector2.Distance(start, destination) / velocity; 
@@ -134,6 +132,7 @@ public class CharacterAbilities : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(m_dashDestination, DashCheckRadius);
     }
 }
