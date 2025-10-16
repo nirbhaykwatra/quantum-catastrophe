@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
 
     public virtual void OnDash(InputValue value)
     {
-        // placeholder for shooting stuff
+        Abilities?.TryDash();
     }
 
     protected virtual void Update()

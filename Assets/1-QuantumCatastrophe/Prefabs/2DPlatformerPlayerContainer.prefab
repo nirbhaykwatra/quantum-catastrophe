@@ -312,6 +312,7 @@ MonoBehaviour:
   <CursorMode>k__BackingField: 1
   <LookInCameraDirection>k__BackingField: 0
   <Movement>k__BackingField: {fileID: 5548389131240028350}
+  <Abilities>k__BackingField: {fileID: 0}
 --- !u!114 &3876257368030616053
 MonoBehaviour:
   m_ObjectHideFlags: 0

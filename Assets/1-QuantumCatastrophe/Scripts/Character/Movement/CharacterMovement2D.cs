@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Sirenix.OdinInspector.Editor.Modules;
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class CharacterMovement2D : CharacterMovementBase
@@ -21,6 +23,9 @@ public class CharacterMovement2D : CharacterMovementBase
     protected Vector3 GroundCheckStart => transform.position + transform.up * GroundCheckOffset;
     protected Vector3 WallCheckStart => transform.position + transform.up * WallCheckOffset;
     protected bool CanWallJump;
+    
+    protected CharacterAbilities m_abilities;
+    protected Action OnGroundedAction;
 
     protected virtual void OnValidate()
     {
@@ -34,8 +39,10 @@ public class CharacterMovement2D : CharacterMovementBase
             CapsuleCollider.size = new Vector2(Radius, Height);
             CapsuleCollider.offset = new Vector2(0f, Height * 0.5f);
         }
+        
+        m_abilities = GetComponent<CharacterAbilities>();
     }
-
+    
     protected virtual void Awake()
     {
         if (CapsuleCollider != null)
@@ -46,12 +53,14 @@ public class CharacterMovement2D : CharacterMovementBase
         }
 
         LookDirection = Vector3.right;
+        
+        m_abilities = GetComponent<CharacterAbilities>();
     }
 
     // receives movement input and clamps it to prevent over-acceleration
     public override void SetMoveInput(Vector3 input)
     {
-        if (!CanMove)
+        if (!CanMove && !m_abilities.IsDashing)
         {
             MoveInput = Vector3.zero;
             return;
@@ -218,7 +227,13 @@ public class CharacterMovement2D : CharacterMovementBase
         if (Vector3.Distance(point, transform.position) < landingCollisionMaxDistance)
         {
             OnGrounded.Invoke(collision.gameObject);
+            OnGroundedEvent();
         }
+    }
+
+    protected void OnGroundedEvent()
+    {
+        m_abilities.CanAirDash = true;
     }
 
     protected bool CheckWallContact()
@@ -251,7 +266,7 @@ public class CharacterMovement2D : CharacterMovementBase
         Gizmos.color = IsGrounded ? Color.green : Color.red;
         Gizmos.DrawRay(GroundCheckStart, -transform.up * GroundCheckDistance);
         
-        Gizmos.color = CheckWallContact() ? Color.green : Color.red;
-        Gizmos.DrawRay(WallCheckStart, LookDirection * WallCheckDistance);
+        // Gizmos.color = CheckWallContact() ? Color.green : Color.red;
+        // Gizmos.DrawRay(WallCheckStart, LookDirection * WallCheckDistance);
     }
 }
