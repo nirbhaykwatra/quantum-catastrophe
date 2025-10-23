@@ -1,0 +1,4082 @@
+fileFormatVersion: 2
+guid: bf20cea634caadd4db926c3d6e2c6926
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3085089223872206140
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_0
+  - first:
+      213: 6716259884379565542
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_1
+  - first:
+      213: 5271557456693084739
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_2
+  - first:
+      213: -7434001208321571558
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_3
+  - first:
+      213: -384181981771075345
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_4
+  - first:
+      213: 8013909640193778235
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_5
+  - first:
+      213: -868935346560917184
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_6
+  - first:
+      213: -3631866270253772620
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_7
+  - first:
+      213: 3819708247254426719
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_8
+  - first:
+      213: 8917569192592322748
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_9
+  - first:
+      213: -2202544353535927885
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_10
+  - first:
+      213: 5929859656850493898
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_11
+  - first:
+      213: -4862677102084850659
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_12
+  - first:
+      213: 4970383359315671363
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_13
+  - first:
+      213: -8160456532080604251
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_14
+  - first:
+      213: -448028801333585284
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_15
+  - first:
+      213: -6800248261180161268
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_16
+  - first:
+      213: 7452993212385012617
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_17
+  - first:
+      213: -8460044999284828313
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_18
+  - first:
+      213: 2373305133089561738
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_19
+  - first:
+      213: -1898736223091745158
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_20
+  - first:
+      213: 5326236687357978775
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_21
+  - first:
+      213: 3138208089076882807
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_22
+  - first:
+      213: 1853357263131058782
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_23
+  - first:
+      213: 4914792715167346942
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_24
+  - first:
+      213: -7943451541839109461
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_25
+  - first:
+      213: 2635404903202395678
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_26
+  - first:
+      213: -1121008752567367564
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_27
+  - first:
+      213: -5235316118212853245
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_28
+  - first:
+      213: 8236709919489148522
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_29
+  - first:
+      213: 6053245036572056997
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_30
+  - first:
+      213: -6834435486413537405
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_31
+  - first:
+      213: 9067975512518571596
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_32
+  - first:
+      213: -3109065794979619157
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_33
+  - first:
+      213: -4914564293357078063
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_34
+  - first:
+      213: -5638657765035505351
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_35
+  - first:
+      213: 1471031168958275002
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_36
+  - first:
+      213: 5535085937862686689
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_37
+  - first:
+      213: -7190179890228874711
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_38
+  - first:
+      213: -2140461543527006207
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_39
+  - first:
+      213: -578063704285005184
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_40
+  - first:
+      213: -355455435280803432
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_41
+  - first:
+      213: -3318104779024837832
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_42
+  - first:
+      213: 3058529329762398268
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_43
+  - first:
+      213: -8099805390574494728
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_44
+  - first:
+      213: 4250292167331753190
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_45
+  - first:
+      213: -4699296715788978485
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_46
+  - first:
+      213: -558673582313049287
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_47
+  - first:
+      213: 3667051598725817215
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_48
+  - first:
+      213: -578661596219796474
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_49
+  - first:
+      213: 8225558806383827372
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_50
+  - first:
+      213: 5024005319834207524
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_51
+  - first:
+      213: -5234938383642478143
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_52
+  - first:
+      213: 4854513988131152346
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_53
+  - first:
+      213: -6392690260731759712
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_54
+  - first:
+      213: 1101579969894164236
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_55
+  - first:
+      213: -7853222931848030314
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_56
+  - first:
+      213: 8069159798478645875
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_57
+  - first:
+      213: 8912561901943647026
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_58
+  - first:
+      213: -1485602384071118114
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_59
+  - first:
+      213: -3295186719635287078
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_60
+  - first:
+      213: -280795151222854398
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_61
+  - first:
+      213: 4671761365960480446
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_62
+  - first:
+      213: -1279327960201281538
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_63
+  - first:
+      213: 5846521322557072718
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_64
+  - first:
+      213: 3026033859564505611
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_65
+  - first:
+      213: 3769057067144662577
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_66
+  - first:
+      213: -8031905338243717671
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_67
+  - first:
+      213: -7038270804379101919
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_68
+  - first:
+      213: 4193794072050684949
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_69
+  - first:
+      213: 1503402591718277254
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_70
+  - first:
+      213: 4697661569544876428
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_71
+  - first:
+      213: -5322544137428446589
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_72
+  - first:
+      213: -4985997893112780009
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_73
+  - first:
+      213: 4489145845995775584
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_74
+  - first:
+      213: 8081038459969187630
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_75
+  - first:
+      213: 1531272322174485837
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_76
+  - first:
+      213: -8979029857573813774
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_77
+  - first:
+      213: 4582014596139548932
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_78
+  - first:
+      213: 1361111372751633178
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_79
+  - first:
+      213: 3270658085596322259
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_80
+  - first:
+      213: 51521053766214121
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_81
+  - first:
+      213: -6487445520721574483
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_82
+  - first:
+      213: -3570161025408610238
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_83
+  - first:
+      213: 2611365613542203766
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_84
+  - first:
+      213: 5002592142559369156
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_85
+  - first:
+      213: 3206820482855207560
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_86
+  - first:
+      213: 3209898789071963461
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_87
+  - first:
+      213: 9066104241702579492
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_88
+  - first:
+      213: 2625583151996431462
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_89
+  - first:
+      213: -6082279137391940792
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_90
+  - first:
+      213: -4166854773420910231
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_91
+  - first:
+      213: -3684077424692943441
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_92
+  - first:
+      213: 1207722502889535098
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_93
+  - first:
+      213: 4654208473749935945
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_94
+  - first:
+      213: 4584422102395026497
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_95
+  - first:
+      213: -4505499103828476609
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_96
+  - first:
+      213: 2834233989161504384
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_97
+  - first:
+      213: -7887583563243971364
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_98
+  - first:
+      213: -8674660167842753884
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_99
+  - first:
+      213: 6810987876516043891
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_100
+  - first:
+      213: 5251006887429873328
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_101
+  - first:
+      213: -3274547906602792549
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_102
+  - first:
+      213: -1762498386925100707
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_103
+  - first:
+      213: -8182550331114158702
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_104
+  - first:
+      213: -3322563807140613811
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_105
+  - first:
+      213: -2818993470004778765
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_106
+  - first:
+      213: -8705578968197424251
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_107
+  - first:
+      213: 6418602545982925479
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_108
+  - first:
+      213: -3897710192963692936
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_109
+  - first:
+      213: -982716400106803573
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_110
+  - first:
+      213: 4742230752954005386
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_111
+  - first:
+      213: 6316115908055904608
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_112
+  - first:
+      213: -1603901128168944543
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_113
+  - first:
+      213: 5706136950846223526
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_114
+  - first:
+      213: 3602349634249871245
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_115
+  - first:
+      213: 4422726885413637325
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_116
+  - first:
+      213: 2549560294376531942
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_117
+  - first:
+      213: -641057094030897809
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_118
+  - first:
+      213: 5504825693392345180
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_119
+  - first:
+      213: -6177790419720281999
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_120
+  - first:
+      213: -3683045050931083128
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_121
+  - first:
+      213: 2411029366030979117
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_122
+  - first:
+      213: 7941929594557320171
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_123
+  - first:
+      213: 3823412404878222182
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_124
+  - first:
+      213: 1250615815549192479
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_125
+  - first:
+      213: -4721973831602971383
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_126
+  - first:
+      213: 160233432587662515
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_127
+  - first:
+      213: -24393935759687212
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_128
+  - first:
+      213: -8954348648002801054
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_129
+  - first:
+      213: -5314285505721403332
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_130
+  - first:
+      213: 5017144693200698249
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_131
+  - first:
+      213: 3736884409786415976
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_132
+  - first:
+      213: -6582240926098431626
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_133
+  - first:
+      213: 7751048515151444015
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_134
+  - first:
+      213: 193468860387768010
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_135
+  - first:
+      213: 3510490797610730843
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_136
+  - first:
+      213: 2518559067027077545
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_137
+  - first:
+      213: 5496259645377207453
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_138
+  - first:
+      213: -3447850763114410144
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_139
+  - first:
+      213: 7592168672148125614
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_140
+  - first:
+      213: 5933876970650759141
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_141
+  - first:
+      213: 5583750048133207762
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_142
+  - first:
+      213: -5068144389148011598
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_143
+  - first:
+      213: -4442897054066479918
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_144
+  - first:
+      213: 1426694594280062514
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_145
+  - first:
+      213: -7845243836038228212
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_146
+  - first:
+      213: 8470854980070327176
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_147
+  - first:
+      213: 8763030952497580855
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_148
+  - first:
+      213: 7651881334233080965
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_149
+  - first:
+      213: -8144655253528586602
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_150
+  - first:
+      213: 4740573453088679170
+    second: IndutrialTileset_Assets1_plus_v1.2_transparent_151
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1975
+        width: 66
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c35d949bd4070da20800000000000000
+      internalID: 3085089223872206140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_1
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1975
+        width: 66
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ed66a3d7c2f43d50800000000000000
+      internalID: 6716259884379565542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_2
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1975
+        width: 66
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 342c043b395582940800000000000000
+      internalID: 5271557456693084739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_3
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 1975
+        width: 66
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a150b2eb94f15d890800000000000000
+      internalID: -7434001208321571558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_4
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1975
+        width: 66
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe0fd67e58c1baaf0800000000000000
+      internalID: -384181981771075345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_5
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 1975
+        width: 66
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3224d5bb50273f60800000000000000
+      internalID: 8013909640193778235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_6
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 1417
+        width: 449
+        height: 593
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 041a477f7ebe0f3f0800000000000000
+      internalID: -868935346560917184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_7
+      rect:
+        serializedVersion: 2
+        x: 2603
+        y: 1853
+        width: 441
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b01dc1aed4099dc0800000000000000
+      internalID: -3631866270253772620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_8
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1911
+        width: 66
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f54ea37c964520530800000000000000
+      internalID: 3819708247254426719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_9
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1911
+        width: 66
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb0be60fee191cb70800000000000000
+      internalID: 8917569192592322748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_10
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1911
+        width: 66
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b9d27d749dfe61e0800000000000000
+      internalID: -2202544353535927885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_11
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 1911
+        width: 66
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac15e7ea0f71b4250800000000000000
+      internalID: 5929859656850493898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_12
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1911
+        width: 66
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1c7ec070fc448cb0800000000000000
+      internalID: -4862677102084850659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_13
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 1911
+        width: 66
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 349f581c4595af440800000000000000
+      internalID: 4970383359315671363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_14
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 1416
+        width: 520
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5abc150250c30ce80800000000000000
+      internalID: -8160456532080604251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_15
+      rect:
+        serializedVersion: 2
+        x: 2102
+        y: 1853
+        width: 426
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7a1e5fcd2848c9f0800000000000000
+      internalID: -448028801333585284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_16
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1847
+        width: 66
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0383e75c3aa0a1a0800000000000000
+      internalID: -6800248261180161268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_17
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1847
+        width: 66
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98b2b99c6d95e6760800000000000000
+      internalID: 7452993212385012617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_18
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1847
+        width: 66
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 767dec975e1e79a80800000000000000
+      internalID: -8460044999284828313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_19
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 1847
+        width: 66
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8c1a69b17cafe020800000000000000
+      internalID: 2373305133089561738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_20
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1847
+        width: 66
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7e137c077556a5e0800000000000000
+      internalID: -1898736223091745158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_21
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 1847
+        width: 66
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79820ab2c089ae940800000000000000
+      internalID: 5326236687357978775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_22
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1783
+        width: 90
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77d5fac41a72d8b20800000000000000
+      internalID: 3138208089076882807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_23
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1783
+        width: 66
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5221de7c9278b910800000000000000
+      internalID: 1853357263131058782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_24
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1783
+        width: 66
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef03a3c4fe9d43440800000000000000
+      internalID: 4914792715167346942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_25
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 1783
+        width: 66
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba2a62ea8e033c190800000000000000
+      internalID: -7943451541839109461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_26
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1783
+        width: 66
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1693b6ebc6d29420800000000000000
+      internalID: 2635404903202395678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_27
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 1783
+        width: 90
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4784e199a706170f0800000000000000
+      internalID: -1121008752567367564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_28
+      rect:
+        serializedVersion: 2
+        x: 2603
+        y: 1662
+        width: 441
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 302cb077abb6857b0800000000000000
+      internalID: -5235316118212853245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_29
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1719
+        width: 53
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a664615280cae4270800000000000000
+      internalID: 8236709919489148522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_30
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1719
+        width: 53
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ad164f0a42710450800000000000000
+      internalID: 6053245036572056997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_31
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1719
+        width: 53
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38f3fffa2253721a0800000000000000
+      internalID: -6834435486413537405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_32
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 1719
+        width: 53
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c463c973fabe7dd70800000000000000
+      internalID: 9067975512518571596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_33
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1719
+        width: 53
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae1ceac1216ad4d0800000000000000
+      internalID: -3109065794979619157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_34
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 1719
+        width: 53
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d9f1ac40d5fbcbb0800000000000000
+      internalID: -4914564293357078063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_35
+      rect:
+        serializedVersion: 2
+        x: 2102
+        y: 1661
+        width: 426
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9398f0933a67fb1b0800000000000000
+      internalID: -5638657765035505351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_36
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1655
+        width: 82
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abd1947ed072a6410800000000000000
+      internalID: 1471031168958275002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_37
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1655
+        width: 54
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e7b097955390dc40800000000000000
+      internalID: 5535085937862686689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_38
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1655
+        width: 54
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92230cb2c79573c90800000000000000
+      internalID: -7190179890228874711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_39
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 1655
+        width: 54
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10040ba119d8b42e0800000000000000
+      internalID: -2140461543527006207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_40
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1655
+        width: 54
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08abb88af1e4af7f0800000000000000
+      internalID: -578063704285005184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_41
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 1655
+        width: 82
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8991b963a2b211bf0800000000000000
+      internalID: -355455435280803432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_42
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1591
+        width: 65
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 833d2b69849b3f1d0800000000000000
+      internalID: -3318104779024837832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_43
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1591
+        width: 65
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c30f99b7834127a20800000000000000
+      internalID: 3058529329762398268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_44
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1591
+        width: 65
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb530179e5b79f80800000000000000
+      internalID: -8099805390574494728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_45
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 1591
+        width: 65
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ec2f6905321cfa30800000000000000
+      internalID: 4250292167331753190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_46
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1591
+        width: 65
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc6fc31f88eb8ceb0800000000000000
+      internalID: -4699296715788978485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_47
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 1591
+        width: 65
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 933f5dc36513f38f0800000000000000
+      internalID: -558673582313049287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_48
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1527
+        width: 65
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f73a41b000cf3e230800000000000000
+      internalID: 3667051598725817215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_49
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1527
+        width: 65
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6049828185e28f7f0800000000000000
+      internalID: -578661596219796474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_50
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1527
+        width: 65
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca9189d472e072270800000000000000
+      internalID: 8225558806383827372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_51
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 1527
+        width: 65
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4250466583ad8b540800000000000000
+      internalID: 5024005319834207524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_52
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1527
+        width: 65
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c9bee5a643c957b0800000000000000
+      internalID: -5234938383642478143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_53
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 1527
+        width: 65
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad1e8bb70c2be5340800000000000000
+      internalID: 4854513988131152346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_54
+      rect:
+        serializedVersion: 2
+        x: 2102
+        y: 1469
+        width: 426
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a3fbf9e31a9847a0800000000000000
+      internalID: -6392690260731759712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_55
+      rect:
+        serializedVersion: 2
+        x: 2582
+        y: 1463
+        width: 343
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c072a3d6529994f00800000000000000
+      internalID: 1101579969894164236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_56
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1463
+        width: 76
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6971f350a5fb30390800000000000000
+      internalID: -7853222931848030314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_57
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1463
+        width: 65
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37aae20a51a6bff60800000000000000
+      internalID: 8069159798478645875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_58
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1463
+        width: 65
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23be70c34d7cfab70800000000000000
+      internalID: 8912561901943647026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_59
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 1463
+        width: 65
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed2b7f3b084126be0800000000000000
+      internalID: -1485602384071118114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_60
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1463
+        width: 65
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad3dd8b13252542d0800000000000000
+      internalID: -3295186719635287078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_61
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 1463
+        width: 76
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20da5b43c4a6a1cf0800000000000000
+      internalID: -280795151222854398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_62
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1399
+        width: 58
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb6d775d53e65d040800000000000000
+      internalID: 4671761365960480446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_63
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1399
+        width: 58
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eff3af49ff9ee3ee0800000000000000
+      internalID: -1279327960201281538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_64
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1399
+        width: 58
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e45e2caaa24032150800000000000000
+      internalID: 5846521322557072718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_65
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 1399
+        width: 58
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0a85ad33c1aef920800000000000000
+      internalID: 3026033859564505611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_66
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1399
+        width: 58
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13e4559ee616e4430800000000000000
+      internalID: 3769057067144662577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_67
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 1399
+        width: 58
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d56b6456a0f88090800000000000000
+      internalID: -8031905338243717671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_68
+      rect:
+        serializedVersion: 2
+        x: 2102
+        y: 1177
+        width: 444
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1251bf76ef9035e90800000000000000
+      internalID: -7038270804379101919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_69
+      rect:
+        serializedVersion: 2
+        x: 2582
+        y: 1176
+        width: 462
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51458b52d79533a30800000000000000
+      internalID: 4193794072050684949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_70
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1335
+        width: 58
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68005c911b82dd410800000000000000
+      internalID: 1503402591718277254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_71
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1335
+        width: 58
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c81f9b7ee42713140800000000000000
+      internalID: 4697661569544876428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_72
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1335
+        width: 58
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3825d3b9e468226b0800000000000000
+      internalID: -5322544137428446589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_73
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 1335
+        width: 58
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71baa2a455d2ecab0800000000000000
+      internalID: -4985997893112780009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_74
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1335
+        width: 60
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 066af77cc56ac4e30800000000000000
+      internalID: 4489145845995775584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_75
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 1335
+        width: 60
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2fabb60aad952070800000000000000
+      internalID: 8081038459969187630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_76
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1271
+        width: 70
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d450991601c204510800000000000000
+      internalID: 1531272322174485837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_77
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1271
+        width: 58
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f1cfafdae3146380800000000000000
+      internalID: -8979029857573813774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_78
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1271
+        width: 58
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4018d86aff5969f30800000000000000
+      internalID: 4582014596139548932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_79
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 1271
+        width: 58
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1bfa900593a3e210800000000000000
+      internalID: 1361111372751633178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_80
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1271
+        width: 58
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d95abd3336b36d20800000000000000
+      internalID: 3270658085596322259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_81
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 1271
+        width: 70
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e1603c102a07b000800000000000000
+      internalID: 51521053766214121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_82
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 708
+        width: 477
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da501bdbba6f7f5a0800000000000000
+      internalID: -6487445520721574483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_83
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 708
+        width: 477
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2405391867d347ec0800000000000000
+      internalID: -3570161025408610238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_84
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1207
+        width: 76
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6716add903f6d3420800000000000000
+      internalID: 2611365613542203766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_85
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1207
+        width: 78
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c7596d7c07cc6540800000000000000
+      internalID: 5002592142559369156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_86
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1207
+        width: 76
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 882080b1d3ae08c20800000000000000
+      internalID: 3206820482855207560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_87
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 1207
+        width: 78
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 545479f11f9db8c20800000000000000
+      internalID: 3209898789071963461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_88
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1207
+        width: 76
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42d285706c541dd70800000000000000
+      internalID: 9066104241702579492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_89
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 1207
+        width: 78
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66c6ffe37f1ff6420800000000000000
+      internalID: 2625583151996431462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_90
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1143
+        width: 104
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84bebfe8957679ba0800000000000000
+      internalID: -6082279137391940792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_91
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1143
+        width: 78
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9691b9719ab5c26c0800000000000000
+      internalID: -4166854773420910231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_92
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1143
+        width: 76
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa52420f9178fdcc0800000000000000
+      internalID: -3684077424692943441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_93
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 1143
+        width: 78
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a76f9f3b731b2c010800000000000000
+      internalID: 1207722502889535098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_94
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1143
+        width: 76
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9475a74a2f1179040800000000000000
+      internalID: 4654208473749935945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_95
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 1143
+        width: 104
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14c74b1ec932f9f30800000000000000
+      internalID: 4584422102395026497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_96
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1079
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3d767caf604971c0800000000000000
+      internalID: -4505499103828476609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_97
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1079
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08e4f46fbc8355720800000000000000
+      internalID: 2834233989161504384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_98
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1079
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdc12a81a8ca98290800000000000000
+      internalID: -7887583563243971364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_99
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 1079
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a29084a98a6d9780800000000000000
+      internalID: -8674660167842753884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_100
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1079
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37c1b35336d758e50800000000000000
+      internalID: 6810987876516043891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_101
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 1079
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0be136e61f25fd840800000000000000
+      internalID: 5251006887429873328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_102
+      rect:
+        serializedVersion: 2
+        x: 2043
+        y: 941
+        width: 496
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9901fa37087e82d0800000000000000
+      internalID: -3274547906602792549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_103
+      rect:
+        serializedVersion: 2
+        x: 2582
+        y: 941
+        width: 462
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5161222e095a87e0800000000000000
+      internalID: -1762498386925100707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_104
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1015
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2958f2da3ddb17e80800000000000000
+      internalID: -8182550331114158702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_105
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1015
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4170d332d1e3e1d0800000000000000
+      internalID: -3322563807140613811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_106
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1015
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f8283cef5ce0e8d0800000000000000
+      internalID: -2818993470004778765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_107
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 1015
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58b1b747d029f2780800000000000000
+      internalID: -8705578968197424251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_108
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1015
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aaeab32205731950800000000000000
+      internalID: 6418602545982925479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_109
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 1015
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 876dafefa3d88e9c0800000000000000
+      internalID: -3897710192963692936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_110
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 943
+        width: 42
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8eeea804a0bc52f0800000000000000
+      internalID: -982716400106803573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_111
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 943
+        width: 42
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a87b1c09eb9cfc140800000000000000
+      internalID: 4742230752954005386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_112
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 943
+        width: 42
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 061bdd344f957a750800000000000000
+      internalID: 6316115908055904608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_113
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 943
+        width: 42
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16c44a8fb6ccdb9e0800000000000000
+      internalID: -1603901128168944543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_114
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 943
+        width: 42
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a47bea0355403f40800000000000000
+      internalID: 5706136950846223526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_115
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 943
+        width: 42
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8fc83208ed1ef130800000000000000
+      internalID: 3602349634249871245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_116
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 879
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcc46af6baea06d30800000000000000
+      internalID: 4422726885413637325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_117
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 879
+        width: 48
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e7e0cf549bd16320800000000000000
+      internalID: 2549560294376531942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_118
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 879
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6d4b8d28f18a17f0800000000000000
+      internalID: -641057094030897809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_119
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 879
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5818156dc1156c40800000000000000
+      internalID: 5504825693392345180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_120
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 879
+        width: 48
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 170e2c73854144aa0800000000000000
+      internalID: -6177790419720281999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_121
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 879
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8880e7f2a0233ecc0800000000000000
+      internalID: -3683045050931083128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_122
+      rect:
+        serializedVersion: 2
+        x: 2582
+        y: 632
+        width: 218
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d20df492f62b57120800000000000000
+      internalID: 2411029366030979117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_123
+      rect:
+        serializedVersion: 2
+        x: 2826
+        y: 632
+        width: 218
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beb40ca53e6673e60800000000000000
+      internalID: 7941929594557320171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_124
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 815
+        width: 34
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 663a69e235d7f0530800000000000000
+      internalID: 3823412404878222182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_125
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 815
+        width: 34
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f198b4c45741b5110800000000000000
+      internalID: 1250615815549192479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_126
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 815
+        width: 34
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90d5d9871dd287eb0800000000000000
+      internalID: -4721973831602971383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_127
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 815
+        width: 34
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b4778e3573493200800000000000000
+      internalID: 160233432587662515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_128
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 815
+        width: 34
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d1ce5c38d559aff0800000000000000
+      internalID: -24393935759687212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_129
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 815
+        width: 34
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2623bc8c853cbb380800000000000000
+      internalID: -8954348648002801054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_130
+      rect:
+        serializedVersion: 2
+        x: 2043
+        y: 632
+        width: 496
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c38f7742d7ddf36b0800000000000000
+      internalID: -5314285505721403332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_131
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 751
+        width: 66
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98bb6f8348a70a540800000000000000
+      internalID: 5017144693200698249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_132
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 751
+        width: 66
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86bb30462941cd330800000000000000
+      internalID: 3736884409786415976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_133
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 751
+        width: 66
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6716ddd70ce27a4a0800000000000000
+      internalID: -6582240926098431626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_134
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 751
+        width: 66
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f28bb66ce81419b60800000000000000
+      internalID: 7751048515151444015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_135
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 751
+        width: 66
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac6338a47e65fa200800000000000000
+      internalID: 193468860387768010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_136
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 751
+        width: 66
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b558dd2f7c4c7b030800000000000000
+      internalID: 3510490797610730843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_137
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 687
+        width: 21
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a9fcf7a028b3f220800000000000000
+      internalID: 2518559067027077545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_138
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 687
+        width: 21
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9cd50ce603a64c40800000000000000
+      internalID: 5496259645377207453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_139
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 687
+        width: 21
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06f810a9ff5c620d0800000000000000
+      internalID: -3447850763114410144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_140
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 687
+        width: 21
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea7fc3aae2dcc5960800000000000000
+      internalID: 7592168672148125614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_141
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 687
+        width: 21
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ef62807aad595250800000000000000
+      internalID: 5933876970650759141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_142
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 687
+        width: 21
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d6dc85b5177d7d40800000000000000
+      internalID: 5583750048133207762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_143
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 40
+        width: 477
+        height: 649
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b3917eb7855aa9b0800000000000000
+      internalID: -5068144389148011598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_144
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 40
+        width: 477
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dcecb63ba8a752c0800000000000000
+      internalID: -4442897054066479918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_145
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 40
+        width: 520
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e780fac23acc310800000000000000
+      internalID: 1426694594280062514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_146
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 379
+        width: 538
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c075e980c48102390800000000000000
+      internalID: -7845243836038228212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_147
+      rect:
+        serializedVersion: 2
+        x: 2628
+        y: 379
+        width: 343
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 883c0fe49b58e8570800000000000000
+      internalID: 8470854980070327176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_148
+      rect:
+        serializedVersion: 2
+        x: 1988
+        y: 40
+        width: 218
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73b0f57093a8c9970800000000000000
+      internalID: 8763030952497580855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_149
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 40
+        width: 293
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 584a7663881f03a60800000000000000
+      internalID: 7651881334233080965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_150
+      rect:
+        serializedVersion: 2
+        x: 2521
+        y: 40
+        width: 293
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 696d86bf23f58fe80800000000000000
+      internalID: -8144655253528586602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndutrialTileset_Assets1_plus_v1.2_transparent_151
+      rect:
+        serializedVersion: 2
+        x: 2826
+        y: 40
+        width: 218
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2056ffe5076e9c140800000000000000
+      internalID: 4740573453088679170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      IndutrialTileset_Assets1_plus_v1.2_transparent_0: 3085089223872206140
+      IndutrialTileset_Assets1_plus_v1.2_transparent_1: 6716259884379565542
+      IndutrialTileset_Assets1_plus_v1.2_transparent_10: -2202544353535927885
+      IndutrialTileset_Assets1_plus_v1.2_transparent_100: 6810987876516043891
+      IndutrialTileset_Assets1_plus_v1.2_transparent_101: 5251006887429873328
+      IndutrialTileset_Assets1_plus_v1.2_transparent_102: -3274547906602792549
+      IndutrialTileset_Assets1_plus_v1.2_transparent_103: -1762498386925100707
+      IndutrialTileset_Assets1_plus_v1.2_transparent_104: -8182550331114158702
+      IndutrialTileset_Assets1_plus_v1.2_transparent_105: -3322563807140613811
+      IndutrialTileset_Assets1_plus_v1.2_transparent_106: -2818993470004778765
+      IndutrialTileset_Assets1_plus_v1.2_transparent_107: -8705578968197424251
+      IndutrialTileset_Assets1_plus_v1.2_transparent_108: 6418602545982925479
+      IndutrialTileset_Assets1_plus_v1.2_transparent_109: -3897710192963692936
+      IndutrialTileset_Assets1_plus_v1.2_transparent_11: 5929859656850493898
+      IndutrialTileset_Assets1_plus_v1.2_transparent_110: -982716400106803573
+      IndutrialTileset_Assets1_plus_v1.2_transparent_111: 4742230752954005386
+      IndutrialTileset_Assets1_plus_v1.2_transparent_112: 6316115908055904608
+      IndutrialTileset_Assets1_plus_v1.2_transparent_113: -1603901128168944543
+      IndutrialTileset_Assets1_plus_v1.2_transparent_114: 5706136950846223526
+      IndutrialTileset_Assets1_plus_v1.2_transparent_115: 3602349634249871245
+      IndutrialTileset_Assets1_plus_v1.2_transparent_116: 4422726885413637325
+      IndutrialTileset_Assets1_plus_v1.2_transparent_117: 2549560294376531942
+      IndutrialTileset_Assets1_plus_v1.2_transparent_118: -641057094030897809
+      IndutrialTileset_Assets1_plus_v1.2_transparent_119: 5504825693392345180
+      IndutrialTileset_Assets1_plus_v1.2_transparent_12: -4862677102084850659
+      IndutrialTileset_Assets1_plus_v1.2_transparent_120: -6177790419720281999
+      IndutrialTileset_Assets1_plus_v1.2_transparent_121: -3683045050931083128
+      IndutrialTileset_Assets1_plus_v1.2_transparent_122: 2411029366030979117
+      IndutrialTileset_Assets1_plus_v1.2_transparent_123: 7941929594557320171
+      IndutrialTileset_Assets1_plus_v1.2_transparent_124: 3823412404878222182
+      IndutrialTileset_Assets1_plus_v1.2_transparent_125: 1250615815549192479
+      IndutrialTileset_Assets1_plus_v1.2_transparent_126: -4721973831602971383
+      IndutrialTileset_Assets1_plus_v1.2_transparent_127: 160233432587662515
+      IndutrialTileset_Assets1_plus_v1.2_transparent_128: -24393935759687212
+      IndutrialTileset_Assets1_plus_v1.2_transparent_129: -8954348648002801054
+      IndutrialTileset_Assets1_plus_v1.2_transparent_13: 4970383359315671363
+      IndutrialTileset_Assets1_plus_v1.2_transparent_130: -5314285505721403332
+      IndutrialTileset_Assets1_plus_v1.2_transparent_131: 5017144693200698249
+      IndutrialTileset_Assets1_plus_v1.2_transparent_132: 3736884409786415976
+      IndutrialTileset_Assets1_plus_v1.2_transparent_133: -6582240926098431626
+      IndutrialTileset_Assets1_plus_v1.2_transparent_134: 7751048515151444015
+      IndutrialTileset_Assets1_plus_v1.2_transparent_135: 193468860387768010
+      IndutrialTileset_Assets1_plus_v1.2_transparent_136: 3510490797610730843
+      IndutrialTileset_Assets1_plus_v1.2_transparent_137: 2518559067027077545
+      IndutrialTileset_Assets1_plus_v1.2_transparent_138: 5496259645377207453
+      IndutrialTileset_Assets1_plus_v1.2_transparent_139: -3447850763114410144
+      IndutrialTileset_Assets1_plus_v1.2_transparent_14: -8160456532080604251
+      IndutrialTileset_Assets1_plus_v1.2_transparent_140: 7592168672148125614
+      IndutrialTileset_Assets1_plus_v1.2_transparent_141: 5933876970650759141
+      IndutrialTileset_Assets1_plus_v1.2_transparent_142: 5583750048133207762
+      IndutrialTileset_Assets1_plus_v1.2_transparent_143: -5068144389148011598
+      IndutrialTileset_Assets1_plus_v1.2_transparent_144: -4442897054066479918
+      IndutrialTileset_Assets1_plus_v1.2_transparent_145: 1426694594280062514
+      IndutrialTileset_Assets1_plus_v1.2_transparent_146: -7845243836038228212
+      IndutrialTileset_Assets1_plus_v1.2_transparent_147: 8470854980070327176
+      IndutrialTileset_Assets1_plus_v1.2_transparent_148: 8763030952497580855
+      IndutrialTileset_Assets1_plus_v1.2_transparent_149: 7651881334233080965
+      IndutrialTileset_Assets1_plus_v1.2_transparent_15: -448028801333585284
+      IndutrialTileset_Assets1_plus_v1.2_transparent_150: -8144655253528586602
+      IndutrialTileset_Assets1_plus_v1.2_transparent_151: 4740573453088679170
+      IndutrialTileset_Assets1_plus_v1.2_transparent_16: -6800248261180161268
+      IndutrialTileset_Assets1_plus_v1.2_transparent_17: 7452993212385012617
+      IndutrialTileset_Assets1_plus_v1.2_transparent_18: -8460044999284828313
+      IndutrialTileset_Assets1_plus_v1.2_transparent_19: 2373305133089561738
+      IndutrialTileset_Assets1_plus_v1.2_transparent_2: 5271557456693084739
+      IndutrialTileset_Assets1_plus_v1.2_transparent_20: -1898736223091745158
+      IndutrialTileset_Assets1_plus_v1.2_transparent_21: 5326236687357978775
+      IndutrialTileset_Assets1_plus_v1.2_transparent_22: 3138208089076882807
+      IndutrialTileset_Assets1_plus_v1.2_transparent_23: 1853357263131058782
+      IndutrialTileset_Assets1_plus_v1.2_transparent_24: 4914792715167346942
+      IndutrialTileset_Assets1_plus_v1.2_transparent_25: -7943451541839109461
+      IndutrialTileset_Assets1_plus_v1.2_transparent_26: 2635404903202395678
+      IndutrialTileset_Assets1_plus_v1.2_transparent_27: -1121008752567367564
+      IndutrialTileset_Assets1_plus_v1.2_transparent_28: -5235316118212853245
+      IndutrialTileset_Assets1_plus_v1.2_transparent_29: 8236709919489148522
+      IndutrialTileset_Assets1_plus_v1.2_transparent_3: -7434001208321571558
+      IndutrialTileset_Assets1_plus_v1.2_transparent_30: 6053245036572056997
+      IndutrialTileset_Assets1_plus_v1.2_transparent_31: -6834435486413537405
+      IndutrialTileset_Assets1_plus_v1.2_transparent_32: 9067975512518571596
+      IndutrialTileset_Assets1_plus_v1.2_transparent_33: -3109065794979619157
+      IndutrialTileset_Assets1_plus_v1.2_transparent_34: -4914564293357078063
+      IndutrialTileset_Assets1_plus_v1.2_transparent_35: -5638657765035505351
+      IndutrialTileset_Assets1_plus_v1.2_transparent_36: 1471031168958275002
+      IndutrialTileset_Assets1_plus_v1.2_transparent_37: 5535085937862686689
+      IndutrialTileset_Assets1_plus_v1.2_transparent_38: -7190179890228874711
+      IndutrialTileset_Assets1_plus_v1.2_transparent_39: -2140461543527006207
+      IndutrialTileset_Assets1_plus_v1.2_transparent_4: -384181981771075345
+      IndutrialTileset_Assets1_plus_v1.2_transparent_40: -578063704285005184
+      IndutrialTileset_Assets1_plus_v1.2_transparent_41: -355455435280803432
+      IndutrialTileset_Assets1_plus_v1.2_transparent_42: -3318104779024837832
+      IndutrialTileset_Assets1_plus_v1.2_transparent_43: 3058529329762398268
+      IndutrialTileset_Assets1_plus_v1.2_transparent_44: -8099805390574494728
+      IndutrialTileset_Assets1_plus_v1.2_transparent_45: 4250292167331753190
+      IndutrialTileset_Assets1_plus_v1.2_transparent_46: -4699296715788978485
+      IndutrialTileset_Assets1_plus_v1.2_transparent_47: -558673582313049287
+      IndutrialTileset_Assets1_plus_v1.2_transparent_48: 3667051598725817215
+      IndutrialTileset_Assets1_plus_v1.2_transparent_49: -578661596219796474
+      IndutrialTileset_Assets1_plus_v1.2_transparent_5: 8013909640193778235
+      IndutrialTileset_Assets1_plus_v1.2_transparent_50: 8225558806383827372
+      IndutrialTileset_Assets1_plus_v1.2_transparent_51: 5024005319834207524
+      IndutrialTileset_Assets1_plus_v1.2_transparent_52: -5234938383642478143
+      IndutrialTileset_Assets1_plus_v1.2_transparent_53: 4854513988131152346
+      IndutrialTileset_Assets1_plus_v1.2_transparent_54: -6392690260731759712
+      IndutrialTileset_Assets1_plus_v1.2_transparent_55: 1101579969894164236
+      IndutrialTileset_Assets1_plus_v1.2_transparent_56: -7853222931848030314
+      IndutrialTileset_Assets1_plus_v1.2_transparent_57: 8069159798478645875
+      IndutrialTileset_Assets1_plus_v1.2_transparent_58: 8912561901943647026
+      IndutrialTileset_Assets1_plus_v1.2_transparent_59: -1485602384071118114
+      IndutrialTileset_Assets1_plus_v1.2_transparent_6: -868935346560917184
+      IndutrialTileset_Assets1_plus_v1.2_transparent_60: -3295186719635287078
+      IndutrialTileset_Assets1_plus_v1.2_transparent_61: -280795151222854398
+      IndutrialTileset_Assets1_plus_v1.2_transparent_62: 4671761365960480446
+      IndutrialTileset_Assets1_plus_v1.2_transparent_63: -1279327960201281538
+      IndutrialTileset_Assets1_plus_v1.2_transparent_64: 5846521322557072718
+      IndutrialTileset_Assets1_plus_v1.2_transparent_65: 3026033859564505611
+      IndutrialTileset_Assets1_plus_v1.2_transparent_66: 3769057067144662577
+      IndutrialTileset_Assets1_plus_v1.2_transparent_67: -8031905338243717671
+      IndutrialTileset_Assets1_plus_v1.2_transparent_68: -7038270804379101919
+      IndutrialTileset_Assets1_plus_v1.2_transparent_69: 4193794072050684949
+      IndutrialTileset_Assets1_plus_v1.2_transparent_7: -3631866270253772620
+      IndutrialTileset_Assets1_plus_v1.2_transparent_70: 1503402591718277254
+      IndutrialTileset_Assets1_plus_v1.2_transparent_71: 4697661569544876428
+      IndutrialTileset_Assets1_plus_v1.2_transparent_72: -5322544137428446589
+      IndutrialTileset_Assets1_plus_v1.2_transparent_73: -4985997893112780009
+      IndutrialTileset_Assets1_plus_v1.2_transparent_74: 4489145845995775584
+      IndutrialTileset_Assets1_plus_v1.2_transparent_75: 8081038459969187630
+      IndutrialTileset_Assets1_plus_v1.2_transparent_76: 1531272322174485837
+      IndutrialTileset_Assets1_plus_v1.2_transparent_77: -8979029857573813774
+      IndutrialTileset_Assets1_plus_v1.2_transparent_78: 4582014596139548932
+      IndutrialTileset_Assets1_plus_v1.2_transparent_79: 1361111372751633178
+      IndutrialTileset_Assets1_plus_v1.2_transparent_8: 3819708247254426719
+      IndutrialTileset_Assets1_plus_v1.2_transparent_80: 3270658085596322259
+      IndutrialTileset_Assets1_plus_v1.2_transparent_81: 51521053766214121
+      IndutrialTileset_Assets1_plus_v1.2_transparent_82: -6487445520721574483
+      IndutrialTileset_Assets1_plus_v1.2_transparent_83: -3570161025408610238
+      IndutrialTileset_Assets1_plus_v1.2_transparent_84: 2611365613542203766
+      IndutrialTileset_Assets1_plus_v1.2_transparent_85: 5002592142559369156
+      IndutrialTileset_Assets1_plus_v1.2_transparent_86: 3206820482855207560
+      IndutrialTileset_Assets1_plus_v1.2_transparent_87: 3209898789071963461
+      IndutrialTileset_Assets1_plus_v1.2_transparent_88: 9066104241702579492
+      IndutrialTileset_Assets1_plus_v1.2_transparent_89: 2625583151996431462
+      IndutrialTileset_Assets1_plus_v1.2_transparent_9: 8917569192592322748
+      IndutrialTileset_Assets1_plus_v1.2_transparent_90: -6082279137391940792
+      IndutrialTileset_Assets1_plus_v1.2_transparent_91: -4166854773420910231
+      IndutrialTileset_Assets1_plus_v1.2_transparent_92: -3684077424692943441
+      IndutrialTileset_Assets1_plus_v1.2_transparent_93: 1207722502889535098
+      IndutrialTileset_Assets1_plus_v1.2_transparent_94: 4654208473749935945
+      IndutrialTileset_Assets1_plus_v1.2_transparent_95: 4584422102395026497
+      IndutrialTileset_Assets1_plus_v1.2_transparent_96: -4505499103828476609
+      IndutrialTileset_Assets1_plus_v1.2_transparent_97: 2834233989161504384
+      IndutrialTileset_Assets1_plus_v1.2_transparent_98: -7887583563243971364
+      IndutrialTileset_Assets1_plus_v1.2_transparent_99: -8674660167842753884
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
