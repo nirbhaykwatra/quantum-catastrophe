@@ -12,9 +12,27 @@ public class CharacterAbilities : MonoBehaviour
     //      Double Jump
     //  Puzzle/Combat
     //      Entanglement mode
+    //      Tunneling Barriers
+    //      Superposition Something
     //      
     
     // TODO: Fix dash cooldowns and air dash grounded reset
+    
+    [field: Header("Abilities")]
+    [field: SerializeField]
+    public bool EnableDash { get; set; } = false;
+    [field: SerializeField]
+    public bool EnableAirDash { get; set; } = false;
+    [field: SerializeField]
+    public bool EnableWallJump { get; set; } = false;
+    [field: SerializeField]
+    public bool EnableDoubleJump { get; set; } = false;
+    [field: SerializeField]
+    public bool EnableEntanglementMode { get; set; } = false;
+    [field: SerializeField]
+    public bool EnableTunnelingBarriers { get; set; } = false;
+    [field: SerializeField]
+    public bool EnableSuperposition { get; set; } = false;
     
     [field: Header("Dashing")]
     [field: SerializeField]
@@ -69,6 +87,7 @@ public class CharacterAbilities : MonoBehaviour
 
     public void TryDash()
     {
+        if (!EnableDash) return;
         if (IsDashing || !CanDash || !m_movement.IsGrounded) return;
         StartCoroutine(OnDash());
         CanDash = false;
@@ -77,10 +96,8 @@ public class CharacterAbilities : MonoBehaviour
 
     public void TryAirDash()
     {
-        Debug.Log("Trying air dash");
-        Debug.Log("CanAirDash: " + CanAirDash);
+        if (!EnableAirDash) return;
         if (!CanDash || !CanAirDash) return;
-        Debug.Log("CanAirDash after guard: " + CanAirDash);
         StartCoroutine(OnDash());
         CanAirDash = false;
         CanDash = false;
@@ -89,6 +106,8 @@ public class CharacterAbilities : MonoBehaviour
 
     public IEnumerator OnDash()
     {
+        if (!EnableDash) yield break;
+        if (!m_movement.IsGrounded && !EnableAirDash) yield break;
         if (!CanDash || IsDashing || !CanAirDash) yield break;
         float timer = 0f;
         float progress = 0f;

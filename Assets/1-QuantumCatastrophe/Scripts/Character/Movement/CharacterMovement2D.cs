@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using Sirenix.OdinInspector.Editor.Modules;
+﻿using Sirenix.OdinInspector;
 using UnityEngine;
-using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class CharacterMovement2D : CharacterMovementBase
@@ -14,6 +10,9 @@ public class CharacterMovement2D : CharacterMovementBase
     [field: Header("Components")]
     [field: SerializeField] protected Rigidbody2D Rigidbody;
     [field: SerializeField] protected CapsuleCollider2D CapsuleCollider;
+    
+    [field: Header("Wall Jump")]
+    [field: SerializeField] protected float WallJumpVelocity = 1.25f;
 
 #if UNITY_6000_0_OR_NEWER
     public override Vector3 Velocity { get => Rigidbody.linearVelocity; protected set => Rigidbody.linearVelocity = value; }
@@ -22,8 +21,10 @@ public class CharacterMovement2D : CharacterMovementBase
 #endif
     protected Vector3 GroundCheckStart => transform.position + transform.up * GroundCheckOffset;
     protected Vector3 WallCheckStart => transform.position + transform.up * WallCheckOffset;
-
+    
+    [ReadOnly]
     public bool CanWallJump;
+    private int m_jumpCount;
     
     protected CharacterAbilities m_abilities;
 
@@ -92,12 +93,23 @@ public class CharacterMovement2D : CharacterMovementBase
     public override void TryJump()
     {
         if (CanWallJump) TryWallJump();
-        if (!CanMove || !CanCoyoteJump) return;
-        Jump();
+        if (IsGrounded)
+        {
+            if (!CanMove || !CanCoyoteJump) return;
+            Jump();
+        }
+        else
+        {
+            if (!m_abilities.EnableDoubleJump) return;
+            if (!CanMove || m_jumpCount > 1) return;
+            Velocity = Vector3.zero;
+            Jump();
+        }
     }
 
     public void TryWallJump()
     {
+        if (!m_abilities.EnableWallJump) return;
         if (!CanMove || !CanWallJump) return;
         WallJump();
     }
@@ -107,7 +119,7 @@ public class CharacterMovement2D : CharacterMovementBase
         // calculate jump velocity from jump height and gravity
         float jumpVelocity = Mathf.Sqrt(2f * -Gravity * JumpHeight);
         // override current y velocity but maintain x/z velocity
-        Velocity = new Vector3(-LookDirection.x * (jumpVelocity * 1.25f), jumpVelocity * 1.25f, Velocity.z);
+        Velocity = new Vector3(-LookDirection.x * (jumpVelocity * WallJumpVelocity), jumpVelocity * WallJumpVelocity, Velocity.z);
         // rotate character to face wall
     }
 
@@ -117,6 +129,7 @@ public class CharacterMovement2D : CharacterMovementBase
         float jumpVelocity = Mathf.Sqrt(2f * -Gravity * JumpHeight);
         // override current y velocity but maintain x/z velocity
         Velocity = new Vector3(Velocity.x, jumpVelocity, Velocity.z);
+        m_jumpCount++;
     }
 
     protected virtual void FixedUpdate()
@@ -234,6 +247,7 @@ public class CharacterMovement2D : CharacterMovementBase
     protected void OnGroundedEvent()
     {
         m_abilities.CanAirDash = true;
+        m_jumpCount = 0;
     }
 
     protected bool CheckWallContact()
