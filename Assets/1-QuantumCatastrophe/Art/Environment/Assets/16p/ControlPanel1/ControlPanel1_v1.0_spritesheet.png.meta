@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: de743aa65c95302409c41c012cf6972f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6995876866041873717
+    second: ControlPanel1_v1.0_spritesheet_0
+  - first:
+      213: 1408127799984562988
+    second: ControlPanel1_v1.0_spritesheet_1
+  - first:
+      213: 1874292581156199214
+    second: ControlPanel1_v1.0_spritesheet_2
+  - first:
+      213: 6806400100820212170
+    second: ControlPanel1_v1.0_spritesheet_3
+  - first:
+      213: -3210811903001412066
+    second: ControlPanel1_v1.0_spritesheet_4
+  - first:
+      213: -8871552672720790442
+    second: ControlPanel1_v1.0_spritesheet_5
+  - first:
+      213: -4935793463742091981
+    second: ControlPanel1_v1.0_spritesheet_6
+  - first:
+      213: -3701098852270975407
+    second: ControlPanel1_v1.0_spritesheet_7
+  - first:
+      213: 3467601680613585261
+    second: ControlPanel1_v1.0_spritesheet_8
+  - first:
+      213: -4597553725871349049
+    second: ControlPanel1_v1.0_spritesheet_9
+  - first:
+      213: -1504472385640861112
+    second: ControlPanel1_v1.0_spritesheet_10
+  - first:
+      213: -2999070297454239282
+    second: ControlPanel1_v1.0_spritesheet_11
+  - first:
+      213: 3682657852974534305
+    second: ControlPanel1_v1.0_spritesheet_12
+  - first:
+      213: -4924701269597923114
+    second: ControlPanel1_v1.0_spritesheet_13
+  - first:
+      213: -7784586711563104481
+    second: ControlPanel1_v1.0_spritesheet_14
+  - first:
+      213: 3390286199848769722
+    second: ControlPanel1_v1.0_spritesheet_15
+  - first:
+      213: -2584641375208382930
+    second: ControlPanel1_v1.0_spritesheet_16
+  - first:
+      213: 1332645529030272755
+    second: ControlPanel1_v1.0_spritesheet_17
+  - first:
+      213: -3841732766770723490
+    second: ControlPanel1_v1.0_spritesheet_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ControlPanel1_v1.0_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 111
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5358cc4a1f8561160800000000000000
+      internalID: 6995876866041873717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ControlPanel1_v1.0_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 19
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c23ae6406ccaa8310800000000000000
+      internalID: 1408127799984562988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ControlPanel1_v1.0_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 95
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2b17f01c23d20a10800000000000000
+      internalID: 1874292581156199214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ControlPanel1_v1.0_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 111
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac9529074d0357e50800000000000000
+      internalID: 6806400100820212170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ControlPanel1_v1.0_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 19
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1e3109f597e073d0800000000000000
+      internalID: -3210811903001412066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ControlPanel1_v1.0_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 18
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65c5f4009d9e1e480800000000000000
+      internalID: -8871552672720790442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ControlPanel1_v1.0_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 95
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33d25f4eef9808bb0800000000000000
+      internalID: -4935793463742091981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ControlPanel1_v1.0_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 79
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15658cff33e03acc0800000000000000
+      internalID: -3701098852270975407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ControlPanel1_v1.0_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 79
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d61358b3b556f1030800000000000000
+      internalID: 3467601680613585261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ControlPanel1_v1.0_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 63
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c22aa5ce353230c0800000000000000
+      internalID: -4597553725871349049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ControlPanel1_v1.0_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 842fd77165a0f1be0800000000000000
+      internalID: -1504472385640861112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ControlPanel1_v1.0_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 47
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec1a0d744792166d0800000000000000
+      internalID: -2999070297454239282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ControlPanel1_v1.0_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 47
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ae89d34ecd6b1330800000000000000
+      internalID: 3682657852974534305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ControlPanel1_v1.0_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 31
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d853b89942f7abb0800000000000000
+      internalID: -4924701269597923114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ControlPanel1_v1.0_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1f0e0e51a797f390800000000000000
+      internalID: -7784586711563104481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ControlPanel1_v1.0_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 15
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab815e41657bc0f20800000000000000
+      internalID: 3390286199848769722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ControlPanel1_v1.0_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 15
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2e5deefc52812cd0800000000000000
+      internalID: -2584641375208382930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ControlPanel1_v1.0_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f6ac594c028e7210800000000000000
+      internalID: 1332645529030272755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ControlPanel1_v1.0_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5507aa276c6faac0800000000000000
+      internalID: -3841732766770723490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ControlPanel1_v1.0_spritesheet_0: 6995876866041873717
+      ControlPanel1_v1.0_spritesheet_1: 1408127799984562988
+      ControlPanel1_v1.0_spritesheet_10: -1504472385640861112
+      ControlPanel1_v1.0_spritesheet_11: -2999070297454239282
+      ControlPanel1_v1.0_spritesheet_12: 3682657852974534305
+      ControlPanel1_v1.0_spritesheet_13: -4924701269597923114
+      ControlPanel1_v1.0_spritesheet_14: -7784586711563104481
+      ControlPanel1_v1.0_spritesheet_15: 3390286199848769722
+      ControlPanel1_v1.0_spritesheet_16: -2584641375208382930
+      ControlPanel1_v1.0_spritesheet_17: 1332645529030272755
+      ControlPanel1_v1.0_spritesheet_18: -3841732766770723490
+      ControlPanel1_v1.0_spritesheet_2: 1874292581156199214
+      ControlPanel1_v1.0_spritesheet_3: 6806400100820212170
+      ControlPanel1_v1.0_spritesheet_4: -3210811903001412066
+      ControlPanel1_v1.0_spritesheet_5: -8871552672720790442
+      ControlPanel1_v1.0_spritesheet_6: -4935793463742091981
+      ControlPanel1_v1.0_spritesheet_7: -3701098852270975407
+      ControlPanel1_v1.0_spritesheet_8: 3467601680613585261
+      ControlPanel1_v1.0_spritesheet_9: -4597553725871349049
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
