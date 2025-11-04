@@ -59,6 +59,7 @@ public class CharacterAbilities : MonoBehaviour
     private float m_initialGravityScale;
     private float m_dashCooldownTimer;
     private Vector2 m_dashDestination;
+    private float m_airboneTimer;
 
     private void Awake()
     {
@@ -75,7 +76,7 @@ public class CharacterAbilities : MonoBehaviour
 
     private void Update()
     {
-        if (!CanDash)
+        if (!CanDash && m_movement.IsGrounded)
         {
             m_dashCooldownTimer -= Time.deltaTime;
             if (m_dashCooldownTimer <= 0)
@@ -83,6 +84,12 @@ public class CharacterAbilities : MonoBehaviour
                 CanDash = true;
             }
         }
+
+        if (!m_movement.IsGrounded)
+        {
+            m_airboneTimer += Time.deltaTime;
+        }
+        
     }
 
     public void TryDash()
@@ -102,6 +109,12 @@ public class CharacterAbilities : MonoBehaviour
         CanAirDash = false;
         CanDash = false;
         m_dashCooldownTimer = DashCooldown;
+    }
+
+    public void OnGrounded()
+    {
+        Debug.Log("Airborne for " + m_airboneTimer + " seconds");
+        m_airboneTimer = 0f;
     }
 
     public IEnumerator OnDash()
