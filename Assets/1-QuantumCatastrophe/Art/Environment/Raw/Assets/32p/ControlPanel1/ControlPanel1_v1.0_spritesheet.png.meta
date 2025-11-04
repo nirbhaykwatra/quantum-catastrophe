@@ -147,7 +147,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 31
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -212,12 +212,12 @@ TextureImporter:
       name: ControlPanel1_v1.0_spritesheet_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 223
-        width: 32
-        height: 22
+        x: 0
+        y: 224
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -235,11 +235,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 34
-        y: 0
+        y: 224
         width: 34
-        height: 256
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -256,12 +256,12 @@ TextureImporter:
       name: ControlPanel1_v1.0_spritesheet_2
       rect:
         serializedVersion: 2
-        x: 70
-        y: 223
-        width: 33
-        height: 31
+        x: 68
+        y: 224
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -279,11 +279,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 102
-        y: 191
-        width: 32
-        height: 33
+        y: 224
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -300,12 +300,12 @@ TextureImporter:
       name: ControlPanel1_v1.0_spritesheet_4
       rect:
         serializedVersion: 2
-        x: 104
-        y: 223
-        width: 32
-        height: 33
+        x: 136
+        y: 224
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -322,12 +322,12 @@ TextureImporter:
       name: ControlPanel1_v1.0_spritesheet_5
       rect:
         serializedVersion: 2
-        x: 136
-        y: 191
-        width: 32
-        height: 33
+        x: 0
+        y: 192
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -344,12 +344,12 @@ TextureImporter:
       name: ControlPanel1_v1.0_spritesheet_6
       rect:
         serializedVersion: 2
-        x: 138
-        y: 223
-        width: 32
-        height: 33
+        x: 34
+        y: 192
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -366,12 +366,12 @@ TextureImporter:
       name: ControlPanel1_v1.0_spritesheet_7
       rect:
         serializedVersion: 2
-        x: 0
-        y: 191
-        width: 32
-        height: 22
+        x: 68
+        y: 192
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -388,12 +388,12 @@ TextureImporter:
       name: ControlPanel1_v1.0_spritesheet_8
       rect:
         serializedVersion: 2
-        x: 67
-        y: 191
-        width: 33
-        height: 31
+        x: 102
+        y: 192
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -410,12 +410,12 @@ TextureImporter:
       name: ControlPanel1_v1.0_spritesheet_9
       rect:
         serializedVersion: 2
-        x: 104
-        y: 159
-        width: 32
-        height: 33
+        x: 136
+        y: 192
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -432,12 +432,12 @@ TextureImporter:
       name: ControlPanel1_v1.0_spritesheet_10
       rect:
         serializedVersion: 2
-        x: 138
-        y: 159
-        width: 32
-        height: 33
+        x: 0
+        y: 160
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -454,12 +454,12 @@ TextureImporter:
       name: ControlPanel1_v1.0_spritesheet_11
       rect:
         serializedVersion: 2
-        x: 2
-        y: 159
-        width: 32
-        height: 22
+        x: 34
+        y: 160
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -476,12 +476,12 @@ TextureImporter:
       name: ControlPanel1_v1.0_spritesheet_12
       rect:
         serializedVersion: 2
-        x: 70
-        y: 159
-        width: 33
-        height: 31
+        x: 68
+        y: 160
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -499,11 +499,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 102
-        y: 127
-        width: 32
-        height: 33
+        y: 160
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -521,11 +521,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 136
-        y: 127
-        width: 32
-        height: 33
+        y: 160
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -543,11 +543,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 127
-        width: 32
-        height: 22
+        y: 128
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -564,12 +564,12 @@ TextureImporter:
       name: ControlPanel1_v1.0_spritesheet_16
       rect:
         serializedVersion: 2
-        x: 67
-        y: 127
-        width: 33
-        height: 31
+        x: 34
+        y: 128
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -586,12 +586,12 @@ TextureImporter:
       name: ControlPanel1_v1.0_spritesheet_17
       rect:
         serializedVersion: 2
-        x: 104
-        y: 95
-        width: 32
-        height: 33
+        x: 68
+        y: 128
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -608,12 +608,12 @@ TextureImporter:
       name: ControlPanel1_v1.0_spritesheet_18
       rect:
         serializedVersion: 2
-        x: 138
-        y: 95
-        width: 32
-        height: 33
+        x: 102
+        y: 128
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -630,12 +630,12 @@ TextureImporter:
       name: ControlPanel1_v1.0_spritesheet_19
       rect:
         serializedVersion: 2
-        x: 2
-        y: 95
-        width: 32
-        height: 22
+        x: 136
+        y: 128
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -652,12 +652,12 @@ TextureImporter:
       name: ControlPanel1_v1.0_spritesheet_20
       rect:
         serializedVersion: 2
-        x: 70
-        y: 95
-        width: 33
-        height: 31
+        x: 0
+        y: 96
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -674,12 +674,12 @@ TextureImporter:
       name: ControlPanel1_v1.0_spritesheet_21
       rect:
         serializedVersion: 2
-        x: 102
-        y: 63
-        width: 32
-        height: 33
+        x: 34
+        y: 96
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -696,12 +696,12 @@ TextureImporter:
       name: ControlPanel1_v1.0_spritesheet_22
       rect:
         serializedVersion: 2
-        x: 136
-        y: 63
-        width: 32
-        height: 33
+        x: 68
+        y: 96
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -718,12 +718,12 @@ TextureImporter:
       name: ControlPanel1_v1.0_spritesheet_23
       rect:
         serializedVersion: 2
-        x: 0
-        y: 63
-        width: 32
-        height: 22
+        x: 102
+        y: 96
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -740,12 +740,12 @@ TextureImporter:
       name: ControlPanel1_v1.0_spritesheet_24
       rect:
         serializedVersion: 2
-        x: 67
-        y: 63
-        width: 33
-        height: 31
+        x: 136
+        y: 96
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -762,12 +762,12 @@ TextureImporter:
       name: ControlPanel1_v1.0_spritesheet_25
       rect:
         serializedVersion: 2
-        x: 104
-        y: 31
-        width: 32
-        height: 33
+        x: 0
+        y: 64
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -784,12 +784,12 @@ TextureImporter:
       name: ControlPanel1_v1.0_spritesheet_26
       rect:
         serializedVersion: 2
-        x: 138
-        y: 31
-        width: 32
-        height: 33
+        x: 34
+        y: 64
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -806,12 +806,12 @@ TextureImporter:
       name: ControlPanel1_v1.0_spritesheet_27
       rect:
         serializedVersion: 2
-        x: 2
-        y: 31
-        width: 32
-        height: 22
+        x: 68
+        y: 64
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -828,12 +828,12 @@ TextureImporter:
       name: ControlPanel1_v1.0_spritesheet_28
       rect:
         serializedVersion: 2
-        x: 70
-        y: 31
-        width: 33
-        height: 31
+        x: 102
+        y: 64
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -850,12 +850,12 @@ TextureImporter:
       name: ControlPanel1_v1.0_spritesheet_29
       rect:
         serializedVersion: 2
-        x: 102
-        y: 0
-        width: 32
+        x: 136
+        y: 64
+        width: 34
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -872,12 +872,12 @@ TextureImporter:
       name: ControlPanel1_v1.0_spritesheet_30
       rect:
         serializedVersion: 2
-        x: 136
-        y: 0
-        width: 32
+        x: 0
+        y: 32
+        width: 34
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -894,12 +894,12 @@ TextureImporter:
       name: ControlPanel1_v1.0_spritesheet_31
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 21
+        x: 34
+        y: 32
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -916,12 +916,12 @@ TextureImporter:
       name: ControlPanel1_v1.0_spritesheet_32
       rect:
         serializedVersion: 2
-        x: 67
-        y: 0
-        width: 33
-        height: 30
+        x: 68
+        y: 32
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -934,11 +934,165 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: ControlPanel1_v1.0_spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 32
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22d32c02140529458f6d2ebe4b15ca2
+      internalID: -374862145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ControlPanel1_v1.0_spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 32
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 826c281ce7ca71449bf93622bdaa1b0c
+      internalID: -598980160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ControlPanel1_v1.0_spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f42872b968bbb46919e0f31ade70e7
+      internalID: 1007947711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ControlPanel1_v1.0_spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: decb735998b807347b418638b68620f8
+      internalID: -276494432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ControlPanel1_v1.0_spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf73052b57029744a49ec757372b8d6
+      internalID: -1408690699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ControlPanel1_v1.0_spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b1bf4d5c049dd409285ac07a353546
+      internalID: 89889525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ControlPanel1_v1.0_spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fccc07f84225a0142ba88fbd7c858440
+      internalID: 1837478002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c8a4e93bc26371741915590b9a8ecba6
     internalID: 0
     vertices: []
     indices: 
@@ -946,7 +1100,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":34.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       ControlPanel1_v1.0_spritesheet_0: 6995876866041873717
       ControlPanel1_v1.0_spritesheet_1: 1408127799984562988
@@ -975,6 +1131,13 @@ TextureImporter:
       ControlPanel1_v1.0_spritesheet_30: -7844503043905395849
       ControlPanel1_v1.0_spritesheet_31: -256885173461242538
       ControlPanel1_v1.0_spritesheet_32: -7458650250335067011
+      ControlPanel1_v1.0_spritesheet_33: -374862145
+      ControlPanel1_v1.0_spritesheet_34: -598980160
+      ControlPanel1_v1.0_spritesheet_35: 1007947711
+      ControlPanel1_v1.0_spritesheet_36: -276494432
+      ControlPanel1_v1.0_spritesheet_37: -1408690699
+      ControlPanel1_v1.0_spritesheet_38: 89889525
+      ControlPanel1_v1.0_spritesheet_39: 1837478002
       ControlPanel1_v1.0_spritesheet_4: -3210811903001412066
       ControlPanel1_v1.0_spritesheet_5: -8871552672720790442
       ControlPanel1_v1.0_spritesheet_6: -4935793463742091981

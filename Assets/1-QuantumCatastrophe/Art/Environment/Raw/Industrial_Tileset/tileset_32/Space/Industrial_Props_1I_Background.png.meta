@@ -81,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 31
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -146,12 +146,12 @@ TextureImporter:
       name: Industrial_Props_1I_Background_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 95
-        width: 19
-        height: 32
+        x: 8
+        y: 96
+        width: 17
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -168,12 +168,12 @@ TextureImporter:
       name: Industrial_Props_1I_Background_1
       rect:
         serializedVersion: 2
-        x: 39
-        y: 95
-        width: 19
-        height: 32
+        x: 40
+        y: 96
+        width: 17
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -190,12 +190,12 @@ TextureImporter:
       name: Industrial_Props_1I_Background_2
       rect:
         serializedVersion: 2
-        x: 65
-        y: 63
-        width: 30
-        height: 34
+        x: 66
+        y: 64
+        width: 28
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -212,12 +212,12 @@ TextureImporter:
       name: Industrial_Props_1I_Background_3
       rect:
         serializedVersion: 2
-        x: 71
-        y: 95
-        width: 19
-        height: 32
+        x: 72
+        y: 96
+        width: 17
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -235,11 +235,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 63
-        width: 65
-        height: 27
+        y: 64
+        width: 64
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -256,12 +256,12 @@ TextureImporter:
       name: Industrial_Props_1I_Background_5
       rect:
         serializedVersion: 2
-        x: 7
-        y: 31
-        width: 18
-        height: 14
+        x: 8
+        y: 32
+        width: 16
+        height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -278,12 +278,12 @@ TextureImporter:
       name: Industrial_Props_1I_Background_6
       rect:
         serializedVersion: 2
-        x: 9
-        y: 0
-        width: 19
-        height: 32
+        x: 34
+        y: 32
+        width: 27
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -300,12 +300,12 @@ TextureImporter:
       name: Industrial_Props_1I_Background_7
       rect:
         serializedVersion: 2
-        x: 33
-        y: 31
-        width: 29
-        height: 25
+        x: 66
+        y: 32
+        width: 27
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -322,12 +322,12 @@ TextureImporter:
       name: Industrial_Props_1I_Background_8
       rect:
         serializedVersion: 2
-        x: 40
+        x: 10
         y: 0
-        width: 19
-        height: 32
+        width: 17
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -344,20 +344,20 @@ TextureImporter:
       name: Industrial_Props_1I_Background_9
       rect:
         serializedVersion: 2
-        x: 65
-        y: 31
-        width: 29
-        height: 25
+        x: 41
+        y: 0
+        width: 17
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 79519d50a58bfd870800000000000000
-      internalID: 8709882901142508951
+      spriteID: 40a55fa84ba4a294e8aa2d20d2498c58
+      internalID: 1788392347
       vertices: []
       indices: 
       edges: []
@@ -366,20 +366,20 @@ TextureImporter:
       name: Industrial_Props_1I_Background_10
       rect:
         serializedVersion: 2
-        x: 63
+        x: 64
         y: 0
-        width: 33
-        height: 29
+        width: 32
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a2fd3f61ac25c7620800000000000000
-      internalID: 2773182498475335466
+      spriteID: 08d1e193b0678344fa133af4c234bb62
+      internalID: 511838604
       vertices: []
       indices: 
       edges: []
@@ -388,7 +388,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 559d9d110b21f284785b7d24f5b241c8
     internalID: 0
     vertices: []
     indices: 
@@ -396,11 +396,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Industrial_Props_1I_Background_0: -3311680331569931733
       Industrial_Props_1I_Background_1: -1593460797946068176
-      Industrial_Props_1I_Background_10: 2773182498475335466
+      Industrial_Props_1I_Background_10: 511838604
       Industrial_Props_1I_Background_2: -4025535884398594788
       Industrial_Props_1I_Background_3: 5828031250970601934
       Industrial_Props_1I_Background_4: -4262827223476079108
@@ -408,7 +410,7 @@ TextureImporter:
       Industrial_Props_1I_Background_6: -500136789036248417
       Industrial_Props_1I_Background_7: -6602136894172567573
       Industrial_Props_1I_Background_8: 7206290940577029533
-      Industrial_Props_1I_Background_9: 8709882901142508951
+      Industrial_Props_1I_Background_9: 1788392347
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -81,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 31
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -146,12 +146,12 @@ TextureImporter:
       name: Industrial_Props_1I_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 95
-        width: 19
-        height: 32
+        x: 8
+        y: 96
+        width: 17
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -168,12 +168,12 @@ TextureImporter:
       name: Industrial_Props_1I_1
       rect:
         serializedVersion: 2
-        x: 39
-        y: 95
-        width: 19
-        height: 32
+        x: 40
+        y: 96
+        width: 17
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -190,12 +190,12 @@ TextureImporter:
       name: Industrial_Props_1I_2
       rect:
         serializedVersion: 2
-        x: 65
-        y: 63
-        width: 30
-        height: 34
+        x: 66
+        y: 64
+        width: 28
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -212,12 +212,12 @@ TextureImporter:
       name: Industrial_Props_1I_3
       rect:
         serializedVersion: 2
-        x: 71
-        y: 95
-        width: 19
-        height: 32
+        x: 72
+        y: 96
+        width: 17
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -235,11 +235,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 63
-        width: 65
-        height: 27
+        y: 64
+        width: 64
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -256,12 +256,12 @@ TextureImporter:
       name: Industrial_Props_1I_5
       rect:
         serializedVersion: 2
-        x: 7
-        y: 31
-        width: 18
-        height: 14
+        x: 8
+        y: 32
+        width: 16
+        height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -278,12 +278,12 @@ TextureImporter:
       name: Industrial_Props_1I_6
       rect:
         serializedVersion: 2
-        x: 9
-        y: 0
-        width: 19
-        height: 32
+        x: 34
+        y: 32
+        width: 27
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -300,12 +300,12 @@ TextureImporter:
       name: Industrial_Props_1I_7
       rect:
         serializedVersion: 2
-        x: 33
-        y: 31
-        width: 29
-        height: 25
+        x: 66
+        y: 32
+        width: 27
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -322,12 +322,12 @@ TextureImporter:
       name: Industrial_Props_1I_8
       rect:
         serializedVersion: 2
-        x: 40
+        x: 10
         y: 0
-        width: 19
-        height: 32
+        width: 17
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -344,20 +344,20 @@ TextureImporter:
       name: Industrial_Props_1I_9
       rect:
         serializedVersion: 2
-        x: 65
-        y: 31
-        width: 29
-        height: 25
+        x: 41
+        y: 0
+        width: 17
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d39df3e63a3e95d90800000000000000
-      internalID: -7108400245758764739
+      spriteID: ee02f5fbc8cffb84cb5611720d5e2b96
+      internalID: -777883322
       vertices: []
       indices: 
       edges: []
@@ -366,20 +366,20 @@ TextureImporter:
       name: Industrial_Props_1I_10
       rect:
         serializedVersion: 2
-        x: 63
+        x: 64
         y: 0
-        width: 33
-        height: 29
+        width: 32
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6d1c14f2456164050800000000000000
-      internalID: 5784335322229883350
+      spriteID: 58641f1c31b21df4e84b587bb35e794a
+      internalID: 1167540591
       vertices: []
       indices: 
       edges: []
@@ -388,7 +388,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c4b06e00faea6064695cec13b101bb6e
     internalID: 0
     vertices: []
     indices: 
@@ -396,11 +396,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Industrial_Props_1I_0: 5327123309640879348
       Industrial_Props_1I_1: 709463116094973118
-      Industrial_Props_1I_10: 5784335322229883350
+      Industrial_Props_1I_10: 1167540591
       Industrial_Props_1I_2: 5176332207799310741
       Industrial_Props_1I_3: -8803966820310357178
       Industrial_Props_1I_4: 5640454379521520824
@@ -408,7 +410,7 @@ TextureImporter:
       Industrial_Props_1I_6: 2810634280441370131
       Industrial_Props_1I_7: -8246632884939101850
       Industrial_Props_1I_8: -7416441268101081429
-      Industrial_Props_1I_9: -7108400245758764739
+      Industrial_Props_1I_9: -777883322
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
