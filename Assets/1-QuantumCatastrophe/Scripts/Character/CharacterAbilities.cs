@@ -2,6 +2,17 @@ using System.Collections;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
+public enum Abilities
+{
+    Dash,
+    AirDash,
+    WallJump,
+    DoubleJump,
+    EntanglementMode,
+    TunnelingBarriers,
+    Superposition
+}
+
 public class CharacterAbilities : MonoBehaviour
 {
     // TODO: Abilities
@@ -160,6 +171,100 @@ public class CharacterAbilities : MonoBehaviour
         m_movement.CanMove = true;
         m_movement.CanTurn = true;
         IsDashing = false;
+    }
+
+    public void UnlockAbility(Abilities ability)
+    {
+        switch (ability)
+        {
+            case Abilities.Dash:
+                EnableDash = true;
+                break;
+            case Abilities.AirDash:
+                EnableAirDash = true;
+                break;
+            case Abilities.WallJump:
+                EnableWallJump = true;
+                break;
+            case Abilities.DoubleJump:
+                EnableDoubleJump = true;
+                break;
+            case Abilities.EntanglementMode:
+                EnableEntanglementMode = true;
+                break;
+            case Abilities.TunnelingBarriers:
+                EnableTunnelingBarriers = true;
+                break;
+            case Abilities.Superposition:
+                EnableSuperposition = true;
+                break;
+            default:
+                throw new System.ArgumentOutOfRangeException(nameof(ability), ability, null);
+        }
+    }
+
+    public void LockAbility(Abilities ability)
+    {
+        switch (ability)
+        {
+            case Abilities.Dash:
+                EnableDash = false;
+                break;
+            case Abilities.AirDash:
+                EnableAirDash = false;
+                break;
+            case Abilities.WallJump:
+                EnableWallJump = false;
+                break;
+            case Abilities.DoubleJump:
+                EnableDoubleJump = false;
+                break;
+            case Abilities.EntanglementMode:
+                EnableEntanglementMode = false;
+                break;
+            case Abilities.TunnelingBarriers:
+                EnableTunnelingBarriers = false;
+                break;
+            case Abilities.Superposition:
+                EnableSuperposition = false;
+                break;
+            default:
+                throw new System.ArgumentOutOfRangeException(nameof(ability), ability, null);
+        }
+    }
+    
+    public void ResetAbilities()
+    {
+        EnableDash = false;
+        EnableAirDash = false;
+        EnableWallJump = false;
+        EnableDoubleJump = false;
+        EnableEntanglementMode = false;
+        EnableTunnelingBarriers = false;
+        EnableSuperposition = false;
+    }
+
+    public bool HasAbility(Abilities ability)
+    {
+        switch (ability)
+        {
+            case Abilities.Dash:
+               return EnableDash;
+            case Abilities.AirDash:
+                return EnableAirDash;
+            case Abilities.DoubleJump:
+                return EnableDoubleJump;
+            case Abilities.WallJump:
+                return EnableWallJump;
+            case Abilities.EntanglementMode:
+                return EnableEntanglementMode;
+            case Abilities.TunnelingBarriers:
+                return EnableTunnelingBarriers;
+            case Abilities.Superposition:
+                return EnableSuperposition;
+            default:
+                throw new System.ArgumentOutOfRangeException(nameof(ability), ability, null);
+        }
     }
 
     private void OnDrawGizmosSelected()

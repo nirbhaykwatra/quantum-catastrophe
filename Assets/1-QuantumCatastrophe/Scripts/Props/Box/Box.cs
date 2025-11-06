@@ -1,4 +1,4 @@
-using System;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -10,7 +10,7 @@ public class Box : MonoBehaviour, IInteractable
     private TextMeshProUGUI m_interactionText;
     private bool m_isOpen = false;
 
-    [SerializeField] private Loot LootItem;
+    [SerializeField] private List<Loot> Items;
 
     private void Awake()
     {
@@ -24,16 +24,39 @@ public class Box : MonoBehaviour, IInteractable
         {
             if (!m_isOpen)
             {
-                m_animator.SetTrigger(m_open);
-                m_isOpen = true;
-                m_interactionText.text = "";
-                interactor.GetComponent<CharacterInventory>().Inventory.Add(LootItem);
+                if (Items.Count == 0)
+                {
+                    Open();
+                    return;
+                }
+                
+                Open();
+
+                for (int i = Items.Count - 1; i >= 0; i--)
+                {
+                    interactor.GetComponent<CharacterInventory>().AddItem(Items[i]);
+                    NotificationManager.Instance.RequestNotification($"You got {Items[i].Name}!", 2f);
+                    Items.RemoveAt(i);
+                }
             }
             else
             {
-                m_animator.SetTrigger(m_close);
+                Close();
             }
         }
+    }
+
+    private void Open()
+    {
+        m_animator.SetTrigger(m_open);
+        m_isOpen = true;
+        m_interactionText.text = "";
+    }
+    
+    private void Close()
+    {
+        m_animator.SetTrigger(m_close);
+        m_isOpen = false;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

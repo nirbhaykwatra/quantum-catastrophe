@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class CharacterInteraction : MonoBehaviour
@@ -6,13 +7,16 @@ public class CharacterInteraction : MonoBehaviour
     [SerializeField] private string interactableTag = "Interactable";
     [field: SerializeField]
     public bool CanInteract { get; set; } = false;
-    private IInteractable m_interactable;
+    private List<IInteractable> m_interactables = new List<IInteractable>();
     
     public void Interact()
     {
-        if (m_interactable != null) 
+        if (m_interactables.Count > 0 && CanInteract) 
         {
-            m_interactable.Interact(gameObject);
+            foreach (IInteractable interactable in m_interactables)
+            {
+                interactable.Interact(gameObject);
+            }
         }
     }
     
@@ -20,13 +24,13 @@ public class CharacterInteraction : MonoBehaviour
     {
         if (!other.gameObject.CompareTag(interactableTag) || other.GetComponent<IInteractable>() == null) return;
         CanInteract = true;
-        m_interactable = other.GetComponent<IInteractable>();
+        m_interactables.Add(other.GetComponent<IInteractable>());
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         if (!other.gameObject.CompareTag(interactableTag) || other.GetComponent<IInteractable>() == null) return;
         CanInteract = false;
-        m_interactable = null;
+        m_interactables.Remove(other.GetComponent<IInteractable>());
     }
 }

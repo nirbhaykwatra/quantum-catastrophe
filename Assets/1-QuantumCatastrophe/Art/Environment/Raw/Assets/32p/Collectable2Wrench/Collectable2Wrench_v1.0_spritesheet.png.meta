@@ -210,11 +210,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 79
-        width: 17
-        height: 17
+        y: 80
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -231,12 +231,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 63
-        width: 17
-        height: 18
+        x: 16
+        y: 80
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -253,12 +253,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_2
       rect:
         serializedVersion: 2
-        x: 17
-        y: 79
-        width: 14
-        height: 17
+        x: 32
+        y: 80
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -275,12 +275,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_3
       rect:
         serializedVersion: 2
-        x: 17
-        y: 63
-        width: 14
-        height: 18
+        x: 48
+        y: 80
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -297,12 +297,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_4
       rect:
         serializedVersion: 2
-        x: 37
-        y: 15
-        width: 7
-        height: 81
+        x: 64
+        y: 80
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -319,12 +319,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_5
       rect:
         serializedVersion: 2
-        x: 49
-        y: 79
-        width: 14
-        height: 17
+        x: 80
+        y: 80
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -341,12 +341,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_6
       rect:
         serializedVersion: 2
-        x: 49
-        y: 63
-        width: 14
-        height: 18
+        x: 96
+        y: 80
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -363,12 +363,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_7
       rect:
         serializedVersion: 2
-        x: 63
-        y: 79
-        width: 18
-        height: 17
+        x: 112
+        y: 80
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -385,12 +385,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_8
       rect:
         serializedVersion: 2
-        x: 63
-        y: 63
-        width: 18
-        height: 18
+        x: 0
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -407,12 +407,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_9
       rect:
         serializedVersion: 2
-        x: 80
-        y: 79
-        width: 15
-        height: 17
+        x: 16
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -429,12 +429,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_10
       rect:
         serializedVersion: 2
-        x: 80
-        y: 63
-        width: 15
-        height: 18
+        x: 32
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -451,12 +451,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_11
       rect:
         serializedVersion: 2
-        x: 101
-        y: 15
-        width: 7
-        height: 81
+        x: 48
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -473,12 +473,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_12
       rect:
         serializedVersion: 2
-        x: 112
-        y: 79
-        width: 15
-        height: 17
+        x: 64
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -495,12 +495,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_13
       rect:
         serializedVersion: 2
-        x: 112
-        y: 63
-        width: 15
-        height: 18
+        x: 80
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -517,12 +517,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_14
       rect:
         serializedVersion: 2
-        x: 0
-        y: 47
-        width: 17
-        height: 18
+        x: 96
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -539,12 +539,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 31
-        width: 17
-        height: 18
+        x: 112
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -561,12 +561,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_16
       rect:
         serializedVersion: 2
-        x: 17
-        y: 47
-        width: 14
-        height: 18
+        x: 0
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -583,12 +583,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_17
       rect:
         serializedVersion: 2
-        x: 17
-        y: 31
-        width: 14
-        height: 18
+        x: 16
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -605,12 +605,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_18
       rect:
         serializedVersion: 2
-        x: 49
-        y: 47
-        width: 14
-        height: 18
+        x: 32
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -627,12 +627,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_19
       rect:
         serializedVersion: 2
-        x: 49
-        y: 31
-        width: 14
-        height: 18
+        x: 48
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -649,12 +649,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_20
       rect:
         serializedVersion: 2
-        x: 63
-        y: 47
-        width: 18
-        height: 18
+        x: 64
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -671,12 +671,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_21
       rect:
         serializedVersion: 2
-        x: 63
-        y: 31
-        width: 18
-        height: 18
+        x: 80
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -693,12 +693,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_22
       rect:
         serializedVersion: 2
-        x: 80
-        y: 47
-        width: 15
-        height: 18
+        x: 96
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -715,12 +715,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_23
       rect:
         serializedVersion: 2
-        x: 80
-        y: 31
-        width: 15
-        height: 18
+        x: 112
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -737,12 +737,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_24
       rect:
         serializedVersion: 2
-        x: 112
-        y: 47
-        width: 15
-        height: 18
+        x: 0
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -759,12 +759,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_25
       rect:
         serializedVersion: 2
-        x: 112
-        y: 31
-        width: 15
-        height: 18
+        x: 16
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -781,12 +781,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_26
       rect:
         serializedVersion: 2
-        x: 0
-        y: 15
-        width: 17
-        height: 18
+        x: 32
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -803,12 +803,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_27
       rect:
         serializedVersion: 2
-        x: 17
-        y: 15
-        width: 14
-        height: 18
+        x: 48
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -825,12 +825,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_28
       rect:
         serializedVersion: 2
-        x: 49
-        y: 15
-        width: 14
-        height: 18
+        x: 64
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -847,12 +847,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_29
       rect:
         serializedVersion: 2
-        x: 63
-        y: 15
-        width: 18
-        height: 18
+        x: 80
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -869,12 +869,12 @@ TextureImporter:
       name: Collectable2Wrench_v1.0_spritesheet_30
       rect:
         serializedVersion: 2
-        x: 80
-        y: 15
-        width: 15
-        height: 18
+        x: 96
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -892,11 +892,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 112
-        y: 15
-        width: 15
-        height: 18
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -909,11 +909,187 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Collectable2Wrench_v1.0_spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a58c1d8fab17a414a8ee2412fb6529d2
+      internalID: -1308880603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectable2Wrench_v1.0_spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ebaa4993621007428e5f68c9e374220
+      internalID: 2013452663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectable2Wrench_v1.0_spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b431c9288bbcd654f83a4395533a1237
+      internalID: -614794367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectable2Wrench_v1.0_spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d3c2275f1676740be33d751421b595
+      internalID: -999736632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectable2Wrench_v1.0_spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d23e6d44673efb43b2305159bcc0e36
+      internalID: -300777484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectable2Wrench_v1.0_spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b563637e4466b2d41a4d25a69ef7711c
+      internalID: 1006157647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectable2Wrench_v1.0_spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf171ec641fcc8439c42febff5a2948
+      internalID: -1742190699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collectable2Wrench_v1.0_spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bfcc159ef253064eb109c290d63dd7a
+      internalID: 111748536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 21e3564a7a7196d4cbf018779c14ade4
     internalID: 0
     vertices: []
     indices: 
@@ -921,7 +1097,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Collectable2Wrench_v1.0_spritesheet_0: -1177614485010594769
       Collectable2Wrench_v1.0_spritesheet_1: 8848653079962388218
@@ -949,6 +1127,14 @@ TextureImporter:
       Collectable2Wrench_v1.0_spritesheet_3: 2273534469723137464
       Collectable2Wrench_v1.0_spritesheet_30: 5589459057104783946
       Collectable2Wrench_v1.0_spritesheet_31: 2986035758766956875
+      Collectable2Wrench_v1.0_spritesheet_32: -1308880603
+      Collectable2Wrench_v1.0_spritesheet_33: 2013452663
+      Collectable2Wrench_v1.0_spritesheet_34: -614794367
+      Collectable2Wrench_v1.0_spritesheet_35: -999736632
+      Collectable2Wrench_v1.0_spritesheet_36: -300777484
+      Collectable2Wrench_v1.0_spritesheet_37: 1006157647
+      Collectable2Wrench_v1.0_spritesheet_38: -1742190699
+      Collectable2Wrench_v1.0_spritesheet_39: 111748536
       Collectable2Wrench_v1.0_spritesheet_4: 6242683446824386685
       Collectable2Wrench_v1.0_spritesheet_5: -989256767751619351
       Collectable2Wrench_v1.0_spritesheet_6: 4203531067566141619

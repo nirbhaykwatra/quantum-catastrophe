@@ -7,6 +7,6 @@ public class Loot : ScriptableObject
     
     public virtual void Use()
     {
-        
+        Destroy(this);
     }
 }
