@@ -1,16 +1,22 @@
+using System;
 using UnityEngine;
 
 public class Checkpoint : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private Vector3 m_currentPosition => transform.position;
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        
+        PlayerController player = other.GetComponent<PlayerController>();
+        if (player)
+        {
+            SetCheckpointOnPlayer(player);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void SetCheckpointOnPlayer(PlayerController player)
     {
-        
+        CharacterHealth health = player.GetComponent<CharacterHealth>();
+        health.SetResetPoint(m_currentPosition);
     }
 }

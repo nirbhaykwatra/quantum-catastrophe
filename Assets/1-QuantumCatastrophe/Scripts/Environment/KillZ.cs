@@ -1,16 +1,24 @@
+using System;
 using UnityEngine;
 
 public class KillZ : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private int DamageAmount = 1;
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        
+        PlayerController player = other.GetComponent<PlayerController>();
+
+        if (player)
+        {
+            CharacterHealth health = player.GetComponent<CharacterHealth>();
+            health.Damage(DamageAmount);
+            ResetPlayerToCheckpoint(player.gameObject);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void ResetPlayerToCheckpoint(GameObject player)
     {
-        
+        CharacterHealth health = player.GetComponent<CharacterHealth>();
+        player.transform.position = health.ResetPoint;
     }
 }
