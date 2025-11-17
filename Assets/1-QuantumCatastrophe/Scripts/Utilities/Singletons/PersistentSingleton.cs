@@ -49,7 +49,10 @@ namespace SCP.Utilities
             }
             else
             {
-                Destroy(gameObject);
+                if (instance != this)
+                {
+                    Destroy(gameObject);
+                }
             }
         }
     }
