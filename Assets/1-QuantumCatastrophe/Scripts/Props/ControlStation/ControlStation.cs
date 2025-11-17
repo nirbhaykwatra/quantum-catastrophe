@@ -108,6 +108,7 @@ public class ControlStation : MonoBehaviour, IInteractable
                 throw new ArgumentOutOfRangeException();
         }
         
+        Close();
         hasBeenUsed = true;
     }
     
