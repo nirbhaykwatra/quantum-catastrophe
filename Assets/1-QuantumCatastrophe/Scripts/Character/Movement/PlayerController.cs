@@ -16,17 +16,26 @@ public class PlayerController : MonoBehaviour
     [field: Header("Components")]
     [field: SerializeField] protected CharacterMovementBase Movement { get; set; }
     [field: SerializeField] protected CharacterAbilities Abilities { get; set; }
+    [field: SerializeField] protected CharacterInteraction Interaction { get; set; }
+    [field: SerializeField] protected CharacterInventory Inventory { get; set; }
 
     protected Vector2 MoveInput { get; set; }
 
     protected virtual void OnValidate()
     {
         if(Movement == null) Movement = GetComponent<CharacterMovementBase>();
+        if(Abilities == null) Abilities = GetComponent<CharacterAbilities>();
+        if(Interaction == null) Interaction = GetComponent<CharacterInteraction>();
+        if(Inventory == null) Inventory = GetComponent<CharacterInventory>();
     }
 
     protected virtual void Awake()
     {
         Cursor.lockState = CursorMode;
+        if(Movement == null) Movement = GetComponent<CharacterMovementBase>();
+        if(Abilities == null) Abilities = GetComponent<CharacterAbilities>();
+        if(Interaction == null) Interaction = GetComponent<CharacterInteraction>();
+        if(Inventory == null) Inventory = GetComponent<CharacterInventory>();
     }
 
     public virtual void OnMove(InputValue value)
@@ -48,6 +57,14 @@ public class PlayerController : MonoBehaviour
         else
         {
             Abilities?.TryAirDash();
+        }
+    }
+
+    public virtual void OnInteract(InputValue value)
+    {
+        if (Interaction.CanInteract)
+        {
+            Interaction.Interact();
         }
     }
 

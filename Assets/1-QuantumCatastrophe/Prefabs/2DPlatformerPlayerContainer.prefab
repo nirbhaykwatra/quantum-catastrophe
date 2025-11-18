@@ -18,8 +18,11 @@ GameObject:
   - component: {fileID: 5548389131240028350}
   - component: {fileID: 6638402231617272092}
   - component: {fileID: 6434668707729419335}
+  - component: {fileID: 440562551213349627}
+  - component: {fileID: 3518850295095940170}
+  - component: {fileID: 7548773903558029643}
   - component: {fileID: 3876257368030616053}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -85,8 +88,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -149447715
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 764303e102e8a834d81fe435ec1d491d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -246,19 +249,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 256ec8144a11a3c4ea17a5ea0b1b0cdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterMovement2D
-  <Speed>k__BackingField: 5
+  <Speed>k__BackingField: 7
   <Acceleration>k__BackingField: 10
   <TurnSpeed>k__BackingField: 15
   <OnlyTurnWithInput>k__BackingField: 1
-  <StoppingDistance>k__BackingField: 0.25
+  <StoppingDistance>k__BackingField: 0.1
   <LookInMoveDirection>k__BackingField: 1
   <ControlRotation>k__BackingField: 1
   <Fix3DSpriteRotation>k__BackingField: 0
   <ParentToSurface>k__BackingField: 0
-  <Gravity>k__BackingField: -20
-  <JumpHeight>k__BackingField: 2.25
-  <AirControl>k__BackingField: 0.1
-  <AirTurning>k__BackingField: 1
+  <Gravity>k__BackingField: -40
+  <JumpHeight>k__BackingField: 2
+  <AirControl>k__BackingField: 1
+  <AirTurning>k__BackingField: 0
   <Height>k__BackingField: 1.8
   <Radius>k__BackingField: 1
   <GroundCheckOffset>k__BackingField: 0.1
@@ -267,16 +270,28 @@ MonoBehaviour:
   <CoyoteMaxJumpDistance>k__BackingField: 0.5
   <GroundMask>k__BackingField:
     serializedVersion: 2
-    m_Bits: 1
-  <WallCheckOffset>k__BackingField: 0.5
-  <WallCheckDistance>k__BackingField: 0.4
+    m_Bits: 72
+  <WallCheckOffset>k__BackingField: 1
+  <WallCheckDistance>k__BackingField: 0.7
   <WallMask>k__BackingField:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 72
   <MinGroundedVelocity>k__BackingField: 5
   OnGrounded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 440562551213349627}
+        m_TargetAssemblyTypeName: CharacterAbilities, Assembly-CSharp
+        m_MethodName: OnGrounded
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnFootstep:
     m_PersistentCalls:
       m_Calls: []
@@ -314,7 +329,62 @@ MonoBehaviour:
   <CursorMode>k__BackingField: 1
   <LookInCameraDirection>k__BackingField: 0
   <Movement>k__BackingField: {fileID: 5548389131240028350}
-  <Abilities>k__BackingField: {fileID: 0}
+  <Abilities>k__BackingField: {fileID: 440562551213349627}
+  <Interaction>k__BackingField: {fileID: 3518850295095940170}
+  <Inventory>k__BackingField: {fileID: 7548773903558029643}
+--- !u!114 &440562551213349627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7422681891417741142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b504339230f5d84fbfc9fcd132a6c46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterAbilities
+  <EnableDash>k__BackingField: 1
+  <EnableAirDash>k__BackingField: 1
+  <EnableWallJump>k__BackingField: 1
+  <EnableDoubleJump>k__BackingField: 1
+  <EnableEntanglementMode>k__BackingField: 0
+  <EnableTunnelingBarriers>k__BackingField: 0
+  <EnableSuperposition>k__BackingField: 0
+  <DashDuration>k__BackingField: 0.2
+  <DashDistance>k__BackingField: 4
+  <DashCooldown>k__BackingField: 0.5
+  <DashCheckOffset>k__BackingField: 1
+  <DashCheckRadius>k__BackingField: 0.25
+  <GroundMask>k__BackingField:
+    serializedVersion: 2
+    m_Bits: 8
+--- !u!114 &3518850295095940170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7422681891417741142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d6b16bb3cebd14d983b36b588dc3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterInteraction
+  interactableTag: Interactable
+  <CanInteract>k__BackingField: 0
+--- !u!114 &7548773903558029643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7422681891417741142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e80eef603e62b54296268a83190d420, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterInventory
 --- !u!114 &3876257368030616053
 MonoBehaviour:
   m_ObjectHideFlags: 0

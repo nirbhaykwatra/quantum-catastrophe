@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: e508435e1d3fdb64784ff4591fbde0a0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 168439340370431401
+    second: Crane1_Grabber_Anim1_v1.0_spritesheet_0
+  - first:
+      213: -6641835815963253999
+    second: Crane1_Grabber_Anim1_v1.0_spritesheet_1
+  - first:
+      213: -250030939403046153
+    second: Crane1_Grabber_Anim1_v1.0_spritesheet_2
+  - first:
+      213: 5952889100491637202
+    second: Crane1_Grabber_Anim1_v1.0_spritesheet_3
+  - first:
+      213: 5708576596718235175
+    second: Crane1_Grabber_Anim1_v1.0_spritesheet_4
+  - first:
+      213: 959055822703098471
+    second: Crane1_Grabber_Anim1_v1.0_spritesheet_5
+  - first:
+      213: 3381601529940188628
+    second: Crane1_Grabber_Anim1_v1.0_spritesheet_6
+  - first:
+      213: 4986297149448705759
+    second: Crane1_Grabber_Anim1_v1.0_spritesheet_7
+  - first:
+      213: -5948312429890413821
+    second: Crane1_Grabber_Anim1_v1.0_spritesheet_8
+  - first:
+      213: 6280671138637467896
+    second: Crane1_Grabber_Anim1_v1.0_spritesheet_9
+  - first:
+      213: 4533045649248239373
+    second: Crane1_Grabber_Anim1_v1.0_spritesheet_10
+  - first:
+      213: 8286530637712318025
+    second: Crane1_Grabber_Anim1_v1.0_spritesheet_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Crane1_Grabber_Anim1_v1.0_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 32
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ad0bf800ba665200800000000000000
+      internalID: 168439340370431401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crane1_Grabber_Anim1_v1.0_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 35
+        width: 29
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1132b0de38573d3a0800000000000000
+      internalID: -6641835815963253999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crane1_Grabber_Anim1_v1.0_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 42
+        width: 37
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f236027f26b78cf0800000000000000
+      internalID: -250030939403046153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crane1_Grabber_Anim1_v1.0_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 42
+        width: 37
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d1491ed819ec9250800000000000000
+      internalID: 5952889100491637202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crane1_Grabber_Anim1_v1.0_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 19
+        width: 29
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72eaf7c5b20f83f40800000000000000
+      internalID: 5708576596718235175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crane1_Grabber_Anim1_v1.0_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 16
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76afcff70304f4d00800000000000000
+      internalID: 959055822703098471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crane1_Grabber_Anim1_v1.0_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 16
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dd900cccacddee20800000000000000
+      internalID: 3381601529940188628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crane1_Grabber_Anim1_v1.0_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 16
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd6de61c6d2e23540800000000000000
+      internalID: 4986297149448705759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crane1_Grabber_Anim1_v1.0_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30b575b4c59537da0800000000000000
+      internalID: -5948312429890413821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crane1_Grabber_Anim1_v1.0_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 0
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f0d889cf1d692750800000000000000
+      internalID: 6280671138637467896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crane1_Grabber_Anim1_v1.0_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 0
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0f321a300d98ee30800000000000000
+      internalID: 4533045649248239373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crane1_Grabber_Anim1_v1.0_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 0
+        width: 29
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94edb3906bbaff270800000000000000
+      internalID: 8286530637712318025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Crane1_Grabber_Anim1_v1.0_spritesheet_0: 168439340370431401
+      Crane1_Grabber_Anim1_v1.0_spritesheet_1: -6641835815963253999
+      Crane1_Grabber_Anim1_v1.0_spritesheet_10: 4533045649248239373
+      Crane1_Grabber_Anim1_v1.0_spritesheet_11: 8286530637712318025
+      Crane1_Grabber_Anim1_v1.0_spritesheet_2: -250030939403046153
+      Crane1_Grabber_Anim1_v1.0_spritesheet_3: 5952889100491637202
+      Crane1_Grabber_Anim1_v1.0_spritesheet_4: 5708576596718235175
+      Crane1_Grabber_Anim1_v1.0_spritesheet_5: 959055822703098471
+      Crane1_Grabber_Anim1_v1.0_spritesheet_6: 3381601529940188628
+      Crane1_Grabber_Anim1_v1.0_spritesheet_7: 4986297149448705759
+      Crane1_Grabber_Anim1_v1.0_spritesheet_8: -5948312429890413821
+      Crane1_Grabber_Anim1_v1.0_spritesheet_9: 6280671138637467896
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

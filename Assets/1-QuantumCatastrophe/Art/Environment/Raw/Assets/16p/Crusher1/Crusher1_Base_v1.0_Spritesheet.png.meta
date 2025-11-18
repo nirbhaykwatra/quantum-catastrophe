@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: af6c71468d678f543bbd02cbbc493cae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1307425233706788535
+    second: Crusher1_Base_v1.0_Spritesheet_0
+  - first:
+      213: -4858223868428761795
+    second: Crusher1_Base_v1.0_Spritesheet_1
+  - first:
+      213: -6963746448727596932
+    second: Crusher1_Base_v1.0_Spritesheet_2
+  - first:
+      213: 688178021469729137
+    second: Crusher1_Base_v1.0_Spritesheet_3
+  - first:
+      213: 5791008700996733113
+    second: Crusher1_Base_v1.0_Spritesheet_4
+  - first:
+      213: 3431147802504613356
+    second: Crusher1_Base_v1.0_Spritesheet_5
+  - first:
+      213: 6548230131503003048
+    second: Crusher1_Base_v1.0_Spritesheet_6
+  - first:
+      213: -7914290527995498592
+    second: Crusher1_Base_v1.0_Spritesheet_7
+  - first:
+      213: 2417806274834299347
+    second: Crusher1_Base_v1.0_Spritesheet_8
+  - first:
+      213: 2444686903740275004
+    second: Crusher1_Base_v1.0_Spritesheet_9
+  - first:
+      213: -460731559966459093
+    second: Crusher1_Base_v1.0_Spritesheet_10
+  - first:
+      213: 6975170764757397528
+    second: Crusher1_Base_v1.0_Spritesheet_11
+  - first:
+      213: -3295485106013896774
+    second: Crusher1_Base_v1.0_Spritesheet_12
+  - first:
+      213: -3850568067327414242
+    second: Crusher1_Base_v1.0_Spritesheet_13
+  - first:
+      213: 8763695416187614836
+    second: Crusher1_Base_v1.0_Spritesheet_14
+  - first:
+      213: 1745851550199957832
+    second: Crusher1_Base_v1.0_Spritesheet_15
+  - first:
+      213: -6913043127306704125
+    second: Crusher1_Base_v1.0_Spritesheet_16
+  - first:
+      213: 5059074859627567271
+    second: Crusher1_Base_v1.0_Spritesheet_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Crusher1_Base_v1.0_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 111
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 949568e4da71bdde0800000000000000
+      internalID: -1307425233706788535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crusher1_Base_v1.0_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 111
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d35caf2b12f149cb0800000000000000
+      internalID: -4858223868428761795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crusher1_Base_v1.0_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 111
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7024b9108dcb5f90800000000000000
+      internalID: -6963746448727596932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crusher1_Base_v1.0_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 111
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1713fefa346ec8900800000000000000
+      internalID: 688178021469729137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crusher1_Base_v1.0_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 111
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b84b124bbbcd5050800000000000000
+      internalID: 5791008700996733113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crusher1_Base_v1.0_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 111
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ced46245fb2ed9f20800000000000000
+      internalID: 3431147802504613356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crusher1_Base_v1.0_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 79
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a5febf4c9cffda50800000000000000
+      internalID: 6548230131503003048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crusher1_Base_v1.0_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 79
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0afe69d42baca2290800000000000000
+      internalID: -7914290527995498592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crusher1_Base_v1.0_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 79
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d975333ff5cd8120800000000000000
+      internalID: 2417806274834299347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crusher1_Base_v1.0_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 79
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c391d7459c54de120800000000000000
+      internalID: 2444686903740275004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crusher1_Base_v1.0_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 79
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2b336756172b99f0800000000000000
+      internalID: -460731559966459093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crusher1_Base_v1.0_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 79
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 810fd01cad8ccc060800000000000000
+      internalID: 6975170764757397528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crusher1_Base_v1.0_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 47
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abf737d91c51442d0800000000000000
+      internalID: -3295485106013896774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crusher1_Base_v1.0_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 47
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e10bc737eb8009ac0800000000000000
+      internalID: -3850568067327414242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crusher1_Base_v1.0_Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 47
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 476f4998c86ee9970800000000000000
+      internalID: 8763695416187614836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crusher1_Base_v1.0_Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 47
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 849cb382cb28a3810800000000000000
+      internalID: 1745851550199957832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crusher1_Base_v1.0_Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 47
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30badef07efef00a0800000000000000
+      internalID: -6913043127306704125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crusher1_Base_v1.0_Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 47
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a8d53cd7c1753640800000000000000
+      internalID: 5059074859627567271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Crusher1_Base_v1.0_Spritesheet_0: -1307425233706788535
+      Crusher1_Base_v1.0_Spritesheet_1: -4858223868428761795
+      Crusher1_Base_v1.0_Spritesheet_10: -460731559966459093
+      Crusher1_Base_v1.0_Spritesheet_11: 6975170764757397528
+      Crusher1_Base_v1.0_Spritesheet_12: -3295485106013896774
+      Crusher1_Base_v1.0_Spritesheet_13: -3850568067327414242
+      Crusher1_Base_v1.0_Spritesheet_14: 8763695416187614836
+      Crusher1_Base_v1.0_Spritesheet_15: 1745851550199957832
+      Crusher1_Base_v1.0_Spritesheet_16: -6913043127306704125
+      Crusher1_Base_v1.0_Spritesheet_17: 5059074859627567271
+      Crusher1_Base_v1.0_Spritesheet_2: -6963746448727596932
+      Crusher1_Base_v1.0_Spritesheet_3: 688178021469729137
+      Crusher1_Base_v1.0_Spritesheet_4: 5791008700996733113
+      Crusher1_Base_v1.0_Spritesheet_5: 3431147802504613356
+      Crusher1_Base_v1.0_Spritesheet_6: 6548230131503003048
+      Crusher1_Base_v1.0_Spritesheet_7: -7914290527995498592
+      Crusher1_Base_v1.0_Spritesheet_8: 2417806274834299347
+      Crusher1_Base_v1.0_Spritesheet_9: 2444686903740275004
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

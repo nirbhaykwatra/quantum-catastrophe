@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Interactable
   layers:
   - Default
   - TransparentFX
@@ -12,7 +13,7 @@ TagManager:
   - Water
   - UI
   - Ground
-  - 
+  - Interactable
   - 
   - 
   - 
@@ -40,6 +41,21 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3827582897
+    locked: 0
+  - name: Midground
+    uniqueID: 3820250439
+    locked: 0
+  - name: Foreground
+    uniqueID: 1958474081
+    locked: 0
+  - name: Props
+    uniqueID: 4249887775
+    locked: 0
+  - name: Player
+    uniqueID: 4145519581
     locked: 0
   m_RenderingLayers:
   - Default
