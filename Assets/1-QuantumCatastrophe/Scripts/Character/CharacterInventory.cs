@@ -30,10 +30,12 @@ public class CharacterInventory : MonoBehaviour
     public void AddItem(Loot loot)
     {
         Inventory.Add(loot);
+        NotificationManager.Instance.RequestNotification("Received " + loot.Name + "!", 3f, NotificationType.Success);
     }
     
     public void RemoveItem(Loot loot)
     {
         Inventory.Remove(loot);
+        NotificationManager.Instance.RequestNotification("Removed " + loot.Name + " from inventory!", 3f, NotificationType.Success);
     }
 }

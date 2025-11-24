@@ -92,6 +92,7 @@ public class ControlStation : MonoBehaviour, IInteractable
             case ControlStationAction.GivePlayerAbility:
                 CharacterAbilities abilities = interactor.GetComponent<CharacterAbilities>();
                 abilities.UnlockAbility(ability);
+                NotificationManager.Instance.RequestNotification("Unlocked " + ability + " ability!", 3f, NotificationType.Success);
                 break;
             case ControlStationAction.GivePlayerItem:
                 CharacterInventory inventory = interactor.GetComponent<CharacterInventory>();
@@ -133,10 +134,7 @@ public class ControlStation : MonoBehaviour, IInteractable
 
     private void ShowMessage(string message)
     {
-        if (m_interactionText != null)
-        {
-            m_interactionText.text = message;
-        }
+        NotificationManager.Instance.RequestNotification(message, 3f, NotificationType.Error);
     }
     
     private void OnTriggerEnter2D(Collider2D other)

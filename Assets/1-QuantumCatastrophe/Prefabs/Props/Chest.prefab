@@ -128,7 +128,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b0dea42716eb914c9007a995330a298, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Box
-  Items: []
+  Items:
+  - {fileID: 11400000, guid: 6b7e95e7a3f566e459cc6674076bfba4, type: 2}
 --- !u!61 &4505000683952303185
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -370,7 +371,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1958474081
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!114 &512628376948247462

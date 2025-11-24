@@ -35,7 +35,6 @@ public class Box : MonoBehaviour, IInteractable
                 for (int i = Items.Count - 1; i >= 0; i--)
                 {
                     interactor.GetComponent<CharacterInventory>().AddItem(Items[i]);
-                    NotificationManager.Instance.RequestNotification($"You got {Items[i].Name}!", 2f);
                     Items.RemoveAt(i);
                 }
             }
