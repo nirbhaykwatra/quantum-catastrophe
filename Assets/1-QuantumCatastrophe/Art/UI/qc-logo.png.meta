@@ -1,22 +1,25 @@
 fileFormatVersion: 2
-guid: 450eeb75e992d8f48bc468affe7de0fd
+guid: da592aa0a883ab9459b5148a79ae4f5e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2561777292277881456
-    second: panel-transparent-center-000_0
+      213: 4255740696089037346
+    second: qc-logo_0
   - first:
-      213: 1043792944131778080
-    second: panel-transparent-center-000_1
+      213: 6574006891944100893
+    second: qc-logo_1
   - first:
-      213: 2229670951230770692
-    second: panel-transparent-center-000_2
+      213: 6729002430969914642
+    second: qc-logo_2
   - first:
-      213: 5730625000160847420
-    second: panel-transparent-center-000_3
+      213: 4056620246559136895
+    second: qc-logo_3
   - first:
-      213: -3758778245034061866
-    second: panel-transparent-center-000_4
+      213: -1565373503520493584
+    second: qc-logo_4
+  - first:
+      213: -7550925466525085316
+    second: qc-logo_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -63,8 +66,8 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 12
-  spriteBorder: {x: 24, y: 24, z: 24, w: 24}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -125,111 +128,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: panel-transparent-center-000_0
+      name: qc-logo_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 83
-        width: 13
-        height: 13
+        y: 295
+        width: 1130
+        height: 337
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 07a92ebdfd24d8320800000000000000
-      internalID: 2561777292277881456
+      spriteID: 22a8f8e7d9d6f0b30800000000000000
+      internalID: 4255740696089037346
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: panel-transparent-center-000_1
+      name: qc-logo_1
       rect:
         serializedVersion: 2
-        x: 3
-        y: 3
-        width: 90
-        height: 90
+        x: 1133
+        y: 295
+        width: 369
+        height: 243
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 026a806072c4c7e00800000000000000
-      internalID: 1043792944131778080
+      spriteID: d144c4900709b3b50800000000000000
+      internalID: 6574006891944100893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: panel-transparent-center-000_2
+      name: qc-logo_2
       rect:
         serializedVersion: 2
-        x: 83
-        y: 83
-        width: 13
-        height: 13
+        x: 1558
+        y: 295
+        width: 316
+        height: 337
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 40e0e16bae161fe10800000000000000
-      internalID: 2229670951230770692
+      spriteID: 215a3b62f08326d50800000000000000
+      internalID: 6729002430969914642
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: panel-transparent-center-000_3
+      name: qc-logo_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1889
+        y: 295
+        width: 357
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7c90d01f920c4830800000000000000
+      internalID: 4056620246559136895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qc-logo_4
+      rect:
+        serializedVersion: 2
+        x: 2267
+        y: 295
+        width: 351
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ff2add971da64ae0800000000000000
+      internalID: -1565373503520493584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qc-logo_5
+      rect:
+        serializedVersion: 2
+        x: 1316
         y: 0
-        width: 13
-        height: 13
+        width: 1732
+        height: 253
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c366f835315478f40800000000000000
-      internalID: 5730625000160847420
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: panel-transparent-center-000_4
-      rect:
-        serializedVersion: 2
-        x: 83
-        y: 0
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6df474bd91326dbc0800000000000000
-      internalID: -3758778245034061866
+      spriteID: c7152527b49b53790800000000000000
+      internalID: -7550925466525085316
       vertices: []
       indices: 
       edges: []
@@ -239,7 +264,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -248,11 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      panel-transparent-center-000_0: 2561777292277881456
-      panel-transparent-center-000_1: 1043792944131778080
-      panel-transparent-center-000_2: 2229670951230770692
-      panel-transparent-center-000_3: 5730625000160847420
-      panel-transparent-center-000_4: -3758778245034061866
+      qc-logo_0: 4255740696089037346
+      qc-logo_1: 6574006891944100893
+      qc-logo_2: 6729002430969914642
+      qc-logo_3: 4056620246559136895
+      qc-logo_4: -1565373503520493584
+      qc-logo_5: -7550925466525085316
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -17,4 +17,4 @@ MonoBehaviour:
   _current: 0
   _valueMinMax: {x: -0.5, y: 0.5}
   _sliderMinMax: {x: 0, y: 10}
-  _volumeProfile: {fileID: 11400000, guid: 356bbcec9a2e9644082e584ad40710cd, type: 2}
+  _volumeProfile: {fileID: 11400000, guid: 3f9215ea0144899419cfbc0957140d3f, type: 2}

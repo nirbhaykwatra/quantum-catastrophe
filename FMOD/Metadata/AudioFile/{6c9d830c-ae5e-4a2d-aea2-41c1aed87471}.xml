@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
-	<object class="AudioFile" id="{0438aa5d-5895-4d31-9ed4-dcdf23c1630e}">
+	<object class="AudioFile" id="{6c9d830c-ae5e-4a2d-aea2-41c1aed87471}">
 		<property name="assetPath">
-			<value>UI/Clocks, Misc, Alarm Clock, Large Snooze Button, Press 02 SND24582.wav</value>
+			<value>UI/dark-ui glitch light 04.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>96</value>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>0.039177083333333335</value>
+			<value>0.24687500000000001</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{0007398a-8526-4222-84a0-9fc057cc09e5}</destination>
