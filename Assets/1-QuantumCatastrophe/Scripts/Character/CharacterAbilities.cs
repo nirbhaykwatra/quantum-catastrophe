@@ -126,7 +126,6 @@ public class CharacterAbilities : MonoBehaviour
 
     public void OnGrounded()
     {
-        Debug.Log("Airborne for " + m_airboneTimer + " seconds");
         m_airboneTimer = 0f;
     }
 

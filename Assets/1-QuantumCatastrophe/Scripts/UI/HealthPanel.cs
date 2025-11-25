@@ -38,7 +38,6 @@ public class HealthPanel : MonoBehaviour
     
     private void HandleDamage(int amount)
     {
-        Debug.Log("HandleDamage");
         if (transform.childCount == 0) return;
         for (int i = 0; i < amount; i++)
         {

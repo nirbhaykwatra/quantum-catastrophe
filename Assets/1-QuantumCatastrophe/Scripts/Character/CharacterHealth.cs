@@ -57,7 +57,6 @@ public class CharacterHealth : MonoBehaviour
     public void Kill()
     {
         OnDeath?.Invoke();
-        //m_playerData.Health = MaxHealth;
         OnDeathEvent.Invoke(Health);
     }
 
