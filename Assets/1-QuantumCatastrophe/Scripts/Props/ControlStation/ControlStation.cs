@@ -91,6 +91,7 @@ public class ControlStation : MonoBehaviour, IInteractable
         {
             case ControlStationAction.GivePlayerAbility:
                 CharacterAbilities abilities = interactor.GetComponent<CharacterAbilities>();
+                CharacterSpawn spawn = interactor.GetComponent<CharacterSpawn>();
                 abilities.UnlockAbility(ability);
                 NotificationManager.Instance.RequestNotification("Unlocked " + ability + " ability!", 3f, NotificationType.Success);
                 break;

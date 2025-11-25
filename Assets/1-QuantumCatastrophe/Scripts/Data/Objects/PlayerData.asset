@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 933078163b3d6144fbc45aa474326390, type: 3}
+  m_Name: PlayerData
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerData
+  LastCheckpoint: {x: 76.5, y: 29, z: 0}
+  Health: 0
+  EnableDash: 0
+  EnableAirDash: 0
+  EnableWallJump: 0
+  EnableDoubleJump: 0
+  EnableEntanglementMode: 0
+  EnableTunnelingBarriers: 0
+  EnableSuperposition: 0

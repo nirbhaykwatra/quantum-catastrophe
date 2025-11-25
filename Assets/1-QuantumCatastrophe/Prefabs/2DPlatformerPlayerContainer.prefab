@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 7548773903558029643}
   - component: {fileID: 3876257368030616053}
   - component: {fileID: 6661714747551818177}
+  - component: {fileID: 2438325806731366079}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -360,6 +361,7 @@ MonoBehaviour:
   <GroundMask>k__BackingField:
     serializedVersion: 2
     m_Bits: 8
+  m_playerData: {fileID: 11400000, guid: 8f7055de7f364f54dbb222cc499e8a98, type: 2}
 --- !u!114 &3518850295095940170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -413,8 +415,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaa391271c8371546a0a07bff45f1219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterHealth
+  m_playerData: {fileID: 11400000, guid: 8f7055de7f364f54dbb222cc499e8a98, type: 2}
+  OnDeathEvent: {fileID: 11400000, guid: 52f3803c268f9a94f968014ddbd49f70, type: 2}
   MaxHealth: 5
   <Health>k__BackingField: 5
+--- !u!114 &2438325806731366079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7422681891417741142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92607447f4fedc8459584a2cb8c5c398, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterSpawn
+  PlayerData: {fileID: 11400000, guid: 8f7055de7f364f54dbb222cc499e8a98, type: 2}
+  SpawnFromCheckpoint: 1
 --- !u!1 &7765261338290157645
 GameObject:
   m_ObjectHideFlags: 0

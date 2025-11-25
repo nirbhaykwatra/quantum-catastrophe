@@ -59,6 +59,8 @@ public class CharacterAbilities : MonoBehaviour
     [field: SerializeField]
     public LayerMask GroundMask { get; set; }
     
+    [SerializeField] private PlayerData m_playerData;
+    
 
     [Title("Read-Only Fields")] 
     [ShowInInspector] [ReadOnly] public bool IsDashing { get; private set; }
@@ -179,24 +181,31 @@ public class CharacterAbilities : MonoBehaviour
         {
             case Abilities.Dash:
                 EnableDash = true;
+                m_playerData.EnableDash = true;
                 break;
             case Abilities.AirDash:
                 EnableAirDash = true;
+                m_playerData.EnableAirDash = true;
                 break;
             case Abilities.WallJump:
                 EnableWallJump = true;
+                m_playerData.EnableWallJump = true;
                 break;
             case Abilities.DoubleJump:
                 EnableDoubleJump = true;
+                m_playerData.EnableDoubleJump = true;
                 break;
             case Abilities.EntanglementMode:
                 EnableEntanglementMode = true;
+                m_playerData.EnableEntanglementMode = true;
                 break;
             case Abilities.TunnelingBarriers:
                 EnableTunnelingBarriers = true;
+                m_playerData.EnableTunnelingBarriers = true;
                 break;
             case Abilities.Superposition:
                 EnableSuperposition = true;
+                m_playerData.EnableSuperposition = true;
                 break;
             default:
                 throw new System.ArgumentOutOfRangeException(nameof(ability), ability, null);
