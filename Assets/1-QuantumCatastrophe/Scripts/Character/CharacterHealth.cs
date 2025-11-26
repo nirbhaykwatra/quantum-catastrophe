@@ -19,15 +19,19 @@ public class CharacterHealth : MonoBehaviour
     public event Action<int> OnHeal; 
     public event Action OnDeath;
 
-    private void Start()
+    private void Awake()
     {
-        m_playerData.Health = m_playerData.Health == 0 ? MaxHealth : m_playerData.Health;
-        Health = m_playerData.Health;
+        int health = PlayerPrefs.GetInt("Health") == 0 ? MaxHealth : m_playerData.Health;
+        PlayerPrefs.SetInt("Health", health);
+        PlayerPrefs.Save();
+        
+        Health = PlayerPrefs.GetInt("Health", health);
     }
 
     private void OnDestroy()
     {
-        m_playerData.Health = Health;
+        PlayerPrefs.SetInt("Health", Health);
+        PlayerPrefs.Save();
     }
 
     [Button]
@@ -41,7 +45,8 @@ public class CharacterHealth : MonoBehaviour
         
         OnTakeDamage?.Invoke(amount);
         Health -= amount;
-        m_playerData.Health = Health;
+        PlayerPrefs.SetInt("Health", Health);
+        PlayerPrefs.Save();
     }
     
     [Button]
@@ -50,7 +55,8 @@ public class CharacterHealth : MonoBehaviour
         if (Health + amount > MaxHealth) return;
         OnHeal?.Invoke(amount);
         Health += amount;
-        m_playerData.Health = Health;
+        PlayerPrefs.SetInt("Health", Health);
+        PlayerPrefs.Save();
     }
 
     [Button]
@@ -68,5 +74,7 @@ public class CharacterHealth : MonoBehaviour
     public void SetHealth(int health)
     {
         Health = health;
+        PlayerPrefs.SetInt("Health", Health);
+        PlayerPrefs.Save();
     }
 }

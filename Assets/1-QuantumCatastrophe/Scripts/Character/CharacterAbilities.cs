@@ -85,6 +85,14 @@ public class CharacterAbilities : MonoBehaviour
         IsDashing = false;
         m_dashCooldownTimer = DashCooldown;
         m_initialGravityScale = m_rigidbody.gravityScale;
+
+        EnableDash = PlayerPrefs.GetInt("EnableDash", 0) == 1;
+        EnableAirDash = PlayerPrefs.GetInt("EnableAirDash", 0) == 1;
+        EnableWallJump = PlayerPrefs.GetInt("EnableWallJump", 0) == 1;
+        EnableDoubleJump = PlayerPrefs.GetInt("EnableDoubleJump", 0) == 1;
+        EnableEntanglementMode = PlayerPrefs.GetInt("EnableEntanglementMode", 0) == 1;
+        EnableTunnelingBarriers = PlayerPrefs.GetInt("EnableTunnelingBarriers", 0) == 1;
+        EnableSuperposition = PlayerPrefs.GetInt("EnableSuperposition", 0) == 1;
     }
 
     private void Update()
@@ -180,35 +188,36 @@ public class CharacterAbilities : MonoBehaviour
         {
             case Abilities.Dash:
                 EnableDash = true;
-                m_playerData.EnableDash = true;
+                PlayerPrefs.SetInt("EnableDash", 1);
                 break;
             case Abilities.AirDash:
                 EnableAirDash = true;
-                m_playerData.EnableAirDash = true;
+                PlayerPrefs.SetInt("EnableAirDash", 1);
                 break;
             case Abilities.WallJump:
                 EnableWallJump = true;
-                m_playerData.EnableWallJump = true;
+                PlayerPrefs.SetInt("EnableWallJump", 1);
                 break;
             case Abilities.DoubleJump:
                 EnableDoubleJump = true;
-                m_playerData.EnableDoubleJump = true;
+                PlayerPrefs.SetInt("EnableDoubleJump", 1);
                 break;
             case Abilities.EntanglementMode:
                 EnableEntanglementMode = true;
-                m_playerData.EnableEntanglementMode = true;
+                PlayerPrefs.SetInt("EnableEntanglementMode", 1);
                 break;
             case Abilities.TunnelingBarriers:
                 EnableTunnelingBarriers = true;
-                m_playerData.EnableTunnelingBarriers = true;
+                PlayerPrefs.SetInt("EnableTunnelingBarriers", 1);
                 break;
             case Abilities.Superposition:
                 EnableSuperposition = true;
-                m_playerData.EnableSuperposition = true;
+                PlayerPrefs.SetInt("EnableSuperposition", 1);
                 break;
             default:
                 throw new System.ArgumentOutOfRangeException(nameof(ability), ability, null);
         }
+        PlayerPrefs.Save();
     }
 
     public void LockAbility(Abilities ability)
@@ -217,39 +226,44 @@ public class CharacterAbilities : MonoBehaviour
         {
             case Abilities.Dash:
                 EnableDash = false;
+                PlayerPrefs.SetInt("EnableDash", 0);
                 break;
             case Abilities.AirDash:
                 EnableAirDash = false;
+                PlayerPrefs.SetInt("EnableAirDash", 0);
                 break;
             case Abilities.WallJump:
                 EnableWallJump = false;
+                PlayerPrefs.SetInt("EnableWallJump", 0);
                 break;
             case Abilities.DoubleJump:
                 EnableDoubleJump = false;
+                PlayerPrefs.SetInt("EnableDoubleJump", 0);
                 break;
             case Abilities.EntanglementMode:
                 EnableEntanglementMode = false;
+                PlayerPrefs.SetInt("EnableEntanglementMode", 0);
                 break;
             case Abilities.TunnelingBarriers:
                 EnableTunnelingBarriers = false;
+                PlayerPrefs.SetInt("EnableTunnelingBarriers", 0);
                 break;
             case Abilities.Superposition:
                 EnableSuperposition = false;
+                PlayerPrefs.SetInt("EnableSuperposition", 0);
                 break;
             default:
                 throw new System.ArgumentOutOfRangeException(nameof(ability), ability, null);
         }
+        PlayerPrefs.Save();
     }
     
     public void ResetAbilities()
     {
-        EnableDash = false;
-        EnableAirDash = false;
-        EnableWallJump = false;
-        EnableDoubleJump = false;
-        EnableEntanglementMode = false;
-        EnableTunnelingBarriers = false;
-        EnableSuperposition = false;
+        foreach (Abilities ability in System.Enum.GetValues(typeof(Abilities)))
+        {
+            LockAbility(ability);
+        }
     }
 
     public bool HasAbility(Abilities ability)

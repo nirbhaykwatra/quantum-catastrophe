@@ -44,3 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61970fd3d85696d408c9ac1ccf544fd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NotificationManager
+  m_notificationPanel: {fileID: 0}
+  m_notificationPrefab: {fileID: 0}

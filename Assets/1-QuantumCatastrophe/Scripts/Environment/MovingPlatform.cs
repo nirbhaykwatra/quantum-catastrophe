@@ -19,6 +19,7 @@ public class MovingPlatform : MonoBehaviour
     // slows movement within distance
     [SerializeField] private float _easingDistance = 1f;
     [SerializeField] private PhysicsMode _physicsMode;
+    [SerializeField] private bool _activateOnStep = false;
 
     public Vector3 NextPoint => _startPosition + _points[_pointIndex % _points.Length];
     public Vector3 PreviousPoint => _startPosition + _points[(_pointIndex + _points.Length - 1) % _points.Length];
@@ -27,6 +28,7 @@ public class MovingPlatform : MonoBehaviour
     private int _pointIndex;
     private Rigidbody2D _rb2D;
     private Rigidbody _rb3D;
+    private bool _started = false;
 
     private void Awake()
     {
@@ -55,6 +57,7 @@ public class MovingPlatform : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (_activateOnStep && !_started) return;
         // checks if point is reached
         float distance = Vector3.Distance(transform.position, NextPoint);
         if (distance < _pointReachedDistance) _pointIndex++;
@@ -81,6 +84,14 @@ public class MovingPlatform : MonoBehaviour
                 _rb2D.velocity = velocity;
 #endif
                 break;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.GetComponent<PlayerController>())
+        {
+            _started = true;
         }
     }
 

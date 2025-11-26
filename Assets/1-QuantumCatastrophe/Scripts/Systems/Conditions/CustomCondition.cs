@@ -5,6 +5,9 @@ using UnityEngine.Events;
 public class CustomCondition : ICondition
 {
     [SerializeField] private string conditionName = "Custom Condition";
+    [TextArea]
+    [SerializeField] private string SuccessMessage = "Condition met.";
+    [TextArea]
     [SerializeField] private string failureMessage = "Condition not met.";
     [SerializeField] private UnityEvent<GameObject> conditionCheck;
     
@@ -27,4 +30,5 @@ public class CustomCondition : ICondition
     }
 
     public string GetFailureMessage() => failureMessage;
+    public string GetSuccessMessage() => SuccessMessage;
 }

@@ -25,12 +25,16 @@ public class HealthPanel : MonoBehaviour
     private void Awake()
     {
         m_health = FindFirstObjectByType<CharacterHealth>();
+    }
+
+    private void Start()
+    {
         for (int i = 0; i < m_health.Health; i++)
         {
             Instantiate(m_healthPoint, transform);
         }
     }
-    
+
     private void HandleHeal(int amount)
     {
         Instantiate(m_healthPoint, transform);

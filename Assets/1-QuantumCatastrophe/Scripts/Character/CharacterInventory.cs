@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using Newtonsoft.Json;
 
 public class CharacterInventory : MonoBehaviour
 {
@@ -11,6 +12,16 @@ public class CharacterInventory : MonoBehaviour
     private void Awake()
     {
         Inventory = new List<Loot>();
+    }
+
+    private void OnEnable()
+    {
+        
+    }
+
+    private void OnDestroy()
+    {
+        
     }
 
     public T FindItem<T>() where T : Loot

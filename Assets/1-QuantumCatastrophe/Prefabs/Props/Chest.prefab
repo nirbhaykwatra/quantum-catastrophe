@@ -128,8 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b0dea42716eb914c9007a995330a298, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Box
-  Items:
-  - {fileID: 11400000, guid: 6b7e95e7a3f566e459cc6674076bfba4, type: 2}
+  Items: []
 --- !u!61 &4505000683952303185
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -243,8 +242,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 04ea1782f45e47344be10568b12ca7aa, type: 2}
+  m_sharedMaterial: {fileID: -4436296699759599727, guid: 04ea1782f45e47344be10568b12ca7aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

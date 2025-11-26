@@ -4,6 +4,9 @@
 public class AbilityCondition : ICondition
 {
     [SerializeField] private Abilities requiredAbility;
+    [TextArea]
+    [SerializeField] private string SuccessMessage = "You have the required ability.";
+    [TextArea]
     [SerializeField] private string failureMessage = "You need a specific ability to use this.";
 
     public bool IsConditionMet(GameObject interactor)
@@ -20,4 +23,5 @@ public class AbilityCondition : ICondition
     }
 
     public string GetFailureMessage() => failureMessage;
+    public string GetSuccessMessage() => SuccessMessage;
 }
