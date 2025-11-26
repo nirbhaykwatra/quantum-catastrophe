@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Rendering.LookDev;
 using UnityEngine;
 
 // moves platforms using Rigidbodies
@@ -28,7 +30,13 @@ public class MovingPlatform : MonoBehaviour
     private int _pointIndex;
     private Rigidbody2D _rb2D;
     private Rigidbody _rb3D;
+    private BoxCollider2D _collider2D;
     private bool _started = false;
+
+    private void OnValidate()
+    {
+        _collider2D = GetComponent<BoxCollider2D>();
+    }
 
     private void Awake()
     {
@@ -106,6 +114,7 @@ public class MovingPlatform : MonoBehaviour
             Vector3 point = origin + _points[i];
             Vector3 nextPoint = origin + _points[(i + 1) % _points.Length];
             Gizmos.DrawWireSphere(point, 0.1f);
+            Gizmos.DrawWireCube(point, _collider2D.size);
             Gizmos.DrawLine(point, nextPoint);
         }
     }

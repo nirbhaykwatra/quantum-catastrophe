@@ -2,15 +2,16 @@ using System.Collections;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
+[System.Flags]
 public enum Abilities
 {
-    Dash,
-    AirDash,
-    WallJump,
-    DoubleJump,
-    EntanglementMode,
-    TunnelingBarriers,
-    Superposition
+    Dash = 1 << 0,
+    AirDash = 1 << 1,
+    WallJump = 1 << 2,
+    DoubleJump = 1 << 3,
+    EntanglementMode = 1 << 4,
+    TunnelingBarriers = 1 << 5,
+    Superposition = 1 << 6,
 }
 
 public class CharacterAbilities : MonoBehaviour

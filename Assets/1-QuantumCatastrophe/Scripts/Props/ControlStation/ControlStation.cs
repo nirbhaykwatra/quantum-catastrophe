@@ -72,6 +72,7 @@ public class ControlStation : MonoBehaviour, IInteractable
     {
         m_animator = GetComponent<Animator>();
         m_interactionText = GetComponentInChildren<TextMeshProUGUI>();
+        Debug.Log($"Ability: {ability}");
     }
 
     public void Interact(GameObject interactor)
@@ -92,7 +93,13 @@ public class ControlStation : MonoBehaviour, IInteractable
             case ControlStationAction.GivePlayerAbility:
                 CharacterAbilities abilities = interactor.GetComponent<CharacterAbilities>();
                 CharacterSpawn spawn = interactor.GetComponent<CharacterSpawn>();
-                abilities.UnlockAbility(ability);
+                foreach (Abilities abilityFlag in System.Enum.GetValues(typeof(Abilities)))
+                {
+                    if (ability.HasFlag(abilityFlag))
+                    {
+                        abilities.UnlockAbility(abilityFlag);
+                    }
+                }
                 NotificationManager.Instance.RequestNotification("Unlocked " + ability + " ability!", 5f, NotificationType.Success);
                 break;
             case ControlStationAction.GivePlayerItem:
