@@ -20,5 +20,6 @@ public class Checkpoint : MonoBehaviour
         CharacterSpawn spawn = player.GetComponent<CharacterSpawn>();
         health.SetResetPoint(m_currentPosition);
         spawn.SetSpawnPoint(m_currentPosition);
+        Debug.Log("Checkpoint set at " + m_currentPosition + "");
     }
 }

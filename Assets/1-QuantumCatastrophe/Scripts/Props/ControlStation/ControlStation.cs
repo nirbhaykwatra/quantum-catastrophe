@@ -72,7 +72,6 @@ public class ControlStation : MonoBehaviour, IInteractable
     {
         m_animator = GetComponent<Animator>();
         m_interactionText = GetComponentInChildren<TextMeshProUGUI>();
-        Debug.Log($"Ability: {ability}");
     }
 
     public void Interact(GameObject interactor)

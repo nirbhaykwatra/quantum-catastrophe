@@ -8,6 +8,7 @@ public class CharacterHealth : MonoBehaviour
     [SerializeField] private PlayerData m_playerData;
     [SerializeField] private IntEventAsset OnDeathEvent;
     [SerializeField] private int MaxHealth = 5;
+    [SerializeField] private float DamageCooldown = 1f;
     [field: SerializeField]
     [ReadOnly]
     public int Health { get; private set; } = 5;
@@ -19,13 +20,25 @@ public class CharacterHealth : MonoBehaviour
     public event Action<int> OnHeal; 
     public event Action OnDeath;
 
+    private bool m_wasDamaged;
+    private float m_timer;
+
     private void Awake()
     {
-        int health = PlayerPrefs.GetInt("Health") == 0 ? MaxHealth : m_playerData.Health;
-        PlayerPrefs.SetInt("Health", health);
-        PlayerPrefs.Save();
-        
-        Health = PlayerPrefs.GetInt("Health", health);
+        SetHealth(MaxHealth);
+    }
+
+    private void Update()
+    {
+        if (m_wasDamaged)
+        {
+            m_timer += Time.deltaTime;
+            if (m_timer >= DamageCooldown)
+            {
+                m_wasDamaged = false;
+                m_timer = 0;
+            }
+        }
     }
 
     private void OnDestroy()
@@ -45,6 +58,7 @@ public class CharacterHealth : MonoBehaviour
         
         OnTakeDamage?.Invoke(amount);
         Health -= amount;
+        m_wasDamaged = true;
         PlayerPrefs.SetInt("Health", Health);
         PlayerPrefs.Save();
     }
