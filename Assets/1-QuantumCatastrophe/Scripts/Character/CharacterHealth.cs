@@ -12,6 +12,8 @@ public class CharacterHealth : MonoBehaviour
     [field: SerializeField]
     [ReadOnly]
     public int Health { get; private set; } = 5;
+    
+    public int MaxHealthValue => MaxHealth;
     public bool IsDead => Health <= 0;
 
     public Vector3 ResetPoint { get; private set; }

@@ -432,6 +432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92607447f4fedc8459584a2cb8c5c398, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterSpawn
+  SpawnAtLevelStart: {x: 0, y: 0, z: 0}
   SpawnFromCheckpoint: 1
 --- !u!1 &7765261338290157645
 GameObject:

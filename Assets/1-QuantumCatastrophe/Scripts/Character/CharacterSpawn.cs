@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class CharacterSpawn : MonoBehaviour
 {
+    [SerializeField] private Vector3 SpawnAtLevelStart = new Vector3(0, 0, 0);
     [SerializeField] private bool SpawnFromCheckpoint = true;
     private Vector3 m_spawnPosition;
     [ReadOnly]
@@ -14,15 +15,31 @@ public class CharacterSpawn : MonoBehaviour
     private void Awake()
     {
         m_health = GetComponent<CharacterHealth>();
+
+        if (PlayerPrefs.HasKey("LastCheckpointX"))
+        {
+            LastCheckpoint = new Vector3(PlayerPrefs.GetFloat("LastCheckpointX"), PlayerPrefs.GetFloat("LastCheckpointY"), PlayerPrefs.GetFloat("LastCheckpointZ"));
+        }
+        else
+        {
+            LastCheckpoint = SpawnAtLevelStart;
+        }
         
-        LastCheckpoint = new Vector3(PlayerPrefs.GetFloat("LastCheckpointX"), PlayerPrefs.GetFloat("LastCheckpointY"), PlayerPrefs.GetFloat("LastCheckpointZ"));
         Debug.Log($"LastCheckpoint: {LastCheckpoint}");
         if (SpawnFromCheckpoint)
         {
             m_spawnPosition = LastCheckpoint;
             transform.SetPositionAndRotation(m_spawnPosition, Quaternion.identity);
         }
-        m_health.SetHealth(PlayerPrefs.GetInt("Health"));
+
+        if (PlayerPrefs.HasKey("Health"))
+        {
+            m_health.SetHealth(PlayerPrefs.GetInt("Health"));
+        }
+        else
+        {
+            m_health.SetHealth(m_health.MaxHealthValue);
+        }
     }
     
     public void SetSpawnPoint(Vector3 position)
