@@ -135,8 +135,11 @@ public class ControlStation : MonoBehaviour, IInteractable
             ShowMessage(condition.GetFailureMessage());
             return false;
         }
+        if (condition != null && condition.IsConditionMet(interactor))
+        {
+            ShowMessage(condition.GetSuccessMessage());
+        }
         if (condition != null) condition.PostConditionCheck(interactor);
-        ShowMessage(condition.GetSuccessMessage());
         return true;
     }
 

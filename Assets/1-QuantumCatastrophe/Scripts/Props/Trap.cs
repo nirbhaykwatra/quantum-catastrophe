@@ -5,11 +5,14 @@ public class Trap : MonoBehaviour
 {
     [SerializeField] private int DamageAmount = 1;
     [SerializeField] private float PushbackForce = 10f;
+    [SerializeField] private float SpeedMultiplier = 1f;
     [SerializeField] private bool IsActive = false;
+    [SerializeField] private bool IsArmed = false;
     [SerializeField] private bool DamagePlayer = true;
     [SerializeField] private bool PushPlayer = true;
     
     private Animator m_animator;
+    private PolygonCollider2D m_collider;
     
     public UnityEvent OnTrapTriggered;
     public UnityEvent OnTrapDeactivated;
@@ -17,7 +20,10 @@ public class Trap : MonoBehaviour
     private void Awake()
     {
         m_animator = GetComponent<Animator>();
+        m_collider = GetComponent<PolygonCollider2D>();
+        m_animator.speed *= SpeedMultiplier;
         ToggleTrap(IsActive);
+        ToggleArmed(IsArmed);
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -25,8 +31,8 @@ public class Trap : MonoBehaviour
         if (other.gameObject.GetComponent<PlayerController>())
         {
             CharacterHealth health = other.gameObject.GetComponent<CharacterHealth>();
-            health.Damage(1);
-            Push(other.rigidbody, PushbackForce, other);
+            if (DamagePlayer) health.Damage(DamageAmount);
+            if (PushPlayer) Push(other.rigidbody, PushbackForce, other);
         }
     }
 
@@ -42,6 +48,13 @@ public class Trap : MonoBehaviour
     {
         IsActive = active;
         m_animator.SetBool("IsActivated", active);
+    }
+    
+    public void ToggleArmed(bool armed)
+    {
+        IsArmed = armed;
+        m_animator.SetBool("IsArmed", armed);
+        m_collider.enabled = armed;
     }
 
     public void HandleTrapActivation()

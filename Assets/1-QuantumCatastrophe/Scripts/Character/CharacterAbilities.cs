@@ -73,7 +73,6 @@ public class CharacterAbilities : MonoBehaviour
     private float m_initialGravityScale;
     private float m_dashCooldownTimer;
     private Vector2 m_dashDestination;
-    private float m_airboneTimer;
 
     private void Awake()
     {
@@ -98,7 +97,7 @@ public class CharacterAbilities : MonoBehaviour
 
     private void Update()
     {
-        if (!CanDash && m_movement.IsGrounded)
+        if (!CanDash)
         {
             m_dashCooldownTimer -= Time.deltaTime;
             if (m_dashCooldownTimer <= 0)
@@ -106,43 +105,29 @@ public class CharacterAbilities : MonoBehaviour
                 CanDash = true;
             }
         }
-
-        if (!m_movement.IsGrounded)
-        {
-            m_airboneTimer += Time.deltaTime;
-        }
         
     }
 
     public void TryDash()
     {
-        if (!EnableDash) return;
-        if (IsDashing || !CanDash || !m_movement.IsGrounded) return;
         StartCoroutine(OnDash());
-        CanDash = false;
-        m_dashCooldownTimer = DashCooldown;
     }
 
     public void TryAirDash()
     {
-        if (!EnableAirDash) return;
-        if (!CanDash || !CanAirDash) return;
         StartCoroutine(OnDash());
-        CanAirDash = false;
-        CanDash = false;
-        m_dashCooldownTimer = DashCooldown;
     }
 
     public void OnGrounded()
     {
-        m_airboneTimer = 0f;
+        
     }
 
     public IEnumerator OnDash()
     {
         if (!EnableDash) yield break;
-        if (!m_movement.IsGrounded && !EnableAirDash) yield break;
-        if (!CanDash || IsDashing || !CanAirDash) yield break;
+        if (!CanDash) yield break;
+
         float timer = 0f;
         float progress = 0f;
         m_rigidbody.gravityScale = 0f;
@@ -181,6 +166,8 @@ public class CharacterAbilities : MonoBehaviour
         m_movement.CanMove = true;
         m_movement.CanTurn = true;
         IsDashing = false;
+        m_dashCooldownTimer = DashCooldown;
+        CanDash = false;
     }
 
     public void UnlockAbility(Abilities ability)

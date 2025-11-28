@@ -19,6 +19,7 @@ public class KillZ : MonoBehaviour
     private void ResetPlayerToCheckpoint(GameObject player)
     {
         CharacterHealth health = player.GetComponent<CharacterHealth>();
+        player.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
         player.transform.position = health.ResetPoint;
     }
 }

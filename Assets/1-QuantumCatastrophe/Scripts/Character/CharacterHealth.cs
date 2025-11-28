@@ -66,7 +66,6 @@ public class CharacterHealth : MonoBehaviour
     [Button]
     public void Heal(int amount)
     {
-        if (Health + amount > MaxHealth) return;
         OnHeal?.Invoke(amount);
         Health += amount;
         PlayerPrefs.SetInt("Health", Health);
