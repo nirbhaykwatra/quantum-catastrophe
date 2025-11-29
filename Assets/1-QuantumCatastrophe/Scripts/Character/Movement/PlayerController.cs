@@ -18,8 +18,13 @@ public class PlayerController : MonoBehaviour
     [field: SerializeField] protected CharacterAbilities Abilities { get; set; }
     [field: SerializeField] protected CharacterInteraction Interaction { get; set; }
     [field: SerializeField] protected CharacterInventory Inventory { get; set; }
+    
+    private PlayerInput m_playerInput;
 
     protected Vector2 MoveInput { get; set; }
+    
+    private float m_disableTimer;
+    private bool m_movementDisabled;
 
     protected virtual void OnValidate()
     {
@@ -27,6 +32,7 @@ public class PlayerController : MonoBehaviour
         if(Abilities == null) Abilities = GetComponent<CharacterAbilities>();
         if(Interaction == null) Interaction = GetComponent<CharacterInteraction>();
         if(Inventory == null) Inventory = GetComponent<CharacterInventory>();
+        if(m_playerInput == null) m_playerInput = GetComponent<PlayerInput>();
     }
 
     protected virtual void Awake()
@@ -36,6 +42,7 @@ public class PlayerController : MonoBehaviour
         if(Abilities == null) Abilities = GetComponent<CharacterAbilities>();
         if(Interaction == null) Interaction = GetComponent<CharacterInteraction>();
         if(Inventory == null) Inventory = GetComponent<CharacterInventory>();
+        if(m_playerInput == null) m_playerInput = GetComponent<PlayerInput>();
     }
 
     public virtual void OnMove(InputValue value)
@@ -75,5 +82,30 @@ public class PlayerController : MonoBehaviour
         Movement.SetMoveInput(moveInput);
         Movement.SetLookDirection(moveInput);
         if (LookInCameraDirection) Movement.SetLookDirection(Camera.main.transform.forward);
+
+        if (m_movementDisabled && m_disableTimer > 0)
+        {
+            m_disableTimer -= Time.deltaTime;
+            if (m_disableTimer <= 0)
+            {
+                EnableMovement();
+            }
+        }
+        
+    }
+
+    public void DisableMovement(float timer)
+    {
+        m_movementDisabled = true;
+        m_disableTimer = timer;
+        m_playerInput.DeactivateInput();
+        Debug.Log($"Deactivating input for {timer} seconds");
+    }
+    
+    public void EnableMovement()
+    {
+        m_movementDisabled = false;
+        m_playerInput.ActivateInput();
+        Debug.Log("Activating input");
     }
 }

@@ -102,6 +102,11 @@ public class MovingPlatform : MonoBehaviour
         }
     }
 
+    public void Activate()
+    {
+        _started = true;
+    }
+
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;

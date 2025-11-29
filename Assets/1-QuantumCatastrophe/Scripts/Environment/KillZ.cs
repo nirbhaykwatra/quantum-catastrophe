@@ -4,6 +4,8 @@ using UnityEngine;
 public class KillZ : MonoBehaviour
 {
     [SerializeField] private int DamageAmount = 1;
+    [SerializeField] private float InputDisableTimer;
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         PlayerController player = other.GetComponent<PlayerController>();
@@ -18,8 +20,7 @@ public class KillZ : MonoBehaviour
 
     private void ResetPlayerToCheckpoint(GameObject player)
     {
-        CharacterHealth health = player.GetComponent<CharacterHealth>();
-        player.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
-        player.transform.position = health.ResetPoint;
+        CharacterSpawn spawn = player.GetComponent<CharacterSpawn>();
+        spawn.Respawn(InputDisableTimer);
     }
 }

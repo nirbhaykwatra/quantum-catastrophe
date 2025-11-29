@@ -7,6 +7,7 @@ public class CharacterHealth : MonoBehaviour
 {
     [SerializeField] private PlayerData m_playerData;
     [SerializeField] private IntEventAsset OnDeathEvent;
+    [SerializeField] private BoolEventAsset OnRespawnEvent;
     [SerializeField] private int MaxHealth = 5;
     [SerializeField] private float DamageCooldown = 1f;
     [field: SerializeField]
@@ -15,8 +16,6 @@ public class CharacterHealth : MonoBehaviour
     
     public int MaxHealthValue => MaxHealth;
     public bool IsDead => Health <= 0;
-
-    public Vector3 ResetPoint { get; private set; }
     
     public event Action<int> OnTakeDamage;
     public event Action<int> OnHeal; 
@@ -78,12 +77,8 @@ public class CharacterHealth : MonoBehaviour
     public void Kill()
     {
         OnDeath?.Invoke();
-        OnDeathEvent.Invoke(Health);
-    }
-
-    public void SetResetPoint(Vector3 point)
-    {
-        ResetPoint = point;
+        //OnDeathEvent.Invoke(Health);
+        OnRespawnEvent.Invoke(true);
     }
 
     public void SetHealth(int health)
