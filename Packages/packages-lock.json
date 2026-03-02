@@ -20,14 +20,14 @@
       "dependencies": {
         "com.qhenshaw.unitytools": "3.3.0"
       },
-      "hash": "e4d2c8e481308a334d0141ea3b3ba5806646849f"
+      "hash": "6edb9f525aee7a6e2248d8cf2b4f9305093e7a68"
     },
     "com.nirbhaykwatra.scenemanager": {
       "version": "https://github.com/nirbhaykwatra/SceneManager.git",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "95101753ee128a8542a30f8e698fe41899b20ed1"
+      "hash": "fc7d616247015a360ff4fa74805152223ebe33bc"
     },
     "com.qhenshaw.fmodextensions": {
       "version": "https://github.com/qhenshaw/FMODExtensions.git",
@@ -57,7 +57,7 @@
         "com.unity.cinemachine": "3.0.0",
         "com.unity.2d.sprite": "1.0.0"
       },
-      "hash": "6ce74f2cbb4d1e94aa103f673c7f73f8442442c4"
+      "hash": "d65131ae0b4664f0765dfc7567cd35fba8522a05"
     },
     "com.unity.2d.animation": {
       "version": "13.0.4",
@@ -363,7 +363,7 @@
       }
     },
     "com.unity.timeline": {
-      "version": "1.8.10",
+      "version": "1.8.11",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -394,7 +394,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.web.stripping-tool": {
-      "version": "1.2.0",
+      "version": "1.2.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {
