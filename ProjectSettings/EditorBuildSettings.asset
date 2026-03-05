@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/1-QuantumCatastrophe/Scenes/LoadingScene.unity
+    guid: 1b5283cc47bea4544aa802db6387c1fb
+  - enabled: 1
     path: Assets/1-QuantumCatastrophe/Scenes/MainMenu.unity
     guid: 72e9f6e03a159a141a29b186d03217a7
   - enabled: 1

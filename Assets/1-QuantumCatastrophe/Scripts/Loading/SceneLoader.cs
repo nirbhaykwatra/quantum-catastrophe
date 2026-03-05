@@ -2,7 +2,6 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
-using SceneManager = UnityEngine.SceneManagement.SceneManager;
 #if UNITY_ADDRESSABLES_EXIST
 using UnityEngine.AddressableAssets;
 #endif
