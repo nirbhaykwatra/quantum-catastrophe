@@ -91,7 +91,15 @@ public class ControlStation : MonoBehaviour, IInteractable
         {
             case ControlStationAction.GivePlayerAbility:
                 CharacterAbilities abilities = interactor.GetComponent<CharacterAbilities>();
-                abilities.UnlockAbility(ability);
+                CharacterSpawn spawn = interactor.GetComponent<CharacterSpawn>();
+                foreach (Abilities abilityFlag in System.Enum.GetValues(typeof(Abilities)))
+                {
+                    if (ability.HasFlag(abilityFlag))
+                    {
+                        abilities.UnlockAbility(abilityFlag);
+                    }
+                }
+                NotificationManager.Instance.RequestNotification("Unlocked " + ability + " ability!", 5f, NotificationType.Success);
                 break;
             case ControlStationAction.GivePlayerItem:
                 CharacterInventory inventory = interactor.GetComponent<CharacterInventory>();
@@ -127,16 +135,17 @@ public class ControlStation : MonoBehaviour, IInteractable
             ShowMessage(condition.GetFailureMessage());
             return false;
         }
+        if (condition != null && condition.IsConditionMet(interactor))
+        {
+            ShowMessage(condition.GetSuccessMessage());
+        }
         if (condition != null) condition.PostConditionCheck(interactor);
         return true;
     }
 
     private void ShowMessage(string message)
     {
-        if (m_interactionText != null)
-        {
-            m_interactionText.text = message;
-        }
+        NotificationManager.Instance.RequestModal(message);
     }
     
     private void OnTriggerEnter2D(Collider2D other)

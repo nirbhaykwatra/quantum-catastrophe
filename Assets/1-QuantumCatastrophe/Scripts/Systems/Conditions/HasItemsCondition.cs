@@ -5,6 +5,9 @@ using UnityEngine;
 public class InventoryCondition : ICondition
 {
     [SerializeField] private List<Loot> RequiredItems;
+    [TextArea]
+    [SerializeField] private string SuccessMessage = "You have the required items.";
+    [TextArea]
     [SerializeField] private string FailureMessage = "You need specific items to use this.";
     [SerializeField] private bool DestroyItemsAfterUse = false;
 
@@ -39,4 +42,5 @@ public class InventoryCondition : ICondition
     }
 
     public string GetFailureMessage() => FailureMessage;
+    public string GetSuccessMessage() => SuccessMessage;
 }

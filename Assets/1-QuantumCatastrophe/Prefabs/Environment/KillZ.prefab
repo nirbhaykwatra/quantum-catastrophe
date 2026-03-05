@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KillZ
   DamageAmount: 1
+  InputDisableTimer: 2.3
 --- !u!61 &6592101520467654884
 BoxCollider2D:
   m_ObjectHideFlags: 0

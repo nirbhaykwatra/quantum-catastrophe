@@ -25,6 +25,8 @@ public class CharacterMovement2D : CharacterMovementBase
     
     [ReadOnly]
     public bool CanWallJump;
+    [ReadOnly]
+    [ShowInInspector]
     private int m_jumpCount;
     
     protected CharacterAbilities m_abilities;
@@ -93,10 +95,11 @@ public class CharacterMovement2D : CharacterMovementBase
     // attempts a jump, will fail if not grounded
     public override void TryJump()
     {
-        if (CanWallJump) TryWallJump();
+        if (CanWallJump && !IsGrounded) TryWallJump();
         if (IsGrounded)
         {
             if (!CanMove || !CanCoyoteJump) return;
+            m_jumpCount = 0;
             Jump();
         }
         else
@@ -163,7 +166,7 @@ public class CharacterMovement2D : CharacterMovementBase
 
         Rigidbody.AddForce(acceleration);
 
-        if (CanWallJump)
+        if (CanWallJump && !IsGrounded)
         {
             Rigidbody.linearVelocity = new Vector2(Velocity.x, Mathf.Max(Velocity.y, -2));
         }
@@ -173,7 +176,6 @@ public class CharacterMovement2D : CharacterMovementBase
         {
             transform.rotation = Quaternion.LookRotation(LookDirection);
         }
-
         // fix capsule collider rotation
         CapsuleCollider.transform.rotation = Quaternion.identity;
     }
@@ -248,7 +250,7 @@ public class CharacterMovement2D : CharacterMovementBase
     protected void OnGroundedEvent()
     {
         m_abilities.CanAirDash = true;
-        m_jumpCount = 0;
+        
     }
 
     protected bool CheckWallContact()
@@ -271,8 +273,6 @@ public class CharacterMovement2D : CharacterMovementBase
         }
         
         if (wallHit.collider == null) return false;
-        
-        
         return true;
     }
 

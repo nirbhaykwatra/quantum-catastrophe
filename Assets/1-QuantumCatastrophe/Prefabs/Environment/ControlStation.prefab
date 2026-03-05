@@ -85,7 +85,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 6995876866041873717, guid: 58c4969764e001747ae4e3017da6ddec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.0967742, y: 1.032258}
@@ -128,12 +128,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b3f4eb18b0ee74479e91b1a10b32fcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ControlStation
-  ControlStationAction: 0
-  conditionType: 0
+  ControlStationAction: 1
+  conditionType: 1
   inventoryCondition:
-    RequiredItems: []
-    FailureMessage: You need specific items to use this.
-    DestroyItemsAfterUse: 0
+    RequiredItems:
+    - {fileID: 11400000, guid: 2a6c964d5f280794da5adb647be30be9, type: 2}
+    - {fileID: 11400000, guid: d7fd3ad57d1aa854b86aaa95ad4506e2, type: 2}
+    - {fileID: 11400000, guid: 2a6c964d5f280794da5adb647be30be9, type: 2}
+    - {fileID: 11400000, guid: d7fd3ad57d1aa854b86aaa95ad4506e2, type: 2}
+    FailureMessage: You need 2 Gears and 2 Wrenches to use this!.
+    DestroyItemsAfterUse: 1
   abilityCondition:
     requiredAbility: 0
     failureMessage: You need a specific ability to use this.
@@ -147,7 +151,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   ItemsToGive: []
-  ability: 0
+  ability: 3
   hasBeenUsed: 0
   usedMessage: Already activated.
 --- !u!61 &377815705219348
@@ -391,7 +395,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1958474081
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!114 &4974511848450361371

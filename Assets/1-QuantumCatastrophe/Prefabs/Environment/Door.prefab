@@ -59,8 +59,8 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -45079521
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!114 &7642060152093054271
 MonoBehaviour:
@@ -137,7 +137,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000000022352, y: -0.5391}
-  m_SizeDelta: {x: 0.9634, y: 0.4022}
+  m_SizeDelta: {x: 1.8, y: 0.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3014800187503068353
 CanvasRenderer:
@@ -169,8 +169,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 04ea1782f45e47344be10568b12ca7aa, type: 2}
+  m_sharedMaterial: {fileID: -4436296699759599727, guid: 04ea1782f45e47344be10568b12ca7aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -447,10 +447,10 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -45079521
   m_SortingLayer: 4
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -7790486547820539382, guid: 9189de69b2e936247a4c2729d941c824, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.032258, y: 4.129032}
@@ -494,7 +494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
   OperationMode: 1
-  RequiredItem: {fileID: 0}
+  RequiredItem: {fileID: 11400000, guid: 6b7e95e7a3f566e459cc6674076bfba4, type: 2}
   m_doorCollider: {fileID: 1085185380372726171}
   m_doorTrigger: {fileID: 4046024577820331591}
   <IsLocked>k__BackingField: 1

@@ -168,3 +168,5 @@ AKSoundEngine lfs
 *.bank lfs
 # assigning the MacOS FMOD plugin to lfs since it is very large
 \Assets\Plugins\FMOD\platforms\mac\lib\fmodstudio.bundle\Contents\MacOS\fmodstudio lfs
+Assets/Plugins/FMOD/**/*.bundle text eol=lf
+Assets/Plugins/FMOD/**/Info.plist text eol=lf

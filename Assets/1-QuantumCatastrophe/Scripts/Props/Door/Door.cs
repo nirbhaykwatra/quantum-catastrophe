@@ -19,6 +19,8 @@ public class Door : MonoBehaviour, IUnlockable, IInteractable
     [SerializeField] private Collider2D m_doorCollider;
     [SerializeField] private Collider2D m_doorTrigger;
     
+    [SerializeField] private bool m_destroyItemOnUse = true;
+    
     private TextMeshProUGUI m_interactionText;
     
     [field: SerializeField]
@@ -50,7 +52,7 @@ public class Door : MonoBehaviour, IUnlockable, IInteractable
             if (inventory.HasItem(requiredItem))
             {
                 Unlock();
-                inventory.RemoveItem(requiredItem);
+                if (m_destroyItemOnUse) inventory.RemoveItem(requiredItem);
                 NotificationManager.Instance.RequestNotification($"You used {requiredItem.Name}!", 2f, NotificationType.Success);
                 return;
             }

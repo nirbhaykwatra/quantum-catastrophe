@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 3518850295095940170}
   - component: {fileID: 7548773903558029643}
   - component: {fileID: 3876257368030616053}
+  - component: {fileID: 6661714747551818177}
+  - component: {fileID: 2438325806731366079}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -46,6 +48,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6102486833466380474
 SpriteRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -89,9 +92,10 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -149447715
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 764303e102e8a834d81fe435ec1d491d, type: 3}
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 21300000, guid: d6316f37d2e3f5447ba2ecbe4f127fb2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -100,7 +104,6 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &8527081426609046684
 Animator:
@@ -344,10 +347,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b504339230f5d84fbfc9fcd132a6c46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterAbilities
-  <EnableDash>k__BackingField: 1
-  <EnableAirDash>k__BackingField: 1
-  <EnableWallJump>k__BackingField: 1
-  <EnableDoubleJump>k__BackingField: 1
+  <EnableDash>k__BackingField: 0
+  <EnableAirDash>k__BackingField: 0
+  <EnableWallJump>k__BackingField: 0
+  <EnableDoubleJump>k__BackingField: 0
   <EnableEntanglementMode>k__BackingField: 0
   <EnableTunnelingBarriers>k__BackingField: 0
   <EnableSuperposition>k__BackingField: 0
@@ -359,6 +362,7 @@ MonoBehaviour:
   <GroundMask>k__BackingField:
     serializedVersion: 2
     m_Bits: 8
+  m_playerData: {fileID: 11400000, guid: 8f7055de7f364f54dbb222cc499e8a98, type: 2}
 --- !u!114 &3518850295095940170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -400,6 +404,39 @@ MonoBehaviour:
   <DampTime>k__BackingField: 0.1
   <Animator>k__BackingField: {fileID: 8527081426609046684}
   <CharacterMovement>k__BackingField: {fileID: 5548389131240028350}
+--- !u!114 &6661714747551818177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7422681891417741142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaa391271c8371546a0a07bff45f1219, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterHealth
+  m_playerData: {fileID: 11400000, guid: 8f7055de7f364f54dbb222cc499e8a98, type: 2}
+  OnDeathEvent: {fileID: 11400000, guid: 52f3803c268f9a94f968014ddbd49f70, type: 2}
+  OnRespawnEvent: {fileID: 0}
+  MaxHealth: 5
+  DamageCooldown: 1
+  <Health>k__BackingField: 0
+--- !u!114 &2438325806731366079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7422681891417741142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92607447f4fedc8459584a2cb8c5c398, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterSpawn
+  SpawnAtLevelStart: {x: 0, y: 0, z: 0}
+  SpawnFromCheckpoint: 1
+  OnRespawn: {fileID: 0}
 --- !u!1 &7765261338290157645
 GameObject:
   m_ObjectHideFlags: 0

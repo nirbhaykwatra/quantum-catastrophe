@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
 
@@ -11,6 +12,12 @@ public class Box : MonoBehaviour, IInteractable
     private bool m_isOpen = false;
 
     [SerializeField] private List<Loot> Items;
+    [SerializeField] private bool SendMessageOnOpen = false;
+    
+    [ShowIf("SendMessageOnOpen")]
+    [TextArea]
+    [SerializeField]
+    private string OpenMessage = "Box opened.";
 
     private void Awake()
     {
@@ -35,8 +42,12 @@ public class Box : MonoBehaviour, IInteractable
                 for (int i = Items.Count - 1; i >= 0; i--)
                 {
                     interactor.GetComponent<CharacterInventory>().AddItem(Items[i]);
-                    NotificationManager.Instance.RequestNotification($"You got {Items[i].Name}!", 2f);
                     Items.RemoveAt(i);
+                }
+                
+                if (SendMessageOnOpen)
+                {
+                    NotificationManager.Instance.RequestModal(OpenMessage);
                 }
             }
             else
