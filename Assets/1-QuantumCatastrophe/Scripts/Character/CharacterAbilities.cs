@@ -105,31 +105,54 @@ public class CharacterAbilities : MonoBehaviour
                 CanDash = true;
             }
         }
-        
     }
 
+    public void RechargeDashCooldown()
+    {
+        IsDashing = false;
+        StopCoroutine(OnDash(isAirDash: false));
+        m_dashCooldownTimer = DashCooldown;
+    }
+    
+    public void RechargeAirDashCooldown()
+    {
+        IsDashing = false;
+        StopCoroutine(OnDash(isAirDash: true));
+        CanAirDash = true;
+    }
+    
     public void TryDash()
     {
-        StartCoroutine(OnDash());
+        StartCoroutine(OnDash(isAirDash: false));
     }
 
     public void TryAirDash()
     {
-        StartCoroutine(OnDash());
+        StartCoroutine(OnDash(isAirDash: true));
     }
 
     public void OnGrounded()
     {
-        
+        RechargeAirDashCooldown();
     }
 
-    public IEnumerator OnDash()
+    public IEnumerator OnDash(bool isAirDash = false)
     {
-        if (!EnableDash) yield break;
-        if (!CanDash) yield break;
+        if (IsDashing) yield break;
+        if (isAirDash)
+        {
+            if (!EnableAirDash) yield break;
+            if (!CanAirDash) yield break;
+        }
+        else
+        {
+            if (!EnableDash) yield break;
+            if (!CanDash) yield break;
+        }
 
         float timer = 0f;
         float progress = 0f;
+        float gravityScalar = 0f;
         m_rigidbody.gravityScale = 0f;
         m_movement.CanMove = false;
         m_movement.CanTurn = false;
@@ -165,9 +188,16 @@ public class CharacterAbilities : MonoBehaviour
         m_rigidbody.gravityScale = m_initialGravityScale;
         m_movement.CanMove = true;
         m_movement.CanTurn = true;
+        if (!isAirDash)
+        {
+            m_dashCooldownTimer = DashCooldown;
+            CanDash = false;
+        }
+        else
+        {
+            CanAirDash = false;
+        }
         IsDashing = false;
-        m_dashCooldownTimer = DashCooldown;
-        CanDash = false;
     }
 
     public void UnlockAbility(Abilities ability)

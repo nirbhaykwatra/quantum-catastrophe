@@ -57,7 +57,15 @@ public class PlayerController : MonoBehaviour
 
     public virtual void OnDash(InputValue value)
     {
-        Abilities?.TryDash();
+        if (Abilities == null) return;
+        if (Movement.IsGrounded)
+        {
+            Abilities?.TryDash();
+        }
+        else
+        {
+            Abilities?.TryAirDash();
+        }
     }
 
     public virtual void OnInteract(InputValue value)
