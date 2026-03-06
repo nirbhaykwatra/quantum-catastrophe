@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerData
   LastCheckpoint: {x: 76.5, y: 29, z: 0}
   Health: 0
-  EnableDash: 0
-  EnableAirDash: 0
-  EnableWallJump: 0
-  EnableDoubleJump: 0
+  EnableDash: 1
+  EnableAirDash: 1
+  EnableWallJump: 1
+  EnableDoubleJump: 1
   EnableEntanglementMode: 0
   EnableTunnelingBarriers: 0
   EnableSuperposition: 0

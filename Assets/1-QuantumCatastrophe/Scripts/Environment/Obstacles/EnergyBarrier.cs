@@ -11,8 +11,13 @@ public class EnergyBarrier : MonoBehaviour
         if (player)
         {
             CharacterAbilities abilities = player.GetComponent<CharacterAbilities>();
-            
-            if (abilities.IsDashing) m_collider.SetActive(false);
+            Rigidbody2D rb = player.GetComponent<Rigidbody2D>();
+
+            if (abilities.IsDashing)
+            {
+                m_collider.SetActive(false);
+                rb.AddForce(abilities.DashDirection * 50f, ForceMode2D.Impulse);
+            }
             
         }
     }

@@ -67,6 +67,7 @@ public class CharacterAbilities : MonoBehaviour
     [ShowInInspector] [ReadOnly] public bool IsDashing { get; private set; }
     [ShowInInspector] [ReadOnly] public bool CanDash { get; set; } = true;
     [ShowInInspector] [ReadOnly] public bool CanAirDash { get; set; }
+    [ShowInInspector] [ReadOnly] public Vector2 DashDirection { get; set; }
     
     private Rigidbody2D m_rigidbody;
     private CharacterMovement2D m_movement;
@@ -110,25 +111,25 @@ public class CharacterAbilities : MonoBehaviour
     public void RechargeDashCooldown()
     {
         IsDashing = false;
-        StopCoroutine(OnDash(isAirDash: false));
+        StopCoroutine(PerformDash(isAirDash: false));
         m_dashCooldownTimer = DashCooldown;
     }
     
     public void RechargeAirDashCooldown()
     {
         IsDashing = false;
-        StopCoroutine(OnDash(isAirDash: true));
+        StopCoroutine(PerformDash(isAirDash: true));
         CanAirDash = true;
     }
     
     public void TryDash()
     {
-        StartCoroutine(OnDash(isAirDash: false));
+        StartCoroutine(PerformDash(isAirDash: false));
     }
 
     public void TryAirDash()
     {
-        StartCoroutine(OnDash(isAirDash: true));
+        StartCoroutine(PerformDash(isAirDash: true));
     }
 
     public void OnGrounded()
@@ -136,7 +137,7 @@ public class CharacterAbilities : MonoBehaviour
         RechargeAirDashCooldown();
     }
 
-    public IEnumerator OnDash(bool isAirDash = false)
+    public IEnumerator PerformDash(bool isAirDash = false)
     {
         if (IsDashing) yield break;
         if (isAirDash)
@@ -178,6 +179,8 @@ public class CharacterAbilities : MonoBehaviour
         {
             timer += Time.deltaTime;
             progress = timer / duration;
+            
+            DashDirection = (destination - start).normalized;
             
             Vector2 position = Vector2.Lerp(start, destination, progress);
             m_rigidbody.MovePosition(position);
