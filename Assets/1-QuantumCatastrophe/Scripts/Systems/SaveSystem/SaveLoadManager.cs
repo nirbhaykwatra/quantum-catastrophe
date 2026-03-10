@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Linq;
+using QC.Utilities;
 using UnityEngine;
 using Sirenix.OdinInspector;
-using SCP.Utilities;
 
-namespace SCP.Systems.SaveLoad
+namespace QC.Systems.SaveLoad
 {
     public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
     {

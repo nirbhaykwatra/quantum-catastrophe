@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SCP.Systems.SaveLoad
+namespace QC.Systems.SaveLoad
 {
     public interface ISaveable
     {

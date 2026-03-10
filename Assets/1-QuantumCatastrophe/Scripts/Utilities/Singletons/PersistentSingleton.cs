@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace SCP.Utilities
+namespace QC.Utilities
 {
     public class PersistentSingleton<T> : MonoBehaviour where T : Component
     {

@@ -5,7 +5,7 @@ using UnityEditor;
 using UnityEngine;
 using FilePathAttribute = Sirenix.OdinInspector.FilePathAttribute;
 
-namespace SCP.Systems.SaveLoad
+namespace QC.Systems.SaveLoad
 {
     // TODO: Programmatically add an instance of the data class to GameData in SaveLoadManager
     // Add a Bind<T, TData> call, using some event or other, using the GameData from SaveLoadManager.

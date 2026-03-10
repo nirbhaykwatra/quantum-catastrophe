@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SCP.Systems.SaveLoad
+namespace QC.Systems.SaveLoad
 {
     /// <summary>
     /// Serializable class which holds data for saving.

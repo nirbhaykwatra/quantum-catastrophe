@@ -2,7 +2,7 @@
 using System.Text;
 using Sirenix.Serialization;
 
-namespace SCP.Systems.SaveLoad
+namespace QC.Systems.SaveLoad
 {
     public class BinarySerializer
     {
