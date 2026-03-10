@@ -249,8 +249,7 @@ public class CharacterMovement2D : CharacterMovementBase
 
     protected void OnGroundedEvent()
     {
-        m_abilities.CanAirDash = true;
-        
+        m_abilities.OnGrounded();
     }
 
     protected bool CheckWallContact()

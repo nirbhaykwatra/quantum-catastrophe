@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace SCP.Systems.SaveLoad
+namespace QC.Systems.SaveLoad
 {
     public interface IDataService
     {

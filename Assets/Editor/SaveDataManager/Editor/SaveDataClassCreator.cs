@@ -6,7 +6,7 @@ using Sirenix.OdinInspector.Editor;
 using System.IO;
 using System.Reflection;
 
-namespace SCP.Systems.SaveLoad
+namespace QC.Systems.SaveLoad
 {
     public class SaveDataClassCreator : OdinEditorWindow
     {
