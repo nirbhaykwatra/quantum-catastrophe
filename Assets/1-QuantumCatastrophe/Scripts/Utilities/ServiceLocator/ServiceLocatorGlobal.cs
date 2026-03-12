@@ -7,7 +7,7 @@ namespace QC.Utilities.ServiceLocation
     /// Global service locator bootstrapper that persists across scene loads.
     /// Configures the service container as global and registers core services like the EventBusRegistry.
     /// </summary>
-    [AddComponentMenu("SCP/ServiceLocator/ServiceLocator Global")]
+    [AddComponentMenu("QC/ServiceLocator/ServiceLocator Global")]
     public class ServiceLocatorGlobal : Bootstrapper
     {
         /// <summary>

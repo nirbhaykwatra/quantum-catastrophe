@@ -6,19 +6,8 @@
     public interface IEvent { }
     
     // Concrete events
-    public struct DayTimeChangeEvent : IEvent
+    public struct ModeChangeEvent : IEvent
     {
-        public bool IsDay;
-    }
-    
-    public struct NeedsChangeEvent : IEvent
-    {
-        public float Fatigue;
-    }
-
-    public struct TextUIEvent : IEvent
-    {
-        public string For;
-        public string Text;
+        public PlayerMode Mode;
     }
 }

@@ -14,6 +14,12 @@ public enum Abilities
     Superposition = 1 << 6,
 }
 
+public enum PlayerMode
+{
+    Normal,
+    Entangle
+}
+
 public class CharacterAbilities : MonoBehaviour
 {
     // TODO: Abilities
