@@ -1,6 +1,9 @@
 using System.Collections;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using System.Collections.Generic;
+using QC.Utilities.EventBusSystem;
+using QC.Utilities.ServiceLocation;
 
 [System.Flags]
 public enum Abilities
@@ -67,8 +70,10 @@ public class CharacterAbilities : MonoBehaviour
     public LayerMask GroundMask { get; set; }
     
     [SerializeField] private PlayerData m_playerData;
+    private GlobalEventBus m_globalEventBus;
     
-
+    // --- Dashing Variables ---
+    
     [Title("Read-Only Fields")] 
     [ShowInInspector] [ReadOnly] public bool IsDashing { get; private set; }
     [ShowInInspector] [ReadOnly] public bool CanDash { get; set; } = true;
@@ -80,11 +85,30 @@ public class CharacterAbilities : MonoBehaviour
     private float m_initialGravityScale;
     private float m_dashCooldownTimer;
     private Vector2 m_dashDestination;
+    
+    // --- Entanglement Variables ---
+    
+    private PlayerMode m_playerMode;
+    [SerializeField] private float m_selectionRadius = 5f;
+    [SerializeField] private LayerMask m_entanglableMask;
+
+    private IEntangleable m_firstTarget;
+    private IEntangleable m_secondTarget;
+    private bool m_entanglementActive;
+
+    // Currently linked pairs
+    private readonly List<(IEntangleable, IEntangleable)> m_pairs = new();
+
+    private void OnEnable()
+    {
+        m_globalEventBus = ServiceLocator.Global.Get<EventBusRegistry>().Get<GlobalEventBus>();
+    }
 
     private void Awake()
     {
         m_rigidbody = GetComponent<Rigidbody2D>();
         m_movement = GetComponent<CharacterMovement2D>();
+        m_playerMode = PlayerMode.Normal;
     }
 
     private void Start()
@@ -92,7 +116,8 @@ public class CharacterAbilities : MonoBehaviour
         IsDashing = false;
         m_dashCooldownTimer = DashCooldown;
         m_initialGravityScale = m_rigidbody.gravityScale;
-
+        
+#if !UNITY_EDITOR
         EnableDash = PlayerPrefs.GetInt("EnableDash", 0) == 1;
         EnableAirDash = PlayerPrefs.GetInt("EnableAirDash", 0) == 1;
         EnableWallJump = PlayerPrefs.GetInt("EnableWallJump", 0) == 1;
@@ -100,6 +125,7 @@ public class CharacterAbilities : MonoBehaviour
         EnableEntanglementMode = PlayerPrefs.GetInt("EnableEntanglementMode", 0) == 1;
         EnableTunnelingBarriers = PlayerPrefs.GetInt("EnableTunnelingBarriers", 0) == 1;
         EnableSuperposition = PlayerPrefs.GetInt("EnableSuperposition", 0) == 1;
+#endif
     }
 
     private void Update()
@@ -114,6 +140,90 @@ public class CharacterAbilities : MonoBehaviour
         }
     }
 
+    #region Entanglement
+
+    public PlayerMode GetPlayerMode() => m_playerMode;
+
+    public void ChangePlayerMode(PlayerMode mode)
+    {
+        m_playerMode = mode;
+        m_globalEventBus.Raise(new OnModeChange { Mode = mode });
+        m_entanglementActive = mode == PlayerMode.Entangle;
+        if (m_entanglementActive)
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            CancelSelection();
+        }
+        Debug.Log($"Player mode changed to {mode}");
+    }
+
+    public void TrySelect(Vector2 position)
+    {
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(position);
+        Collider2D hit = Physics2D.OverlapPoint(mousePos);
+        if (hit != null)
+        {
+            IEntangleable entangleable = hit.GetComponent<IEntangleable>();
+            TryEntangle(entangleable);
+        }
+    }
+    
+    public void TryEntangle(IEntangleable target)
+    {
+        if (!m_entanglementActive || target == null) return;
+
+        if (m_firstTarget == null)
+        {
+            m_firstTarget = target;
+            m_firstTarget.OnEntanglementSelected();
+        }
+        else if (m_secondTarget == null && target != m_firstTarget)
+        {
+            m_secondTarget = target;
+            m_secondTarget.OnEntanglementSelected();
+            CommitEntanglement();
+        }
+
+        if (m_firstTarget != null && m_secondTarget != null)
+        {
+            if (target == m_firstTarget)
+            {
+                CancelSelection();
+            }
+            else if (target == m_secondTarget)
+            {
+                m_secondTarget.OnEntanglementDeselected();
+                m_secondTarget = null;
+            }
+        }
+    }
+
+    private void CommitEntanglement()
+    {
+        m_firstTarget.OnEntangle(m_secondTarget);
+        m_secondTarget.OnEntangle(m_firstTarget);
+        m_pairs.Add((m_firstTarget, m_secondTarget));
+        CancelSelection();
+    }
+
+    public void CancelSelection()
+    {
+        m_firstTarget?.OnEntanglementDeselected();
+        m_secondTarget?.OnEntanglementDeselected();
+        m_firstTarget = null;
+        m_secondTarget = null;
+    }
+
+    #endregion
+    
+    
+
+    #region Dashing
+    
     public void RechargeDashCooldown()
     {
         IsDashing = false;
@@ -159,7 +269,6 @@ public class CharacterAbilities : MonoBehaviour
 
         float timer = 0f;
         float progress = 0f;
-        float gravityScalar = 0f;
         m_rigidbody.gravityScale = 0f;
         m_movement.CanMove = false;
         m_movement.CanTurn = false;
@@ -208,6 +317,10 @@ public class CharacterAbilities : MonoBehaviour
         }
         IsDashing = false;
     }
+        
+    #endregion
+    
+    #region Ability API
 
     public void UnlockAbility(Abilities ability)
     {
@@ -315,6 +428,8 @@ public class CharacterAbilities : MonoBehaviour
                 throw new System.ArgumentOutOfRangeException(nameof(ability), ability, null);
         }
     }
+    
+    #endregion
 
     private void OnDrawGizmosSelected()
     {

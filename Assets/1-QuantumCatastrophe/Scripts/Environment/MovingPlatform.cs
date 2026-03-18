@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // moves platforms using Rigidbodies
-public class MovingPlatform : MonoBehaviour
+public class MovingPlatform : MonoBehaviour, IEntangleable
 {
     private enum PhysicsMode
     {
@@ -121,5 +121,25 @@ public class MovingPlatform : MonoBehaviour
             Gizmos.DrawWireCube(point, _collider2D.size);
             Gizmos.DrawLine(point, nextPoint);
         }
+    }
+
+    public void OnEntanglementSelected()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void OnEntanglementDeselected()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void OnEntangle(IEntangleable other)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void OnEntanglementBroken()
+    {
+        throw new NotImplementedException();
     }
 }

@@ -75,6 +75,18 @@ public class PlayerController : MonoBehaviour
             Interaction.Interact();
         }
     }
+    
+    public virtual void OnModeChange(InputValue value)
+    {
+        if (Abilities == null || !Abilities.EnableEntanglementMode) return;
+        PlayerMode mode = Abilities.GetPlayerMode() == PlayerMode.Normal ? PlayerMode.Entangle : PlayerMode.Normal;
+        Abilities?.ChangePlayerMode(mode);
+    }
+
+    public virtual void OnEntangleSelect(InputValue value)
+    {
+        Abilities?.TrySelect(Mouse.current.position.ReadValue());
+    }
 
     protected virtual void Update()
     {
