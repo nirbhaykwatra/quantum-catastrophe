@@ -1,5 +1,7 @@
 using System;
 using GameEvents;
+using QC.Utilities.EventBusSystem;
+using QC.Utilities.ServiceLocation;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -17,12 +19,15 @@ public class CharacterHealth : MonoBehaviour
     public int MaxHealthValue => MaxHealth;
     public bool IsDead => Health <= 0;
     
-    public event Action<int> OnTakeDamage;
-    public event Action<int> OnHeal; 
-    public event Action OnDeath;
+    private GlobalEventBus m_eventBus;
 
     private bool m_wasDamaged;
     private float m_timer;
+
+    private void OnEnable()
+    {
+        m_eventBus = ServiceLocator.Global.Get<EventBusRegistry>().Get<GlobalEventBus>();
+    }
 
     private void Awake()
     {
@@ -57,7 +62,7 @@ public class CharacterHealth : MonoBehaviour
             Kill();
         }
         
-        OnTakeDamage?.Invoke(amount);
+        m_eventBus.Raise(new OnTakeDamage { Damage = amount });
         Health -= amount;
         m_wasDamaged = true;
         PlayerPrefs.SetInt("Health", Health);
@@ -67,7 +72,7 @@ public class CharacterHealth : MonoBehaviour
     [Button]
     public void Heal(int amount)
     {
-        OnHeal?.Invoke(amount);
+        m_eventBus.Raise(new OnHeal { Amount = amount });
         Health += amount;
         PlayerPrefs.SetInt("Health", Health);
         PlayerPrefs.Save();
@@ -76,8 +81,7 @@ public class CharacterHealth : MonoBehaviour
     [Button]
     public void Kill()
     {
-        OnDeath?.Invoke();
-        //OnDeathEvent.Invoke(Health);
+        m_eventBus.Raise(new OnDeath());
         OnRespawnEvent.Invoke(true);
     }
 

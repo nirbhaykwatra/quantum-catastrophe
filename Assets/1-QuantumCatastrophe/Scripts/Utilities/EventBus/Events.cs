@@ -6,8 +6,24 @@
     public interface IEvent { }
     
     // Concrete events
-    public struct ModeChangeEvent : IEvent
+    public struct OnModeChange : IEvent
     {
         public PlayerMode Mode;
     }
+    
+    public struct OnTakeDamage : IEvent
+    {
+        public int Damage;
+    }
+    
+    public struct OnHeal : IEvent
+    {
+        public int Amount;
+    }
+    
+    public struct OnDeath : IEvent
+    {
+        public bool IsPlayer;
+    }
+    
 }
