@@ -4,8 +4,8 @@ using UnityEngine;
 
 namespace QC.Utilities.BlackboardSystem
 {
-    [CreateAssetMenu(fileName = "New Blackboard Data", menuName = "SCP/Blackboard/Blackboard Data", order = 0)]
-    public class BlackboardData : ScriptableObject
+    [CreateAssetMenu(fileName = "New Blackboard Data", menuName = "QC/Blackboard/Blackboard Data", order = 0)]
+    public class BlackboardData : ScriptableObject 
     {
         public List<BlackboardEntryData> Entries = new();
 
