@@ -37,6 +37,11 @@ public class PlayerController : MonoBehaviour
         if(Inventory == null) Inventory = GetComponent<CharacterInventory>();
         if(m_playerInput == null) m_playerInput = GetComponent<PlayerInput>();
     }
+    
+    protected virtual void OnEnable()
+    {
+        m_globalEventBus = ServiceLocator.Global.Get<EventBusRegistry>().Get<GlobalEventBus>();
+    }
 
     protected virtual void Awake()
     {
