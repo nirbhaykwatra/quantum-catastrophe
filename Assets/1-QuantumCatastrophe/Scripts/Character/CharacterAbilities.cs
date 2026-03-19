@@ -176,29 +176,35 @@ public class CharacterAbilities : MonoBehaviour
     {
         if (!m_entanglementActive || target == null) return;
 
+        // Toggle off first target
+        if (target == m_firstTarget)
+        {
+            CancelSelection();
+            return;
+        }
+
+        // Toggle off second target
+        if (target == m_secondTarget)
+        {
+            m_secondTarget.OnEntanglementDeselected();
+            m_secondTarget = null;
+            return;
+        }
+
+        // Select first target
         if (m_firstTarget == null)
         {
             m_firstTarget = target;
             m_firstTarget.OnEntanglementSelected();
+            return;
         }
-        else if (m_secondTarget == null && target != m_firstTarget)
+
+        // Select second target and commit
+        if (m_secondTarget == null)
         {
             m_secondTarget = target;
             m_secondTarget.OnEntanglementSelected();
             CommitEntanglement();
-        }
-
-        if (m_firstTarget != null && m_secondTarget != null)
-        {
-            if (target == m_firstTarget)
-            {
-                CancelSelection();
-            }
-            else if (target == m_secondTarget)
-            {
-                m_secondTarget.OnEntanglementDeselected();
-                m_secondTarget = null;
-            }
         }
     }
 

@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using QC.Utilities.EventBusSystem;
+using QC.Utilities.ServiceLocation;
 
 // moves platforms using Rigidbodies
 public class MovingPlatform : MonoBehaviour, IEntangleable
@@ -13,6 +15,7 @@ public class MovingPlatform : MonoBehaviour, IEntangleable
     }
 
     // points to loop through
+    [SerializeField] private bool _Active = true;
     [SerializeField] private Vector3[] _points = new Vector3[] { -Vector3.right, Vector3.right };
     [SerializeField] private float _speed = 2f;
     // moves to next point within distance
@@ -21,6 +24,7 @@ public class MovingPlatform : MonoBehaviour, IEntangleable
     [SerializeField] private float _easingDistance = 1f;
     [SerializeField] private PhysicsMode _physicsMode;
     [SerializeField] private bool _activateOnStep = false;
+    [SerializeField] private GameObject m_entanglementSelector;
 
     public Vector3 NextPoint => _startPosition + _points[_pointIndex % _points.Length];
     public Vector3 PreviousPoint => _startPosition + _points[(_pointIndex + _points.Length - 1) % _points.Length];
@@ -31,10 +35,20 @@ public class MovingPlatform : MonoBehaviour, IEntangleable
     private Rigidbody _rb3D;
     private BoxCollider2D _collider2D;
     private bool _started = false;
+    private GlobalEventBus m_globalEventBus;
+    
+    private EventBinding<OnModeChange> m_onModeChange;
 
     private void OnValidate()
     {
         _collider2D = GetComponent<BoxCollider2D>();
+    }
+
+    private void OnEnable()
+    {
+        m_globalEventBus = ServiceLocator.Global.Get<EventBusRegistry>().Get<GlobalEventBus>();
+        m_onModeChange = new EventBinding<OnModeChange>(ActivateEntanglementSelector);
+        m_globalEventBus.Register(m_onModeChange);
     }
 
     private void Awake()
@@ -64,6 +78,7 @@ public class MovingPlatform : MonoBehaviour, IEntangleable
 
     private void FixedUpdate()
     {
+        if (!_Active) return;
         if (_activateOnStep && !_started) return;
         // checks if point is reached
         float distance = Vector3.Distance(transform.position, NextPoint);
@@ -105,6 +120,12 @@ public class MovingPlatform : MonoBehaviour, IEntangleable
     public void Activate()
     {
         _started = true;
+        _Active = true;
+    }
+    public void Deactivate()
+    {
+        _started = false;
+        _Active = false;
     }
 
     private void OnDrawGizmosSelected()
@@ -123,14 +144,21 @@ public class MovingPlatform : MonoBehaviour, IEntangleable
         }
     }
 
+    private void ActivateEntanglementSelector(OnModeChange @event)
+    {
+        m_entanglementSelector.SetActive(@event.Mode == PlayerMode.Entangle);
+    }
+
     public void OnEntanglementSelected()
     {
-        throw new NotImplementedException();
+        SpriteRenderer spriteRenderer = m_entanglementSelector.GetComponent<SpriteRenderer>();
+        spriteRenderer.color = Color.green;
     }
 
     public void OnEntanglementDeselected()
     {
-        throw new NotImplementedException();
+        SpriteRenderer spriteRenderer = m_entanglementSelector.GetComponent<SpriteRenderer>();
+        spriteRenderer.color = Color.white;
     }
 
     public void OnEntangle(IEntangleable other)

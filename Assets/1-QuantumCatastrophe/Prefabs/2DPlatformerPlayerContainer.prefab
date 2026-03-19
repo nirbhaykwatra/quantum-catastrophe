@@ -363,6 +363,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   m_playerData: {fileID: 11400000, guid: 8f7055de7f364f54dbb222cc499e8a98, type: 2}
+  m_selectionRadius: 5
+  m_entanglableMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &3518850295095940170
 MonoBehaviour:
   m_ObjectHideFlags: 0
