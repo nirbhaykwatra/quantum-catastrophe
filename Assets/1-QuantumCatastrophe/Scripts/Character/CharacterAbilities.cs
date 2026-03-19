@@ -210,8 +210,8 @@ public class CharacterAbilities : MonoBehaviour
 
     private void CommitEntanglement()
     {
-        m_firstTarget.OnEntangle(m_secondTarget);
-        m_secondTarget.OnEntangle(m_firstTarget);
+        m_firstTarget.OnEntangle(m_secondTarget, 0);
+        m_secondTarget.OnEntangle(m_firstTarget, 1);
         m_pairs.Add((m_firstTarget, m_secondTarget));
         CancelSelection();
     }

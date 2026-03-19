@@ -39,6 +39,8 @@ public class MovingPlatform : MonoBehaviour, IEntangleable
     
     private EventBinding<OnModeChange> m_onModeChange;
     private bool m_entangled = false;
+    private int m_entanglementOrder = -1;
+    private IEntangleable m_entangledObject = null;
 
     private void OnValidate()
     {
@@ -124,7 +126,16 @@ public class MovingPlatform : MonoBehaviour, IEntangleable
 
     private void MovePlatformEntangled()
     {
-        
+        if (m_entanglementOrder == -1) return;
+        switch (m_entanglementOrder)
+        {
+            case 0:
+                MovePlatform();
+                break;
+            case 1:
+                _rb2D.linearVelocity = m_entangledObject.GetVelocity();
+                break;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -179,13 +190,27 @@ public class MovingPlatform : MonoBehaviour, IEntangleable
         spriteRenderer.color = Color.white;
     }
 
-    public void OnEntangle(IEntangleable other)
+    public void OnEntangle(IEntangleable other, int order)
     {
         m_entangled = true;
+        m_entanglementOrder = order;
+        m_entangledObject = other;
+        SpriteRenderer spriteRenderer = m_entanglementSelector.GetComponent<SpriteRenderer>();
+        spriteRenderer.color = Color.red;
     }
 
     public void OnEntanglementBroken()
     {
         m_entangled = false;
+        m_entanglementOrder = -1;
+        m_entangledObject = null;
+        _rb2D.linearVelocity = Vector2.zero;
+        SpriteRenderer spriteRenderer = m_entanglementSelector.GetComponent<SpriteRenderer>();
+        spriteRenderer.color = Color.white;
+    }
+
+    public Vector2 GetVelocity()
+    {
+        return _rb2D.linearVelocity;
     }
 }
