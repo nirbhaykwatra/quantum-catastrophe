@@ -38,6 +38,7 @@ public class MovingPlatform : MonoBehaviour, IEntangleable
     private GlobalEventBus m_globalEventBus;
     
     private EventBinding<OnModeChange> m_onModeChange;
+    private bool m_entangled = false;
 
     private void OnValidate()
     {
@@ -78,6 +79,18 @@ public class MovingPlatform : MonoBehaviour, IEntangleable
 
     private void FixedUpdate()
     {
+        if (m_entangled)
+        {
+            MovePlatformEntangled();
+        }
+        else
+        {
+            MovePlatform();
+        }
+    }
+
+    private void MovePlatform()
+    {
         if (!_Active) return;
         if (_activateOnStep && !_started) return;
         // checks if point is reached
@@ -107,6 +120,11 @@ public class MovingPlatform : MonoBehaviour, IEntangleable
 #endif
                 break;
         }
+    }
+
+    private void MovePlatformEntangled()
+    {
+        
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -163,11 +181,11 @@ public class MovingPlatform : MonoBehaviour, IEntangleable
 
     public void OnEntangle(IEntangleable other)
     {
-        throw new NotImplementedException();
+        m_entangled = true;
     }
 
     public void OnEntanglementBroken()
     {
-        throw new NotImplementedException();
+        m_entangled = false;
     }
 }
