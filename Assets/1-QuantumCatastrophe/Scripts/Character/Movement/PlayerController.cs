@@ -97,6 +97,8 @@ public class PlayerController : MonoBehaviour
     {
         m_globalEventBus.Raise(new OnClickEntangle());
     }
+    
+    // TODO: Add control to disentangle selected object
 
     protected virtual void Update()
     {
