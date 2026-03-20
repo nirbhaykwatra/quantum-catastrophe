@@ -96,7 +96,7 @@ public class PlayerController : MonoBehaviour
         Abilities?.TrySelect(Mouse.current.position.ReadValue());
     }
     
-    // TODO: Add control to disentangle selected object
+    // TODO: Add keybind to disentangle selected object
 
     protected virtual void Update()
     {

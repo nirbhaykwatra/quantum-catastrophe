@@ -172,6 +172,9 @@ public class CharacterAbilities : MonoBehaviour
         }
     }
     
+    // TODO:
+    // Debug disentanglement and selection states
+    // Try using Dict instead of List for storing entangled pairs 
     public void TryEntangle(IEntangleable target)
     {
         if (!m_entanglementActive || target == null) return;
@@ -204,6 +207,11 @@ public class CharacterAbilities : MonoBehaviour
         {
             m_secondTarget = target;
             m_secondTarget.OnEntanglementSelected();
+            if (m_pairs.Contains((m_firstTarget, m_secondTarget)))
+            {
+                CommitDisentanglement(m_firstTarget);
+                return;
+            }
             CommitEntanglement();
         }
     }
@@ -214,6 +222,19 @@ public class CharacterAbilities : MonoBehaviour
         m_secondTarget.OnEntangle(m_firstTarget, 1);
         m_pairs.Add((m_firstTarget, m_secondTarget));
         CancelSelection();
+    }
+    
+    private void CommitDisentanglement(IEntangleable target)
+    {
+        if (!m_entanglementActive) return;
+        if (m_pairs.Count == 0) return;
+        (IEntangleable first, IEntangleable second) = m_pairs[0];
+        if (target == first || target == second)
+        {
+            m_pairs.RemoveAt(0);
+            first.OnEntanglementBroken();
+            second.OnEntanglementBroken();
+        }
     }
 
     public void CancelSelection()
