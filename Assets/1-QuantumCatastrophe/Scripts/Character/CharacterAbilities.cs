@@ -2,6 +2,7 @@ using System.Collections;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using System.Collections.Generic;
+using System.Linq;
 using QC.Utilities.EventBusSystem;
 using QC.Utilities.ServiceLocation;
 
@@ -168,6 +169,7 @@ public class CharacterAbilities : MonoBehaviour
         if (hit != null)
         {
             IEntangleable entangleable = hit.GetComponent<IEntangleable>();
+            if (entangleable == null) return;
             TryEntangle(entangleable);
         }
     }
@@ -198,6 +200,10 @@ public class CharacterAbilities : MonoBehaviour
         if (m_firstTarget == null)
         {
             m_firstTarget = target;
+            if (m_pairs.Any(t => t.Item1 == m_firstTarget))
+            {
+                CommitDisentanglement(m_firstTarget);
+            }
             m_firstTarget.OnEntanglementSelected();
             return;
         }
@@ -207,6 +213,10 @@ public class CharacterAbilities : MonoBehaviour
         {
             m_secondTarget = target;
             m_secondTarget.OnEntanglementSelected();
+            if (m_pairs.Any(t => t.Item1 == m_secondTarget))
+            {
+                CommitDisentanglement(m_secondTarget);
+            }
             if (m_pairs.Contains((m_firstTarget, m_secondTarget)))
             {
                 CommitDisentanglement(m_firstTarget);
@@ -222,6 +232,7 @@ public class CharacterAbilities : MonoBehaviour
         m_secondTarget.OnEntangle(m_firstTarget, 1);
         m_pairs.Add((m_firstTarget, m_secondTarget));
         CancelSelection();
+        ChangePlayerMode(PlayerMode.Normal);
     }
     
     private void CommitDisentanglement(IEntangleable target)
@@ -234,6 +245,9 @@ public class CharacterAbilities : MonoBehaviour
             m_pairs.RemoveAt(0);
             first.OnEntanglementBroken();
             second.OnEntanglementBroken();
+            CancelSelection();
+            ChangePlayerMode(PlayerMode.Normal);
+            return;
         }
     }
 
