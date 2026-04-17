@@ -92,14 +92,9 @@ public class CharacterAbilities : MonoBehaviour
     private PlayerMode m_playerMode;
     [SerializeField] private float m_selectionRadius = 5f;
     [SerializeField] private LayerMask m_entanglableMask;
-
-    private IEntangleable m_firstTarget;
-    private IEntangleable m_secondTarget;
+    
     private bool m_entanglementActive;
-
-    // Currently linked pairs
-    private readonly List<(IEntangleable, IEntangleable)> m_pairs = new();
-
+    
     private void OnEnable()
     {
         m_globalEventBus = ServiceLocator.Global.Get<EventBusRegistry>().Get<GlobalEventBus>();
@@ -140,128 +135,6 @@ public class CharacterAbilities : MonoBehaviour
             }
         }
     }
-
-    #region Entanglement
-
-    public PlayerMode GetPlayerMode() => m_playerMode;
-
-    public void ChangePlayerMode(PlayerMode mode)
-    {
-        m_playerMode = mode;
-        m_globalEventBus.Raise(new OnModeChange { Mode = mode });
-        m_entanglementActive = mode == PlayerMode.Entangle;
-        if (m_entanglementActive)
-        {
-            Cursor.lockState = CursorLockMode.None;
-        }
-        else
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-            CancelSelection();
-        }
-        Debug.Log($"Player mode changed to {mode}");
-    }
-
-    public void TrySelect(Vector2 position)
-    {
-        Vector2 mousePos = Camera.main.ScreenToWorldPoint(position);
-        Collider2D hit = Physics2D.OverlapPoint(mousePos);
-        if (hit != null)
-        {
-            IEntangleable entangleable = hit.GetComponent<IEntangleable>();
-            if (entangleable == null) return;
-            TryEntangle(entangleable);
-        }
-    }
-    
-    // TODO:
-    // Debug disentanglement and selection states
-    // Try using Dict instead of List for storing entangled pairs 
-    public void TryEntangle(IEntangleable target)
-    {
-        if (!m_entanglementActive || target == null) return;
-
-        // Toggle off first target
-        if (target == m_firstTarget)
-        {
-            CancelSelection();
-            return;
-        }
-
-        // Toggle off second target
-        if (target == m_secondTarget)
-        {
-            m_secondTarget.OnEntanglementDeselected();
-            m_secondTarget = null;
-            return;
-        }
-
-        // Select first target
-        if (m_firstTarget == null)
-        {
-            m_firstTarget = target;
-            if (m_pairs.Any(t => t.Item1 == m_firstTarget))
-            {
-                CommitDisentanglement(m_firstTarget);
-            }
-            m_firstTarget.OnEntanglementSelected();
-            return;
-        }
-
-        // Select second target and commit
-        if (m_secondTarget == null)
-        {
-            m_secondTarget = target;
-            m_secondTarget.OnEntanglementSelected();
-            if (m_pairs.Any(t => t.Item1 == m_secondTarget))
-            {
-                CommitDisentanglement(m_secondTarget);
-            }
-            if (m_pairs.Contains((m_firstTarget, m_secondTarget)))
-            {
-                CommitDisentanglement(m_firstTarget);
-                return;
-            }
-            CommitEntanglement();
-        }
-    }
-
-    private void CommitEntanglement()
-    {
-        m_firstTarget.OnEntangle(m_secondTarget, 0);
-        m_secondTarget.OnEntangle(m_firstTarget, 1);
-        m_pairs.Add((m_firstTarget, m_secondTarget));
-        CancelSelection();
-        ChangePlayerMode(PlayerMode.Normal);
-    }
-    
-    private void CommitDisentanglement(IEntangleable target)
-    {
-        if (!m_entanglementActive) return;
-        if (m_pairs.Count == 0) return;
-        (IEntangleable first, IEntangleable second) = m_pairs[0];
-        if (target == first || target == second)
-        {
-            m_pairs.RemoveAt(0);
-            first.OnEntanglementBroken();
-            second.OnEntanglementBroken();
-            CancelSelection();
-            ChangePlayerMode(PlayerMode.Normal);
-            return;
-        }
-    }
-
-    public void CancelSelection()
-    {
-        m_firstTarget?.OnEntanglementDeselected();
-        m_secondTarget?.OnEntanglementDeselected();
-        m_firstTarget = null;
-        m_secondTarget = null;
-    }
-
-    #endregion
-    
-    
 
     #region Dashing
     

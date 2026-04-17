@@ -37,11 +37,6 @@ public class PlayerController : MonoBehaviour
         if(Inventory == null) Inventory = GetComponent<CharacterInventory>();
         if(m_playerInput == null) m_playerInput = GetComponent<PlayerInput>();
     }
-    
-    protected virtual void OnEnable()
-    {
-        m_globalEventBus = ServiceLocator.Global.Get<EventBusRegistry>().Get<GlobalEventBus>();
-    }
 
     protected virtual void Awake()
     {
@@ -51,6 +46,15 @@ public class PlayerController : MonoBehaviour
         if(Interaction == null) Interaction = GetComponent<CharacterInteraction>();
         if(Inventory == null) Inventory = GetComponent<CharacterInventory>();
         if(m_playerInput == null) m_playerInput = GetComponent<PlayerInput>();
+    }
+
+    private void OnEnable()
+    {
+        m_globalEventBus = ServiceLocator.Global.Get<EventBusRegistry>().Get<GlobalEventBus>();
+    }
+
+    private void Start()
+    {
     }
 
     public virtual void OnMove(InputValue value)
@@ -83,20 +87,16 @@ public class PlayerController : MonoBehaviour
             Interaction.Interact();
         }
     }
-    
+
     public virtual void OnModeChange(InputValue value)
-    {
-        if (Abilities == null || !Abilities.EnableEntanglementMode) return;
-        PlayerMode mode = Abilities.GetPlayerMode() == PlayerMode.Normal ? PlayerMode.Entangle : PlayerMode.Normal;
-        Abilities?.ChangePlayerMode(mode);
+    { 
+        m_globalEventBus.Raise(new OnToggleEntanglement());
     }
 
     public virtual void OnEntangleSelect(InputValue value)
     {
-        Abilities?.TrySelect(Mouse.current.position.ReadValue());
+        m_globalEventBus.Raise(new OnClickEntangle());
     }
-    
-    // TODO: Add keybind to disentangle selected object
 
     protected virtual void Update()
     {
@@ -123,7 +123,6 @@ public class PlayerController : MonoBehaviour
         }
         
     }
-
     public void DisableMovement(float timer)
     {
         m_movementDisabled = true;

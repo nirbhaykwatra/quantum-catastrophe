@@ -422,7 +422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterHealth
   m_playerData: {fileID: 11400000, guid: 8f7055de7f364f54dbb222cc499e8a98, type: 2}
   OnDeathEvent: {fileID: 11400000, guid: 52f3803c268f9a94f968014ddbd49f70, type: 2}
-  OnRespawnEvent: {fileID: 0}
+  OnRespawnEvent: {fileID: 11400000, guid: b47df65d42b6fce45975c1b4d9475721, type: 2}
   MaxHealth: 5
   DamageCooldown: 1
   <Health>k__BackingField: 0
@@ -440,7 +440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterSpawn
   SpawnAtLevelStart: {x: 0, y: 0, z: 0}
   SpawnFromCheckpoint: 1
-  OnRespawn: {fileID: 0}
+  OnRespawn: {fileID: 11400000, guid: b47df65d42b6fce45975c1b4d9475721, type: 2}
 --- !u!1 &7765261338290157645
 GameObject:
   m_ObjectHideFlags: 0

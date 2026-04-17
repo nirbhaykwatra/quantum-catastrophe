@@ -6,7 +6,7 @@ using QC.Utilities.EventBusSystem;
 using QC.Utilities.ServiceLocation;
 
 // moves platforms using Rigidbodies
-public class MovingPlatform : MonoBehaviour, IEntangleable
+public class MovingPlatform : MonoBehaviour
 {
     private enum PhysicsMode
     {
@@ -35,23 +35,9 @@ public class MovingPlatform : MonoBehaviour, IEntangleable
     private Rigidbody _rb3D;
     private BoxCollider2D _collider2D;
     private bool _started = false;
-    private GlobalEventBus m_globalEventBus;
-    
-    private EventBinding<OnModeChange> m_onModeChange;
-    private bool m_entangled = false;
-    private int m_entanglementOrder = -1;
-    private IEntangleable m_entangledObject = null;
-
     private void OnValidate()
     {
         _collider2D = GetComponent<BoxCollider2D>();
-    }
-
-    private void OnEnable()
-    {
-        m_globalEventBus = ServiceLocator.Global.Get<EventBusRegistry>().Get<GlobalEventBus>();
-        m_onModeChange = new EventBinding<OnModeChange>(ActivateEntanglementSelector);
-        m_globalEventBus.Register(m_onModeChange);
     }
 
     private void Awake()
@@ -81,14 +67,7 @@ public class MovingPlatform : MonoBehaviour, IEntangleable
 
     private void FixedUpdate()
     {
-        if (m_entangled)
-        {
-            MovePlatformEntangled();
-        }
-        else
-        {
-            MovePlatform();
-        }
+        MovePlatform();
     }
 
     private void MovePlatform()
@@ -120,20 +99,6 @@ public class MovingPlatform : MonoBehaviour, IEntangleable
 #else
                 _rb2D.velocity = velocity;
 #endif
-                break;
-        }
-    }
-
-    private void MovePlatformEntangled()
-    {
-        if (m_entanglementOrder == -1) return;
-        switch (m_entanglementOrder)
-        {
-            case 0:
-                MovePlatform();
-                break;
-            case 1:
-                _rb2D.linearVelocity = m_entangledObject.GetVelocity();
                 break;
         }
     }
@@ -171,46 +136,5 @@ public class MovingPlatform : MonoBehaviour, IEntangleable
             Gizmos.DrawWireCube(point, _collider2D.size);
             Gizmos.DrawLine(point, nextPoint);
         }
-    }
-
-    private void ActivateEntanglementSelector(OnModeChange @event)
-    {
-        m_entanglementSelector.SetActive(@event.Mode == PlayerMode.Entangle);
-    }
-
-    public void OnEntanglementSelected()
-    {
-        SpriteRenderer spriteRenderer = m_entanglementSelector.GetComponent<SpriteRenderer>();
-        spriteRenderer.color = Color.green;
-    }
-
-    public void OnEntanglementDeselected()
-    {
-        SpriteRenderer spriteRenderer = m_entanglementSelector.GetComponent<SpriteRenderer>();
-        spriteRenderer.color = Color.white;
-    }
-
-    public void OnEntangle(IEntangleable other, int order)
-    {
-        m_entangled = true;
-        m_entanglementOrder = order;
-        m_entangledObject = other;
-        SpriteRenderer spriteRenderer = m_entanglementSelector.GetComponent<SpriteRenderer>();
-        spriteRenderer.color = Color.red;
-    }
-
-    public void OnEntanglementBroken()
-    {
-        m_entangled = false;
-        m_entanglementOrder = -1;
-        m_entangledObject = null;
-        _rb2D.linearVelocity = Vector2.zero;
-        SpriteRenderer spriteRenderer = m_entanglementSelector.GetComponent<SpriteRenderer>();
-        spriteRenderer.color = Color.white;
-    }
-
-    public Vector2 GetVelocity()
-    {
-        return _rb2D.linearVelocity;
     }
 }
