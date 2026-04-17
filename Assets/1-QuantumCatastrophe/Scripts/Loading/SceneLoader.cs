@@ -26,7 +26,7 @@ public class SceneLoader : MonoBehaviour
     {
         foreach (string b in banks)
         {
-#if UNITY_WEBGL
+#if UNITY_WEBGL && !UNITY_EDITOR
             FMODUnity.RuntimeManager.LoadBank(b, bankFolderURL, true);
 #else
             FMODUnity.RuntimeManager.LoadBank(b, true);
