@@ -37,11 +37,6 @@ public class PlayerController : MonoBehaviour
         if(Inventory == null) Inventory = GetComponent<CharacterInventory>();
         if(m_playerInput == null) m_playerInput = GetComponent<PlayerInput>();
     }
-    
-    protected virtual void OnEnable()
-    {
-        m_globalEventBus = ServiceLocator.Global.Get<EventBusRegistry>().Get<GlobalEventBus>();
-    }
 
     protected virtual void Awake()
     {
@@ -102,8 +97,6 @@ public class PlayerController : MonoBehaviour
     {
         m_globalEventBus.Raise(new OnClickEntangle());
     }
-    
-    // TODO: Add keybind to disentangle selected object
 
     protected virtual void Update()
     {
