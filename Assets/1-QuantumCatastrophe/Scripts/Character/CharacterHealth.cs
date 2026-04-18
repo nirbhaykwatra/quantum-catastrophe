@@ -19,14 +19,14 @@ public class CharacterHealth : MonoBehaviour
     public int MaxHealthValue => MaxHealth;
     public bool IsDead => Health <= 0;
     
-    private GlobalEventBus m_eventBus;
+    private UIEventBus m_eventBus;
 
     private bool m_wasDamaged;
     private float m_timer;
 
     private void OnEnable()
     {
-        m_eventBus = ServiceLocator.Global.Get<EventBusRegistry>().Get<GlobalEventBus>();
+        m_eventBus = ServiceLocator.Global.Get<EventBusRegistry>().Get<UIEventBus>();
     }
 
     private void Awake()
