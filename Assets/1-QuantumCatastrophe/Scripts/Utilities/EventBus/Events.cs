@@ -9,7 +9,7 @@ namespace QC.Utilities.EventBusSystem
     public interface IEvent { }
     
     // Concrete events
-    public struct OnModeChange : IEvent
+    public struct OnModeChanged : IEvent
     {
         public PlayerMode Mode;
     }

@@ -140,7 +140,7 @@ namespace QC.Systems.Entanglement
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
 
-            m_globalEventBus.Raise(new OnModeChange { Mode = PlayerMode.Entangle });
+            m_globalEventBus.Raise(new OnModeChanged { Mode = PlayerMode.Entangle });
         }
 
         private void ExitEntanglementMode()
@@ -157,7 +157,7 @@ namespace QC.Systems.Entanglement
             Cursor.lockState = m_previousCursorLockMode;
             Cursor.visible = m_previousCursorVisible;
 
-            m_globalEventBus.Raise(new OnModeChange { Mode = PlayerMode.Normal });
+            m_globalEventBus.Raise(new OnModeChanged { Mode = PlayerMode.Normal });
         }
 
         // ── Selection flow ────────────────────────────────────────────────────
