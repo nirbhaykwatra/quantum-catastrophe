@@ -7,12 +7,20 @@ public class EnergyBarrier : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        AddForceInDashDirection(other);
+        if (other.gameObject.GetComponent<CharacterAbilities>() != null)
+        {
+            if (!other.gameObject.GetComponent<CharacterAbilities>().EnableTunnelingBarriers) return;
+            AddForceInDashDirection(other);
+        }
     }
     
     private void OnTriggerExit2D(Collider2D other)
     {
-        ResetDashAndJump(other);
+        if (other.gameObject.GetComponent<CharacterAbilities>() != null)
+        {
+            if (!other.gameObject.GetComponent<CharacterAbilities>().EnableTunnelingBarriers) return;
+            ResetDashAndJump(other);
+        }
     }
 
     private void ResetDashAndJump(Collider2D other)
