@@ -77,7 +77,9 @@ namespace QC.Systems.Entanglement
             if (m_highlightObject != null)
             {
                 m_highlightObject.SetActive(true);
-                m_highlightObject.GetComponent<SpriteRenderer>().color = Color.red;
+                SpriteRenderer spriteRenderer = m_highlightObject.GetComponentInChildren<SpriteRenderer>();
+                if (spriteRenderer != null)
+                    spriteRenderer.color = Color.red;
             }
         }
 
