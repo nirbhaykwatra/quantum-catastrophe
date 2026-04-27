@@ -6,7 +6,7 @@ namespace QC.Utilities.ServiceLocation
     /// Scene-specific service locator bootstrapper that is destroyed when the scene unloads.
     /// Use this for services that should only exist within a particular scene's lifetime.
     /// </summary>
-    [AddComponentMenu("SCP/ServiceLocator/ServiceLocator Scene")]
+    [AddComponentMenu("QC/ServiceLocator/ServiceLocator Scene")]
     public class ServiceLocatorScene : Bootstrapper
     {
         /// <summary>

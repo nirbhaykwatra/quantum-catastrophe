@@ -110,6 +110,8 @@ public class CharacterMovement2D : CharacterMovementBase
             Jump();
         }
     }
+    
+    public void ResetJumpCount() => m_jumpCount = 0;
 
     public void TryWallJump()
     {

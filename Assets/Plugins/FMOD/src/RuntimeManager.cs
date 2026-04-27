@@ -922,6 +922,11 @@ retry:
             LoadBank(bankName, loadSamples, bankName);
         }
 
+        public static void LoadBank(string bankName, string bankFolder, bool loadSamples = false)
+        {
+            LoadBank(bankName, bankFolder, loadSamples, bankName);
+        }
+
         private static void LoadBank(string bankName, bool loadSamples, string bankId)
         {
             if (Instance.loadedBanks.ContainsKey(bankId))
@@ -931,6 +936,58 @@ retry:
             else
             {
                 string bankFolder = Instance.currentPlatform.GetBankFolder();
+
+#if !UNITY_EDITOR
+                if (!string.IsNullOrEmpty(Settings.Instance.TargetSubFolder))
+                {
+                    bankFolder = RuntimeUtils.GetCommonPlatformPath(Path.Combine(bankFolder, Settings.Instance.TargetSubFolder));
+                }
+#endif
+
+                const string BankExtension = ".bank";
+
+                string bankPath;
+
+                if (System.IO.Path.GetExtension(bankName) != BankExtension)
+                {
+                    bankPath = string.Format("{0}/{1}{2}", bankFolder, bankName, BankExtension);
+                }
+                else
+                {
+                    bankPath = string.Format("{0}/{1}", bankFolder, bankName);
+                }
+                Instance.loadingBanksRef++;
+#if UNITY_ANDROID && !UNITY_EDITOR
+                if (Settings.Instance.AndroidUseOBB)
+                {
+                    Instance.StartCoroutine(Instance.loadFromWeb(bankPath, bankName, loadSamples));
+                }
+                else
+#elif UNITY_WEBGL && !UNITY_EDITOR
+                if (true)
+                {
+                    Instance.StartCoroutine(Instance.loadFromWeb(bankPath, bankName, loadSamples));
+                }
+                else
+#endif // (UNITY_ANDROID || UNITY_WEBGL) && !UNITY_EDITOR
+                {
+                    LoadedBank loadedBank = new LoadedBank();
+                    FMOD.RESULT loadResult = Instance.studioSystem.loadBankFile(bankPath, FMOD.Studio.LOAD_BANK_FLAGS.NORMAL, out loadedBank.Bank);
+                    Instance.RegisterLoadedBank(loadedBank, bankPath, bankId, loadSamples, loadResult);
+                    Instance.loadingBanksRef--;
+                }
+            }
+
+        }
+        
+        private static void LoadBank(string bankName, string bankFolder, bool loadSamples, string bankId)
+        {
+            if (Instance.loadedBanks.ContainsKey(bankId))
+            {
+                ReferenceLoadedBank(bankId, loadSamples);
+            }
+            else
+            {
 
 #if !UNITY_EDITOR
                 if (!string.IsNullOrEmpty(Settings.Instance.TargetSubFolder))

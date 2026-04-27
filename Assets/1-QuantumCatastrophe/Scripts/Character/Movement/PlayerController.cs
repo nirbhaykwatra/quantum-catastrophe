@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using QC.Utilities.EventBusSystem;
+using QC.Utilities.ServiceLocation;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.InputSystem;
@@ -20,6 +22,7 @@ public class PlayerController : MonoBehaviour
     [field: SerializeField] protected CharacterInventory Inventory { get; set; }
     
     private PlayerInput m_playerInput;
+    private GlobalEventBus m_globalEventBus;
 
     protected Vector2 MoveInput { get; set; }
     
@@ -43,6 +46,15 @@ public class PlayerController : MonoBehaviour
         if(Interaction == null) Interaction = GetComponent<CharacterInteraction>();
         if(Inventory == null) Inventory = GetComponent<CharacterInventory>();
         if(m_playerInput == null) m_playerInput = GetComponent<PlayerInput>();
+    }
+
+    private void OnEnable()
+    {
+        m_globalEventBus = ServiceLocator.Global.Get<EventBusRegistry>().Get<GlobalEventBus>();
+    }
+
+    private void Start()
+    {
     }
 
     public virtual void OnMove(InputValue value)
@@ -76,6 +88,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public virtual void OnModeChange(InputValue value)
+    { 
+        m_globalEventBus.Raise(new OnToggleEntanglement());
+    }
+
+    public virtual void OnEntangleSelect(InputValue value)
+    {
+        m_globalEventBus.Raise(new OnClickEntangle());
+    }
+    
+    // TODO: Add control to disentangle selected object
+
     protected virtual void Update()
     {
         if (Movement == null) return;
@@ -101,7 +125,6 @@ public class PlayerController : MonoBehaviour
         }
         
     }
-
     public void DisableMovement(float timer)
     {
         m_movementDisabled = true;

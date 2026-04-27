@@ -7,6 +7,38 @@ public class EnergyBarrier : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.gameObject.GetComponent<CharacterAbilities>() != null)
+        {
+            if (!other.gameObject.GetComponent<CharacterAbilities>().EnableTunnelingBarriers) return;
+            AddForceInDashDirection(other);
+        }
+    }
+    
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.GetComponent<CharacterAbilities>() != null)
+        {
+            if (!other.gameObject.GetComponent<CharacterAbilities>().EnableTunnelingBarriers) return;
+            ResetDashAndJump(other);
+        }
+    }
+
+    private void ResetDashAndJump(Collider2D other)
+    {
+        PlayerController player = other.gameObject.GetComponent<PlayerController>();
+        if (player)
+        {
+            m_collider.SetActive(true);
+            CharacterAbilities abilities = player.GetComponent<CharacterAbilities>();
+            CharacterMovement2D movement = player.GetComponent<CharacterMovement2D>();
+            movement.ResetJumpCount();
+            abilities.RechargeDashCooldown();
+            abilities.RechargeAirDashCooldown();
+        }
+    }
+
+    private void AddForceInDashDirection(Collider2D other)
+    {
         PlayerController player = other.gameObject.GetComponent<PlayerController>();
         if (player)
         {
@@ -18,19 +50,6 @@ public class EnergyBarrier : MonoBehaviour
                 m_collider.SetActive(false);
                 rb.AddForce(abilities.DashDirection * 50f, ForceMode2D.Impulse);
             }
-            
-        }
-    }
-    
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        PlayerController player = other.gameObject.GetComponent<PlayerController>();
-        if (player)
-        {
-            m_collider.SetActive(true);
-            CharacterAbilities abilities = player.GetComponent<CharacterAbilities>();
-            abilities.RechargeDashCooldown();
-            abilities.RechargeAirDashCooldown();
         }
     }
 }
