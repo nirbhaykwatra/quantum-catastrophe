@@ -1,0 +1,13 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/1-QuantumCatastrophe/UI/MainMenu/MainMenu.uss?fileID=7433441132597879392&amp;guid=78aea880adcc8d3478faf8ea735936ac&amp;type=3#MainMenu"/>
+    <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement name="VisualElement" style="justify-content: center; width: 70%;">
+            <ui:Image source="project://database/Assets/1-QuantumCatastrophe/Art/UI/qc-logo.png?fileID=2800000&amp;guid=da592aa0a883ab9459b5148a79ae4f5e&amp;type=3#qc-logo"/>
+        </ui:VisualElement>
+        <ui:VisualElement style="padding-right: 10%; padding-left: 5%; width: 50%; justify-content: center;">
+            <ui:Button text="Select Level" name="Button" class="qc-menu-button"/>
+            <ui:Button text="Options" class="qc-menu-button"/>
+            <ui:Button text="Credits" class="qc-menu-button"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
