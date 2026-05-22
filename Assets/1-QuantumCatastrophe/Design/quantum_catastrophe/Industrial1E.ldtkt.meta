@@ -1,0 +1,404 @@
+fileFormatVersion: 2
+guid: 480f3493da539554f8cfca9e794d7618
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: f3268c876daf4890b6af6cd462063137, type: 3}
+  _reimportOnDependencyChange: 1
+  _pixelsPerUnit: 16
+  _overrideTexture: {instanceID: 0}
+  _sprites:
+  - name: Industrial1E_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 96
+      width: 32
+      height: 32
+    spriteID: 78267ce642ab0e043bc89398b039c077
+    spriteOutline:
+    - shape:
+      - {x: 16, y: 16}
+      - {x: -16, y: 16}
+      - {x: -16, y: -12}
+      - {x: -13, y: -16}
+      - {x: 16, y: -16}
+    tessellationDetail: 0
+  - name: Industrial1E_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 96
+      width: 32
+      height: 32
+    spriteID: ac6e27a6a42309f4cae4c9168dab9035
+    spriteOutline:
+    - shape:
+      - {x: 16, y: 16}
+      - {x: -16, y: 16}
+      - {x: -16, y: -16}
+      - {x: 16, y: -16}
+    tessellationDetail: 0
+  - name: Industrial1E_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 96
+      width: 32
+      height: 32
+    spriteID: 8e92501462e4bc94db1e475c0b9b66cb
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial1E_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 96
+      width: 32
+      height: 32
+    spriteID: fb5678146e2fb9544966287e4599952b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial1E_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 96
+      width: 32
+      height: 32
+    spriteID: 41e8f7015e9ea1e4e939e5e44093a466
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial1E_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 96
+      width: 32
+      height: 32
+    spriteID: 52d25042910b79447a916d8c34b5a064
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial1E_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 4dc578b7c97d1df4b936f4f27728dfcc
+    spriteOutline:
+    - shape:
+      - {x: 16, y: 16}
+      - {x: -14, y: 16}
+      - {x: -16, y: 14}
+      - {x: -16, y: -16}
+      - {x: 16, y: -16}
+    tessellationDetail: 0
+  - name: Industrial1E_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 27b0a2cadda9137448990c695a926949
+    spriteOutline:
+    - shape:
+      - {x: 16, y: 16}
+      - {x: -16, y: 16}
+      - {x: -16, y: -16}
+      - {x: 16, y: -16}
+    tessellationDetail: 0
+  - name: Industrial1E_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 64
+      width: 32
+      height: 32
+    spriteID: d5be45e60131a0e418c4080089b0fcf9
+    spriteOutline:
+    - shape:
+      - {x: 16, y: 15}
+      - {x: 14, y: 16}
+      - {x: -16, y: 16}
+      - {x: -16, y: -16}
+      - {x: 16, y: -16}
+    tessellationDetail: 0
+  - name: Industrial1E_9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 62de6d86f682d1542a69d8af267a59c9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial1E_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 0bd8bbd6de8e75b4fa6a285bc2888eef
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial1E_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 64
+      width: 32
+      height: 32
+    spriteID: e996fc6764a104e47b75d1d2608fd15e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial1E_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 32
+      width: 32
+      height: 32
+    spriteID: ec16ed57f4335c94a922092f1c7cba76
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial1E_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 32
+      width: 32
+      height: 32
+    spriteID: b9b39d713fccd4a42957fe5fb62f6783
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial1E_14
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 32
+      width: 32
+      height: 32
+    spriteID: e76c9c78ff947d646b80ce53fc5c6b67
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial1E_15
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 0981e2a7f3de53f4c8a4e84ce6fd09b8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial1E_16
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 32
+      width: 32
+      height: 32
+    spriteID: d80243a219903a448b551d7195aa02e1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial1E_17
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 32
+      width: 32
+      height: 32
+    spriteID: ffff1edc81b03a3419c9a9ae5f20158f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial1E_18
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 02ca1b56c6808a842bb5ddfd8d11598c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial1E_19
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 5e948424046f76c43b4a45eebfa7d42e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial1E_20
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 96481db1b5bfb5e4c9ee55e3b72de84b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial1E_21
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 3aa7d2e1da864c641a9ff8f5a94bcb17
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial1E_22
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 0
+      width: 32
+      height: 32
+    spriteID: f0f3766a29e9e094b8554a895be1edeb
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial1E_23
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 0
+      width: 32
+      height: 32
+    spriteID: f10c90a68f6d1c64e822de9ee4876957
+    spriteOutline: []
+    tessellationDetail: 0
+  _secondaryTextures: []
+  _artifacts: {fileID: -2988177865379244337, guid: 480f3493da539554f8cfca9e794d7618, type: 3}

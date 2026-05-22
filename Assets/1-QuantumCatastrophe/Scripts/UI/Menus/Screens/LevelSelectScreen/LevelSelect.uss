@@ -1,0 +1,35 @@
+.unity-button {
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.qc-menu-button {
+    opacity: 1;
+    -unity-font-definition: url("project://database/Assets/1-QuantumCatastrophe/Art/UI/PressStart2P-Regular.ttf?fileID=12800000&guid=11ac347594b49f542bfef59c17c95999&type=3#PressStart2P-Regular");
+    -unity-font-style: normal;
+    font-size: 39px;
+    -unity-text-align: upper-left;
+    color: rgb(255, 255, 255);
+    background-image: none;
+}
+
+.qc-menu-button:hover {
+    color: rgb(17, 255, 0);
+}
+
+.qc-level-select-item-button {
+    opacity: 1;
+    -unity-font-definition: url("project://database/Assets/1-QuantumCatastrophe/Art/UI/PressStart2P-Regular.ttf?fileID=12800000&guid=11ac347594b49f542bfef59c17c95999&type=3#PressStart2P-Regular");
+    -unity-font-style: normal;
+    font-size: 39px;
+    -unity-text-align: upper-left;
+    color: rgb(255, 255, 255);
+    background-image: none;
+}
+
+.qc-level-select-item-button:hover {
+    color: rgb(17, 255, 0);
+}
