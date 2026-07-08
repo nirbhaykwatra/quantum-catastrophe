@@ -19,14 +19,20 @@ ScriptedImporter:
   _createLevelBoundsTrigger: 0
   _useParallax: 1
   _scaleEntities: 1
-  _intGridValues: []
+  _intGridValues:
+  - _key: IntGrid_1
+    _asset: {instanceID: 0}
   _entities:
   - _key: PlayerStart
-    _asset: {instanceID: 0}
+    _asset: {fileID: 7765261338290157645, guid: f8162405fa32dfb4b83544b4e17c64e1, type: 3}
   _enumGenerate: 0
   _enumPath: 
   _enumNamespace: 
   _useLayerCustomSortingOrders: 0
   _layerCustomSortingOrders:
+  - _ldtkLayerName: Entities
+    _ldtkLayerOrder: 0
+  - _ldtkLayerName: IntGrid
+    _ldtkLayerOrder: -1
   - _ldtkLayerName: Tiles
     _ldtkLayerOrder: 0
