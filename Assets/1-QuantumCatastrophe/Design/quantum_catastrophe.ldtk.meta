@@ -10,9 +10,9 @@ ScriptedImporter:
   script: {fileID: 11500000, guid: aaa16bfc62c086f4fb45da87b6acf9b1, type: 3}
   _reimportOnDependencyChange: 1
   _jsonFile: {fileID: -164016180542632921, guid: 232bd8b679d8e5c459a70fe4ae8ea67b, type: 3}
-  _pixelsPerUnit: 16
+  _pixelsPerUnit: 32
   _customLevelPrefab: {instanceID: 0}
-  _intGridValueColorsVisible: 0
+  _intGridValueColorsVisible: 1
   _useCompositeCollider: 1
   _geometryType: 0
   _createBackgroundColor: 1
@@ -21,7 +21,7 @@ ScriptedImporter:
   _scaleEntities: 1
   _intGridValues:
   - _key: IntGrid_1
-    _asset: {instanceID: 0}
+    _asset: {fileID: 11400000, guid: 9a892f2d22a38d943a6168bf0541424e, type: 2}
   _entities:
   - _key: PlayerStart
     _asset: {fileID: 7765261338290157645, guid: f8162405fa32dfb4b83544b4e17c64e1, type: 3}
