@@ -22,9 +22,17 @@ ScriptedImporter:
   _intGridValues:
   - _key: IntGrid_1
     _asset: {fileID: 11400000, guid: 9a892f2d22a38d943a6168bf0541424e, type: 2}
+  - _key: IntGrid_2
+    _asset: {fileID: 11400000, guid: 80a06ee23cef808479c1841e404ecec7, type: 2}
   _entities:
   - _key: PlayerStart
     _asset: {fileID: 7765261338290157645, guid: f8162405fa32dfb4b83544b4e17c64e1, type: 3}
+  - _key: Door
+    _asset: {instanceID: 0}
+  - _key: Chest
+    _asset: {instanceID: 0}
+  - _key: Control_Station
+    _asset: {instanceID: 0}
   _enumGenerate: 0
   _enumPath: 
   _enumNamespace: 
@@ -32,7 +40,15 @@ ScriptedImporter:
   _layerCustomSortingOrders:
   - _ldtkLayerName: Entities
     _ldtkLayerOrder: 0
+  - _ldtkLayerName: Ground
+    _ldtkLayerOrder: -2
+  - _ldtkLayerName: Walls
+    _ldtkLayerOrder: -3
+  - _ldtkLayerName: Background_Props
+    _ldtkLayerOrder: -3
+  - _ldtkLayerName: Background
+    _ldtkLayerOrder: -3
+  - _ldtkLayerName: Background_Solid
+    _ldtkLayerOrder: -5
   - _ldtkLayerName: IntGrid
     _ldtkLayerOrder: -1
-  - _ldtkLayerName: Tiles
-    _ldtkLayerOrder: 0

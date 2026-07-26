@@ -1,0 +1,33 @@
+{
+  "Rects": null,
+  "Def": {
+    "__cHei": 4,
+    "__cWid": 6,
+    "cachedPixelData": {
+      "opaqueTiles": "000000001100001000101001",
+      "averageColors": "969b978b77ac79bc78ab78bcf8acf9abf589f79bf8abf79bc479d479f79bf88ac899c7abf89bf8acf69af8acc8aaf013"
+    },
+    "customData": [
+
+    ],
+    "embedAtlas": null,
+    "enumTags": [
+
+    ],
+    "identifier": "Industrial_Tileset_2I",
+    "padding": 0,
+    "pxHei": 128,
+    "pxWid": 192,
+    "relPath": "../Art/Environment/Raw/Industrial_Tileset/tileset_32/Space/Industrial_Tileset_2I.png",
+    "savedSelections": [
+
+    ],
+    "spacing": 0,
+    "tags": [
+
+    ],
+    "tagsSourceEnumUid": null,
+    "tileGridSize": 32,
+    "uid": 17
+  }
+}

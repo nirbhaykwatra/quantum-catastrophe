@@ -347,13 +347,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b504339230f5d84fbfc9fcd132a6c46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterAbilities
-  <EnableDash>k__BackingField: 0
-  <EnableAirDash>k__BackingField: 0
-  <EnableWallJump>k__BackingField: 0
-  <EnableDoubleJump>k__BackingField: 0
-  <EnableEntanglementMode>k__BackingField: 0
-  <EnableTunnelingBarriers>k__BackingField: 0
-  <EnableSuperposition>k__BackingField: 0
+  <EnableDash>k__BackingField: 1
+  <EnableAirDash>k__BackingField: 1
+  <EnableWallJump>k__BackingField: 1
+  <EnableDoubleJump>k__BackingField: 1
+  <EnableEntanglementMode>k__BackingField: 1
+  <EnableTunnelingBarriers>k__BackingField: 1
+  <EnableSuperposition>k__BackingField: 1
   <DashDuration>k__BackingField: 0.2
   <DashDistance>k__BackingField: 4
   <DashCooldown>k__BackingField: 0.5
@@ -361,12 +361,12 @@ MonoBehaviour:
   <DashCheckRadius>k__BackingField: 0.25
   <GroundMask>k__BackingField:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 72
   m_playerData: {fileID: 11400000, guid: 8f7055de7f364f54dbb222cc499e8a98, type: 2}
   m_selectionRadius: 5
   m_entanglableMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
 --- !u!114 &3518850295095940170
 MonoBehaviour:
   m_ObjectHideFlags: 0

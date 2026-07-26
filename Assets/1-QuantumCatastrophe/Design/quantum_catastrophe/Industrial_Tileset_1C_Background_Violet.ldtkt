@@ -1,0 +1,33 @@
+{
+  "Rects": null,
+  "Def": {
+    "__cHei": 4,
+    "__cWid": 6,
+    "cachedPixelData": {
+      "opaqueTiles": "000011010011010001000001",
+      "averageColors": "e76af86ae86ae86af759f659f76af76af76ae86af759f759e659f649e75ae76af759f759e759e659e75ae75af75af759"
+    },
+    "customData": [
+
+    ],
+    "embedAtlas": null,
+    "enumTags": [
+
+    ],
+    "identifier": "Industrial_Tileset_1C_Background_Violet",
+    "padding": 0,
+    "pxHei": 128,
+    "pxWid": 192,
+    "relPath": "../Art/Environment/Raw/Industrial_Tileset/tileset_32/Industrial_Tileset_1C_Background_Violet.png",
+    "savedSelections": [
+
+    ],
+    "spacing": 0,
+    "tags": [
+
+    ],
+    "tagsSourceEnumUid": null,
+    "tileGridSize": 32,
+    "uid": 32
+  }
+}

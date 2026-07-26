@@ -51,11 +51,11 @@ TagManager:
   - name: Foreground
     uniqueID: 1958474081
     locked: 0
-  - name: Props
-    uniqueID: 4249887775
-    locked: 0
   - name: Platforms
     uniqueID: 3945178527
+    locked: 0
+  - name: Props
+    uniqueID: 4249887775
     locked: 0
   - name: Player
     uniqueID: 4145519581

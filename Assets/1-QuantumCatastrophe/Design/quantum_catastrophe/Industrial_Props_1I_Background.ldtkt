@@ -1,0 +1,33 @@
+{
+  "Rects": null,
+  "Def": {
+    "__cHei": 4,
+    "__cWid": 3,
+    "cachedPixelData": {
+      "opaqueTiles": "000000000111",
+      "averageColors": "4559444843387337455a6448344874487448000000000000"
+    },
+    "customData": [
+
+    ],
+    "embedAtlas": null,
+    "enumTags": [
+
+    ],
+    "identifier": "Industrial_Props_1I_Background",
+    "padding": 0,
+    "pxHei": 127,
+    "pxWid": 96,
+    "relPath": "../Art/Environment/Raw/Industrial_Tileset/tileset_32/Space/Industrial_Props_1I_Background.png",
+    "savedSelections": [
+
+    ],
+    "spacing": 0,
+    "tags": [
+
+    ],
+    "tagsSourceEnumUid": null,
+    "tileGridSize": 32,
+    "uid": 21
+  }
+}

@@ -1,0 +1,196 @@
+fileFormatVersion: 2
+guid: db9afd63ec001914f8d7db54116bdb72
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: f3268c876daf4890b6af6cd462063137, type: 3}
+  _reimportOnDependencyChange: 1
+  _pixelsPerUnit: 32
+  _overrideTexture: {instanceID: 0}
+  _sprites:
+  - name: Industrial_Props_1I_Background_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 95
+      width: 32
+      height: 32
+    spriteID: 2e37d4aef1a2635439b2f488f6a32fc4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Props_1I_Background_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 95
+      width: 32
+      height: 32
+    spriteID: b245ffe981a6cef44bb2436fbb23772e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Props_1I_Background_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 95
+      width: 32
+      height: 32
+    spriteID: 5987784bd743fde45a06a4b29011cbcf
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Props_1I_Background_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 63
+      width: 32
+      height: 32
+    spriteID: 73f22513ea9f61d4d8e406cf4e623d1d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Props_1I_Background_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 63
+      width: 32
+      height: 32
+    spriteID: 125c993a6fe303f4c878566482d9c83c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Props_1I_Background_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 63
+      width: 32
+      height: 32
+    spriteID: a0c7199b85ae7fc48950b8a613abd4b1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Props_1I_Background_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 31
+      width: 32
+      height: 32
+    spriteID: 82e6439ef4f6d8144ac4742926429d8c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Props_1I_Background_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 31
+      width: 32
+      height: 32
+    spriteID: a1f8138a3b110674591a88a662eff3a4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Props_1I_Background_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 31
+      width: 32
+      height: 32
+    spriteID: be46b9ee2340d4544a085a9cba708928
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Props_1I_Background_9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 32
+      height: 31
+    spriteID: e92e63a87cd27624ca94326fef8035f5
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Props_1I_Background_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 0
+      width: 32
+      height: 31
+    spriteID: 04e0cee4038d543428f865013fcfbaf5
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Props_1I_Background_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 0
+      width: 32
+      height: 31
+    spriteID: a5d68f8b7507cc84abdc4d91e5dc69e9
+    spriteOutline: []
+    tessellationDetail: 0
+  _secondaryTextures: []
+  _artifacts: {instanceID: 0}

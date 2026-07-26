@@ -1,0 +1,376 @@
+fileFormatVersion: 2
+guid: b9bddfea4f2d43f4c9365c8483074cbb
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: f3268c876daf4890b6af6cd462063137, type: 3}
+  _reimportOnDependencyChange: 1
+  _pixelsPerUnit: 32
+  _overrideTexture: {instanceID: 0}
+  _sprites:
+  - name: Industrial_Tileset_2H_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 96
+      width: 32
+      height: 32
+    spriteID: f84b40d1cce8c484099bb14ad935380d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_2H_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 96
+      width: 32
+      height: 32
+    spriteID: 63f99c4e47342b749bbadbf580fdf9cb
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_2H_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 96
+      width: 32
+      height: 32
+    spriteID: 6f1da1cf92a1b16428939e10dfcec320
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_2H_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 96
+      width: 32
+      height: 32
+    spriteID: c34319372ea1f40499b30e2a6823f7fd
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_2H_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 96
+      width: 32
+      height: 32
+    spriteID: 1c5961d8a439fe543888833234ebe661
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_2H_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 96
+      width: 32
+      height: 32
+    spriteID: b4e3b649aad94404d878417055a951d0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_2H_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 5d13e48bfb128024d936664464983c02
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_2H_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 6cd90d97377bcc1488759e3bab08c68d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_2H_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 64
+      width: 32
+      height: 32
+    spriteID: d5a765ee72ff38a4193c7e593d68b4a9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_2H_9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 3b9d94292887b1a4081fbd02f2d22f9d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_2H_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 64
+      width: 32
+      height: 32
+    spriteID: c49fb939e257a4548953c29bd1fd77f4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_2H_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 82d56d229a5dbf140ac8eebf15ff3b1c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_2H_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 27985693093c4754d8397fbf2c14f2e5
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_2H_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 1af691923e30a1f4fa3ec7e555235d56
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_2H_14
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 32
+      width: 32
+      height: 32
+    spriteID: cd526691b4db86e48a80ca3c0563b31d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_2H_15
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 7479cbb16256cdd428a753eac3a0768f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_2H_16
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 32
+      width: 32
+      height: 32
+    spriteID: ea349c074e1d8ce4db1ef70f9379faa8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_2H_17
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 06a23b7f20a8b5245906b5e4e0c78395
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_2H_18
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 32
+      height: 32
+    spriteID: da8081e7d65c0f74585f8e4f11d77576
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_2H_19
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 3e04a23061889b740a8eefd67e9413f9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_2H_20
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 5bb101c5afa9c1f4da23089372cee6bb
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_2H_21
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 12bd18f8c63e35d4aa7a166dd83c93a6
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_2H_22
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 87149d3be1a59e44ab902c6fffa04117
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_2H_23
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 32ae4061cfb2812488a1d2028950f9f4
+    spriteOutline: []
+    tessellationDetail: 0
+  _secondaryTextures: []
+  _artifacts: {instanceID: 0}
