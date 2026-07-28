@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Door@close
+  m_Name: Door@open
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,19 +21,19 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 514549067, guid: 9189de69b2e936247a4c2729d941c824, type: 3}
+      value: {fileID: -1343591907, guid: 49899285ceeb34f4d9d9cdf1ebdad569, type: 3}
     - time: 0.083333336
-      value: {fileID: 1682415535, guid: 9189de69b2e936247a4c2729d941c824, type: 3}
+      value: {fileID: 243505241, guid: 49899285ceeb34f4d9d9cdf1ebdad569, type: 3}
     - time: 0.16666667
-      value: {fileID: 966978861, guid: 9189de69b2e936247a4c2729d941c824, type: 3}
+      value: {fileID: 1832800950, guid: 49899285ceeb34f4d9d9cdf1ebdad569, type: 3}
     - time: 0.25
-      value: {fileID: 763837106, guid: 9189de69b2e936247a4c2729d941c824, type: 3}
+      value: {fileID: -1705980912, guid: 49899285ceeb34f4d9d9cdf1ebdad569, type: 3}
     - time: 0.33333334
-      value: {fileID: 1613377835, guid: 9189de69b2e936247a4c2729d941c824, type: 3}
+      value: {fileID: -1385000547, guid: 49899285ceeb34f4d9d9cdf1ebdad569, type: 3}
     - time: 0.41666666
-      value: {fileID: -1447504471, guid: 9189de69b2e936247a4c2729d941c824, type: 3}
+      value: {fileID: -769046161, guid: 49899285ceeb34f4d9d9cdf1ebdad569, type: 3}
     - time: 0.5
-      value: {fileID: -7790486547820539382, guid: 9189de69b2e936247a4c2729d941c824, type: 3}
+      value: {fileID: 101463779, guid: 49899285ceeb34f4d9d9cdf1ebdad569, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -56,13 +56,13 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 514549067, guid: 9189de69b2e936247a4c2729d941c824, type: 3}
-    - {fileID: 1682415535, guid: 9189de69b2e936247a4c2729d941c824, type: 3}
-    - {fileID: 966978861, guid: 9189de69b2e936247a4c2729d941c824, type: 3}
-    - {fileID: 763837106, guid: 9189de69b2e936247a4c2729d941c824, type: 3}
-    - {fileID: 1613377835, guid: 9189de69b2e936247a4c2729d941c824, type: 3}
-    - {fileID: -1447504471, guid: 9189de69b2e936247a4c2729d941c824, type: 3}
-    - {fileID: -7790486547820539382, guid: 9189de69b2e936247a4c2729d941c824, type: 3}
+    - {fileID: -1343591907, guid: 49899285ceeb34f4d9d9cdf1ebdad569, type: 3}
+    - {fileID: 243505241, guid: 49899285ceeb34f4d9d9cdf1ebdad569, type: 3}
+    - {fileID: 1832800950, guid: 49899285ceeb34f4d9d9cdf1ebdad569, type: 3}
+    - {fileID: -1705980912, guid: 49899285ceeb34f4d9d9cdf1ebdad569, type: 3}
+    - {fileID: -1385000547, guid: 49899285ceeb34f4d9d9cdf1ebdad569, type: 3}
+    - {fileID: -769046161, guid: 49899285ceeb34f4d9d9cdf1ebdad569, type: 3}
+    - {fileID: 101463779, guid: 49899285ceeb34f4d9d9cdf1ebdad569, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -88,8 +88,8 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.5
-    functionName: OnDoorClose
+  - time: 0.33333334
+    functionName: OnDoorOpen
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
