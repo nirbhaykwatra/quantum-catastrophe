@@ -80,6 +80,18 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4391305518204182550, guid: acd42e337b6d4f94ba4fd546a3f6d794, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 4391305518204182550, guid: acd42e337b6d4f94ba4fd546a3f6d794, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464945290991735458, guid: acd42e337b6d4f94ba4fd546a3f6d794, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 8c747b130eafde147b876c593729cbf7, type: 2}
     - target: {fileID: 7135424089882498293, guid: acd42e337b6d4f94ba4fd546a3f6d794, type: 3}
       propertyPath: m_Size.x
       value: 1.0312867

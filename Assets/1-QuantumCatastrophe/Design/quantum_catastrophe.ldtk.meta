@@ -28,11 +28,11 @@ ScriptedImporter:
   - _key: PlayerStart
     _asset: {fileID: 7765261338290157645, guid: f8162405fa32dfb4b83544b4e17c64e1, type: 3}
   - _key: Door
-    _asset: {fileID: 8624863730972687797, guid: acd42e337b6d4f94ba4fd546a3f6d794, type: 3}
+    _asset: {fileID: 5689500235066935997, guid: d715eb62d35d4474580820e86ebd7f14, type: 3}
   - _key: Chest
     _asset: {instanceID: 0}
   - _key: Control_Station
-    _asset: {instanceID: 0}
+    _asset: {fileID: 2318963219203099725, guid: 335123dc69b3e7b49a4241edd8e28ad2, type: 3}
   _enumGenerate: 0
   _enumPath: 
   _enumNamespace: 
