@@ -14,12 +14,13 @@ public class Door : MonoBehaviour, IUnlockable, IInteractable
     private int m_openTrigger = Animator.StringToHash("Open");
     private int m_closeTrigger = Animator.StringToHash("Close");
     private Animator m_animator;
-    private bool m_isOpen = false;
+    [ShowInInspector] [ReadOnly] private bool m_isOpen = false;
     
     [SerializeField] private Collider2D m_doorCollider;
     [SerializeField] private Collider2D m_doorTrigger;
     
     [SerializeField] private bool m_destroyItemOnUse = true;
+    [SerializeField] private bool m_itemRequiredToUnlock = false;
     
     private TextMeshProUGUI m_interactionText;
     
@@ -48,15 +49,20 @@ public class Door : MonoBehaviour, IUnlockable, IInteractable
         if (interactor.GetComponent<PlayerController>() != null)
         {
             CharacterInventory inventory = interactor.GetComponent<CharacterInventory>();
-            KeyItem requiredItem = (KeyItem)inventory.FindItemByName(RequiredItem.Name);
-            if (inventory.HasItem(requiredItem))
+            if (m_itemRequiredToUnlock)
             {
-                Unlock();
-                if (m_destroyItemOnUse) inventory.RemoveItem(requiredItem);
-                NotificationManager.Instance.RequestNotification($"You used {requiredItem.Name}!", 2f, NotificationType.Success);
-                return;
+                KeyItem requiredItem = (KeyItem)inventory.FindItemByName(RequiredItem.Name);
+                if (inventory.HasItem(requiredItem))
+                {
+                    Unlock();
+                    if (m_destroyItemOnUse) inventory.RemoveItem(requiredItem);
+                    NotificationManager.Instance.RequestNotification($"You used {requiredItem.Name}!", 2f, NotificationType.Success);
+                    return;
+                }
+                NotificationManager.Instance.RequestNotification($"You need {RequiredItem.Name} to open this door!", 2f, NotificationType.Error);
             }
-            NotificationManager.Instance.RequestNotification($"You need {RequiredItem.Name} to open this door!", 2f, NotificationType.Error);
+            Unlock();
+            return;
         }
     }
 
@@ -92,15 +98,11 @@ public class Door : MonoBehaviour, IUnlockable, IInteractable
         }
         IsLocked = true;
     }
-
+    
     public void Open()
     {
         if (IsLocked) return;
-        if (m_isOpen)
-        {
-            Close();
-            return;
-        }
+        if (m_isOpen) return;
         m_isOpen = true;
         m_animator.SetTrigger(m_openTrigger);
     }
@@ -108,13 +110,23 @@ public class Door : MonoBehaviour, IUnlockable, IInteractable
     public void Close()
     {
         if (IsLocked) return;
-        if (!m_isOpen)
-        {
-            Open();           
-            return;           
-        }
+        if (!m_isOpen) return;
         m_isOpen = false;
         m_animator.SetTrigger(m_closeTrigger);
+    }
+
+    [Button]
+    public void ToggleDoor()
+    {
+        if (IsLocked) return;
+        if (m_isOpen)
+        {
+            Close();
+        }
+        else
+        {
+            Open();
+        }
     }
     
     #endregion
