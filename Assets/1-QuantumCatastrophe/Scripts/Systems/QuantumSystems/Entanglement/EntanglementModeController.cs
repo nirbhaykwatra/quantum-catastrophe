@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using QC.Character;
 using QC.Utilities.EventBusSystem;
 using QC.Utilities.ServiceLocation;
 using UnityEngine;

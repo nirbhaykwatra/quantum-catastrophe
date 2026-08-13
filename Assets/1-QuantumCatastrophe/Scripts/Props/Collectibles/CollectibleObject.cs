@@ -1,4 +1,5 @@
 using System;
+using QC.Character;
 using UnityEngine;
 
 public class CollectibleObject : MonoBehaviour

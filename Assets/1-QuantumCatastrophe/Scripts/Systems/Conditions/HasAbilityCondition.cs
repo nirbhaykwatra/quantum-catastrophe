@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using QC.Character;
+using UnityEngine;
 
 [System.Serializable]
 public class AbilityCondition : ICondition

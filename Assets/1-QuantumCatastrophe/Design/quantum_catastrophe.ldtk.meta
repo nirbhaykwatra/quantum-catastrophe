@@ -30,9 +30,15 @@ ScriptedImporter:
   - _key: Door
     _asset: {fileID: 5689500235066935997, guid: d715eb62d35d4474580820e86ebd7f14, type: 3}
   - _key: Chest
-    _asset: {instanceID: 0}
+    _asset: {fileID: 586183526166310154, guid: a323e6936b17f254581e1bf2a37e4cb7, type: 3}
   - _key: Control_Station
     _asset: {fileID: 2318963219203099725, guid: 335123dc69b3e7b49a4241edd8e28ad2, type: 3}
+  - _key: Collectible_Gear
+    _asset: {fileID: 6580342518958723029, guid: f846e7a4425bfd74487c724bdfd7c75f, type: 3}
+  - _key: Collectible_Wrench
+    _asset: {fileID: 7880491606199328274, guid: 34df1a542ea825647ad011c40633acb5, type: 3}
+  - _key: Quantum_Tunneling_Activator
+    _asset: {fileID: 4274899991574725916, guid: ff8ccb9a7835ec94e835ce4a0addb24f, type: 3}
   _enumGenerate: 0
   _enumPath: 
   _enumNamespace: 

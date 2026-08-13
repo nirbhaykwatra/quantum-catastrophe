@@ -1,3 +1,4 @@
+using QC.Character;
 using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
@@ -7,7 +8,10 @@ public enum DoorOperationMode
     Manual,
     Automatic
 }
-public class Door : MonoBehaviour, IUnlockable, IInteractable
+
+namespace QC.Props
+{
+    public class Door : MonoBehaviour, IUnlockable, IInteractable
 {
     public DoorOperationMode OperationMode;
     [SerializeField] private KeyItem RequiredItem;
@@ -175,4 +179,5 @@ public class Door : MonoBehaviour, IUnlockable, IInteractable
         OperationMode = mode;
     }
 
+}
 }

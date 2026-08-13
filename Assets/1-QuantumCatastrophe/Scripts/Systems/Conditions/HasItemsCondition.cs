@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using QC.Character;
 using UnityEngine;
 
 [System.Serializable]
