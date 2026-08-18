@@ -26,9 +26,9 @@ namespace QC.Character
         
         }
 
-        public T FindItem<T>() where T : Loot
+        public Loot FindItem(Loot item)
         {
-            return Inventory.Find(loot => loot is T) as T;
+            return Inventory.Find(loot => loot == item);
         }
 
         public Loot FindItemByName(string itemName)

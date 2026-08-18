@@ -1,0 +1,33 @@
+{
+  "Rects": null,
+  "Def": {
+    "__cHei": 8,
+    "__cWid": 12,
+    "cachedPixelData": {
+      "opaqueTiles": "010011000000010011110000010011110000010011100111100000010011100000000000100000000000111111000000",
+      "averageColors": "f7aaf688f7abf7abf354f46589ab89ab78ab77aa78ab78acf8abf798f8abf7abf455f455f688f688f466f578f79af7abf587f242f688e366f476f466f477f477f466f467e589e478e588f365e588e589f466f354f466f467f466f678f477f011f7a57683a794a7947794a7a5f366f688f255f466f122f243f69476849693969466938683000000000000000000000000f6938684b685d684d684d794000000000000000000000000f7aaf587f7aaf8abf687f8ab000000000000000000000000"
+    },
+    "customData": [
+
+    ],
+    "embedAtlas": null,
+    "enumTags": [
+
+    ],
+    "identifier": "Industrial_Tileset_D_Full",
+    "padding": 0,
+    "pxHei": 256,
+    "pxWid": 384,
+    "relPath": "../Art/Environment/Raw/Industrial_Tileset/tileset_32/Industrial_Tileset_D_Full.png",
+    "savedSelections": [
+
+    ],
+    "spacing": 0,
+    "tags": [
+
+    ],
+    "tagsSourceEnumUid": null,
+    "tileGridSize": 32,
+    "uid": 63
+  }
+}
