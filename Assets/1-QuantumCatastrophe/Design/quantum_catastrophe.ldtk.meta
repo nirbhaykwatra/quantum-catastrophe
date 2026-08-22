@@ -24,6 +24,10 @@ ScriptedImporter:
     _asset: {fileID: 11400000, guid: 9a892f2d22a38d943a6168bf0541424e, type: 2}
   - _key: IntGrid_2
     _asset: {fileID: 11400000, guid: 80a06ee23cef808479c1841e404ecec7, type: 2}
+  - _key: IntGrid_3
+    _asset: {fileID: 11400000, guid: e4d1af08cd0ad4246b96c8c65b4c21f3, type: 2}
+  - _key: IntGrid_4
+    _asset: {fileID: 11400000, guid: 37fcdaebc8904384bbc1e1ab1ee814eb, type: 2}
   _entities:
   - _key: PlayerStart
     _asset: {fileID: 7765261338290157645, guid: f8162405fa32dfb4b83544b4e17c64e1, type: 3}
@@ -39,6 +43,8 @@ ScriptedImporter:
     _asset: {fileID: 7880491606199328274, guid: 34df1a542ea825647ad011c40633acb5, type: 3}
   - _key: Quantum_Tunneling_Activator
     _asset: {fileID: 4274899991574725916, guid: ff8ccb9a7835ec94e835ce4a0addb24f, type: 3}
+  - _key: EnergyBarrier
+    _asset: {fileID: 3914264272515758019, guid: 8d248a33f9d0e1f44a53f975faab27b5, type: 3}
   _enumGenerate: 0
   _enumPath: 
   _enumNamespace: 

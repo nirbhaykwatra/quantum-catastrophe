@@ -79,6 +79,7 @@ public class NotificationManager : Singleton<NotificationManager>
 
     private void PublishNotification(Notification notification)
     {
+        if (!m_notificationPanel || !m_notificationPrefab) return;
         GameObject notificationObject = Instantiate(m_notificationPrefab, m_notificationPanel.transform);
         NotificationUI notificationUI = notificationObject.GetComponent<NotificationUI>();
         notificationUI.InstantiateNotification(notification);
@@ -86,6 +87,7 @@ public class NotificationManager : Singleton<NotificationManager>
 
     private void PublishModal(string message)
     {
+        if (!m_HUDCanvas) return;
         GameObject modalObject = Instantiate(m_modalPrefab, m_HUDCanvas.transform);
         Modal modal = modalObject.GetComponent<Modal>();
         modal.SetText(message);

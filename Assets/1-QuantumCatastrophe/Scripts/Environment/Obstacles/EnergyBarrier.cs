@@ -4,7 +4,15 @@ using UnityEngine;
 
 public class EnergyBarrier : MonoBehaviour
 {
+    [SerializeField] private float EjectionForce;
     [SerializeField] private GameObject m_collider;
+
+    private EnergyBarrierController m_controller;
+
+    private void Awake()
+    {
+        m_controller = GetComponentInChildren<EnergyBarrierController>();
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -29,7 +37,8 @@ public class EnergyBarrier : MonoBehaviour
         PlayerController player = other.gameObject.GetComponent<PlayerController>();
         if (player)
         {
-            m_collider.SetActive(true);
+            // m_collider.SetActive(true);
+            m_controller.Activate();
             CharacterAbilities abilities = player.GetComponent<CharacterAbilities>();
             CharacterMovement2D movement = player.GetComponent<CharacterMovement2D>();
             movement.ResetJumpCount();
@@ -48,8 +57,9 @@ public class EnergyBarrier : MonoBehaviour
 
             if (abilities.IsDashing)
             {
-                m_collider.SetActive(false);
-                rb.AddForce(abilities.DashDirection * 50f, ForceMode2D.Impulse);
+                // m_collider.SetActive(false);
+                m_controller.Deactivate();
+                rb.AddForce(abilities.DashDirection * EjectionForce, ForceMode2D.Impulse);
             }
         }
     }

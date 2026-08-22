@@ -70,6 +70,16 @@ namespace QC.Props
         }
     }
 
+    public void TryUnlock()
+    {
+        if (IsUnlocked())
+        {
+            return;
+        }
+
+        Unlock();
+    }
+
     public void TryRemoteUnlock()
     {
         if (IsUnlocked())

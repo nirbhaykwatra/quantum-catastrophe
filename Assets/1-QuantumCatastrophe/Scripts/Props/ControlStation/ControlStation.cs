@@ -95,7 +95,7 @@ namespace QC.Props
                 case ControlStationAction.GivePlayerAbility:
                     CharacterAbilities abilities = interactor.GetComponent<CharacterAbilities>();
                     CharacterSpawn spawn = interactor.GetComponent<CharacterSpawn>();
-                    foreach (Abilities abilityFlag in System.Enum.GetValues(typeof(Abilities)))
+                    foreach (Abilities abilityFlag in Enum.GetValues(typeof(Abilities)))
                     {
                         if (ability.HasFlag(abilityFlag))
                         {
