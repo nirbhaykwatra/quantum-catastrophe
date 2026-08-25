@@ -26,9 +26,9 @@ public class Box : MonoBehaviour, IInteractable
         m_interactionText = GetComponentInChildren<TextMeshProUGUI>();
     }
     
-    public void Interact(GameObject interactor)
+    public void Interact(in InteractionContext context)
     {
-        if (interactor.GetComponent<PlayerController>())
+        if (context.Interactor.GetComponent<PlayerController>())
         {
             if (!m_isOpen)
             {
@@ -42,7 +42,7 @@ public class Box : MonoBehaviour, IInteractable
 
                 for (int i = Items.Count - 1; i >= 0; i--)
                 {
-                    interactor.GetComponent<CharacterInventory>().AddItem(Items[i]);
+                    context.Interactor.GetComponent<CharacterInventory>().AddItem(Items[i]);
                     Items.RemoveAt(i);
                 }
                 

@@ -2,33 +2,20 @@
 using UnityEngine.Events;
 
 [System.Serializable]
-public class CustomCondition : ICondition
+public class CustomCondition : BaseCondition
 {
-    [SerializeField] private string conditionName = "Custom Condition";
-    [TextArea]
-    [SerializeField] private string SuccessMessage = "Condition met.";
-    [TextArea]
-    [SerializeField] private string failureMessage = "Condition not met.";
-    [SerializeField] private UnityEvent<GameObject> conditionCheck;
-    
-    private bool lastCheckResult = false;
+    [SerializeField] 
+    private UnityEvent<GameObject> _conditionCheck;
+    private bool _lastCheckResult = false;
 
-    public bool IsConditionMet(GameObject interactor)
+    public override bool IsConditionMet(in InteractionContext context)
     {
-        conditionCheck?.Invoke(interactor);
-        return lastCheckResult;
+        _conditionCheck?.Invoke(context.Interactor);
+        return _lastCheckResult;
     }
 
     public void SetResult(bool result)
     {
-        lastCheckResult = result;
+        _lastCheckResult = result;
     }
-    
-    public void PostConditionCheck(GameObject interactor)
-    {
-        
-    }
-
-    public string GetFailureMessage() => failureMessage;
-    public string GetSuccessMessage() => SuccessMessage;
 }

@@ -37,9 +37,9 @@ namespace QC.Props
         m_interactionText = GetComponentInChildren<TextMeshProUGUI>();
     }
     
-    public void Interact(GameObject interactor)
+    public void Interact(in InteractionContext context)
     {
-        TryUnlock(interactor);
+        TryUnlock(context.Interactor);
     }
 
     #region Lock/Unlock

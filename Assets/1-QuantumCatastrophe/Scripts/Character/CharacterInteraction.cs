@@ -15,7 +15,7 @@ public class CharacterInteraction : MonoBehaviour
         {
             foreach (IInteractable interactable in m_interactables)
             {
-                interactable.Interact(gameObject);
+                interactable.Interact(new InteractionContext(gameObject));
             }
         }
     }

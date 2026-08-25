@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using QC.Character;
+using QC.Props.ControlStationActions;
 using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
@@ -26,42 +27,15 @@ namespace QC.Props
     public class ControlStation : MonoBehaviour, IInteractable
     {
         [Title("Settings")]
-        [SerializeField]
-        private ControlStationAction ControlStationAction = ControlStationAction.GivePlayerItem;
+        
+        [SerializeReference]
+        private List<BaseControlStationAction> ControlStationActions = new();
+        
         private int m_openTrigger = Animator.StringToHash("Open");
         private int m_closeTrigger = Animator.StringToHash("Close");
         private Animator m_animator;
         private TextMeshProUGUI m_interactionText;
         private bool m_isOpen = false;
-        
-        [Title("Conditions")]
-        [SerializeField]
-        private ConditionType conditionType = ConditionType.None;
-
-        [ShowIf("conditionType", ConditionType.RequireInventoryItems)]
-        [SerializeField]
-        private InventoryCondition inventoryCondition;
-
-        [ShowIf("conditionType", ConditionType.RequireAbility)]
-        [SerializeField]
-        private AbilityCondition abilityCondition;
-
-        [ShowIf("conditionType", ConditionType.Custom)]
-        [SerializeField]
-        private CustomCondition customCondition;
-        
-        [Title("Actions")]
-        [ShowIf("ControlStationAction", ControlStationAction.WorldInteraction)]
-        [SerializeField]
-        private UnityEvent OnWorldInteract;
-        
-        [ShowIf("ControlStationAction", ControlStationAction.GivePlayerItem)]
-        [SerializeField]
-        private List<Loot> ItemsToGive = new List<Loot>();
-
-        [ShowIf("ControlStationAction", ControlStationAction.GivePlayerAbility)]
-        [SerializeField]
-        private Abilities ability;
         
         [Title("Already Used")]
         [SerializeField]
@@ -77,75 +51,28 @@ namespace QC.Props
             m_interactionText = GetComponentInChildren<TextMeshProUGUI>();
         }
 
-        public void Interact(GameObject interactor)
+        public void Interact(in InteractionContext context)
         {
             if (hasBeenUsed)
             {
                 ShowMessage(usedMessage);
                 return;
             }
-            
-            if (!CheckConditions(interactor))
+
+            foreach (BaseControlStationAction action in ControlStationActions)
             {
-                return;
+                if (!action.CheckConditions(context)) return;
             }
-            
-            switch (ControlStationAction)
+
+            foreach (BaseControlStationAction action in ControlStationActions)
             {
-                case ControlStationAction.GivePlayerAbility:
-                    CharacterAbilities abilities = interactor.GetComponent<CharacterAbilities>();
-                    CharacterSpawn spawn = interactor.GetComponent<CharacterSpawn>();
-                    foreach (Abilities abilityFlag in Enum.GetValues(typeof(Abilities)))
-                    {
-                        if (ability.HasFlag(abilityFlag))
-                        {
-                            abilities.UnlockAbility(abilityFlag);
-                        }
-                    }
-                    NotificationManager.Instance.RequestNotification("Unlocked " + ability + " ability!", 5f, NotificationType.Success);
-                    break;
-                case ControlStationAction.GivePlayerItem:
-                    CharacterInventory inventory = interactor.GetComponent<CharacterInventory>();
-                    for (int i = ItemsToGive.Count - 1; i >= 0; i--)
-                    {
-                        inventory.AddItem(ItemsToGive[i]);
-                        ItemsToGive.RemoveAt(i);
-                    }
-                    break;
-                case ControlStationAction.WorldInteraction:
-                    OnWorldInteract?.Invoke();
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException();
+                action.Execute(context);
             }
             
             Close();
             hasBeenUsed = true;
         }
         
-        private bool CheckConditions(GameObject interactor)
-        {
-            ICondition condition = conditionType switch
-            {
-                ConditionType.RequireInventoryItems => inventoryCondition,
-                ConditionType.RequireAbility => abilityCondition,
-                ConditionType.Custom => customCondition,
-                _ => null
-            };
-
-            if (condition != null && !condition.IsConditionMet(interactor))
-            {
-                ShowMessage(condition.GetFailureMessage());
-                return false;
-            }
-            if (condition != null && condition.IsConditionMet(interactor))
-            {
-                ShowMessage(condition.GetSuccessMessage());
-            }
-            if (condition != null) condition.PostConditionCheck(interactor);
-            return true;
-        }
-
         private void ShowMessage(string message)
         {
             NotificationManager.Instance.RequestModal(message);

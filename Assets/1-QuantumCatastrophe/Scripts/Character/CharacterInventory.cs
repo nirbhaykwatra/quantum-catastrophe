@@ -9,23 +9,9 @@ namespace QC.Character
     public class CharacterInventory : MonoBehaviour
     {
         [ShowInInspector]
-        private List<Loot> Inventory;
-
-        private void Awake()
-        {
-            Inventory = new List<Loot>();
-        }
-
-        private void OnEnable()
-        {
+        [SerializeField]
+        private List<Loot> Inventory = new();
         
-        }
-
-        private void OnDestroy()
-        {
-        
-        }
-
         public Loot FindItem(Loot item)
         {
             return Inventory.Find(loot => loot == item);

@@ -3,18 +3,14 @@ using QC.Character;
 using UnityEngine;
 
 [System.Serializable]
-public class InventoryCondition : ICondition
+public class InventoryCondition : BaseCondition
 {
     [SerializeField] private List<Loot> RequiredItems;
-    [TextArea]
-    [SerializeField] private string SuccessMessage = "You have the required items.";
-    [TextArea]
-    [SerializeField] private string FailureMessage = "You need specific items to use this.";
     [SerializeField] private bool DestroyItemsAfterUse = false;
 
-    public bool IsConditionMet(GameObject interactor)
+    public override bool IsConditionMet(in InteractionContext context)
     {
-        CharacterInventory inventory = interactor.GetComponent<CharacterInventory>();
+        CharacterInventory inventory = context.Interactor.GetComponent<CharacterInventory>();
         if (inventory == null) return false;
 
         foreach (Loot item in RequiredItems)
@@ -27,21 +23,17 @@ public class InventoryCondition : ICondition
         return true;
     }
 
-    public void PostConditionCheck(GameObject interactor)
+    public override void PostConditionCheck(in InteractionContext context)
     {
-        if (DestroyItemsAfterUse)
+        if (!DestroyItemsAfterUse) return;
+        
+        CharacterInventory inventory = context.Interactor.GetComponent<CharacterInventory>();
+        foreach (Loot item in RequiredItems)
         {
-            CharacterInventory inventory = interactor.GetComponent<CharacterInventory>();
-            foreach (Loot item in RequiredItems)
+            if (inventory.HasItem(item))
             {
-                if (inventory.HasItem(item))
-                {
-                    inventory.RemoveItem(item);
-                }
+                inventory.RemoveItem(item);
             }
         }
     }
-
-    public string GetFailureMessage() => FailureMessage;
-    public string GetSuccessMessage() => SuccessMessage;
 }
