@@ -60,10 +60,10 @@ namespace QC.Props
                 {
                     Unlock();
                     if (m_destroyItemOnUse) inventory.RemoveItem(requiredItem);
-                    NotificationManager.Instance.RequestNotification($"You used {requiredItem.Name}!", 2f, NotificationType.Success);
+                    // NotificationManager.Instance.RequestNotification($"You used {requiredItem.Name}!", 2f, NotificationType.Success);
                     return;
                 }
-                NotificationManager.Instance.RequestNotification($"You need {RequiredItem.Name} to open this door!", 2f, NotificationType.Error);
+                // NotificationManager.Instance.RequestNotification($"You need {RequiredItem.Name} to open this door!", 2f, NotificationType.Error);
             }
             Unlock();
             return;
@@ -88,7 +88,7 @@ namespace QC.Props
         }
         else
         {
-            NotificationManager.Instance.RequestNotification($"You need to unlock the door connected to this object with {RequiredItem.Name}!", 2f, NotificationType.Error);
+            // NotificationManager.Instance.RequestNotification($"You need to unlock the door connected to this object with {RequiredItem.Name}!", 2f, NotificationType.Error);
         }
     }
     

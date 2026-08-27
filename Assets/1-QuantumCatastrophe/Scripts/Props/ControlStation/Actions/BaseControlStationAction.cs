@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using QC.Systems.Notifications;
+using QC.Utilities.EventBusSystem;
 using UnityEngine;
 
 namespace QC.Props.ControlStationActions
@@ -8,12 +10,14 @@ namespace QC.Props.ControlStationActions
     public abstract class BaseControlStationAction
     {
         public string ActionName;
+        public string NotificationText;
+        public NotificationType NotificationType;
         public bool DebugConditions;
         
         [SerializeReference] 
         private List<BaseCondition> Conditions = new();
 
-        public virtual void Execute(in InteractionContext context) { }
+        public virtual void Execute(in InteractionContext context, UIEventBus eventBus) { }
         public bool CheckConditions(in InteractionContext context)
         {
             foreach (BaseCondition condition in Conditions)

@@ -82,13 +82,13 @@ public class LeverSwitch : MonoBehaviour, IInteractable
         {
             m_interactionText.text = "Press E to activate";
             OnSwitchReset?.Invoke();   
-            NotificationManager.Instance.RequestNotification(NotificationMessage, 2f, NotificationType.Success);
+            // NotificationManager.Instance.RequestNotification(NotificationMessage, 2f, NotificationType.Success);
         }
         else
         {
             m_interactionText.text = "Press E to deactivate";      
             OnSwitchOn?.Invoke();     
-            NotificationManager.Instance.RequestNotification(SwitchOnNotificationMessage, 2f, NotificationType.Success);
+            // NotificationManager.Instance.RequestNotification(SwitchOnNotificationMessage, 2f, NotificationType.Success);
         }
     }
     
@@ -100,7 +100,7 @@ public class LeverSwitch : MonoBehaviour, IInteractable
         m_animator.SetBool(m_isOnBool, SwitchedOn);
         m_interactionText.text = "Press E to activate";
         OnSwitchOff?.Invoke();       
-        NotificationManager.Instance.RequestNotification(SwitchOffNotificationMessage, 2f, NotificationType.Success);
+        // NotificationManager.Instance.RequestNotification(SwitchOffNotificationMessage, 2f, NotificationType.Success);
     }
     
     private void OnTriggerEnter2D(Collider2D other)

@@ -1,5 +1,8 @@
 ﻿using System;
 using QC.Character;
+using QC.Systems.Notifications;
+using QC.Utilities.EventBusSystem;
+using QC.Utilities.ServiceLocation;
 using UnityEngine;
 
 namespace QC.Props.ControlStationActions
@@ -10,7 +13,7 @@ namespace QC.Props.ControlStationActions
         [SerializeField]
         public Abilities Ability;
 
-        public override void Execute(in InteractionContext context)
+        public override void Execute(in InteractionContext context, UIEventBus eventBus)
         {
             CharacterAbilities abilities = context.Interactor.GetComponent<CharacterAbilities>();
             foreach (Abilities abilityFlag in Enum.GetValues(typeof(Abilities)))
@@ -20,7 +23,6 @@ namespace QC.Props.ControlStationActions
                     abilities.UnlockAbility(abilityFlag);
                 }
             }
-            // NotificationManager.Instance.RequestNotification("Unlocked " + Ability + " ability!", 5f, NotificationType.Success);
         }
     }
 }

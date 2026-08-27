@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using QC.Character;
+using QC.Utilities.EventBusSystem;
+using QC.Utilities.ServiceLocation;
 using UnityEngine;
 
 namespace QC.Props.ControlStationActions
@@ -9,16 +11,30 @@ namespace QC.Props.ControlStationActions
     public class GivePlayerItem : BaseControlStationAction
     {
         [SerializeField]
-        private List<Loot> ItemsToGive = new List<Loot>();
-        
-        public override void Execute(in InteractionContext context)
+        private List<LootEntry> ItemsToGive = new();
+
+        public override void Execute(in InteractionContext context, UIEventBus eventBus)
         {
             CharacterInventory inventory = context.Interactor.GetComponent<CharacterInventory>();
-            for (int i = ItemsToGive.Count - 1; i >= 0; i--)
+            inventory.AddItems(ItemsToGive);
+            
+            ;
+            foreach (LootEntry entry in ItemsToGive)
             {
-                inventory.AddItem(ItemsToGive[i]);
+                if (entry.Item == null || entry.Quantity <= 0) continue;
+
+                string message = entry.Quantity > 1
+                    ? $"Received {entry.Quantity}× {entry.Item.Name}!"
+                    : $"Received {entry.Item.Name}!";
+
+                eventBus.Raise(new OnRequestNotification
+                {
+                    Message = message,
+                    Icon = entry.Item.Icon,
+                    Type = NotificationType,
+                    Duration = 3f
+                });
             }
-            // NotificationManager.Instance.RequestNotification("Unlocked " + _ability + " ability!", 5f, NotificationType.Success);
         }
     }
 }

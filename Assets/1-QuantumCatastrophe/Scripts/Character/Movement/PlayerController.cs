@@ -98,6 +98,11 @@ public class PlayerController : MonoBehaviour
     {
         m_globalEventBus.Raise(new OnClickEntangle());
     }
+
+    public virtual void OnObserve(InputValue value)
+    {
+        m_globalEventBus.Raise(new OnToggleSuperposition());
+    }
     
     // TODO: Add control to disentangle selected object
 

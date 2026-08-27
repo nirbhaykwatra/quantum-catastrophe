@@ -48,7 +48,7 @@ public class Box : MonoBehaviour, IInteractable
                 
                 if (SendMessageOnOpen)
                 {
-                    NotificationManager.Instance.RequestModal(OpenMessage);
+                    // NotificationManager.Instance.RequestModal(OpenMessage);
                 }
             }
             else

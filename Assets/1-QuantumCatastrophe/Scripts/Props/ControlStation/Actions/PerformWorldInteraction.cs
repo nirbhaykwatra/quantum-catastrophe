@@ -1,4 +1,5 @@
 ﻿using System;
+using QC.Utilities.EventBusSystem;
 using UnityEngine.Events;
 
 namespace QC.Props.ControlStationActions
@@ -8,7 +9,7 @@ namespace QC.Props.ControlStationActions
     {
         public UnityEvent OnWorldInteract;
         
-        public override void Execute(in InteractionContext context)
+        public override void Execute(in InteractionContext context, UIEventBus eventBus)
         {
             OnWorldInteract?.Invoke();
         }

@@ -1,0 +1,27 @@
+.notification-container {
+}
+.notification-item {
+    background-image: resource("UI/Notifications/Background");
+    -unity-slice-left: 9; -unity-slice-right: 9; -unity-slice-top: 9; -unity-slice-bottom: 9;
+    flex-direction: row;
+    padding: 12px;
+    margin-bottom: 8px;
+    opacity: 0;
+    translate: 420px 0;
+    transition-property: opacity, translate;
+    transition-duration: 0.35s, 0.35s;
+    transition-timing-function: ease-out, ease-out;
+}
+.notification-info { -unity-background-image-tint-color: rgb(255, 255, 255); }
+.notification-warning { -unity-background-image-tint-color: rgb(255, 210, 120); }
+.notification-achievement { -unity-background-image-tint-color: rgb(255, 235, 150); }
+
+.notification-enter {
+    opacity: 1;
+    translate: 0 0;
+}
+
+.notification-exit {
+    opacity: 0;
+    translate: 0 0;
+}

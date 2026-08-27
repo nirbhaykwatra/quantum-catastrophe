@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using QC.Character;
 using QC.Props.ControlStationActions;
+using QC.Utilities.EventBusSystem;
+using QC.Utilities.ServiceLocation;
 using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
@@ -31,12 +33,6 @@ namespace QC.Props
         [SerializeReference]
         private List<BaseControlStationAction> ControlStationActions = new();
         
-        private int m_openTrigger = Animator.StringToHash("Open");
-        private int m_closeTrigger = Animator.StringToHash("Close");
-        private Animator m_animator;
-        private TextMeshProUGUI m_interactionText;
-        private bool m_isOpen = false;
-        
         [Title("Already Used")]
         [SerializeField]
         private bool hasBeenUsed = false;
@@ -44,11 +40,20 @@ namespace QC.Props
         [ShowIf("hasBeenUsed")]
         [SerializeField]
         private string usedMessage = "Already activated.";
+        
+        private int m_openTrigger = Animator.StringToHash("Open");
+        private int m_closeTrigger = Animator.StringToHash("Close");
+        private Animator m_animator;
+        private TextMeshProUGUI m_interactionText;
+        private bool m_isOpen = false;
+
+        private UIEventBus _uiEventBus;
 
         private void Awake()
         {
             m_animator = GetComponent<Animator>();
             m_interactionText = GetComponentInChildren<TextMeshProUGUI>();
+            _uiEventBus = ServiceLocator.ForSceneOf(this).Get<EventBusRegistry>().Get<UIEventBus>();
         }
 
         public void Interact(in InteractionContext context)
@@ -66,7 +71,8 @@ namespace QC.Props
 
             foreach (BaseControlStationAction action in ControlStationActions)
             {
-                action.Execute(context);
+                action.Execute(context, _uiEventBus);
+                ServiceLocator.ForSceneOf(this).Get<EventBusRegistry>().Get<UIEventBus>().Raise(new OnRequestNotification { Duration = 3f, Message = action.NotificationText, Type = action.NotificationType});
             }
             
             Close();
@@ -75,7 +81,7 @@ namespace QC.Props
         
         private void ShowMessage(string message)
         {
-            NotificationManager.Instance.RequestModal(message);
+            // NotificationManager.Instance.RequestModal(message);
         }
         
         private void OnTriggerEnter2D(Collider2D other)

@@ -3,6 +3,7 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
+using QC.Systems.Notifications;
 using QC.Utilities.EventBusSystem;
 using QC.Utilities.ServiceLocation;
 
@@ -73,7 +74,7 @@ namespace QC.Character
         public LayerMask GroundMask { get; set; }
         
         [SerializeField] private PlayerData m_playerData;
-        private GlobalEventBus m_globalEventBus;
+        private UIEventBus _uiEventBus;
         
         // --- Dashing Variables ---
         
@@ -99,7 +100,7 @@ namespace QC.Character
         
         private void OnEnable()
         {
-            m_globalEventBus = ServiceLocator.Global.Get<EventBusRegistry>().Get<GlobalEventBus>();
+            _uiEventBus = ServiceLocator.ForSceneOf(this).Get<EventBusRegistry>().Get<UIEventBus>();
         }
 
         private void Awake()
