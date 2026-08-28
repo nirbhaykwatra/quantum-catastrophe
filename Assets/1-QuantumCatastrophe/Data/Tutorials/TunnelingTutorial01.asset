@@ -22,7 +22,7 @@ MonoBehaviour:
 
       Hint: This has something to do with
       the concept of Quantum Tunneling!'
-    illustration: {fileID: 0}
+    illustration: {fileID: 2235896359658747422, guid: 902eda7f00c1b4a4eaeeb0a5ce83d7d1, type: 3}
     highlightMode: 0
     highlightTargetId: 
     worldHighlightRadius: 60

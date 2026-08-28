@@ -43,8 +43,14 @@ ScriptedImporter:
     _asset: {fileID: 7880491606199328274, guid: 34df1a542ea825647ad011c40633acb5, type: 3}
   - _key: Quantum_Tunneling_Activator
     _asset: {fileID: 4274899991574725916, guid: ff8ccb9a7835ec94e835ce4a0addb24f, type: 3}
+  - _key: Loot
+    _asset: {fileID: 4427358075693191777, guid: a49ace44c39b1714ca89fc40d77afc97, type: 3}
   - _key: EnergyBarrier
     _asset: {fileID: 3914264272515758019, guid: 8d248a33f9d0e1f44a53f975faab27b5, type: 3}
+  - _key: Lever
+    _asset: {fileID: 5407911907417217254, guid: e94f88223adc91642b17269245d16be5, type: 3}
+  - _key: MovingPlatform
+    _asset: {fileID: 2797255104080555817, guid: bcbffddbf419c92498ba42cb0d213780, type: 3}
   _enumGenerate: 0
   _enumPath: 
   _enumNamespace: 

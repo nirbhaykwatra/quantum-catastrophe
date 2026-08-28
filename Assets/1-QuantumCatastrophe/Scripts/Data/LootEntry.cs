@@ -1,10 +1,17 @@
 ﻿using System;
+using Sirenix.OdinInspector;
 using UnityEngine;
+
+public enum LootType
+{
+    Collectible,
+    KeyItem
+}
 
 [Serializable]
 public struct LootEntry
 {
     public Loot Item;
-    [Min(1)]
     public int Quantity;
+    public LootType Type;
 }

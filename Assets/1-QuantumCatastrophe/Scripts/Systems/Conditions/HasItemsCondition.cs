@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class InventoryCondition : BaseCondition
 {
-    [SerializeField] private List<Loot> RequiredItems;
+    [SerializeField] private List<LootEntry> RequiredItems;
     [SerializeField] private bool DestroyItemsAfterUse = false;
 
     public override bool IsConditionMet(in InteractionContext context)
@@ -13,12 +13,11 @@ public class InventoryCondition : BaseCondition
         CharacterInventory inventory = context.Interactor.GetComponent<CharacterInventory>();
         if (inventory == null) return false;
 
-        foreach (Loot item in RequiredItems)
+        foreach (LootEntry entry in RequiredItems)
         {
-            if (!inventory.HasItem(item))
-            {
+            InventorySlot slot = inventory.FindSlot(entry.Item);
+            if (slot == null || slot.Quantity < entry.Quantity)
                 return false;
-            }
         }
         return true;
     }
@@ -26,14 +25,11 @@ public class InventoryCondition : BaseCondition
     public override void PostConditionCheck(in InteractionContext context)
     {
         if (!DestroyItemsAfterUse) return;
-        
+
         CharacterInventory inventory = context.Interactor.GetComponent<CharacterInventory>();
-        foreach (Loot item in RequiredItems)
+        foreach (LootEntry entry in RequiredItems)
         {
-            if (inventory.HasItem(item))
-            {
-                inventory.RemoveItem(item);
-            }
+            inventory.RemoveItem(entry);
         }
     }
 }

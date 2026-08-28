@@ -131,9 +131,12 @@ namespace QC.Systems.Tutorials
 
             _headerLabel.text = step.headerText;
             _bodyLabel.text = step.bodyText;
-            _illustration.style.backgroundImage = step.illustration != null
-                ? new StyleBackground(step.illustration)
-                : StyleKeyword.Null;
+            bool hasIllustration = step.illustration != null;
+            _illustration.style.display = hasIllustration ? DisplayStyle.Flex : DisplayStyle.None;
+            if (hasIllustration)
+            {
+                _illustration.style.backgroundImage = new StyleBackground(step.illustration);
+            }
 
             UpdateHighlight(step);
 

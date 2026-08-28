@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CollectibleObject : MonoBehaviour
 {
-    [SerializeField] private Loot Item;
+    [SerializeField] private LootEntry Item;
     private Animator m_animator;
     
     private void Awake()
@@ -17,7 +17,7 @@ public class CollectibleObject : MonoBehaviour
         if (other.gameObject.GetComponent<PlayerController>())
         {
             CharacterInventory inventory = other.gameObject.GetComponent<CharacterInventory>();
-            inventory.AddItem(Item);
+            inventory.AddItems(Item);
             Destroy(gameObject);
         }
     }

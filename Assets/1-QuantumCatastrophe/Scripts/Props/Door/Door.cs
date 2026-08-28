@@ -14,7 +14,7 @@ namespace QC.Props
     public class Door : MonoBehaviour, IUnlockable, IInteractable
 {
     public DoorOperationMode OperationMode;
-    [SerializeField] private KeyItem RequiredItem;
+    [SerializeField] [ShowInInspector] private LootEntry RequiredItem;
     private int m_openTrigger = Animator.StringToHash("Open");
     private int m_closeTrigger = Animator.StringToHash("Close");
     private Animator m_animator;
@@ -55,11 +55,11 @@ namespace QC.Props
             CharacterInventory inventory = interactor.GetComponent<CharacterInventory>();
             if (m_itemRequiredToUnlock)
             {
-                KeyItem requiredItem = (KeyItem)inventory.FindItemByName(RequiredItem.Name);
-                if (inventory.HasItem(requiredItem))
+                InventorySlot requiredItem = inventory.FindSlot(RequiredItem.Item);
+                if (requiredItem != null)
                 {
                     Unlock();
-                    if (m_destroyItemOnUse) inventory.RemoveItem(requiredItem);
+                    if (m_destroyItemOnUse) inventory.RemoveItem(RequiredItem);
                     // NotificationManager.Instance.RequestNotification($"You used {requiredItem.Name}!", 2f, NotificationType.Success);
                     return;
                 }

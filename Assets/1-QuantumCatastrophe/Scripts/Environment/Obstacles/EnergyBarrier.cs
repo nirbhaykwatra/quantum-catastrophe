@@ -8,7 +8,7 @@ public class EnergyBarrier : MonoBehaviour
     [SerializeField] private GameObject m_collider;
 
     private EnergyBarrierController m_controller;
-
+    
     private void Awake()
     {
         m_controller = GetComponentInChildren<EnergyBarrierController>();
@@ -22,7 +22,18 @@ public class EnergyBarrier : MonoBehaviour
             AddForceInDashDirection(other);
         }
     }
-    
+
+    // TODO: If this is not present, then the player cannot dash through the barrier when standing within the trigger
+    //  and with this, the dash force is added each frame the player is in the trigger. Figure out a fix.
+    // private void OnTriggerStay2D(Collider2D other)
+    // {
+    //     if (other.gameObject.GetComponent<CharacterAbilities>() != null)
+    //     {
+    //         if (!other.gameObject.GetComponent<CharacterAbilities>().EnableTunnelingBarriers) return;
+    //         AddForceInDashDirection(other);
+    //     }
+    // }
+
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.GetComponent<CharacterAbilities>() != null)

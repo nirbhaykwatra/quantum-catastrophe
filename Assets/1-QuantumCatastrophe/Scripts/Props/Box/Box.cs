@@ -1,5 +1,8 @@
 using System.Collections.Generic;
 using QC.Character;
+using QC.Systems.Notifications;
+using QC.Utilities.EventBusSystem;
+using QC.Utilities.ServiceLocation;
 using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
@@ -12,7 +15,7 @@ public class Box : MonoBehaviour, IInteractable
     private TextMeshProUGUI m_interactionText;
     private bool m_isOpen = false;
 
-    [SerializeField] private List<Loot> Items;
+    [SerializeField] private List<LootEntry> Items;
     [SerializeField] private bool SendMessageOnOpen = false;
     
     [ShowIf("SendMessageOnOpen")]
@@ -39,16 +42,21 @@ public class Box : MonoBehaviour, IInteractable
                 }
                 
                 Open();
-
+                
+                context.Interactor.GetComponent<CharacterInventory>().AddItems(Items);
                 for (int i = Items.Count - 1; i >= 0; i--)
                 {
-                    context.Interactor.GetComponent<CharacterInventory>().AddItem(Items[i]);
+                    if (SendMessageOnOpen)
+                    {
+                        ServiceLocator.ForSceneOf(this).Get<EventBusRegistry>().Get<UIEventBus>().Raise(new OnRequestNotification
+                        {
+                            Duration = 3f,
+                            Icon = Items[i].Item.Icon,
+                            Message = $"Received {Items[i].Quantity}x {Items[i].Item.Name}",
+                            Type = NotificationType.Info
+                        });
+                    }
                     Items.RemoveAt(i);
-                }
-                
-                if (SendMessageOnOpen)
-                {
-                    // NotificationManager.Instance.RequestModal(OpenMessage);
                 }
             }
             else

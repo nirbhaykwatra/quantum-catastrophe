@@ -1,8 +1,11 @@
 using System;
 using System.Collections.Generic;
+using FMOD;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using Newtonsoft.Json;
+using QC.Props.QuantumObjects;
+using Debug = UnityEngine.Debug;
 
 namespace QC.Character
 {
@@ -25,6 +28,13 @@ namespace QC.Character
         [SerializeField]
         private List<InventorySlot> Inventory = new();
 
+        private CharacterAbilities _abilities;
+
+        private void Awake()
+        {
+            _abilities = GetComponent<CharacterAbilities>();
+        }
+
         public InventorySlot FindSlot(Loot item)
         {
             return Inventory.Find(slot => slot.Item == item);
@@ -35,10 +45,6 @@ namespace QC.Character
             return Inventory.Find(slot => slot.Item.Name == itemName);
         }
 
-        // Keep old API working
-        public Loot FindItem(Loot item) => FindSlot(item)?.Item;
-        public Loot FindItemByName(string itemName) => FindSlotByName(itemName)?.Item;
-
         public bool HasItem(Loot loot)
         {
             InventorySlot slot = FindSlot(loot);
@@ -46,7 +52,7 @@ namespace QC.Character
         }
 
         /// <summary>Adds a single unit of a loot item, stacking if it already exists.</summary>
-        public void AddItem(Loot loot, int quantity = 1)
+        private void AddItem(Loot loot, int quantity = 1)
         {
             InventorySlot slot = FindSlot(loot);
             if (slot != null)
@@ -64,12 +70,43 @@ namespace QC.Character
         {
             foreach (LootEntry entry in entries)
             {
-                if (entry.Item == null || entry.Quantity <= 0) continue;
-                AddItem(entry.Item, entry.Quantity);
+                AddItems(entry);
+            }
+        }
+        
+        /// <summary>Adds a single LootEntry, stacking if the item already exists.</summary>
+        public void AddItems(LootEntry entry)
+        {
+            if (entry.Item == null || entry.Quantity <= 0) return;
+            if (entry.Type == LootType.KeyItem)
+            {
+                // TODO: Find a type safe way to do this, without the hard coded string
+                if (entry.Item.Name == "TunnelingActivator")
+                {
+                    _abilities.EnableDash = true;
+                    _abilities.EnableAirDash = true;
+                    _abilities.EnableTunnelingBarriers = true;
+                }
+            }
+            AddItem(entry.Item, entry.Quantity);
+        }
+
+        public void RemoveItem(LootEntry entry)
+        {
+            RemoveItem(entry.Item, entry.Quantity);
+            if (entry.Type == LootType.KeyItem)
+            {
+                // TODO: Find a type safe way to do this, without the hard coded string
+                if (entry.Item.Name == "TunnelingActivator")
+                {
+                    _abilities.EnableDash = false;
+                    _abilities.EnableAirDash = false;
+                    _abilities.EnableTunnelingBarriers = false;
+                }
             }
         }
 
-        public void RemoveItem(Loot loot, int quantity = 1)
+        private void RemoveItem(Loot loot, int quantity = 1)
         {
             InventorySlot slot = FindSlot(loot);
             if (slot == null) return;

@@ -4,7 +4,7 @@
         <ui:Label text="" name="header-label" style="width: 50%; align-self: center; -unity-text-align: upper-center; font-size: 40px;"/>
         <ui:VisualElement name="body" style="flex-grow: 1; flex-direction: row;">
             <ui:Label text="" name="body-label" style="width: 50%; white-space: pre-wrap;"/>
-            <ui:VisualElement name="illustration" style="flex-grow: 1;"/>
+            <ui:VisualElement name="illustration" style="flex-grow: 1; overflow: hidden; -unity-background-scale-mode: scale-to-fit;"/>
         </ui:VisualElement>
         <ui:Button text="Okay" name="next-button" class="tutorial-next-button" style="align-items: auto; align-self: center; width: 15%; height: 8%;"/>
     </ui:VisualElement>
