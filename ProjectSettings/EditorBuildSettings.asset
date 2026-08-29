@@ -14,5 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/1-QuantumCatastrophe/Scenes/Tutorial.unity
     guid: cbb43914832c4394bb3c3d4bee47b1ac
+  - enabled: 1
+    path: Assets/1-QuantumCatastrophe/Scenes/TunnelingTutorial.unity
+    guid: 6691500de550a964b974606bee2c1b32
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

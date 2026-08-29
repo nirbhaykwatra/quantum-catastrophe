@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93cc588a0cb9c874e917337a9a56a589, type: 3}
   m_Name: SuperpositionActivator
   m_EditorClassIdentifier: Assembly-CSharp::KeyItem
-  Name: TunnelingActivator
-  Icon: {fileID: 0}
+  Name: SuperpositionActivator
+  Icon: {fileID: 21300000, guid: 3c7050e337b9dda42aa3f7670432387b, type: 3}

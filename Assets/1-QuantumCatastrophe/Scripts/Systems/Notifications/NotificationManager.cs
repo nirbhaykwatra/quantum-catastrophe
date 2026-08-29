@@ -23,6 +23,7 @@ namespace QC.Systems.Notifications
         [SerializeField] private int maxConcurrent = 3;
 
         [Title("Debug")] 
+        [SerializeField] private bool _enableDebugging;
         
         [SerializeField] 
         [ShowInInspector]
@@ -78,7 +79,7 @@ namespace QC.Systems.Notifications
             }
 
             DisplayNotification(request);
-            Debug.Log($"Notification requested! Duration: {request.Duration} Message: {request.Message} Type: {request.Type}");
+            if (_enableDebugging) Debug.Log($"Notification requested! Duration: {request.Duration} Message: {request.Message} Type: {request.Type}");
         }
 
         private void DisplayNotification(OnRequestNotification request)

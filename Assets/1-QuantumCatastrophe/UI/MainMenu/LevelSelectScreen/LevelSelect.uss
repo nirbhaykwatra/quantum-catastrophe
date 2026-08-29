@@ -24,7 +24,7 @@
     opacity: 1;
     -unity-font-definition: url("project://database/Assets/1-QuantumCatastrophe/Art/UI/PressStart2P-Regular.ttf?fileID=12800000&guid=11ac347594b49f542bfef59c17c95999&type=3#PressStart2P-Regular");
     -unity-font-style: normal;
-    font-size: 39px;
+    flex-wrap: wrap;
     -unity-text-align: upper-left;
     color: rgb(255, 255, 255);
     background-image: none;

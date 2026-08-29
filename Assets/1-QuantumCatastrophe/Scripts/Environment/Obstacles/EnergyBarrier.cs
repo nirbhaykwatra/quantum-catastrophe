@@ -51,7 +51,7 @@ public class EnergyBarrier : MonoBehaviour
             m_controller.Activate();
             CharacterAbilities abilities = player.GetComponent<CharacterAbilities>();
             CharacterMovement2D movement = player.GetComponent<CharacterMovement2D>();
-            movement.ResetJumpCount();
+            movement.ResetMidAirJumpCount();
             abilities.RechargeDashCooldown();
             abilities.RechargeAirDashCooldown();
         }

@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
 using QC.Character;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 [System.Serializable]
 public class InventoryCondition : BaseCondition
 {
-    [SerializeField] private List<LootEntry> RequiredItems;
+    [SerializeField] [ShowInInspector] private List<LootEntry> RequiredItems;
     [SerializeField] private bool DestroyItemsAfterUse = false;
 
     public override bool IsConditionMet(in InteractionContext context)

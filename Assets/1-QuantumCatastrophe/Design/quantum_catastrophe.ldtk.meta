@@ -34,7 +34,7 @@ ScriptedImporter:
   - _key: Door
     _asset: {fileID: 5689500235066935997, guid: d715eb62d35d4474580820e86ebd7f14, type: 3}
   - _key: Chest
-    _asset: {fileID: 586183526166310154, guid: a323e6936b17f254581e1bf2a37e4cb7, type: 3}
+    _asset: {fileID: 2991531591399078759, guid: 7e55fa65d1b7cc74b9c52654b7175f9b, type: 3}
   - _key: Control_Station
     _asset: {fileID: 2318963219203099725, guid: 335123dc69b3e7b49a4241edd8e28ad2, type: 3}
   - _key: Collectible_Gear
@@ -51,15 +51,19 @@ ScriptedImporter:
     _asset: {fileID: 5407911907417217254, guid: e94f88223adc91642b17269245d16be5, type: 3}
   - _key: MovingPlatform
     _asset: {fileID: 2797255104080555817, guid: bcbffddbf419c92498ba42cb0d213780, type: 3}
+  - _key: SpikeTrap
+    _asset: {fileID: 1632321622122813367, guid: eb028fa00212d4c4586f736433f92686, type: 3}
   _enumGenerate: 0
   _enumPath: 
   _enumNamespace: 
   _useLayerCustomSortingOrders: 0
   _layerCustomSortingOrders:
-  - _ldtkLayerName: Entities
-    _ldtkLayerOrder: 0
   - _ldtkLayerName: IntGrid
     _ldtkLayerOrder: -1
+  - _ldtkLayerName: Foreground
+    _ldtkLayerOrder: 1
+  - _ldtkLayerName: Entities
+    _ldtkLayerOrder: 0
   - _ldtkLayerName: Ground
     _ldtkLayerOrder: -2
   - _ldtkLayerName: Walls

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: TunnelingActivator
   m_EditorClassIdentifier: Assembly-CSharp::KeyItem
   Name: TunnelingActivator
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: a111d3bda2259ce4fa3e95d48888dc48, type: 3}

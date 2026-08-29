@@ -3,11 +3,10 @@
 // Owns the TutorialModalDocument UIDocument (highest sort order, blocks input while active).
 // Subscribes to RequestTutorialEvent to begin a sequence and GameplaySignalEvent to advance
 // steps waiting on a specific in-game action. Supports highlighting either a UI Toolkit
-// VisualElement or an in-world scene object (via TutorialTargetRegistry).
-//
-// Expects EventBus to be a MonoBehaviour singleton (EventBus.Instance) with
-// Subscribe<T>(Action<T>) / Unsubscribe<T>(Action<T>) / Publish<T>(T) methods.
-// Expects a SaveData static class with HasSeenTutorial(id) / MarkTutorialSeen(id).
+// VisualElement or an in-world scene object (via TutorialTargetRegistry). Body text scrolls
+// via a ScrollView, and the illustration column collapses (and the text column expands to
+// fill the row) when a step has no illustration. Illustrations support either a static
+// Sprite or a Sprite[] flipbook (GIF frames exported ahead of time).
 
 using QC.Utilities.EventBusSystem;
 using QC.Utilities.ServiceLocation;
@@ -27,6 +26,7 @@ namespace QC.Systems.Tutorials
         private VisualElement _modalPanel;
         private Label _headerLabel;
         private Label _bodyLabel;
+        private ScrollView _bodyScroll;
         private VisualElement _illustration;
         private Button _nextButton;
         private VisualElement _highlightOverlay;
@@ -43,6 +43,11 @@ namespace QC.Systems.Tutorials
         private float _previousTimeScale;
         private CursorLockMode _previousLockState;
         private bool _previousCursorVisible;
+
+        // Flipbook illustration state
+        private Sprite[] _currentFlipbookFrames;
+        private int _flipbookFrameIndex;
+        private IVisualElementScheduledItem _flipbookSchedule;
 
         private UIEventBus _uiEventBus;
 
@@ -65,6 +70,7 @@ namespace QC.Systems.Tutorials
             _modalPanel = _root.Q<VisualElement>("modal-panel");
             _headerLabel = _root.Q<Label>("header-label");
             _bodyLabel = _root.Q<Label>("body-label");
+            _bodyScroll = _root.Q<ScrollView>("body-scroll");
             _illustration = _root.Q<VisualElement>("illustration");
             _nextButton = _root.Q<Button>("next-button");
             _highlightOverlay = _root.Q<VisualElement>("highlight-overlay");
@@ -74,7 +80,7 @@ namespace QC.Systems.Tutorials
 
             _onRequestTutorialEvent = new EventBinding<OnRequestTutorialEvent>(OnTutorialRequested);
             _onGameplaySignalEvent = new EventBinding<OnGameplaySignalEvent>(OnGameplaySignal);
-            
+
             _uiEventBus.Register(_onRequestTutorialEvent);
             _uiEventBus.Register(_onGameplaySignalEvent);
         }
@@ -82,6 +88,7 @@ namespace QC.Systems.Tutorials
         private void OnDisable()
         {
             _nextButton.clicked -= OnNextClicked;
+            StopFlipbook();
 
             _uiEventBus.Deregister(_onRequestTutorialEvent);
             _uiEventBus.Deregister(_onGameplaySignalEvent);
@@ -117,7 +124,7 @@ namespace QC.Systems.Tutorials
             _previousCursorVisible = Cursor.visible;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-            
+
             _modalPanel.style.display = DisplayStyle.Flex;
             _uiEventBus.Raise(new OnTutorialModalOpened());
             ShowCurrentStep();
@@ -131,13 +138,9 @@ namespace QC.Systems.Tutorials
 
             _headerLabel.text = step.headerText;
             _bodyLabel.text = step.bodyText;
-            bool hasIllustration = step.illustration != null;
-            _illustration.style.display = hasIllustration ? DisplayStyle.Flex : DisplayStyle.None;
-            if (hasIllustration)
-            {
-                _illustration.style.backgroundImage = new StyleBackground(step.illustration);
-            }
+            if (_bodyScroll != null) _bodyScroll.scrollOffset = Vector2.zero;
 
+            UpdateIllustration(step);
             UpdateHighlight(step);
 
             _waitingForEvent = step.advanceMode == TutorialAdvanceMode.WaitForEvent;
@@ -184,6 +187,8 @@ namespace QC.Systems.Tutorials
 
         private void EndSequence()
         {
+            StopFlipbook();
+
             string id = _currentSequence.tutorialId;
 
             _modalPanel.RemoveFromClassList("modal-visible");
@@ -196,7 +201,7 @@ namespace QC.Systems.Tutorials
             HideImmediate();
             IsActive = false;
             _activeWorldTargetId = null;
-            
+
             Time.timeScale = _previousTimeScale;
             Cursor.lockState = _previousLockState;
             Cursor.visible = _previousCursorVisible;
@@ -212,6 +217,69 @@ namespace QC.Systems.Tutorials
         {
             _modalPanel.style.display = DisplayStyle.None;
             _highlightOverlay.style.display = DisplayStyle.None;
+        }
+
+        // ---------- Illustration ----------
+
+        private void UpdateIllustration(TutorialStep step)
+        {
+            StopFlipbook();
+
+            bool hasIllustration = step.illustrationMode != IllustrationMode.None;
+            _illustration.style.display = hasIllustration ? DisplayStyle.Flex : DisplayStyle.None;
+
+            // Let the text column reclaim the full row when there's nothing to
+            // sit alongside it, instead of leaving a blank gap.
+            if (_bodyScroll != null)
+            {
+                _bodyScroll.EnableInClassList("body-full-width", !hasIllustration);
+            }
+
+            switch (step.illustrationMode)
+            {
+                case IllustrationMode.None:
+                    break;
+
+                case IllustrationMode.Sprite:
+                    _illustration.style.backgroundImage = new StyleBackground(step.illustration);
+                    break;
+
+                case IllustrationMode.Flipbook:
+                    StartFlipbook(step.flipbookFrames, step.flipbookFrameRate);
+                    break;
+            }
+        }
+
+        private void StartFlipbook(Sprite[] frames, float frameRate)
+        {
+            if (frames == null || frames.Length == 0) return;
+
+            _currentFlipbookFrames = frames;
+            _flipbookFrameIndex = 0;
+            ShowFlipbookFrame();
+
+            float frameDurationMs = 1000f / Mathf.Max(frameRate, 1f);
+            _flipbookSchedule = _illustration.schedule
+                .Execute(AdvanceFlipbookFrame)
+                .Every((long)frameDurationMs);
+        }
+
+        private void ShowFlipbookFrame()
+        {
+            _illustration.style.backgroundImage = new StyleBackground(_currentFlipbookFrames[_flipbookFrameIndex]);
+        }
+
+        private void AdvanceFlipbookFrame()
+        {
+            _flipbookFrameIndex = (_flipbookFrameIndex + 1) % _currentFlipbookFrames.Length;
+            ShowFlipbookFrame();
+        }
+
+        private void StopFlipbook()
+        {
+            _flipbookSchedule?.Pause();
+            _flipbookSchedule = null;
+            _currentFlipbookFrames = null;
         }
 
         // ---------- Highlighting ----------
@@ -284,5 +352,3 @@ namespace QC.Systems.Tutorials
         }
     }
 }
-
-

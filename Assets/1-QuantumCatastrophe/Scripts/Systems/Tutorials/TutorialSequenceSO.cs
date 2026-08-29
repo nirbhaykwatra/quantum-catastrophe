@@ -1,4 +1,6 @@
 // TutorialSequenceSO.cs
+
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace QC.Systems.Tutorials
@@ -16,13 +18,30 @@ namespace QC.Systems.Tutorials
 
     public enum TutorialAdvanceMode { ButtonClick, WaitForEvent, Timer }
 
+    // Flipbook plays a pre-sliced Sprite[] (frames exported from a source GIF via
+    // ffmpeg/ImageMagick/etc.) on a timer — no VideoPlayer/VideoClip involved, so
+    // it behaves identically on every platform, WebGL included.
+    public enum IllustrationMode { None, Sprite, Flipbook }
+
     [System.Serializable]
     public class TutorialStep
     {
         [Header("Content")]
         public string headerText;
         [TextArea] public string bodyText;
+
+        [Header("Illustration")]
+        public IllustrationMode illustrationMode;
+        
+        [Tooltip("Used when illustrationMode == Sprite.")]
         public Sprite illustration;
+
+        [Tooltip("Used when illustrationMode == Flipbook. Frames in playback order, " +
+                 "sliced from the source GIF ahead of time.")]
+        public Sprite[] flipbookFrames;
+
+        [Tooltip("Playback speed for flipbookFrames, in frames per second.")]
+        public float flipbookFrameRate = 12f;
 
         [Header("Highlight")]
         public HighlightMode highlightMode;

@@ -448,7 +448,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -45079521
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: -7790486547820539382, guid: 9189de69b2e936247a4c2729d941c824, type: 3}
@@ -496,10 +496,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
   OperationMode: 1
-  RequiredItem: {fileID: 11400000, guid: 6b7e95e7a3f566e459cc6674076bfba4, type: 2}
+  RequiredItem:
+    Item: {fileID: 0}
+    Quantity: 0
+    Type: 0
   m_doorCollider: {fileID: 1085185380372726171}
   m_doorTrigger: {fileID: 4046024577820331591}
   m_destroyItemOnUse: 1
+  m_itemRequiredToUnlock: 0
   <IsLocked>k__BackingField: 1
 --- !u!61 &1085185380372726171
 BoxCollider2D:

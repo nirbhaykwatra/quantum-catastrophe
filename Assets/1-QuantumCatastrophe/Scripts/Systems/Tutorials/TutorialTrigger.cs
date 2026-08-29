@@ -1,7 +1,9 @@
 ﻿using System;
 using QC.Utilities.EventBusSystem;
 using QC.Utilities.ServiceLocation;
+using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace QC.Systems.Tutorials
 {
@@ -9,6 +11,10 @@ namespace QC.Systems.Tutorials
     {
         [SerializeField] private TutorialSequenceSO sequence;
         [SerializeField] private bool fireOnce = true;
+        [SerializeField] private bool triggerWorldEvent;
+        
+        [ShowIf("triggerWorldEvent")]
+        [SerializeField]  private UnityEvent _worldEvent;
 
         private bool _hasFired;
         private EventBinding<OnTutorialCompleted> _tutorialCompletedEvent;
@@ -35,6 +41,7 @@ namespace QC.Systems.Tutorials
         private void Fire()
         {
             if (fireOnce && _hasFired) return;
+            if (triggerWorldEvent && _worldEvent != null) _worldEvent.Invoke();
 
             _hasFired = true;
             ServiceLocator.ForSceneOf(this).Get<EventBusRegistry>().Get<UIEventBus>().Raise(new OnRequestTutorialEvent { Sequence = sequence });

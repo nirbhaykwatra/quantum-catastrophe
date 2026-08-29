@@ -15,4 +15,4 @@ MonoBehaviour:
   LevelName: Tutorial
   Thumbnail: {fileID: 21300000, guid: eabb20ba4a9a32d43be5f388597be91c, type: 3}
   IsLocked: 0
-  ThumbnailTint: {r: 0.78867924, g: 0.27634335, b: 0.034225617, a: 1}
+  ThumbnailTint: {r: 0.7882353, g: 0.035294134, b: 0.74496067, a: 1}

@@ -1,12 +1,14 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/1-QuantumCatastrophe/UI/Common/Tutorials/Tutorial.uss?fileID=7433441132597879392&amp;guid=2d1e005f486392a4f8699ead6b05c56f&amp;type=3#Tutorial"/>
-    <ui:VisualElement name="modal-panel" class="modal-panel" style="flex-grow: 1; width: auto; margin-left: 150px; margin-right: 150px; margin-top: 100px; margin-bottom: 100px; height: 100%;">
-        <ui:Label text="" name="header-label" style="width: 50%; align-self: center; -unity-text-align: upper-center; font-size: 40px;"/>
-        <ui:VisualElement name="body" style="flex-grow: 1; flex-direction: row;">
-            <ui:Label text="" name="body-label" style="width: 50%; white-space: pre-wrap;"/>
-            <ui:VisualElement name="illustration" style="flex-grow: 1; overflow: hidden; -unity-background-scale-mode: scale-to-fit;"/>
+    <ui:VisualElement name="modal-panel" class="modal-panel">
+        <ui:Label text="" name="header-label" class="modal-header-label"/>
+        <ui:VisualElement name="body" class="modal-body">
+            <ui:ScrollView name="body-scroll" class="modal-body-scroll">
+                <ui:Label text="" name="body-label" class="modal-body-label"/>
+            </ui:ScrollView>
+            <ui:VisualElement name="illustration" class="modal-illustration"/>
         </ui:VisualElement>
-        <ui:Button text="Okay" name="next-button" class="tutorial-next-button" style="align-items: auto; align-self: center; width: 15%; height: 8%;"/>
+        <ui:Button text="Okay" name="next-button" class="tutorial-next-button"/>
     </ui:VisualElement>
-    <ui:VisualElement name="highlight-overlay" picking-mode="Ignore" style="flex-grow: 1; width: 98px; height: 0;"/>
+    <ui:VisualElement name="highlight-overlay" picking-mode="Ignore" class="highlight-overlay"/>
 </ui:UXML>

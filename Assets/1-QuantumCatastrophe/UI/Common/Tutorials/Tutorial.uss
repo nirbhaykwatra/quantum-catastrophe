@@ -1,16 +1,18 @@
 .modal-panel {
     background-image: resource("UI/Tutorials/Background");
-    -unity-slice-left: 6; -unity-slice-right: 6;
-    -unity-slice-top: 6; -unity-slice-bottom: 6;
-    width: 480px;
-    min-height: 220px;
-    max-height: 480px;
+    -unity-slice-left: 6;
+    -unity-slice-right: 6;
+    -unity-slice-top: 6;
+    -unity-slice-bottom: 6;
+    width: 1024px;
+    height: 480px;
     padding: 24px;
-
     flex-direction: column;
     align-items: stretch;
-
-    /* Enter/exit state — toggled via .modal-visible in TutorialModalController */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
     opacity: 0;
     scale: 0.9 0.9;
     transition-property: opacity, scale;
@@ -22,14 +24,72 @@
     opacity: 1;
     scale: 1 1;
 }
+
+.modal-header-label {
+    margin: 6px 3px 6px 3px;
+    padding: 0;
+    width: 50%;
+    height: 50px;
+    align-self: center;
+    -unity-text-align: middle-center;
+    font-size: 40px;
+    white-space: pre-wrap;
+    -unity-text-generator: advanced;
+    -unity-text-auto-size: best-fit 10px 47px;
+    -unity-font-definition: url("project://database/Assets/1-QuantumCatastrophe/Art/UI/PxPlus_IBM_VGA8.ttf?fileID=12800000&guid=cdd9fd7c8367be14393bfd18c833cfbd&type=3#PxPlus_IBM_VGA8");
+}
+
+.modal-body {
+    flex-grow: 1;
+    flex-direction: row;
+}
+
+.modal-body-scroll {
+    width: 50%;
+    flex-shrink: 0;
+    transition-property: width;
+    transition-duration: 0.15s;
+}
+
+.modal-body-scroll.body-full-width {
+    width: 100%;
+}
+
+.modal-body-label {
+    white-space: pre-wrap;
+    -unity-text-generator: advanced;
+    -unity-text-auto-size: best-fit 10px 25px;
+    -unity-font-definition: url("project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=c87da6f3fe89fcb439d145586bd4ac0e&type=3#NotInter-Regular");
+}
+
+.modal-illustration {
+    flex-grow: 1;
+    overflow: hidden;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
 .tutorial-next-button {
     background-image: resource("UI/Tutorials/Button");
-    -unity-slice-left: 4; -unity-slice-right: 4; -unity-slice-top: 4; -unity-slice-bottom: 4;
+    -unity-slice-left: 4;
+    -unity-slice-right: 4;
+    -unity-slice-top: 4;
+    -unity-slice-bottom: 4;
+    align-self: center;
+    width: 25%;
+    height: 15%;
+    font-size: 26px;
+    white-space: pre-wrap;
+    -unity-text-generator: advanced;
+    -unity-text-auto-size: best-fit 8px 40px;
+    -unity-font-definition: url("project://database/Packages/com.mischief.markdownviewer/Editor/Skin/JetBrainsMono-Bold.ttf?fileID=12800000&guid=19776cb85294a9c449b77f0c7ef63bbe&type=3#JetBrainsMono-Bold");
 }
-.tutorial-next-button:hover { -unity-background-image-tint-color: red; }
-.tutorial-next-button:active {  }
 
-/* ---------- Highlight overlay ---------- */
+.tutorial-next-button:hover {
+    -unity-background-image-tint-color: red;
+}
+
+.tutorial-next-button:active {
+}
 
 .highlight-overlay {
     position: absolute;
@@ -37,22 +97,17 @@
     top: 0;
     right: 0;
     bottom: 0;
-
-    /* Dim-rects surround the spotlighted target, not cover it — the
-       overlay itself must never block clicks on either the target
-       underneath (world object or UI element) or anything else. */
     align-items: flex-start;
 }
 
 .dim-rect {
     background-color: rgba(0, 0, 0, 0.65);
-
-    /* fade in alongside the modal rather than popping in instantly */
     opacity: 0;
     transition-property: opacity;
     transition-duration: 0.2s;
 }
 
-.highlight-overlay, .dim-rect {
+.highlight-overlay,
+.dim-rect {
     pointer-events: none;
 }

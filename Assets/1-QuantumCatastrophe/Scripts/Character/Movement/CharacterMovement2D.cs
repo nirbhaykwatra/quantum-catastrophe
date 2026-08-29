@@ -113,6 +113,7 @@ public class CharacterMovement2D : CharacterMovementBase
     }
     
     public void ResetJumpCount() => m_jumpCount = 0;
+    public void ResetMidAirJumpCount() => m_jumpCount = 1;
 
     public void TryWallJump()
     {

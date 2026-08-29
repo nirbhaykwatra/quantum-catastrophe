@@ -81,7 +81,7 @@ namespace QC.Character
         [Title("Read-Only Fields")] 
         [ShowInInspector] [ReadOnly] public bool IsDashing { get; private set; }
         [ShowInInspector] [ReadOnly] public bool CanDash { get; set; } = true;
-        [ShowInInspector] [ReadOnly] public bool CanAirDash { get; set; }
+        [ShowInInspector] [ReadOnly] public bool CanAirDash { get; set; } = true;
         [ShowInInspector] [ReadOnly] public Vector2 DashDirection { get; set; }
         
         private Rigidbody2D m_rigidbody;
@@ -89,6 +89,8 @@ namespace QC.Character
         private float m_initialGravityScale;
         private float m_dashCooldownTimer;
         private Vector2 m_dashDestination;
+        private Coroutine m_dashCoroutine;
+        private bool m_dashCancelRequested;
         
         // --- Entanglement Variables ---
         
@@ -143,26 +145,44 @@ namespace QC.Character
         
         public void RechargeDashCooldown()
         {
-            IsDashing = false;
-            StopCoroutine(PerformDash(isAirDash: false));
+            CancelActiveDash();
             m_dashCooldownTimer = DashCooldown;
+            CanDash = true;
         }
-        
+
         public void RechargeAirDashCooldown()
         {
-            IsDashing = false;
-            StopCoroutine(PerformDash(isAirDash: true));
+            CancelActiveDash();
             CanAirDash = true;
         }
-        
+
+        private void CancelActiveDash()
+        {
+            m_dashCancelRequested = true;
+
+            if (m_dashCoroutine != null)
+            {
+                StopCoroutine(m_dashCoroutine);
+                m_dashCoroutine = null;
+            }
+
+            // Restore state ourselves — don't rely on the coroutine's own
+            // cleanup code running, since Unity doesn't guarantee that when
+            // a coroutine is stopped externally via StopCoroutine.
+            m_rigidbody.gravityScale = m_initialGravityScale;
+            m_movement.CanMove = true;
+            m_movement.CanTurn = true;
+            IsDashing = false;
+        }
+
         public void TryDash()
         {
-            StartCoroutine(PerformDash(isAirDash: false));
+            m_dashCoroutine = StartCoroutine(PerformDash(isAirDash: false));
         }
 
         public void TryAirDash()
         {
-            StartCoroutine(PerformDash(isAirDash: true));
+            m_dashCoroutine = StartCoroutine(PerformDash(isAirDash: true));
         }
 
         public void OnGrounded()
@@ -184,42 +204,46 @@ namespace QC.Character
                 if (!CanDash) yield break;
             }
 
-            float timer = 0f;
-            float progress = 0f;
+            m_dashCancelRequested = false;
             m_rigidbody.gravityScale = 0f;
             m_movement.CanMove = false;
             m_movement.CanTurn = false;
             IsDashing = true;
-            
-            // find start/end positions
+
+            float timer = 0f;
+            float progress = 0f;
+
             Vector2 direction = m_movement.MoveInput.magnitude > 0.1f ? m_movement.MoveInput : transform.forward;
             Vector2 start = transform.position;
             Vector2 destination = start + (direction * DashDistance);
-            
+
             RaycastHit2D hit = Physics2D.Linecast(start + Vector2.up * DashCheckOffset, destination + Vector2.up * DashCheckOffset, GroundMask);
             if (hit.collider != null)
             {
                 destination = start + direction * (hit.distance - DashCheckRadius);
             }
-            
+
             m_dashDestination = destination;
 
             float velocity = DashDistance / DashDuration;
-            float duration = Vector2.Distance(start, destination) / velocity; 
-            
+            float duration = Vector2.Distance(start, destination) / velocity;
+
             while (progress < 1f)
             {
+                if (m_dashCancelRequested) yield break; // cleanup already handled by CancelActiveDash
+
                 timer += Time.deltaTime;
                 progress = timer / duration;
-                
+
                 DashDirection = (destination - start).normalized;
-                
+
                 Vector2 position = Vector2.Lerp(start, destination, progress);
                 m_rigidbody.MovePosition(position);
-                
+
                 yield return null;
             }
-            
+
+            // Natural completion — only reached if nobody cancelled us
             m_rigidbody.gravityScale = m_initialGravityScale;
             m_movement.CanMove = true;
             m_movement.CanTurn = true;

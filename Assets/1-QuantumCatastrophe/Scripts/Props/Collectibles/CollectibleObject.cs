@@ -1,10 +1,11 @@
 using System;
 using QC.Character;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class CollectibleObject : MonoBehaviour
 {
-    [SerializeField] private LootEntry Item;
+    [SerializeField] [ShowInInspector] private LootEntry Item;
     private Animator m_animator;
     
     private void Awake()

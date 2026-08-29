@@ -1,11 +1,10 @@
 using System;
 using System.Collections.Generic;
-using FMOD;
+using QC.Systems.Notifications;
+using QC.Utilities.EventBusSystem;
 using Sirenix.OdinInspector;
 using UnityEngine;
-using Newtonsoft.Json;
-using QC.Props.QuantumObjects;
-using Debug = UnityEngine.Debug;
+using ServiceLocator = QC.Utilities.ServiceLocation.ServiceLocator;
 
 namespace QC.Character
 {
@@ -27,6 +26,8 @@ namespace QC.Character
         [ShowInInspector]
         [SerializeField]
         private List<InventorySlot> Inventory = new();
+
+        [SerializeField] private float NotificationDuration = 5f;
 
         private CharacterAbilities _abilities;
 
@@ -89,11 +90,33 @@ namespace QC.Character
                 }
             }
             AddItem(entry.Item, entry.Quantity);
+            string message = entry.Quantity > 1
+                ? $"Received {entry.Quantity}× {entry.Item.Name}!"
+                : $"Received {entry.Item.Name}!";
+
+            ServiceLocator.ForSceneOf(this).Get<EventBusRegistry>().Get<UIEventBus>().Raise(new OnRequestNotification
+            {
+                Message = message,
+                Icon = entry.Item.Icon,
+                Type = NotificationType.Info,
+                Duration = NotificationDuration
+            });
         }
 
         public void RemoveItem(LootEntry entry)
         {
             RemoveItem(entry.Item, entry.Quantity);
+            string message = entry.Quantity > 1
+                ? $"Removed {entry.Quantity}× {entry.Item.Name}!"
+                : $"Removed {entry.Item.Name}!";
+
+            ServiceLocator.ForSceneOf(this).Get<EventBusRegistry>().Get<UIEventBus>().Raise(new OnRequestNotification
+            {
+                Message = message,
+                Icon = entry.Item.Icon,
+                Type = NotificationType.Info,
+                Duration = NotificationDuration
+            });
             if (entry.Type == LootType.KeyItem)
             {
                 // TODO: Find a type safe way to do this, without the hard coded string

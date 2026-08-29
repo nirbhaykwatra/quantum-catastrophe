@@ -15,7 +15,7 @@ public class Box : MonoBehaviour, IInteractable
     private TextMeshProUGUI m_interactionText;
     private bool m_isOpen = false;
 
-    [SerializeField] private List<LootEntry> Items;
+    [SerializeField] [ShowInInspector] private List<LootEntry> Items;
     [SerializeField] private bool SendMessageOnOpen = false;
     
     [ShowIf("SendMessageOnOpen")]

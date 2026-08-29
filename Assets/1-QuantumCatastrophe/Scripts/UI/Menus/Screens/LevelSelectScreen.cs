@@ -24,7 +24,7 @@ public class LevelSelectScreen : MenuScreen
             TemplateContainer item = _levelSelectItemTemplate.Instantiate();
             Debug.Log($"item: {item.Q<Button>("level-select-item-button")}");
             Button btn = item.Q<Button>("level-select-item-button");
-            btn.text = level.IsLocked ? "Locked" : level.LevelName;
+            btn.text = level.IsLocked ? "Locked" : level.LevelName.SplitPascalCase();
             btn.style.backgroundImage = new StyleBackground(level.Thumbnail);
             btn.style.unityBackgroundImageTintColor = level.IsLocked ? Color.grey : level.ThumbnailTint;
             btn.RegisterCallback<ClickEvent>(_ => OnLevelClicked(level));
