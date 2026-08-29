@@ -72,7 +72,6 @@ namespace QC.Props
             foreach (BaseControlStationAction action in ControlStationActions)
             {
                 action.Execute(context, _uiEventBus);
-                ServiceLocator.ForSceneOf(this).Get<EventBusRegistry>().Get<UIEventBus>().Raise(new OnRequestNotification { Duration = 3f, Message = action.NotificationText, Type = action.NotificationType});
             }
             
             Close();

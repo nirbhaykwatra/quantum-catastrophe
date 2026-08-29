@@ -310,7 +310,7 @@ namespace QC.Utilities.ServiceLocation
                 s_global = null;
             }
             // Remove from scene containers if this is a scene locator
-            else if (s_sceneContainers.ContainsValue(this)) s_sceneContainers.Remove(gameObject.scene);
+            else if (s_sceneContainers.ContainsValue(this) && s_sceneContainers != null) s_sceneContainers.Remove(gameObject.scene);
         }
 
         /// <summary>

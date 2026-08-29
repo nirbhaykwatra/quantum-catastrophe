@@ -32,7 +32,7 @@ namespace QC.Props.ControlStationActions
                     Message = message,
                     Icon = entry.Item.Icon,
                     Type = NotificationType,
-                    Duration = 3f
+                    Duration = NotificationDuration
                 });
             }
         }

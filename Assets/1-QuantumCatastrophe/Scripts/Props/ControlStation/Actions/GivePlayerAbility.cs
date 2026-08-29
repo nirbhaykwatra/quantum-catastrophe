@@ -21,6 +21,13 @@ namespace QC.Props.ControlStationActions
                 if (Ability.HasFlag(abilityFlag))
                 {
                     abilities.UnlockAbility(abilityFlag);
+                    eventBus.Raise(new OnRequestNotification
+                    {
+                        Message = NotificationText,
+                        Icon = NotificationIcon,
+                        Type = NotificationType,
+                        Duration = NotificationDuration
+                    });
                 }
             }
         }

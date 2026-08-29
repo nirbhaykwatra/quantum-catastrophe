@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using QC.Utilities.EventBusSystem;
 using QC.Utilities.ServiceLocation;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -20,6 +21,14 @@ namespace QC.Systems.Notifications
         [SerializeField] private VisualTreeAsset notificationTemplate;
         [SerializeField] private int poolSize = 5;
         [SerializeField] private int maxConcurrent = 3;
+
+        [Title("Debug")] 
+        
+        [SerializeField] 
+        [ShowInInspector]
+        private LootEntry _debugLoot;
+
+        [SerializeField] private NotificationType _debugNotificationType;
 
         private VisualElement _root;
         private VisualElement _container;
@@ -69,6 +78,7 @@ namespace QC.Systems.Notifications
             }
 
             DisplayNotification(request);
+            Debug.Log($"Notification requested! Duration: {request.Duration} Message: {request.Message} Type: {request.Type}");
         }
 
         private void DisplayNotification(OnRequestNotification request)
@@ -133,6 +143,13 @@ namespace QC.Systems.Notifications
             NotificationType.Achievement => "notification-achievement",
             _ => "notification-info",
         };
+        
+        [Title("Debug")]
+        [Button]
+        private void TestNotification()
+        {
+            Show(new OnRequestNotification { Duration = 5f, Icon = _debugLoot.Item.Icon, Message = $" Test for {_debugLoot.Item.Name}", Type = _debugNotificationType});
+        }
     }
 }
 

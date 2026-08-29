@@ -12,6 +12,13 @@ namespace QC.Props.ControlStationActions
         public override void Execute(in InteractionContext context, UIEventBus eventBus)
         {
             OnWorldInteract?.Invoke();
+            eventBus.Raise(new OnRequestNotification
+            {
+                Message = NotificationText,
+                Icon = NotificationIcon,
+                Type = NotificationType,
+                Duration = NotificationDuration
+            });
         }
     }
 }

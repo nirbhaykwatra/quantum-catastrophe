@@ -8,6 +8,7 @@ public class EnergyBarrier : MonoBehaviour
     [SerializeField] private GameObject m_collider;
 
     private EnergyBarrierController m_controller;
+    private bool m_forceAppliedThisDash;
     
     private void Awake()
     {
@@ -22,17 +23,15 @@ public class EnergyBarrier : MonoBehaviour
             AddForceInDashDirection(other);
         }
     }
-
-    // TODO: If this is not present, then the player cannot dash through the barrier when standing within the trigger
-    //  and with this, the dash force is added each frame the player is in the trigger. Figure out a fix.
-    // private void OnTriggerStay2D(Collider2D other)
-    // {
-    //     if (other.gameObject.GetComponent<CharacterAbilities>() != null)
-    //     {
-    //         if (!other.gameObject.GetComponent<CharacterAbilities>().EnableTunnelingBarriers) return;
-    //         AddForceInDashDirection(other);
-    //     }
-    // }
+    
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.GetComponent<CharacterAbilities>() != null)
+        {
+            if (!other.gameObject.GetComponent<CharacterAbilities>().EnableTunnelingBarriers) return;
+            AddForceInDashDirection(other);
+        }
+    }
 
     private void OnTriggerExit2D(Collider2D other)
     {
@@ -48,7 +47,7 @@ public class EnergyBarrier : MonoBehaviour
         PlayerController player = other.gameObject.GetComponent<PlayerController>();
         if (player)
         {
-            // m_collider.SetActive(true);
+            m_forceAppliedThisDash = false;
             m_controller.Activate();
             CharacterAbilities abilities = player.GetComponent<CharacterAbilities>();
             CharacterMovement2D movement = player.GetComponent<CharacterMovement2D>();
@@ -68,7 +67,7 @@ public class EnergyBarrier : MonoBehaviour
 
             if (abilities.IsDashing)
             {
-                // m_collider.SetActive(false);
+                m_forceAppliedThisDash = true;
                 m_controller.Deactivate();
                 rb.AddForce(abilities.DashDirection * EjectionForce, ForceMode2D.Impulse);
             }

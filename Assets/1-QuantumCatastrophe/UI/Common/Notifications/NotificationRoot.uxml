@@ -1,4 +1,4 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/1-QuantumCatastrophe/UI/Common/Notifications/Notification.uss?fileID=7433441132597879392&amp;guid=cf564207d118eb34fb4f18437cc94890&amp;type=3#Notification"/>
-    <ui:VisualElement name="notification-container" class="notification-container" style="position: absolute; bottom: auto; right: 20px; width: 400px; top: 0;"/>
+    <Style src="project://database/Assets/1-QuantumCatastrophe/UI/Common/Notifications/Notification.uss?fileID=7433441132597879392&amp;guid=cf564207d118eb34fb4f18437cc94890&amp;type=3"/>
+    <ui:VisualElement name="notification-container" class="notification-container"/>
 </ui:UXML>

@@ -11,7 +11,9 @@ namespace QC.Props.ControlStationActions
     {
         public string ActionName;
         public string NotificationText;
+        public Sprite NotificationIcon;
         public NotificationType NotificationType;
+        public float NotificationDuration;
         public bool DebugConditions;
         
         [SerializeReference] 
