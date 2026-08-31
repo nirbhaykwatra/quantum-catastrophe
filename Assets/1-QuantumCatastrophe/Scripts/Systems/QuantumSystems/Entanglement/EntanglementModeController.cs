@@ -103,8 +103,9 @@ namespace QC.Systems.Entanglement
 
         public void OnToggleEntanglementMode(OnToggleEntanglement @event)
         {
-            Debug.Log($"Entanglement mode toggled");
             if (!m_abilities.EnableEntanglementMode) return;
+            
+            m_globalEventBus.Raise(new OnGameplaySignalEvent { SignalName = "entanglementModeToggled"});
 
             if (m_state == SelectionState.Inactive)
                 EnterEntanglementMode();
@@ -148,6 +149,7 @@ namespace QC.Systems.Entanglement
         {
             if (m_firstSelection != null)
             {
+                m_firstSelection.ChangeHighlightColor(Color.red);
                 m_firstSelection.Unhighlight();
                 m_firstSelection = null;
             }
@@ -167,7 +169,7 @@ namespace QC.Systems.Entanglement
         {
             if (clicked == null) return;
 
-            // Clicking an entangled Target directly disentangles it — no second click needed.
+            // Clicking an entangled Target directly disentangles it.
             if (clicked.IsEntangled && clicked.Role == EntanglementRole.Target)
             {
                 m_entanglementManager.BreakSpecificPair(clicked.Partner, clicked);
@@ -177,6 +179,7 @@ namespace QC.Systems.Entanglement
 
             // Free objects or Sources proceed to second-selection.
             m_firstSelection = clicked;
+            clicked.ChangeHighlightColor(Color.green);
             m_state = SelectionState.AwaitingSecondSelection;
         }
 

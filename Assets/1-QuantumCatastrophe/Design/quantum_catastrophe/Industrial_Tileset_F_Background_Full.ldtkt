@@ -1,0 +1,33 @@
+{
+  "Rects": null,
+  "Def": {
+    "__cHei": 8,
+    "__cWid": 12,
+    "cachedPixelData": {
+      "opaqueTiles": "010011000000010011110000010011110000010011100111100000000000100000000000100000000000111111000000",
+      "averageColors": "f7b8f6a8f7b8f7b8f6a7f5a787a887a877b876b877b877b8f7b8f7a8f7b8f6b8f597f597f6a8f6a8f597f6a7f6a8f7b9f6a8f597f6a8e597f5a7f5a7f5a7f5a7f5a7f5a7e6a7e5a7e6a8f5a7e6a8e6a7f5a7f5a7f597f5a7f597f6a7f5a7f596f6a876a8a6a8a6a876a8a6a8000000000000000000000000f6a876a896a896a866a886a8000000000000000000000000f6a886a8b6a8d6a8d6a8d6a8000000000000000000000000f6b8f6a8f6a8f7b8f6a8f7b8000000000000000000000000"
+    },
+    "customData": [
+
+    ],
+    "embedAtlas": null,
+    "enumTags": [
+
+    ],
+    "identifier": "Industrial_Tileset_F_Background_Full",
+    "padding": 0,
+    "pxHei": 256,
+    "pxWid": 384,
+    "relPath": "../Art/Environment/Raw/Industrial_Tileset/tileset_32/Industrial_Tileset_F_Background_Full.png",
+    "savedSelections": [
+
+    ],
+    "spacing": 0,
+    "tags": [
+
+    ],
+    "tagsSourceEnumUid": null,
+    "tileGridSize": 32,
+    "uid": 77
+  }
+}

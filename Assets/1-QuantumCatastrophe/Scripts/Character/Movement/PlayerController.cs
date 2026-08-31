@@ -101,7 +101,12 @@ public class PlayerController : MonoBehaviour
 
     public virtual void OnObserve(InputValue value)
     {
-        m_globalEventBus.Raise(new OnToggleSuperposition());
+        m_globalEventBus.Raise(new OnToggleSuperposition { Observed = value.isPressed});
+    }
+
+    public virtual void OnZoomOut(InputValue value)
+    {
+        m_globalEventBus.Raise(new OnZoomOut());
     }
     
     // TODO: Add control to disentangle selected object

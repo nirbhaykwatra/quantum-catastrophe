@@ -18,7 +18,11 @@ namespace QC.Utilities.EventBusSystem
     }
 
     public struct OnToggleEntanglement : IEvent { }
-    public struct OnToggleSuperposition : IEvent { }
+
+    public struct OnToggleSuperposition : IEvent
+    {
+        public bool Observed;
+    }
     
     public struct OnClickEntangle : IEvent { }
     
@@ -80,6 +84,11 @@ namespace QC.Utilities.EventBusSystem
     public struct OnTutorialCompleted : IEvent
     {
         public string TutorialId;
+    }
+
+    public struct OnZoomOut : IEvent
+    {
+        
     }
     
 }

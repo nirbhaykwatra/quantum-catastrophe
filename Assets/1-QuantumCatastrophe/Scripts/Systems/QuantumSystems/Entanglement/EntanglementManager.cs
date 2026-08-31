@@ -13,8 +13,6 @@ namespace QC.Systems.Entanglement
     /// </summary>
     public class EntanglementManager : PersistentSingleton<EntanglementManager>
     {
-        // ── Singleton-style scene reference ───────────────────────────────────
-
         // ── Internal pair record ──────────────────────────────────────────────
 
         private readonly struct EntanglementPair
@@ -30,6 +28,14 @@ namespace QC.Systems.Entanglement
         }
 
         private readonly List<EntanglementPair> m_pairs = new();
+
+        // ── Link visuals ──────────────────────────────────────────────────────
+
+        [Tooltip("Prefab with a LineRenderer + LinkBeamVisual component. Instantiated per active pair.")]
+        [SerializeField]
+        private LinkBeamVisual m_linkVisualPrefab;
+
+        private readonly Dictionary<(EntanglableComponent Source, EntanglableComponent Target), LinkBeamVisual> m_activeVisuals = new();
 
         // ── Back-propagation damping ──────────────────────────────────────────
 
@@ -132,6 +138,32 @@ namespace QC.Systems.Entanglement
 
             foreach (IEntanglementStrategy strategy in evt.Source.Strategies)
                 strategy.OnEntangled(evt.Source, evt.Target);
+
+            SpawnLinkVisual(evt.Source, evt.Target);
+        }
+
+        // ── Link visual management ────────────────────────────────────────────
+
+        private void SpawnLinkVisual(EntanglableComponent source, EntanglableComponent target)
+        {
+            if (m_linkVisualPrefab == null) return;
+
+            var key = (source, target);
+            if (m_activeVisuals.ContainsKey(key)) return; // already visualized, don't double-spawn
+
+            LinkBeamVisual visual = Instantiate(m_linkVisualPrefab);
+            visual.SetEndpoints(source.transform, target.transform);
+            m_activeVisuals[key] = visual;
+        }
+
+        private void DespawnLinkVisual(EntanglableComponent source, EntanglableComponent target)
+        {
+            var key = (source, target);
+            if (m_activeVisuals.TryGetValue(key, out LinkBeamVisual visual))
+            {
+                if (visual != null) Destroy(visual.gameObject);
+                m_activeVisuals.Remove(key);
+            }
         }
 
         private void HandlePairBroken(OnEntanglementPairBroken evt)
@@ -194,6 +226,8 @@ namespace QC.Systems.Entanglement
         {
             EntanglementPair pair = m_pairs[index];
             m_pairs.RemoveAt(index);
+
+            DespawnLinkVisual(pair.Source, pair.Target);
 
             // Notify each component, removing only the specific partner link.
             pair.Source?.OnDisentangled(pair.Target);

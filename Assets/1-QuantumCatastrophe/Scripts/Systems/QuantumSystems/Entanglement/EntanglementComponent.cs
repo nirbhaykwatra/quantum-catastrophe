@@ -63,10 +63,12 @@ namespace QC.Systems.Entanglement
         public bool PropagateBackToSource => m_propagateBackToSource;
 
         private EntanglementManager m_entanglementManager;
+        private Rigidbody2D _rb;
         
         private void Start()
         {
             m_entanglementManager = ServiceLocator.ForSceneOf(this).Get<EntanglementManager>();
+            _rb = GetComponent<Rigidbody2D>();
         }
 
         // ── Highlight API ─────────────────────────────────────────────────────
@@ -90,6 +92,13 @@ namespace QC.Systems.Entanglement
                 m_highlightObject.SetActive(false);
         }
 
+        public void ChangeHighlightColor(Color color)
+        {
+            SpriteRenderer spriteRenderer = m_highlightObject.GetComponentInChildren<SpriteRenderer>();
+            if (spriteRenderer != null)
+                spriteRenderer.color = color;
+        }
+
         // ── Entanglement lifecycle ────────────────────────────────────────────
 
         /// <summary>
@@ -101,7 +110,10 @@ namespace QC.Systems.Entanglement
             IsEntangled = true;
             Role = role;
             if (!m_partners.Contains(partner))
+            {
                 m_partners.Add(partner);
+                _rb.gravityScale = 0;
+            }
             Unhighlight();
         }
 
@@ -116,6 +128,9 @@ namespace QC.Systems.Entanglement
             {
                 IsEntangled = false;
                 Role = EntanglementRole.None;
+                _rb.linearVelocity = Vector2.zero;
+                _rb.angularVelocity = 0;
+                _rb.gravityScale = 1;
             }
         }
 

@@ -1,0 +1,1456 @@
+fileFormatVersion: 2
+guid: a985a72e00f507240bbb04b777a6f05c
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: f3268c876daf4890b6af6cd462063137, type: 3}
+  _reimportOnDependencyChange: 1
+  _pixelsPerUnit: 32
+  _overrideTexture: {instanceID: 0}
+  _sprites:
+  - name: Industrial_Tileset_F_Background_Full_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 4bcbfe50e9710814fadd44a4a9202674
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 0a260ada162878a4c9f7815590a90218
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 224
+      width: 32
+      height: 32
+    spriteID: dec4d547893adf44085d2ab4179f7f34
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 448be96d4dae24d4381ffd77e5f33d8e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 36b017b3934cda642902a7eff0f2229b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 224
+      width: 32
+      height: 32
+    spriteID: ac230ff08276c1f42bab04f9297edb8a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 3f1fb19874b48d6428467567f653a511
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 224
+      width: 32
+      height: 32
+    spriteID: d6757f2bb7496ac4f8ed5732c7b5e6d4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 5da86c84aaebe1445ac432636da8b9da
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 5bacf6adb93080242a3587b95db01561
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 224
+      width: 32
+      height: 32
+    spriteID: c8e701eb7e13ff74f87801d517eb34d1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 224
+      width: 32
+      height: 32
+    spriteID: cc2dfe0c3d0120a4ba42bf26d6e81598
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 192
+      width: 32
+      height: 32
+    spriteID: 3ff610ae7d6963d40b382077a072984a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 192
+      width: 32
+      height: 32
+    spriteID: d97da9a6788f73a4891b0357438d0638
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_14
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 192
+      width: 32
+      height: 32
+    spriteID: 3ea84d966f6d30147a11b7f38b2688ba
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_15
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 192
+      width: 32
+      height: 32
+    spriteID: 40627f274ccc89a4690bc9f7639c3d6e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_16
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 192
+      width: 32
+      height: 32
+    spriteID: 514fc1eadc34a5e42878fee2c422a52e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_17
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 192
+      width: 32
+      height: 32
+    spriteID: 732318b5153189043975a225428d17a8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_18
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 192
+      width: 32
+      height: 32
+    spriteID: 0bd0f66b49dc6c043b68a3933e574237
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_19
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 192
+      width: 32
+      height: 32
+    spriteID: 5baa4e878c1a95146b6045551375a07e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_20
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 192
+      width: 32
+      height: 32
+    spriteID: 8941357ccf063154ea412b779d0133e5
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_21
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 192
+      width: 32
+      height: 32
+    spriteID: 91114fdcfe54d324ab1d47f458390c09
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_22
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 192
+      width: 32
+      height: 32
+    spriteID: 0103a75e5563c494bb871f7b0faff998
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_23
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 192
+      width: 32
+      height: 32
+    spriteID: b149c338ee044004f817c5f2da9ea3f7
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_24
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 160
+      width: 32
+      height: 32
+    spriteID: 2ea0c85286f6b484e822f8535e90a58e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_25
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 160
+      width: 32
+      height: 32
+    spriteID: 489729a07d89d5245b1c32c786a17fd1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_26
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 160
+      width: 32
+      height: 32
+    spriteID: bd5e697de16b18f4e97620fc574b83db
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_27
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 160
+      width: 32
+      height: 32
+    spriteID: f7ed8db73fdcdc14b8e8dc6621916ddd
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_28
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 160
+      width: 32
+      height: 32
+    spriteID: ae0f41f15fda7cc43bbb6c488f0134bc
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_29
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 160
+      width: 32
+      height: 32
+    spriteID: 08a63bdd2a409c446a5b015c2f75925d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_30
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 160
+      width: 32
+      height: 32
+    spriteID: c484a6df3004198459f37e1954635a48
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_31
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 160
+      width: 32
+      height: 32
+    spriteID: a4b4136a3794c6447ac311d61e04b8fa
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_32
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 160
+      width: 32
+      height: 32
+    spriteID: 5f491382b73b3d54aaaefa92cd09ad03
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_33
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 160
+      width: 32
+      height: 32
+    spriteID: 57414df525ec30a4fa553aa16a4b2167
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_34
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 160
+      width: 32
+      height: 32
+    spriteID: 06d9071a602d079478a10b41e26865c1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_35
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 160
+      width: 32
+      height: 32
+    spriteID: 163b3e2e70c48094f84ffcb8b79d3574
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_36
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 128
+      width: 32
+      height: 32
+    spriteID: 7832b36a6292f524fbd78c00117e1ef6
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_37
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 128
+      width: 32
+      height: 32
+    spriteID: 10d811ee09aea304cab2ef9da9cec8ba
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_38
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 128
+      width: 32
+      height: 32
+    spriteID: abf1c60da4db09941bf30828ba8c681b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_39
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 128
+      width: 32
+      height: 32
+    spriteID: 517c6d47c7d07c344a76a7795b843b72
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_40
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 128
+      width: 32
+      height: 32
+    spriteID: 3427c7d7aa5f2f84282530c48dc11cc7
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_41
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 128
+      width: 32
+      height: 32
+    spriteID: 11546c9e28e96174fa474e6778366631
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_42
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 128
+      width: 32
+      height: 32
+    spriteID: 3871ed90d2ed31d4e84c24d6ee1955ba
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_43
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 128
+      width: 32
+      height: 32
+    spriteID: e3f47bd040288fa40a64eb2b24f9ac17
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_44
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 128
+      width: 32
+      height: 32
+    spriteID: 612b3efe93425f14081607146c33485b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_45
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 128
+      width: 32
+      height: 32
+    spriteID: 281e708bbab0022418af3269d6580031
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_46
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 128
+      width: 32
+      height: 32
+    spriteID: 555bfea00f71cea4ba1b71d80e481653
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_47
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 128
+      width: 32
+      height: 32
+    spriteID: a75f0c74a2d984c438c217bdbf7c7e1e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_48
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 96
+      width: 32
+      height: 32
+    spriteID: fb82bb4c22c49da4b9b09d070e249131
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_49
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 96
+      width: 32
+      height: 32
+    spriteID: f66cbbe65e85c3342be9d4930222e97c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_50
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 96
+      width: 32
+      height: 32
+    spriteID: 1b462f335f25b0c43ae48c4a09112ee8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_51
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 96
+      width: 32
+      height: 32
+    spriteID: c92702e7d133ed54c9e8239cd4b1421f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_52
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 96
+      width: 32
+      height: 32
+    spriteID: 628dbaef4c92f4849b106eb28bedd7b9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_53
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 96
+      width: 32
+      height: 32
+    spriteID: 95a18851a3c75044293fe8cdfe07fe5a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_54
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 96
+      width: 32
+      height: 32
+    spriteID: a64a62a0146425340a904b6d3bd39d5c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_55
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 96
+      width: 32
+      height: 32
+    spriteID: 35431e7041e1fbb4c8c0d19dbba3a772
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_56
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 96
+      width: 32
+      height: 32
+    spriteID: a7a1ff7d42c31984db88c0722567dccb
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_57
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 96
+      width: 32
+      height: 32
+    spriteID: eb52ff2f215e68346a5d70a7c166ffc6
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_58
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 96
+      width: 32
+      height: 32
+    spriteID: d002e9d58d8e9154c97496edffeb4b14
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_59
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 96
+      width: 32
+      height: 32
+    spriteID: cc3cc2ad31c359b4d9b9598aadc1b0f5
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_60
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 64
+      width: 32
+      height: 32
+    spriteID: ef6fc47292df9114fa6e6631b71887e6
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_61
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 64
+      width: 32
+      height: 32
+    spriteID: f18e4e82950c9fd4f8bfca1c67dfba0b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_62
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 0daef5326af458d4ba29cc581b9df225
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_63
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 64
+      width: 32
+      height: 32
+    spriteID: b3c18a40dedd92b4d9bc668c870bff74
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_64
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 64
+      width: 32
+      height: 32
+    spriteID: a54e5b8eed0dfbd4fa5e1c830011632a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_65
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 0cacf1294a22f344eb77f2e64ac9a41c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_66
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 57ba06138b260bf4890fe8b21faa3af2
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_67
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 778171ae749fdff40a3ed7d2a001b8d9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_68
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 64
+      width: 32
+      height: 32
+    spriteID: e248808a503e35441b239dfbbcf4641d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_69
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 7ea2614ee01c07f4ab9353fdd1fc96d4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_70
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 04b8e272f61faeb4cb6a59ad3805e8b1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_71
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 64
+      width: 32
+      height: 32
+    spriteID: ca27370226a2a1b4c9b23e4cbba81851
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_72
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 3685232eb89b37c4d87ac0fd45571da3
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_73
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 19d620502260c594e867206331d53b75
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_74
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 16e02c6e04f244343a7ebaa3c285dce6
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_75
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 8bf02ed8d82d65a4cbcf606ed7a88b4c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_76
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 32
+      width: 32
+      height: 32
+    spriteID: c9ef9179f5bd66141a931ca076885671
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_77
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 0b01401f0c8204e41bcfc9ac58fdda1c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_78
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 574c1e39fd981da42abf231c42e796db
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_79
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 32
+      width: 32
+      height: 32
+    spriteID: b95a09574c5db7d459d4b31c22b763e7
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_80
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 509663e10ec732a4cbff286b8200c02a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_81
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 49012fa37d8fb994181c2ab928cc9469
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_82
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 32
+      width: 32
+      height: 32
+    spriteID: e864c8d9c1b152047bf4e82b6c58cf5f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_83
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 32
+      width: 32
+      height: 32
+    spriteID: cdf9d3c6b87ecd34a8d45a4f011bc926
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_84
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 566ed0c55a8ef8e40a3e7549c42a05a1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_85
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 9add67f49c898d54e9583b5a8d8e8643
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_86
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 2aad43da3cce1c44fa781996dca6c9f2
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_87
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 6584d9011045c3840aa8b8ee215903db
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_88
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 0
+      width: 32
+      height: 32
+    spriteID: ab2898663a3a6ad46af394fabaaf3784
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_89
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 0
+      width: 32
+      height: 32
+    spriteID: b630e2773af4a3b4b8d266f13d5e9037
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_90
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 8275f061ee2e5324cbd2aed0abc9a856
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_91
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 2d36159c493ce7c40b2b5249e8924e25
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_92
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 0
+      width: 32
+      height: 32
+    spriteID: f1f3eaf55ae96ac49a75aaad902abec8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_93
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 0
+      width: 32
+      height: 32
+    spriteID: ec55b1a8d00701f41a15828e72040aff
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_94
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 3fb4f619c3b8a1549b6636607edee224
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Industrial_Tileset_F_Background_Full_95
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 0441209653ee67b40a4b247cc15f1978
+    spriteOutline: []
+    tessellationDetail: 0
+  _secondaryTextures: []
+  _artifacts: {instanceID: 0}

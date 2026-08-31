@@ -80,12 +80,21 @@
                 },
                 {
                     "name": "Observe",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "200bb108-ca3b-4403-a0df-ed4204c41c39",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "ZoomOut",
+                    "type": "Button",
+                    "id": "7c718b96-b6d9-41ba-b25f-ad2a295edcdf",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -339,6 +348,17 @@
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "Observe",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8fc77374-f9ba-4685-b3d2-4cc4a942641b",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "ZoomOut",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
