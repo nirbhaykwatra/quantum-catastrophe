@@ -100,6 +100,7 @@ namespace QC.Systems.Entanglement
         public void OnToggleEntanglementMode(OnToggleEntanglement @event)
         {
             if (!m_abilities.EnableEntanglementMode) return;
+            Debug.Log($"OnToggleEntanglement event callback");
             
             if (m_state == SelectionState.Inactive)
                 EnterEntanglementMode();

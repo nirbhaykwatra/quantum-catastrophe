@@ -36,6 +36,7 @@ public class CharacterMovement2D : CharacterMovementBase
     [ReadOnly]
     [ShowInInspector]
     private int m_jumpCount;
+    private bool m_wasGrounded;
     
     protected CharacterAbilities m_abilities;
 
@@ -160,8 +161,9 @@ public class CharacterMovement2D : CharacterMovementBase
     protected virtual void FixedUpdate()
     {
         // check for the ground
+        bool wasGrounded = IsGrounded;
         IsGrounded = CheckGrounded();
-        if (IsGrounded) ResetJumpCount();
+        if (IsGrounded && !wasGrounded) ResetJumpCount(); // only on the landing edge
         CanWallJump = CheckWallContact();
 
         // sends correct forward/right inputs to GetMovementAcceleration and applies result to rigidbody

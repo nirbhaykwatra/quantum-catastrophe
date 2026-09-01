@@ -20,7 +20,7 @@ MonoBehaviour:
 
 
       You
-      can press the "Q" button on your keyboard to go into Entanglement Mode!'
+      can press the "X" button on your keyboard to go into Entanglement Mode!'
     illustrationMode: 1
     illustration: {fileID: 8115644005664255767, guid: 8de39c38c3b208242ab8cb4cebe900a3, type: 3}
     flipbookFrames: []

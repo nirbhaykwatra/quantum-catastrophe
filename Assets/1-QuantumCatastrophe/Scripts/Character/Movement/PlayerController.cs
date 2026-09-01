@@ -92,7 +92,9 @@ public class PlayerController : MonoBehaviour
     }
 
     public virtual void OnModeChange(InputValue value)
-    { 
+    {
+        Debug.Log($"OnModeChange pure input");
+        Debug.Log($"Event Bus is null: {m_globalEventBus == null}");
         m_globalEventBus.Raise(new OnToggleEntanglement());
     }
 
@@ -103,6 +105,7 @@ public class PlayerController : MonoBehaviour
 
     public virtual void OnObserve(InputValue value)
     {
+        if (!Abilities.EnableSuperposition) return;
         m_globalEventBus.Raise(new OnToggleSuperposition { Observed = value.isPressed});
     }
 
