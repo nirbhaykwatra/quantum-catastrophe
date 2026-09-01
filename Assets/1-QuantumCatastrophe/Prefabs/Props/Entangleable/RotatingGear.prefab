@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5903980502351261368}
   - component: {fileID: 1213452088510846340}
   - component: {fileID: 7481906468362682214}
+  - component: {fileID: 1618991122825876100}
   m_Layer: 8
   m_Name: RotatingGear
   m_TagString: Untagged
@@ -63,7 +64,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 91d44f7d96393d742ad3cfa6c60b959a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -211,6 +212,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1618991122825876100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6766949766687376639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c99424eb05499cbddea7db8b706214, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QC.Systems.Entanglement.EntanglementIndicatorVisual
+  m_fadeSpeed: 4
 --- !u!1 &7055500737547340806
 GameObject:
   m_ObjectHideFlags: 0

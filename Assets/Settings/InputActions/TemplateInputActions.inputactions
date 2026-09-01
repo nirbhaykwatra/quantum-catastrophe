@@ -95,6 +95,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "ResetLevel",
+                    "type": "Button",
+                    "id": "420f467a-561b-4cd2-b660-a74cd2c93443",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -359,6 +368,17 @@
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "ZoomOut",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0bb7f2a0-ddc5-46a8-b50b-8e1ebff5cba6",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "ResetLevel",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 5912268706223136162}
   - component: {fileID: 1413664676610306538}
   - component: {fileID: 2266601629907034021}
+  - component: {fileID: 3356020534057704081}
+  - component: {fileID: 1096134798792689952}
   m_Layer: 8
   m_Name: PowerUnit
   m_TagString: Untagged
@@ -63,7 +65,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 91d44f7d96393d742ad3cfa6c60b959a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -241,6 +243,31 @@ MonoBehaviour:
   m_minPenetrationDepth: 0.1
   m_skinWidth: 0.01
   m_maxPushPerStep: 0.5
+--- !u!114 &3356020534057704081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011783793844252896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c99424eb05499cbddea7db8b706214, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QC.Systems.Entanglement.EntanglementIndicatorVisual
+  m_fadeSpeed: 4
+--- !u!114 &1096134798792689952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011783793844252896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ae8020e7dcb415cbadb1f5cd8587f02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PowerUnit
 --- !u!1 &3559285621561891992
 GameObject:
   m_ObjectHideFlags: 0

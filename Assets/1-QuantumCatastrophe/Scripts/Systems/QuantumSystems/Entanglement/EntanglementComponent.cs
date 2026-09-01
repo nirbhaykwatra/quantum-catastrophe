@@ -80,7 +80,7 @@ namespace QC.Systems.Entanglement
             {
                 m_highlightObject.SetActive(true);
                 SpriteRenderer spriteRenderer = m_highlightObject.GetComponentInChildren<SpriteRenderer>();
-                if (spriteRenderer != null)
+                if (spriteRenderer != null && spriteRenderer.color == Color.white)
                     spriteRenderer.color = Color.red;
             }
         }
@@ -109,6 +109,7 @@ namespace QC.Systems.Entanglement
         {
             IsEntangled = true;
             Role = role;
+            ChangeHighlightColor(Color.yellow);
             if (!m_partners.Contains(partner))
             {
                 m_partners.Add(partner);
@@ -128,6 +129,7 @@ namespace QC.Systems.Entanglement
             {
                 IsEntangled = false;
                 Role = EntanglementRole.None;
+                ChangeHighlightColor(Color.red);
                 _rb.linearVelocity = Vector2.zero;
                 _rb.angularVelocity = 0;
                 _rb.gravityScale = 1;

@@ -45,6 +45,8 @@ GameObject:
   - component: {fileID: 4900090961081626727}
   - component: {fileID: 1630862100060246485}
   - component: {fileID: 3966359935020877206}
+  - component: {fileID: 4664520972794218287}
+  - component: {fileID: 2828369188457028265}
   m_Layer: 8
   m_Name: Platform
   m_TagString: Untagged
@@ -94,7 +96,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 91d44f7d96393d742ad3cfa6c60b959a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -220,8 +222,42 @@ MonoBehaviour:
   _pointReachedDistance: 0.05
   _easingDistance: 1
   _physicsMode: 1
+  _movementMode: 0
   _activateOnStep: 0
+  _playerOffBehavior: 0
   m_entanglementSelector: {fileID: 4294727407651611341}
+--- !u!114 &4664520972794218287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3857541522459393004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c99424eb05499cbddea7db8b706214, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QC.Systems.Entanglement.EntanglementIndicatorVisual
+  m_fadeSpeed: 4
+--- !u!114 &2828369188457028265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3857541522459393004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19630ae044a14e7e9f7ed06447185ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QC.Systems.Entanglement.EntanglableComponent
+  m_strategies: []
+  m_impedanceSources: []
+  m_propagateBackToSource: 0
+  m_highlightObject: {fileID: 4294727407651611341}
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &4294727407651611341
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,7 +344,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
-  m_Size: {x: 6.65, y: 1.64}
+  m_Size: {x: 3.65, y: 1.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

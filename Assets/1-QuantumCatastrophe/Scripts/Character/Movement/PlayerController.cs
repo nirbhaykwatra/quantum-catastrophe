@@ -108,8 +108,11 @@ public class PlayerController : MonoBehaviour
     {
         m_globalEventBus.Raise(new OnZoomOut());
     }
-    
-    // TODO: Add control to disentangle selected object
+
+    public virtual void OnResetLevel(InputValue value)
+    {
+        m_globalEventBus.Raise(new OnResetLevel());
+    }
 
     protected virtual void Update()
     {

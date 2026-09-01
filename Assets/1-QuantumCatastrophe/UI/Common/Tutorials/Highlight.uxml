@@ -1,0 +1,4 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/1-QuantumCatastrophe/UI/Common/Tutorials/Tutorial.uss?fileID=7433441132597879392&amp;guid=2d1e005f486392a4f8699ead6b05c56f&amp;type=3#Tutorial"/>
+    <ui:VisualElement name="dim-rect" class="dim-rect" style="flex-grow: 1;"/>
+</ui:UXML>

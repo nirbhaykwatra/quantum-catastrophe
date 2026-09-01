@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a38ff11e56845d34bb1cbcc759d946a6, type: 3}
+  m_Name: EntanglementTutorial04
+  m_EditorClassIdentifier: Assembly-CSharp::QC.Systems.Tutorials.TutorialSequenceSO
+  tutorialId: ent04
+  steps:
+  - headerText: Solve The Puzzle!
+    bodyText: 'Welcome to the Entanglement tutorial!
+
+
+      To complete this tutorial,
+      you must reach the door at the top of the map. The door is currently locked.
+
+
+      You
+      must guide the 3 Tower Keys into the same force fields as their color. For
+      example, Red Tower goes in the Red Force Field and so on.
+
+
+      Use the power
+      of entanglement to guide the keys and escape! Good luck!'
+    illustrationMode: 0
+    illustration: {fileID: 0}
+    flipbookFrames: []
+    flipbookFrameRate: 12
+    highlightMode: 0
+    highlightTargetId: 
+    worldHighlightRadius: 60
+    advanceMode: 0
+    requiredEventName: 
+    timerSeconds: 0

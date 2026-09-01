@@ -66,7 +66,7 @@ namespace QC.Systems.Entanglement
         {
             m_abilities = GetComponent<CharacterAbilities>();
             if (m_camera == null) m_camera = Camera.main;
-            
+            m_globalEventBus = ServiceLocator.Global.Get<EventBusRegistry>().Get<GlobalEventBus>();
         }
 
         private void Start()
@@ -76,12 +76,8 @@ namespace QC.Systems.Entanglement
 
         private void OnEnable()
         {
-            m_globalEventBus = ServiceLocator.Global.Get<EventBusRegistry>().Get<GlobalEventBus>();
             m_toggleEntanglementBinding = new EventBinding<OnToggleEntanglement>(OnToggleEntanglementMode);
             m_clickEntangleBinding = new EventBinding<OnClickEntangle>(OnEntanglementSelect);
-
-            if (m_globalEventBus == null)
-                m_globalEventBus = ServiceLocator.Global.Get<EventBusRegistry>().Get<GlobalEventBus>();
 
             m_globalEventBus.Register(m_toggleEntanglementBinding);
             m_globalEventBus.Register(m_clickEntangleBinding);
@@ -105,8 +101,6 @@ namespace QC.Systems.Entanglement
         {
             if (!m_abilities.EnableEntanglementMode) return;
             
-            m_globalEventBus.Raise(new OnGameplaySignalEvent { SignalName = "entanglementModeToggled"});
-
             if (m_state == SelectionState.Inactive)
                 EnterEntanglementMode();
             else

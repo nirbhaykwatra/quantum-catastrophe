@@ -86,9 +86,8 @@ namespace QC.Utilities.EventBusSystem
         public string TutorialId;
     }
 
-    public struct OnZoomOut : IEvent
-    {
-        
-    }
+    public struct OnZoomOut : IEvent { }
+    
+    public struct OnResetLevel : IEvent { }
     
 }
