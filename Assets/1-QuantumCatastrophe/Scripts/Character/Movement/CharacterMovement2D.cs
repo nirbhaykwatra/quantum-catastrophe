@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using QC.Character;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -15,14 +16,20 @@ public class CharacterMovement2D : CharacterMovementBase
     
     [field: Header("Wall Jump")]
     [field: SerializeField] protected float WallJumpVelocity = 1.25f;
+    [field: SerializeField] protected float WallJumpHeight = 2f;
+    [field: SerializeField] protected float WallJumpHorizontalSpeed = 6f;
+    [field: SerializeField] protected float WallJumpControlLockDuration = 0.15f;
 
 #if UNITY_6000_0_OR_NEWER
     public override Vector3 Velocity { get => Rigidbody.linearVelocity; protected set => Rigidbody.linearVelocity = value; }
 #else
     public override Vector3 Velocity { get => Rigidbody.velocity; protected set => Rigidbody.velocity = value; }
 #endif
+    public bool CanDashJump { get; set; }
     protected Vector3 GroundCheckStart => transform.position + transform.up * GroundCheckOffset;
-    protected Vector3 WallCheckStart => transform.position + transform.up * WallCheckOffset;
+    protected Vector3 WallCheckStart => transform.position 
+                                        + transform.up * WallCheckOffset 
+                                        + (Vector3)(LookDirection.normalized * (Radius * 0.5f));
     
     [ReadOnly]
     public bool CanWallJump;
@@ -124,17 +131,27 @@ public class CharacterMovement2D : CharacterMovementBase
 
     private void WallJump()
     {
-        // calculate jump velocity from jump height and gravity
-        float jumpVelocity = Mathf.Sqrt(2f * -Gravity * JumpHeight);
-        // override current y velocity but maintain x/z velocity
-        Velocity = new Vector3(-LookDirection.x * (jumpVelocity * WallJumpVelocity), jumpVelocity * WallJumpVelocity, Velocity.z);
-        // rotate character to face wall
+        float verticalVelocity = Mathf.Sqrt(2f * -Gravity * WallJumpHeight);
+        float horizontalVelocity = -LookDirection.x * WallJumpHorizontalSpeed;
+        Velocity = new Vector3(horizontalVelocity, verticalVelocity, Velocity.z);
+
+        LookDirection = new Vector3(-LookDirection.x, 0f, 0f);
+
+        m_abilities.OnWallJump();
+        StartCoroutine(WallJumpControlLock());
+    }
+
+    private IEnumerator WallJumpControlLock()
+    {
+        CanMove = false;
+        yield return new WaitForSeconds(WallJumpControlLockDuration);
+        CanMove = true;
     }
 
     public override void Jump()
     {
         // calculate jump velocity from jump height and gravity
-        float jumpVelocity = Mathf.Sqrt(2f * -Gravity * JumpHeight);
+        float jumpVelocity = CanDashJump ? Mathf.Sqrt(2f * -Gravity * JumpHeight * m_abilities.DashJumpBoostMultiplier) : Mathf.Sqrt(2f * -Gravity * JumpHeight);
         // override current y velocity but maintain x/z velocity
         Velocity = new Vector3(Velocity.x, jumpVelocity, Velocity.z);
         m_jumpCount++;
@@ -144,6 +161,7 @@ public class CharacterMovement2D : CharacterMovementBase
     {
         // check for the ground
         IsGrounded = CheckGrounded();
+        if (IsGrounded) ResetJumpCount();
         CanWallJump = CheckWallContact();
 
         // sends correct forward/right inputs to GetMovementAcceleration and applies result to rigidbody
@@ -258,25 +276,25 @@ public class CharacterMovement2D : CharacterMovementBase
 
     protected bool CheckWallContact()
     {
-        // configure layer mask for 2D raycast
         ContactFilter2D filter = new ContactFilter2D();
         filter.SetLayerMask(WallMask);
-        // raycast to find ground
         RaycastHit2D[] hits = new RaycastHit2D[4];
-        RaycastHit2D wallHit = new RaycastHit2D();
-        Physics2D.Raycast(WallCheckStart, LookDirection, filter, hits, WallCheckDistance);
-        for (int i = 0; i < hits.Length; i++)
+        int hitCount = Physics2D.Raycast(WallCheckStart, LookDirection, filter, hits, WallCheckDistance);
+
+        float closestDistance = float.MaxValue;
+        bool foundWall = false;
+        for (int i = 0; i < hitCount; i++)
         {
             RaycastHit2D hit = hits[i];
-            if(hit.collider != null && hit.collider != CapsuleCollider)
+            if (hit.collider == null || hit.collider == CapsuleCollider) continue;
+            if (hit.distance < closestDistance)
             {
-                wallHit = hit;
-                continue;
+                closestDistance = hit.distance;
+                foundWall = true;
             }
         }
-        
-        if (wallHit.collider == null) return false;
-        return true;
+
+        return foundWall;
     }
 
     protected virtual void OnDrawGizmosSelected()

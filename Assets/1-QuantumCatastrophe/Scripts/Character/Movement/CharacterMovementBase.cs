@@ -62,12 +62,37 @@ public abstract class CharacterMovementBase : MonoBehaviour
     public bool IsGrounded { get; protected set; }
     public GameObject SurfaceObject { get; protected set; }
     public Vector3 SurfaceVelocity { get; protected set; }
-    public bool CanMove { get; set; } = true;
-    public bool CanTurn { get; set; } = true;
+    public bool CanMove
+    {
+        get => m_moveLockCount <= 0;
+        set
+        {
+            if (value) m_moveLockCount = Mathf.Max(0, m_moveLockCount - 1);
+            else m_moveLockCount++;
+        }
+    }
+
+    public bool CanTurn
+    {
+        get => m_turnLockCount <= 0;
+        set
+        {
+            if (value) m_turnLockCount = Mathf.Max(0, m_turnLockCount - 1);
+            else m_turnLockCount++;
+        }
+    }
+    // Hard reset — bypasses the movement lock count entirely. Use for respawns, debug
+    // commands, or anywhere you need to guarantee control is restored
+    // regardless of how many systems still think they hold a lock.
+    public void ForceUnlockAllMovement()
+    {
+        m_moveLockCount = 0;
+        m_turnLockCount = 0;
+    }
+    
     public Vector3 GroundNormal { get; protected set; } = Vector3.up;
     public float LastGroundedTime { get; protected set; }
     public Vector3 LastGroundedPosition { get; protected set; }
-
     // methods
     public virtual void TryJump() { }
     public virtual void Jump() { }
@@ -78,4 +103,7 @@ public abstract class CharacterMovementBase : MonoBehaviour
     {
         if (animationEvent.animatorClipInfo.weight > 0.5f && IsGrounded && NormalizedSpeed > 0.05f) OnFootstep.Invoke(SurfaceObject);
     }
+    
+    private int m_moveLockCount;
+    private int m_turnLockCount;
 }

@@ -19,6 +19,7 @@ public class DeathScreenController : MonoBehaviour
     private Button menuButton;
 
     private UIEventBus _uiEventBus;
+    private GlobalEventBus _globalEventBus;
     private EventBinding<OnDeath> _onDeath;
 
     private void Awake()
@@ -32,6 +33,7 @@ public class DeathScreenController : MonoBehaviour
         menuButton.clicked += OnMenuClicked;
 
         _uiEventBus = ServiceLocator.ForSceneOf(this).Get<EventBusRegistry>().Get<UIEventBus>();
+        _globalEventBus = ServiceLocator.ForSceneOf(this).Get<EventBusRegistry>().Get<GlobalEventBus>();
         _onDeath = new EventBinding<OnDeath>(HandleDeath);
     }
     
@@ -67,7 +69,8 @@ public class DeathScreenController : MonoBehaviour
     private void OnRetryClicked()
     {
         HideDeathScreen();
-        SceneManager.LoadScene(currentSceneName);
+        _globalEventBus.Raise(new OnRespawnPlayer());
+        screenFader.FadeIn(1000);
     }
 
     private void OnMenuClicked()

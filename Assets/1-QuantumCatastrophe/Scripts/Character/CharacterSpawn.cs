@@ -1,5 +1,7 @@
 using System;
 using GameEvents;
+using QC.Utilities.EventBusSystem;
+using QC.Utilities.ServiceLocation;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -16,12 +18,17 @@ public class CharacterSpawn : MonoBehaviour
     private CharacterHealth m_health;
     private Rigidbody2D m_rigidbody;
     private PlayerController m_playerController;
+
+    private GlobalEventBus _globalEventBus;
+    private EventBinding<OnRespawnPlayer> _respawnPlayer;
     
     private void Awake()
     {
         m_health = GetComponent<CharacterHealth>();
         m_rigidbody = GetComponent<Rigidbody2D>();
         m_playerController = GetComponent<PlayerController>();
+
+        _globalEventBus = ServiceLocator.ForSceneOf(this).Get<EventBusRegistry>().Get<GlobalEventBus>();
 
         if (PlayerPrefs.HasKey("LastCheckpointX"))
         {
@@ -38,6 +45,17 @@ public class CharacterSpawn : MonoBehaviour
             m_spawnPosition = LastCheckpoint;
             transform.SetPositionAndRotation(m_spawnPosition, Quaternion.identity);
         }
+    }
+
+    private void OnEnable()
+    {
+        _respawnPlayer = new EventBinding<OnRespawnPlayer>(HandlePlayerRespawn);
+        _globalEventBus.Register(_respawnPlayer);
+    }
+
+    private void OnDisable()
+    {
+        _globalEventBus.Deregister(_respawnPlayer);
     }
 
     private void Start()
@@ -76,5 +94,12 @@ public class CharacterSpawn : MonoBehaviour
         OnRespawn.Invoke(false);
         m_rigidbody.linearVelocity = Vector2.zero;
         m_playerController.DisableMovement(inputDisableTimer);
+    }
+
+    private void HandlePlayerRespawn()
+    {
+        m_rigidbody.linearVelocity = Vector2.zero;
+        TeleportToLastCheckpoint();
+        m_playerController.DisableMovement(1f);
     }
 }

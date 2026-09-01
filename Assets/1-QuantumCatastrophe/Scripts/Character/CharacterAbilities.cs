@@ -71,7 +71,15 @@ namespace QC.Character
         [field: SerializeField]
         public float DashCheckRadius { get; set; } = 0.25f;
         [field: SerializeField]
+        public float DashJumpBoostDuration { get; set; } = 0.2f;
+        [field: SerializeField]
+        public float DashJumpBoostMultiplier { get; set; } = 1.5f;
+        [field: SerializeField]
         public LayerMask GroundMask { get; set; }
+        
+        [field: Header("Wall Jump Interactions")]
+        [field: SerializeField] public bool RechargeDashOnWallJump { get; set; } = true;
+        [field: SerializeField] public bool RechargeAirDashOnWallJump { get; set; } = true;
         
         [SerializeField] private PlayerData m_playerData;
         private UIEventBus _uiEventBus;
@@ -166,13 +174,11 @@ namespace QC.Character
                 StopCoroutine(m_dashCoroutine);
                 m_dashCoroutine = null;
             }
-
             // Restore state ourselves — don't rely on the coroutine's own
             // cleanup code running, since Unity doesn't guarantee that when
             // a coroutine is stopped externally via StopCoroutine.
             m_rigidbody.gravityScale = m_initialGravityScale;
-            m_movement.CanMove = true;
-            m_movement.CanTurn = true;
+            m_movement.ForceUnlockAllMovement();
             IsDashing = false;
         }
 
@@ -240,10 +246,12 @@ namespace QC.Character
 
                 Vector2 position = Vector2.Lerp(start, destination, progress);
                 m_rigidbody.MovePosition(position);
-
+                
                 yield return null;
             }
 
+            StartCoroutine(DashJumpBoostWindow());
+            
             // Natural completion — only reached if nobody cancelled us
             m_rigidbody.gravityScale = m_initialGravityScale;
             m_movement.CanMove = true;
@@ -259,8 +267,21 @@ namespace QC.Character
             }
             IsDashing = false;
         }
+        
+        private IEnumerator DashJumpBoostWindow()
+        {
+            m_movement.CanDashJump = true;
+            yield return new WaitForSeconds(DashJumpBoostDuration);
+            m_movement.CanDashJump = false;
+        }
             
         #endregion
+        
+        public void OnWallJump()
+        {
+            if (RechargeDashOnWallJump) RechargeDashCooldown();
+            if (RechargeAirDashOnWallJump) RechargeAirDashCooldown();
+        }
         
         #region Ability API
 

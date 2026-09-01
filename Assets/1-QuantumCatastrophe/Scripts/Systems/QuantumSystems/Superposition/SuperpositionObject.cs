@@ -12,7 +12,7 @@ namespace QC.Systems.Superposition
         private bool _observed = true;
 
         [SerializeField]
-        private float _unobservedTransparency;
+        private float _unobservedTransparency = 0.5f;
 
         private Collider2D _collider;
         private SpriteRenderer _spriteRenderer;

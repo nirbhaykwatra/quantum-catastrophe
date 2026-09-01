@@ -42,6 +42,8 @@ namespace QC.Utilities.EventBusSystem
         public bool IsPlayer;
     }
     
+    public struct OnRespawnPlayer : IEvent { }
+    
     public struct OnWin : IEvent { }
     
     public struct OnHealthChangedEvent : IEvent

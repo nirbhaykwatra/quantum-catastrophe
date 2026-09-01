@@ -387,6 +387,9 @@ MonoBehaviour:
   Rigidbody: {fileID: 8132600139385282924}
   CapsuleCollider: {fileID: 5042489157841715398}
   WallJumpVelocity: 1.25
+  WallJumpHeight: 2
+  WallJumpHorizontalSpeed: 6
+  WallJumpControlLockDuration: 0.15
   CanWallJump: 0
 --- !u!114 &6638402231617272092
 MonoBehaviour:
@@ -444,9 +447,13 @@ MonoBehaviour:
   <DashCooldown>k__BackingField: 0.5
   <DashCheckOffset>k__BackingField: 1
   <DashCheckRadius>k__BackingField: 0.25
+  <DashJumpBoostDuration>k__BackingField: 0.2
+  <DashJumpBoostMultiplier>k__BackingField: 1.5
   <GroundMask>k__BackingField:
     serializedVersion: 2
     m_Bits: 72
+  <RechargeDashOnWallJump>k__BackingField: 1
+  <RechargeAirDashOnWallJump>k__BackingField: 1
   m_playerData: {fileID: 11400000, guid: 8f7055de7f364f54dbb222cc499e8a98, type: 2}
   m_selectionRadius: 5
   m_entanglableMask:

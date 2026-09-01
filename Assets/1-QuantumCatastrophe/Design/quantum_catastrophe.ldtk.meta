@@ -51,8 +51,16 @@ ScriptedImporter:
     _asset: {fileID: 5407911907417217254, guid: e94f88223adc91642b17269245d16be5, type: 3}
   - _key: MovingPlatform
     _asset: {fileID: 2797255104080555817, guid: bcbffddbf419c92498ba42cb0d213780, type: 3}
+  - _key: MovingPlatformObserved
+    _asset: {fileID: 6664764474191698327, guid: 7a048628b2400444f9242f57ca6fa7b7, type: 3}
+  - _key: MovingPlatformUnobserved
+    _asset: {fileID: 184144603543654876, guid: 23963f20148d85445b513d18606b1f76, type: 3}
+  - _key: PlatformingWallObserved
+    _asset: {fileID: 7147004550077163450, guid: e861d2352a32b2e47bcc111ad5841f3c, type: 3}
+  - _key: PlatformingWallUnobserved
+    _asset: {fileID: 1814982618103833455, guid: d072872dba55e974dbdddaab47d2e7aa, type: 3}
   - _key: SpikeTrap
-    _asset: {fileID: 1632321622122813367, guid: eb028fa00212d4c4586f736433f92686, type: 3}
+    _asset: {fileID: 5951379199720890703, guid: eb028fa00212d4c4586f736433f92686, type: 3}
   _enumGenerate: 0
   _enumPath: 
   _enumNamespace: 

@@ -20,5 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/1-QuantumCatastrophe/Scenes/EntanglementTutorial.unity
     guid: 30277060f06d0f244a97280a2dd27def
+  - enabled: 1
+    path: Assets/1-QuantumCatastrophe/Scenes/SuperpositionTutorial.unity
+    guid: cb085ce60a4210a45b459d576be8c69d
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

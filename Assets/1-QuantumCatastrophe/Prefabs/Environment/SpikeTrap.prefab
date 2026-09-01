@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1632321622122813367
+--- !u!1 &3346826449860494644
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,41 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 982520790194029897}
-  - component: {fileID: 6099457369231239525}
-  - component: {fileID: 3385268648133587645}
-  - component: {fileID: 3502031758039896483}
-  - component: {fileID: 3100426895892230930}
+  - component: {fileID: 8575515775185100823}
+  - component: {fileID: 2730156633099808723}
+  - component: {fileID: 5521953873109405777}
+  - component: {fileID: 4516426741250808704}
+  - component: {fileID: 7919608789045053967}
   m_Layer: 0
-  m_Name: SpikeTrap
+  m_Name: Trap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &982520790194029897
+--- !u!4 &8575515775185100823
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1632321622122813367}
+  m_GameObject: {fileID: 3346826449860494644}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.518, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 747368737733464684}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6099457369231239525
+--- !u!212 &2730156633099808723
 SpriteRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1632321622122813367}
+  m_GameObject: {fileID: 3346826449860494644}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -82,6 +83,7 @@ SpriteRenderer:
   m_SortingLayerID: -45079521
   m_SortingLayer: 4
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_Sprite: {fileID: 4735526671476607549, guid: e6521566634b3d441a169ee2f8f7dcaa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -91,16 +93,15 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &3385268648133587645
+--- !u!95 &5521953873109405777
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1632321622122813367}
+  m_GameObject: {fileID: 3346826449860494644}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 5e9caa75d216170429ac246e32e2c882, type: 2}
@@ -115,13 +116,13 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3502031758039896483
+--- !u!114 &4516426741250808704
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1632321622122813367}
+  m_GameObject: {fileID: 3346826449860494644}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7972f47461b0466488ca63f51588011c, type: 3}
@@ -129,6 +130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Trap
   DamageAmount: 1
   PushbackForce: 20
+  SpeedMultiplier: 1
   IsActive: 1
   IsArmed: 0
   DamagePlayer: 1
@@ -136,7 +138,7 @@ MonoBehaviour:
   OnTrapTriggered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3100426895892230930}
+      - m_Target: {fileID: 7919608789045053967}
         m_TargetAssemblyTypeName: UnityEngine.PolygonCollider2D, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -151,7 +153,7 @@ MonoBehaviour:
   OnTrapDeactivated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3100426895892230930}
+      - m_Target: {fileID: 7919608789045053967}
         m_TargetAssemblyTypeName: UnityEngine.PolygonCollider2D, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -163,13 +165,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!60 &3100426895892230930
+--- !u!60 &7919608789045053967
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1632321622122813367}
+  m_GameObject: {fileID: 3346826449860494644}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -218,3 +220,35 @@ PolygonCollider2D:
       - {x: 0.51519823, y: -0.25953212}
       - {x: 0.32271206, y: -0.25750512}
   m_UseDelaunayMesh: 0
+--- !u!1 &5951379199720890703
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 747368737733464684}
+  m_Layer: 0
+  m_Name: SpikeTrap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &747368737733464684
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5951379199720890703}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8575515775185100823}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
