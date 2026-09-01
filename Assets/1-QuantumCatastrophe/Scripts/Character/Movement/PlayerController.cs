@@ -47,11 +47,13 @@ public class PlayerController : MonoBehaviour
         if(Interaction == null) Interaction = GetComponent<CharacterInteraction>();
         if(Inventory == null) Inventory = GetComponent<CharacterInventory>();
         if(m_playerInput == null) m_playerInput = GetComponent<PlayerInput>();
+        
+        m_globalEventBus = ServiceLocator.ForSceneOf(this).Get<EventBusRegistry>().Get<GlobalEventBus>();
     }
 
     private void OnEnable()
     {
-        m_globalEventBus = ServiceLocator.Global.Get<EventBusRegistry>().Get<GlobalEventBus>();
+        
     }
 
     private void Start()
@@ -112,6 +114,11 @@ public class PlayerController : MonoBehaviour
     public virtual void OnResetLevel(InputValue value)
     {
         m_globalEventBus.Raise(new OnResetLevel());
+    }
+
+    public virtual void OnPause(InputValue value)
+    {
+        m_globalEventBus.Raise(new OnPauseRequestedEvent());
     }
 
     protected virtual void Update()

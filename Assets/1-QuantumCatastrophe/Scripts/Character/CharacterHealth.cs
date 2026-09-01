@@ -23,13 +23,13 @@ public class CharacterHealth : MonoBehaviour
 
     private bool m_wasDamaged;
     private float m_timer;
-
-    private void OnEnable()
+    
+    private void Awake()
     {
-        m_eventBus = ServiceLocator.Global.Get<EventBusRegistry>().Get<UIEventBus>();
+        m_eventBus = ServiceLocator.ForSceneOf(this).Get<EventBusRegistry>().Get<UIEventBus>();
     }
 
-    private void Awake()
+    private void OnEnable()
     {
         SetHealth(MaxHealth);
     }
@@ -63,7 +63,7 @@ public class CharacterHealth : MonoBehaviour
         }
         
         m_eventBus.Raise(new OnTakeDamage { Damage = amount });
-        Health -= amount;
+        SetHealth(Health - amount);
         m_wasDamaged = true;
         PlayerPrefs.SetInt("Health", Health);
         PlayerPrefs.Save();
@@ -73,7 +73,7 @@ public class CharacterHealth : MonoBehaviour
     public void Heal(int amount)
     {
         m_eventBus.Raise(new OnHeal { Amount = amount });
-        Health += amount;
+        SetHealth(Health + amount);
         PlayerPrefs.SetInt("Health", Health);
         PlayerPrefs.Save();
     }
@@ -82,12 +82,12 @@ public class CharacterHealth : MonoBehaviour
     public void Kill()
     {
         m_eventBus.Raise(new OnDeath());
-        OnRespawnEvent.Invoke(true);
     }
 
     public void SetHealth(int health)
     {
         Health = health;
+        m_eventBus.Raise(new OnHealthChangedEvent { Current = health, Max = MaxHealth});
         PlayerPrefs.SetInt("Health", Health);
         PlayerPrefs.Save();
     }

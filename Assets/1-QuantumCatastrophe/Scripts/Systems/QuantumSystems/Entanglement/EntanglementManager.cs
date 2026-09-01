@@ -11,7 +11,7 @@ namespace QC.Systems.Entanglement
     /// Scene-level service that maintains all active entanglement pairs and
     /// orchestrates the per-FixedUpdate propagation loop.
     /// </summary>
-    public class EntanglementManager : PersistentSingleton<EntanglementManager>
+    public class EntanglementManager : MonoBehaviour
     {
         // ── Internal pair record ──────────────────────────────────────────────
 
@@ -56,15 +56,14 @@ namespace QC.Systems.Entanglement
 
         // ── Unity lifecycle ───────────────────────────────────────────────────
 
-        protected override void Awake()
+        protected void Awake()
         {
-            base.Awake();
             ServiceLocator.ForSceneOf(this).Register(this);
+            m_globalEventBus = ServiceLocator.ForSceneOf(this).Get<EventBusRegistry>().Get<GlobalEventBus>();
         }
 
         private void OnEnable()
         {
-            m_globalEventBus = ServiceLocator.Global.Get<EventBusRegistry>().Get<GlobalEventBus>();
             m_onPairFormed = new EventBinding<OnEntanglementPairFormed>(HandlePairFormed);
             m_onPairBroken = new EventBinding<OnEntanglementPairBroken>(HandlePairBroken);
             m_globalEventBus.Register(m_onPairFormed);

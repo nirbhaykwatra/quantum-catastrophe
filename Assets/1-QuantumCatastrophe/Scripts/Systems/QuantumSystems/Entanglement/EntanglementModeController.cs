@@ -66,7 +66,7 @@ namespace QC.Systems.Entanglement
         {
             m_abilities = GetComponent<CharacterAbilities>();
             if (m_camera == null) m_camera = Camera.main;
-            m_globalEventBus = ServiceLocator.Global.Get<EventBusRegistry>().Get<GlobalEventBus>();
+            m_globalEventBus = ServiceLocator.ForSceneOf(this).Get<EventBusRegistry>().Get<GlobalEventBus>();
         }
 
         private void Start()

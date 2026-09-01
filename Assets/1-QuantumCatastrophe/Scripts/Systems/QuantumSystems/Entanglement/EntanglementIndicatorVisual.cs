@@ -32,7 +32,7 @@ namespace QC.Systems.Entanglement
 
         private void OnEnable()
         {
-            m_globalEventBus = ServiceLocator.Global.Get<EventBusRegistry>().Get<GlobalEventBus>();
+            m_globalEventBus = ServiceLocator.ForSceneOf(this).Get<EventBusRegistry>().Get<GlobalEventBus>();
             m_onPairFormed = new EventBinding<OnEntanglementPairFormed>(HandlePairFormed);
             m_onPairBroken = new EventBinding<OnEntanglementPairBroken>(HandlePairBroken);
             m_globalEventBus.Register(m_onPairFormed);

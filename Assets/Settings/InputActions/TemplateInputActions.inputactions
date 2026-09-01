@@ -46,7 +46,7 @@
                     "name": "Pause",
                     "type": "Button",
                     "id": "6a0b6a00-6f72-4bb2-9f07-c3912a6e51bd",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "Press(behavior=1)",
                     "initialStateCheck": false

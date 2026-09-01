@@ -1,4 +1,5 @@
-﻿using QC.Systems.Entanglement;
+﻿using System;
+using QC.Systems.Entanglement;
 using QC.Systems.Notifications;
 using QC.Systems.Tutorials;
 using UnityEngine;
@@ -39,6 +40,21 @@ namespace QC.Utilities.EventBusSystem
     public struct OnDeath : IEvent
     {
         public bool IsPlayer;
+    }
+    
+    public struct OnWin : IEvent { }
+    
+    public struct OnHealthChangedEvent : IEvent
+    {
+        public int Current;
+        public int Max;
+    }
+
+    public struct OnPauseRequestedEvent : IEvent { }
+
+    public struct OnGamePausedEvent : IEvent
+    {
+        public bool IsPaused;
     }
     
     public struct OnEntanglementPairFormed : IEvent
@@ -89,5 +105,14 @@ namespace QC.Utilities.EventBusSystem
     public struct OnZoomOut : IEvent { }
     
     public struct OnResetLevel : IEvent { }
+
+    public struct OnScreenFade : IEvent
+    {
+        public float FadeOutMs; 
+        public float HoldMs;
+        public float FadeInMs;
+        public Action OnBlack;
+        public Action OnComplete;
+    }
     
 }

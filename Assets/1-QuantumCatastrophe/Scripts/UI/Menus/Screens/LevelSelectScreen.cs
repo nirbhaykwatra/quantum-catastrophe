@@ -22,7 +22,6 @@ public class LevelSelectScreen : MenuScreen
         foreach (LevelData level in _levelRegistry.Levels)
         {
             TemplateContainer item = _levelSelectItemTemplate.Instantiate();
-            Debug.Log($"item: {item.Q<Button>("level-select-item-button")}");
             Button btn = item.Q<Button>("level-select-item-button");
             btn.text = level.IsLocked ? "Locked" : level.LevelName.SplitPascalCase();
             btn.style.backgroundImage = new StyleBackground(level.Thumbnail);

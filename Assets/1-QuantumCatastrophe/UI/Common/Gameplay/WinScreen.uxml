@@ -1,0 +1,7 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/1-QuantumCatastrophe/UI/Common/Gameplay/Gameplay.uss?fileID=7433441132597879392&amp;guid=2c0d646fc504bdc498d674cbbdcccc4c&amp;type=3#Gameplay"/>
+    <ui:VisualElement name="win-screen" class="win-screen">
+        <ui:Label text="You escaped this room!" class="win-title"/>
+        <ui:Button name="menu-button" text="Main Menu" class="win-button"/>
+    </ui:VisualElement>
+</ui:UXML>

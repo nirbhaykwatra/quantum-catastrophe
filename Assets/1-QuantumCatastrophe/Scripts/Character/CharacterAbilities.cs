@@ -102,7 +102,7 @@ namespace QC.Character
         
         private void OnEnable()
         {
-            _uiEventBus = ServiceLocator.ForSceneOf(this).Get<EventBusRegistry>().Get<UIEventBus>();
+            
         }
 
         private void Awake()
@@ -110,6 +110,7 @@ namespace QC.Character
             m_rigidbody = GetComponent<Rigidbody2D>();
             m_movement = GetComponent<CharacterMovement2D>();
             m_playerMode = PlayerMode.Normal;
+            _uiEventBus = ServiceLocator.ForSceneOf(this).Get<EventBusRegistry>().Get<UIEventBus>();
         }
 
         private void Start()

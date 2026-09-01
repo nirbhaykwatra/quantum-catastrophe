@@ -1,3 +1,4 @@
+using System;
 using GameEvents;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -37,7 +38,10 @@ public class CharacterSpawn : MonoBehaviour
             m_spawnPosition = LastCheckpoint;
             transform.SetPositionAndRotation(m_spawnPosition, Quaternion.identity);
         }
+    }
 
+    private void Start()
+    {
         if (PlayerPrefs.HasKey("Health"))
         {
             m_health.SetHealth(PlayerPrefs.GetInt("Health"));
@@ -47,7 +51,7 @@ public class CharacterSpawn : MonoBehaviour
             m_health.SetHealth(m_health.MaxHealthValue);
         }
     }
-    
+
     public void SetSpawnPoint(Vector3 position)
     {
         LastCheckpoint = position;

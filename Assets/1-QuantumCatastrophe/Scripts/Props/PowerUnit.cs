@@ -12,7 +12,7 @@ public class PowerUnit : MonoBehaviour
 
     private void Awake()
     {
-        _globalEventBus = ServiceLocator.Global.Get<EventBusRegistry>().Get<GlobalEventBus>();
+        _globalEventBus = ServiceLocator.ForSceneOf(this).Get<EventBusRegistry>().Get<GlobalEventBus>();
         _rb = GetComponent<Rigidbody2D>();
         _startPosition = transform.position;
     }

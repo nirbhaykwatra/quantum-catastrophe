@@ -1,0 +1,8 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/1-QuantumCatastrophe/UI/Common/Gameplay/Gameplay.uss?fileID=7433441132597879392&amp;guid=2c0d646fc504bdc498d674cbbdcccc4c&amp;type=3#Gameplay"/>
+    <ui:VisualElement name="death-screen" class="death-screen">
+        <ui:Label text="Try Again!" class="death-title"/>
+        <ui:Button name="retry-button" text="Retry" class="death-button"/>
+        <ui:Button name="menu-button" text="Main Menu" class="death-button"/>
+    </ui:VisualElement>
+</ui:UXML>
